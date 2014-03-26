@@ -1,0 +1,45 @@
+<%
+  Dim i As Integer
+%>
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+     <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h3 id="myModalLabel"><%=("CPU Flags long desc")%></h3>
+     </div>
+     <div class="modal-body">
+      <div class="widget widget-nopad"> 
+         <div class="widget-content"> 
+           <div class="widget big-stats-container"> 
+               <div class="widget-content"> 
+                 <table class="table table-bordered"> 
+                  <tbody>
+                    <% For i = 1 To 94 %>
+                      <tr> 
+                         <td><b><%= MValidate.RADIVATE["CPUID"]["Flags"][i]["FEATURE"]%></b></td> 
+                         
+                         <%If MValidate.RADIVATE["CPUID"]["Flags"][i]["VALUE"] = "1" Then%>
+                         <td><i class="icon-ok-circle"></td>
+                         <%Else%>
+                         <td><i class="icon-remove-circle"></td> 
+                         <%Endif%>
+                         
+                         <td><%= MValidate.RADIVATE["CPUID"]["Flags"][i]["DESC"]%></td>
+                         
+                         <%If MValidate.RADIVATE["CPUID"]["Flags"][i]["HAVEWEBSITE"] = "1" Then%>
+                         <td><a href="<%= MValidate.RADIVATE["CPUID"]["Flags"][i]["WEBSITE"]%>" target="_blank"><button class="btn btn-github-alt"><i class="icon-external-link"></i></button></a></td> 
+                         <%Else%>
+                         <td></td> 
+                         <%Endif%>
+                      </tr> 
+                    <% Next %>
+                     </tbody> 
+                 </table> 
+               </div> 
+          </div> 
+      </div> 
+     </div> 
+     </div>
+     <div class="modal-footer">
+      <button class="btn" data-dismiss="modal" aria-hidden="true"><%=("Close")%></button>
+     </div>
+</div>

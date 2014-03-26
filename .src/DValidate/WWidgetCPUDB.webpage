@@ -1,0 +1,63 @@
+<div class="widget widget-nopad">
+  <div class="widget-header"> <i class="icon-list-alt"></i>
+    <h3><%Print ("CPU From Database")%></h3>
+  </div>
+  <div class="widget-content">
+    <table class="table table-bordered">
+      <tbody> 
+        <tr> 
+         <td><b><%Print ("TDP:")%></b></td> 
+         <td><%=Replace(MValidate.RADIVATE["CPU_TDP"], "TDP:", "")%></td> 
+        </tr> 
+        <tr> 
+         <td><b><%Print ("PPS:")%></b></td> 
+         <td><%=Replace(MValidate.RADIVATE["CPU_PPS"], "PPS:", "")%></td> 
+        </tr> 
+        <tr> 
+         <td><b><%Print ("Die size:")%></b></td> 
+         <td><%=Replace(MValidate.RADIVATE["CPU_DIE_SIZE"], "Die size:", "")%></td> 
+        </tr> 
+        <tr> 
+         <td><b><%Print ("Package:")%></b></td> 
+         <td><%=Replace(MValidate.RADIVATE["CPU_PACKAGE"], "Package:", "")%></td> 
+        </tr> 
+        <tr> 
+         <td><b><%Print ("Turboclock:")%></b></td> 
+         <td><%=Replace(MValidate.RADIVATE["CPU_TURBOCLOCK"], "Turboclock:", "")%></td> 
+        </tr> 
+        <tr> 
+         <td><b><%Print ("Voltage:")%></b></td> 
+         <td><%=Replace(MValidate.RADIVATE["CPU_VOLTAGE"], "Voltage:", "")%></td> 
+        </tr> 
+        <tr> 
+         <td><b><%Print ("Part:")%></b></td> 
+         <td><%=Replace(MValidate.RADIVATE["CPU_PART"], "Part:", "")%></td> 
+        </tr> 
+        <tr> 
+         <td><b><%Print ("Socket:")%></b></td> 
+         <td><%=Replace(MValidate.RADIVATE["CPU_SOCKET"], "Socket:", "")%></td> 
+        </tr> 
+        <tr> 
+         <td><b><%Print ("Transistors:")%></b></td> 
+         <td><%=Replace(MValidate.RADIVATE["CPU_TRANSISTORS"], "Transistors:", "")%></td> 
+        </tr> 
+        <tr> 
+         <td><b><%Print ("TCaseMax:")%></b></td> 
+         <td><%=Replace(MValidate.RADIVATE["CPU_TCASEMAX"], "TCaseMax:", "")%></td> 
+        </tr> 
+        <tr> 
+         <td><b><%Print ("Multiplier:")%></b></td> 
+         <td><%=Replace(MValidate.RADIVATE["CPU_MULTIPLIER"], "Multiplier:", "")%></td> 
+        </tr> 
+        <tr> 
+         <td><b><%Print ("Codename:")%></b></td> 
+         <td><%=Replace(MValidate.RADIVATE["CPU_CODENAME"], "Codename:", "")%></td> 
+        </tr> 
+        <tr> 
+         <td><b><%Print ("Memory support:")%></b></td>
+         <td><%=Replace(MValidate.RADIVATE["CPU_MEMORY_SUPPORT"], "Memory support:", "")%></td> 
+        </tr> 
+      </tbody>
+    </table>
+  </div>
+</div>

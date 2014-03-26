@@ -1,0 +1,46 @@
+' Gambas module file
+
+Public USER_DATA As Collection
+Public Function User_Logged() As Boolean
+  
+  'Dim USER_DATA As Collection
+
+If IsNull(Request.Cookies["__ursa"]) = False Then
+    If Exist(Global.WHEREIS_SITE_ROOT & "/Users/" & Request.Cookies["__ursa"] & "") Then
+      USER_DATA = JSON.Decode(File.Load(Global.WHEREIS_SITE_ROOT & "/Users/" & Request.Cookies["__ursa"] & "/Data.json"))
+      If USER_DATA["SECRET_KEY"] = Request.Cookies["__apix"] Then
+      Return True
+      Endif
+      Return False
+    Endif
+    Return False
+Else
+Return False
+Endif
+End
+
+Public Function Send_Mail(email As String, username As String, displayname As String, API_PUBLIC As String, API_PRIVATE As String, Password As String)
+  Dim Message As String
+  Message = "Your Login: "
+            "" & username & "\n"
+            "\n"
+            "Your Display name: "
+            "" & displayname & "\n"
+            "\n"
+            "Api Public Key: "
+            "" & API_PUBLIC & "\n"
+            "\n"
+            "Api Private key: "
+            "" & API_PRIVATE & "\n"
+            "\n"
+            "Your Password: "
+            "" & Password & "\n"
+            "\n"
+            "Login url: "
+            "" & Global.WEBSITE_ROOT_URL_HTTP & "/inex.r?login"
+            "\n"
+            "This mail was generated automatically."
+            "Do Not answer him."
+
+  Shell "echo \"" & Message & "\" | mail -s \"Account Information in Cerbero\" " & email & ""
+End

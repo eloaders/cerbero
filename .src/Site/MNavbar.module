@@ -1,0 +1,25 @@
+' Gambas module file
+
+Public USERNAME_ACCOUT_TEXT As String
+Public PROFILE_LOGIN_URL As String
+Public PROFILE_LOGIN_TEXT As String
+Public PROFILE_LOGOUT_SIGNIN_URL As String
+Public PROFILE_LOGOUT_SIGNIN_TEXT As String
+
+Public Sub _init()
+
+ If Usera.User_Logged() = True Then
+   USERNAME_ACCOUT_TEXT = Usera.USER_DATA["CERBERO_USERNAME"]
+   PROFILE_LOGIN_URL = Application.Root & "?profile"
+   PROFILE_LOGIN_TEXT = "Profile"
+   PROFILE_LOGOUT_SIGNIN_URL = Application.Root & "?logout"
+   PROFILE_LOGOUT_SIGNIN_TEXT = "Logout"
+ Else
+   USERNAME_ACCOUT_TEXT = "Account"
+   PROFILE_LOGIN_URL = Application.Root & "?login"
+   PROFILE_LOGIN_TEXT = "Sign In"
+   PROFILE_LOGOUT_SIGNIN_URL = Application.Root & "?signup"
+   PROFILE_LOGOUT_SIGNIN_TEXT = "Sign Up"
+ Endif
+  
+End

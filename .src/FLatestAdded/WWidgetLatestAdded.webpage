@@ -1,0 +1,47 @@
+<%
+Dim All As Integer
+Dim Current As Integer
+%>
+<div class="widget widget-table action-table"> 
+  <div class="widget-content"> 
+    <table class="table table-hover"> 
+      <thead> 
+        <tr> 
+          <th><%Print ("CPU Logo")%></th>
+          <th><%Print ("CPU and GPU")%></th> 
+          <th><%Print ("Motherboard")%></th> 
+          <th class="text-center"><%Print ("Distribution")%></th> 
+          <th class="text-center"><%Print ("Link to report")%></th>
+          </tr> 
+      </thead> 
+      <tbody>
+      <%For All = 0 To MLatestAdded.LATEST_ADDED.Count - 1%>
+        <tr> 
+          <td class="col-sm-8 col-md-6"> 
+            <div class="media"> 
+                <a class="thumbnail pull-left" href="<%Print Global.WEBSITE_ROOT_URL_HTTP & Application.Root & "?validate=" & MLatestAdded.LATEST_ADDED[CString(All)]["ID"]%>" target="_blank"><img class="media-object" src="<%Print Global.WEBSITE_ROOT_URL_HTTP & "/LOGOS/" & MLatestAdded.LATEST_ADDED[CString(All)]["CPU_LOGO"]%>"></a> 
+            </div></td> 
+            <td class="col-sm-1 col-md-1 text-center"> 
+                <div class="media-body"> 
+                    <h4 class="media-heading"><%Print MLatestAdded.LATEST_ADDED[CString(All)]["CPU_VENDOR"]%></a></h4> 
+                    <h5 class="media-heading"><%Print MLatestAdded.LATEST_ADDED[CString(All)]["CPU_NAME"]%></a></h5> 
+                    <span>I-Nex V: </span><span class="text-success"><strong><%Print MLatestAdded.LATEST_ADDED[CString(All)]["INEX_VERSION"]%></strong></span> 
+                </div> 
+            <strong><%Print MLatestAdded.LATEST_ADDED[CString(All)]["GPU_MODEL"]%></strong></td> 
+            <td class="col-sm-1 col-md-1 text-center">
+              <strong><%Print Replace(MLatestAdded.LATEST_ADDED[CString(All)]["INEX_MOTHERBOARD_VENDOR1"], "Board Vendor:", "")%></strong>
+              <strong><%Print Replace(MLatestAdded.LATEST_ADDED[CString(All)]["INEX_MOTHERBOARD_VENDOR3"], "Board Name:", "")%></strong>
+            </td> 
+            <td class="col-sm-1 col-md-1 text-center">
+              <strong><%Print Replace(MLatestAdded.LATEST_ADDED[CString(All)]["DISTRO_VENDOR"], "Distro Vendor:", "") & " " & Replace(MLatestAdded.LATEST_ADDED[CString(All)]["DISTRO_VENDOR2"], "Distro Release:", "")%></strong>
+            </td> 
+            <td class="td-actions"> 
+            <a <a href="<%Print Global.WEBSITE_ROOT_URL_HTTP & Application.Root & "?validate=" & MLatestAdded.LATEST_ADDED[CString(All)]["ID"]%>" target="_blank" class="btn btn-link btn-small"> 
+            <i class="btn-icon-only icon-link"></i> 
+            </a>
+        </tr>
+      <%Next%>
+      </tbody> 
+    </table> 
+  </div>
+</div>

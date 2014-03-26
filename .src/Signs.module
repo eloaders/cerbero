@@ -1,0 +1,30 @@
+' Gambas module file
+
+Public Sub Sign_in()
+  Dim USER_DATA As Collection
+  If Exist("" & Global.WHEREIS_SITE_ROOT & "/Users/" & Request.Post["username"] & "") = True Then
+    USER_DATA = JSON.Decode(File.Load("" & Global.WHEREIS_SITE_ROOT & "/Users/" & Request.Post["username"] & "/Data.json"))
+    If USER_DATA["CERBERO_USER_PASSWORD"] = Base64$(Digest["sha256"](Request.Post["password"])) Then
+      If USER_DATA["SECRET_KEY"] = Request.Cookies["__apix"] Then
+        Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & "/inex.r?login")
+      Else
+        USER_DATA.Remove("SECRET_KEY")
+        USER_DATA.Add(Replace(Crypt.md5(Rnd(200)), "$1$", ""), "SECRET_KEY")
+        File.Save("" & Global.WHEREIS_SITE_ROOT & "/Users/" & Request.Post["username"] & "/Data.json", JSON.Encode(USER_DATA))
+        If Request.Post["keepmeloginedin"] = "keepmeloginedin" Then
+          Response.SetCookie("__ursa", USER_DATA["CERBERO_USERNAME"], Global.WEBSITE_ROOT_URL, "/", DateAdd(Now(), gb.Year, 2), True)
+          Response.SetCookie("__apix", USER_DATA["SECRET_KEY"], Global.WEBSITE_ROOT_URL, "/", DateAdd(Now(), gb.Year, 2), True)
+          Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & "/inex.r")
+        Else
+          Response.SetCookie("__ursa", USER_DATA["CERBERO_USERNAME"], Global.WEBSITE_ROOT_URL, "/")
+          Response.SetCookie("__apix", USER_DATA["SECRET_KEY"], Global.WEBSITE_ROOT_URL, "/")
+          Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & "/inex.r")
+        Endif
+      Endif
+    Else
+    Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & "/inex.r?login")
+    Endif
+  Else
+    Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & "/inex.r?login")
+  Endif
+End

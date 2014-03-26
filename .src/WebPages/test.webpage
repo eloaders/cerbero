@@ -1,0 +1,27 @@
+<%
+Dim sEnv As String
+%>
+
+<!-- Variable declaration must come before any HTML -->
+
+<html>
+
+<h2>CGI script environmental variables</h2>
+
+<table border="1" cellspacing="0" cellpadding="2">
+
+  <tr>
+    <th align="left">Name</th>
+    <th align="left">Value</th>
+  </tr>
+
+<% For Each sEnv In Application.Env %>
+  <tr valign="top">
+    <td><%= sEnv %></td>
+    <td><%= Application.Env[sEnv] %>&nbsp;</td>
+  </tr>
+<% Next %>
+
+</table>
+
+</html>

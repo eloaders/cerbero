@@ -1,0 +1,325 @@
+<%
+Dim USER_DATA As Collection
+%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>I-Nex - Cerbero</title>
+<meta name="description" content="i-nex.pl serwis internetowy, natywna linuksowa wersja oprogramowania alternetywnego dla cpu-z oraz validate." />
+<meta name="keywords" content="cpu-z, validate, linux, ubuntu, cpu, motherboard, i-nex, cerbero, hardware, gpu" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="icon" type="image/png" href="favicon.png" />
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" />
+<link href="css/font-awesome.css" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/pages/signin.css" rel="stylesheet" type="text/css">
+<link href="css/pages/dashboard.css" rel="stylesheet">
+</head>
+<body>
+<%
+    Print "<div class=\"navbar navbar-fixed-top\">"
+    Print "   <div class=\"navbar-inner\">"
+    Print "     <div class=\"container\">"
+    Print "         <a class=\"btn btn-navbar\" data-toggle=\"collapse\" data-target=\".nav-collapse\">"
+    Print "           <span class=\"icon-bar\"></span>"
+    Print "           <span class=\"icon-bar\"></span>"
+    Print "           <span class=\"icon-bar\"></span>"
+    Print "         </a>"
+    Print "         <a class=\"brand\" href=\"" & Application.Root & "\">"
+    Print ("           I-Nex - Cerbero")
+    Print "         </a>"
+%>
+<%
+        If Usera.User_Logged() = True Then
+        Print "         <div class=\"nav-collapse\">"
+        Print "           <ul class=\"nav pull-right\">"
+        Print "             <li class=\"dropdown\">"
+        Print "                 <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">"
+        Print "                   <i class=\"icon-user\"></i> "
+        Print "                     " & Usera.USER_DATA["CERBERO_USERNAME"] & ""
+        Print "                   <b class=\"caret\"></b>"
+        Print "                 </a>"
+        Print "             <ul class=\"dropdown-menu\">"
+        Print "                  <li>"
+        Print "                    <a href=\"" & Application.Root & "?profile\">"
+        Print ("                    Profile")
+        Print "                    </a>"
+        Print "                  </li>"
+        Print "                  <li>"
+        Print "                   <a href=\"" & Application.Root & "?logout\">"
+        Print ("                   Logout")
+        Print "                   </a>"
+        Print "                  </li>"
+        Print "             </ul>"
+        Print "           </li>"
+        Print "         </ul>"
+        Print "       </div><!--/.nav-collapse -->  "
+        Print "    </div> <!-- /container -->"
+        Print "</div> <!-- /navbar-inner -->"
+        Else
+        DUploadUserNav.Render
+        Endif
+
+%>
+<br/>
+<br/>
+<br/>
+<div class="container">
+  <div class="row">
+  
+    <div class="span12">
+      <div id="target-1" class="widget">
+        <div class="widget-content">
+<h1>Polityka prywatności serwisu i-nex.pl</h1>
+<h3>1. Informacje ogólne.</h3>
+<ol>
+<li>
+<p lang="en-US" align="JUSTIFY"><span style="font-family: 'Trebuchet MS', serif;"><span>Serwis realizuje funkcje pozyskiwania informacji o użytkownikach i ich zachowaniu w następujący sposób:</span></span></p>
+<ol>
+<li>
+<p lang="en-US" align="JUSTIFY"><span style="font-family: 'Trebuchet MS', serif;"><span>Poprzez dobrowolnie wprowadzone w formularzach informacje.</span></span></p>
+</li>
+<li>
+<p lang="en-US" align="JUSTIFY"><span style="font-family: 'Trebuchet MS', serif;"><span>Poprzez zapisywanie w urządzeniach końcowych pliki cookie (tzw. &#8222;ciasteczka&#8221;).</span></span></p>
+</li>
+<li>
+<p lang="en-US" align="JUSTIFY"><span style="font-family: 'Trebuchet MS', serif;"><span>Poprzez gromadzenie logów serwera www przez operatora hostingowego</span></span></p>
+<p>AB-Com<br />
+Arkadiusz Bednarczyk<br />
+Wodna 19A, 76-251 Kobylnica<br />
+NIP:839-124-44-13</p>
+<p lang="en-US" align="JUSTIFY"><span style="font-family: 'Trebuchet MS', serif;"><span>funkcjonującego pod adresem hosting.linux.pl</span></span></p>
+</li>
+</ol>
+</li>
+</ol>
+<h3>2. Informacje w formularzach.</h3>
+<ol>
+<li>
+<p lang="en-US" align="JUSTIFY"><span style="font-family: 'Trebuchet MS', serif;"><span>Serwis zbiera informacje podane dobrowolnie przez użytkownika.</span></span></p>
+</li>
+<li>
+<p lang="en-US" align="JUSTIFY"><span style="font-family: 'Trebuchet MS', serif;"><span>Serwis może zapisać ponadto informacje o parametrach połączenia (oznaczenie czasu, adres IP)</span></span></p>
+</li>
+<li>
+<p lang="en-US" align="JUSTIFY"><span style="font-family: 'Trebuchet MS', serif;"><span>Dane w formularzu nie są udostępniane podmiotom trzecim inaczej, niż za zgodą użytkownika.</span></span></p>
+</li>
+<li>
+<p lang="en-US" align="JUSTIFY"><span style="font-family: 'Trebuchet MS', serif;"><span>Dane podane w formularzu mogą stanowić zbiór potencjalnych klientów, zarejestrowany przez Operatora Serwisu w rejestrze prowadzonym przez Generalnego Inspektora Ochrony Danych Osobowych.</span></span></p>
+</li>
+<li>
+<p lang="en-US" align="JUSTIFY"><span style="font-family: 'Trebuchet MS', serif;"><span>Dane podane w formularzu są przetwarzane w celu wynikającym z funkcji konkretnego formularza, np w celu dokonania procesu obsługi zgłoszenia serwisowego lub kontaktu handlowego.</span></span></p>
+</li>
+<li>
+<p lang="en-US" align="JUSTIFY"><span style="font-family: 'Trebuchet MS', serif;"><span>Dane podane w formularzach mogą być przekazane podmiotom technicznie realizującym niektóre usługi – w szczególności dotyczy to przekazywania informacji o posiadaczu rejestrowanej domeny do podmiotów będących operatorami domen internetowych (przede wszystkim Naukowa i Akademicka Sieć Komputerowa j.b.r – NASK), serwisów obsługujących płatności lub też innych podmiotów, z którymi Operator Serwisu w tym zakresie współpracuje.</span></span></p>
+</li>
+</ol>
+<h3>3. Informacja o plikach cookies.</h3>
+<ol>
+<li>
+<p lang="en-US" align="JUSTIFY"><span style="font-family: 'Trebuchet MS', serif;"><span>Serwis korzysta z plików cookies.</span></span></p>
+</li>
+<li>
+<p lang="en-US" align="JUSTIFY"><span style="font-family: 'Trebuchet MS', serif;"><span>Pliki cookies (tzw. „ciasteczka”) stanowią dane informatyczne, w szczególności pliki tekstowe, które przechowywane są w urządzeniu końcowym Użytkownika Serwisu i przeznaczone są do korzystania ze stron internetowych Serwisu. Cookies zazwyczaj zawierają nazwę strony internetowej, z której pochodzą, czas przechowywania ich na urządzeniu końcowym oraz unikalny numer.</span></span></p>
+</li>
+<li>
+<p lang="en-US" align="JUSTIFY"><span style="font-family: 'Trebuchet MS', serif;"><span>Podmiotem zamieszczającym na urządzeniu końcowym Użytkownika Serwisu pliki cookies oraz uzyskującym do nich dostęp jest operator Serwisu.</span></span></p>
+</li>
+<li>
+<p lang="en-US" align="JUSTIFY"><span style="font-family: 'Trebuchet MS', serif;"><span>Pliki cookies wykorzystywane są w następujących celach:</span></span></p>
+<ol>
+<li>
+<p lang="en-US" align="JUSTIFY"><span style="font-family: 'Trebuchet MS', serif;"><span>tworzenia statystyk, które pomagają zrozumieć, w jaki sposób Użytkownicy Serwisu korzystają ze stron internetowych, co umożliwia ulepszanie ich struktury i zawartości;</span></span></p>
+</li>
+<li>
+<p lang="en-US" align="JUSTIFY"><span style="font-family: 'Trebuchet MS', serif;"><span>utrzymanie sesji Użytkownika Serwisu (po zalogowaniu), dzięki której Użytkownik nie musi na każdej podstronie Serwisu ponownie wpisywać loginu i hasła;</span></span></p>
+</li>
+<li>
+<p lang="en-US" align="JUSTIFY"><span style="font-family: 'Trebuchet MS', serif;"><span>określania profilu użytkownika w celu wyświetlania mu dopasowanych materiałów w sieciach reklamowych, w szczególności sieci Google.</span></span></p>
+</li>
+</ol>
+</li>
+<li>
+<p lang="en-US" align="JUSTIFY"><span style="font-family: 'Trebuchet MS', serif;"><span>W ramach Serwisu stosowane są dwa zasadnicze rodzaje plików cookies: „sesyjne” (session cookies) oraz „stałe” (persistent cookies). Cookies „sesyjne” są plikami tymczasowymi, które przechowywane są w urządzeniu końcowym Użytkownika do czasu wylogowania, opuszczenia strony internetowej lub wyłączenia oprogramowania (przeglądarki internetowej). „Stałe” pliki cookies przechowywane są w urządzeniu końcowym Użytkownika przez czas określony w parametrach plików cookies lub do czasu ich usunięcia przez Użytkownika.</span></span></p>
+</li>
+<li>
+<p lang="en-US" align="JUSTIFY"><span style="font-family: 'Trebuchet MS', serif;"><span>Oprogramowanie do przeglądania stron internetowych (przeglądarka internetowa) zazwyczaj domyślnie dopuszcza przechowywanie plików cookies w urządzeniu końcowym Użytkownika. Użytkownicy Serwisu mogą dokonać zmiany ustawień w tym zakresie. Przeglądarka internetowa umożliwia usunięcie plików cookies. Możliwe jest także automatyczne blokowanie plików cookies Szczegółowe informacje na ten temat zawiera pomoc lub dokumentacja przeglądarki internetowej.</span></span></p>
+</li>
+<li>
+<p lang="en-US" align="JUSTIFY"><span style="font-family: 'Trebuchet MS', serif;"><span>Ograniczenia stosowania plików cookies mogą wpłynąć na niektóre funkcjonalności dostępne na stronach internetowych Serwisu.</span></span></p>
+</li>
+<li>
+<p lang="en-US" align="JUSTIFY"><span style="font-family: 'Trebuchet MS', serif;"><span>Pliki cookies zamieszczane w urządzeniu końcowym Użytkownika Serwisu i wykorzystywane mogą być również przez współpracujących z operatorem Serwisu reklamodawców oraz partnerów.</span></span></p>
+</li>
+<li>
+<p lang="en-US" align="JUSTIFY"><span style="font-family: 'Trebuchet MS', serif;"><span>Zalecamy przeczytanie polityki ochrony prywatności tych firm, aby poznać zasady korzystania z plików cookie wykorzystywane w statystykach: <span style="color: #000080;"><span style="text-decoration: underline;"><a href="http://www.google.pl/intl/pl/analytics/privacyoverview.html"><span style="color: #0000ff;">Polityka ochrony prywatności Google Analytics</span></a></span></span></span></span></p>
+</li>
+<li>
+<p lang="en-US" align="JUSTIFY"><span style="font-family: 'Trebuchet MS', serif;"><span>Pliki cookie mogą być wykorzystane przez sieci reklamowe, w szczególności sieć Google, do wyświetlenia reklam dopasowanych do sposobu, w jaki użytkownik korzysta z Serwisu. W tym celu mogą zachować informację o ścieżce nawigacji użytkownika lub czasie pozostawania na danej stronie.</span></span></p>
+</li>
+<li>
+<p lang="en-US" align="JUSTIFY"><span style="font-family: 'Trebuchet MS', serif;"><span>W zakresie informacji o preferencjach użytkownika gromadzonych przez sieć reklamową Google użytkownik może przeglądać i edytować informacje wynikające z plików cookies przy pomocy narzędzia: <span style="color: #000080;"><span style="text-decoration: underline;"><a href="https://www.google.com/ads/preferences/"><span style="color: #0000ff;">https://www.google.com/ads/preferences/</span></a></span></span></span></span></p>
+</li>
+</ol>
+<h3>4. Logi serwera.</h3>
+<ol>
+<li>
+<p lang="en-US" align="JUSTIFY"><span style="font-family: 'Trebuchet MS', serif;"><span>Informacje o niektórych zachowaniach użytkowników podlegają logowaniu w warstwie serwerowej. Dane te są wykorzystywane wyłącznie w celu administrowania serwisem oraz w celu zapewnienia jak najbardziej sprawnej obsługi świadczonych usług hostingowych.</span></span></p>
+</li>
+<li>
+<p lang="en-US" align="JUSTIFY"><span style="font-family: 'Trebuchet MS', serif;"><span>Przeglądane zasoby identyfikowane są poprzez adresy URL. Ponadto zapisowi mogą podlegać:</span></span></p>
+<ol>
+<li>
+<p lang="en-US" align="JUSTIFY"><span style="font-family: 'Trebuchet MS', serif;"><span>czas nadejścia zapytania,</span></span></p>
+</li>
+<li>
+<p lang="en-US" align="JUSTIFY"><span style="font-family: 'Trebuchet MS', serif;"><span>czas wysłania odpowiedzi,</span></span></p>
+</li>
+<li>
+<p lang="en-US" align="JUSTIFY"><span style="font-family: 'Trebuchet MS', serif;"><span>nazwę stacji klienta – identyfikacja realizowana przez protokół HTTP,</span></span></p>
+</li>
+<li>
+<p lang="en-US" align="JUSTIFY"><span style="font-family: 'Trebuchet MS', serif;"><span>informacje o błędach jakie nastąpiły przy realizacji transakcji HTTP,</span></span></p>
+</li>
+<li>
+<p lang="en-US" align="JUSTIFY"><span style="font-family: 'Trebuchet MS', serif;"><span>adres URL strony poprzednio odwiedzanej przez użytkownika (referer link) – w przypadku gdy przejście do Serwisu nastąpiło przez odnośnik,</span></span></p>
+</li>
+<li>
+<p lang="en-US" align="JUSTIFY"><span style="font-family: 'Trebuchet MS', serif;"><span>informacje o przeglądarce użytkownika,</span></span></p>
+</li>
+<li>
+<p lang="en-US" align="JUSTIFY"><span style="font-family: 'Trebuchet MS', serif;"><span>Informacje o adresie IP.</span></span></p>
+</li>
+</ol>
+</li>
+<li>
+<p lang="en-US" align="JUSTIFY"><span style="font-family: 'Trebuchet MS', serif;"><span>Dane powyższe nie są kojarzone z konkretnymi osobami przeglądającymi strony.</span></span></p>
+</li>
+<li>
+<p lang="en-US" align="JUSTIFY"><span style="font-family: 'Trebuchet MS', serif;"><span>Dane powyższe są wykorzystywane jedynie dla celów administrowania serwerem.</span></span></p>
+</li>
+</ol>
+<h3>5. Udostępnienie danych.</h3>
+<ol>
+<li>
+<p lang="en-US" align="JUSTIFY"><span style="font-family: 'Trebuchet MS', serif;"><span>Dane podlegają udostępnieniu podmiotom zewnętrznym wyłącznie w granicach prawnie dozwolonych.</span></span></p>
+</li>
+<li>
+<p lang="en-US" align="JUSTIFY"><span style="font-family: 'Trebuchet MS', serif;"><span>Dane umożliwiające identyfikację osoby fizycznej są udostępniane wyłączenie za zgodą tej osoby.</span></span></p>
+</li>
+<li>
+<p lang="en-US" align="JUSTIFY"><span style="font-family: 'Trebuchet MS', serif;"><span>Operator może mieć obowiązek udzielania informacji zebranych przez Serwis upoważnionym organom na podstawie zgodnych z prawem żądań w zakresie wynikającym z żądania.</span></span></p>
+</li>
+</ol>
+<h3>6. Zarządzanie plikami cookies – jak w praktyce wyrażać i cofać zgodę?</h3>
+<ol>
+<li>
+<p lang="en-US" align="JUSTIFY"><span style="font-family: 'Trebuchet MS', serif;"><span>Jeśli użytkownik nie chce otrzymywać plików cookies, może zmienić ustawienia przeglądarki. Zastrzegamy, że wyłączenie obsługi plików cookies niezbędnych dla procesów uwierzytelniania, bezpieczeństwa, utrzymania preferencji użytkownika może utrudnić, a w skrajnych przypadkach może uniemożliwić korzystanie ze stron www</span></span></p>
+</li>
+<li>
+<p lang="en-US" align="JUSTIFY"><span style="font-family: 'Trebuchet MS', serif;"><span>W celu zarządzania ustawieniami cookies wybierz z listy poniżej przeglądarkę internetową/ system i postępuj zgodnie z instrukcjami:</span></span></p>
+<ol>
+<li>
+<p lang="en-US" align="JUSTIFY"><span style="font-family: 'Trebuchet MS', serif;"><span><span style="color: #000080;"><span style="text-decoration: underline;"><a href="http://support.microsoft.com/kb/196955"><span style="color: #0000ff;">Internet Explorer</span></a></span></span></span></span></p>
+</li>
+<li>
+<p lang="en-US" align="JUSTIFY"><span style="font-family: 'Trebuchet MS', serif;"><span><span style="color: #000080;"><span style="text-decoration: underline;"><a href="http://support.google.com/chrome/bin/answer.py?hl=pl&amp;answer=95647"><span style="color: #0000ff;">Chrome</span></a></span></span></span></span></p>
+</li>
+<li>
+<p lang="en-US" align="JUSTIFY"><span style="font-family: 'Trebuchet MS', serif;"><span><span style="color: #000080;"><span style="text-decoration: underline;"><a href="http://support.apple.com/kb/PH5042"><span style="color: #0000ff;">Safari</span></a></span></span></span></span></p>
+</li>
+<li>
+<p lang="en-US" align="JUSTIFY"><span style="font-family: 'Trebuchet MS', serif;"><span><span style="color: #000080;"><span style="text-decoration: underline;"><a href="http://support.mozilla.org/pl/kb/W%C5%82%C4%85czanie%20i%20wy%C5%82%C4%85czanie%20obs%C5%82ugi%20ciasteczek"><span style="color: #0000ff;">Firefox</span></a></span></span></span></span></p>
+</li>
+<li>
+<p lang="en-US" align="JUSTIFY"><span style="font-family: 'Trebuchet MS', serif;"><span><span style="color: #000080;"><span style="text-decoration: underline;"><a href="http://help.opera.com/Windows/12.10/pl/cookies.html"><span style="color: #0000ff;">Opera</span></a></span></span></span></span></p>
+</li>
+<li>
+<p lang="en-US" align="JUSTIFY"><span style="font-family: 'Trebuchet MS', serif;"><span><span style="color: #000080;"><span style="text-decoration: underline;"><a href="http://support.google.com/chrome/bin/answer.py?hl=pl&amp;answer=95647"><span style="color: #0000ff;">Android</span></a></span></span></span></span></p>
+</li>
+<li>
+<p lang="en-US" align="JUSTIFY"><span style="font-family: 'Trebuchet MS', serif;"><span><span style="color: #000080;"><span style="text-decoration: underline;"><a href="http://support.apple.com/kb/HT1677?viewlocale=pl_PL"><span style="color: #0000ff;">Safari (iOS)</span></a></span></span></span></span></p>
+</li>
+<li>
+<p lang="en-US" align="JUSTIFY"><span style="font-family: 'Trebuchet MS', serif;"><span><span style="color: #000080;"><span style="text-decoration: underline;"><a href="http://www.windowsphone.com/pl-pl/how-to/wp7/web/changing-privacy-and-other-browser-settings"><span style="color: #0000ff;">Windows Phone</span></a></span></span></span></span></p>
+</li>
+<li>
+<p lang="en-US" align="JUSTIFY"><span style="font-family: 'Trebuchet MS', serif;"><span><span style="color: #000080;"><span style="text-decoration: underline;"><a href="http://docs.blackberry.com/en/smartphone_users/deliverables/32004/Turn_off_cookies_in_the_browser_60_1072866_11.jsp"><span style="color: #0000ff;">Blackberry</span></a></span></span></span></span></p>
+</li>
+</ol>
+</li>
+</ol>
+        </div> <!-- /widget-content -->
+      </div> <!-- /widget -->  
+    </div> <!-- /span6 -->
+  </div>
+</div>
+
+<br/>
+<br/>
+<br/>
+<div class="extra">
+  <div class="extra-inner">
+    <div class="container">
+        <div class="row">
+                    <div class="span3">
+                        <h4><% Print ("About Cerbero") %></h4>
+                        <ul>
+                            <li><a href="http://i-nex.linux.pl/">I-Nex</a></li>
+                            <li><a href="inex.r?page=donate" class="btn btn-success" role="button"><i class="icon-money"></i><label class="control-label"><% Print ("Donate") %></label></a></li>
+                        </ul>
+                    </div>
+                    <!-- /span3 -->
+                    <div class="span3">
+                        <h4><% Print ("Support") %></h4>
+                        <ul>
+                            <li><a href="http://i-nex.linux.pl/bbs/categories/i-nex-validate">Ask a Question</a></li>
+                            <li><a href="http://i-nex.linux.pl/bbs/categories/i-nex-validate">Report a bug</a></li>
+                        </ul>
+                    </div>
+                    <!-- /span3 -->
+                    <div class="span3">
+                        <h4><% Print ("Something Legal") %></h4>
+                        <ul>
+                            <li><a href="inex.r?page=policy"><% Print ("Privacy Policy") %></a></li>
+                        </ul>
+                    </div>
+                    <!-- /span3 -->
+                    <div class="span3">
+                        <h4><%Print ("Sponsors")%></h4>
+                        <ul>
+                            <li><a href="http://abix.info.pl/"><h4>ABIX - systemy wspomagania biznesu.</h4></a></li>
+                        </ul>
+                    </div>
+                    <!-- /span3 -->
+                </div> <!-- /row -->
+    </div> <!-- /container -->
+  </div> <!-- /extra-inner -->
+
+
+
+<div class="footer">
+  <div class="footer-inner">
+    <div class="container">
+      <div class="row">
+        <div class="span12">eloaders &copy; 2014 <a href="http://i-nex.linux.pl/"></a>. Cerbero V: <span class="badge"><% Print Application.Version %></span></div>
+        <!-- /span12 --> 
+      </div>
+      <!-- /row --> 
+    </div>
+    <!-- /container --> 
+  </div>
+  <!-- /footer-inner --> 
+</div>
+<!-- /footer --> 
+
+
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/signin.js"></script>
+</body>
+</html>

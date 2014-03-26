@@ -1,0 +1,69 @@
+<br/>
+<br/>
+<br/>
+<div class="container">
+  <div class="row">
+  
+    <div class="span9">
+      <div id="target-1" class="widget">
+        <div class="widget-content">
+        <h1><% Print ("Donate") %></h1>
+          <p><% Print ("If you want to financially support the program's I-Nex and service Cerbero. ")%></p>
+          <p><% Print ("Nothing stands in the way to be able to make a small or a larger deposit and the work we put into the project. ")%></p>
+          <p><% Print ("There are three ways. ")%></p>
+          </br>
+          <p><% Print ("Direct deposit into a bank account:")%></p>
+          </br>
+          <p><b>(Alior Bank) nr:</b><h3><b>06 2490 0005 0000 4000 5835 2126</b></h3></p>
+          <p><% Print ("<h3>Title: i-nex.pl - support and your forum nickname or Cerbero</h3>")%></p>
+          </br>
+          <p><% Print ("Using PayPal:")%></p>
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"><input type="hidden" name="cmd" value="_s-xclick"> <input type="hidden" name="hosted_button_id" value="SW98P7RAXC3YQ"> <input type="image" alt="PayPal — Płać wygodnie i bezpiecznie" name="submit" src="https://www.paypalobjects.com/pl_PL/PL/i/btn/btn_donateCC_LG.gif"> <img alt="" src="https://www.paypalobjects.com/pl_PL/i/scr/pixel.gif" width="1" height="1" border="0"><p></p>
+          </br>
+          <p><% Print ("Możesz także pomóc pisząc tłumaczenia na swój język, lub podsyłać błędy.")%></p>
+          <p><% Print ("Możesz zostać administratorem Forum lub osobą piszącą o nowościach na blogu.")%></p>
+          <p><% Print ("Możesz być osobą która zarządza kontami na sourceforge oraz launchpad czy github.")%></p>
+          <p><% Print ("Możesz być osobą która zgłasza błędy na forum.")%></p>
+          <p><% Print ("Możesz być osobą która zarządza serwerem.")%></p>
+          <p><% Print ("Możesz być osobą która będzie dbać o wygląd strony HTML5 & CSS3 & Bootstrap.")%></p>
+        </div> <!-- /widget-content -->
+      </div> <!-- /widget -->  
+    </div> <!-- /span10 -->
+    <div class="span3">
+      <div id="target-1" class="widget">
+        <div class="widget-content">
+          <h1><% Print ("Last donators") %></h1>
+            <table class="table table-hover"> 
+              <thead> 
+                <tr> 
+                  <th><%Print ("Username")%></th>
+                  <th><%Print ("Count")%></th> 
+                  <th><%Print ("Homepage")%></th>
+                </tr> 
+              </thead> 
+              <tbody>
+                <tr> 
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody> 
+            </table>
+        </div> <!-- /widget-content -->
+      </div> <!-- /widget -->  
+    </div>
+  </div>
+</div>
+
+<br/>
+<br/>
+<br/>
+<<WExtra>>
+<<WFooter>>
+
+
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/signin.js"></script>
+</body>
+</html>

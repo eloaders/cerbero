@@ -1,0 +1,74 @@
+' Gambas module file
+
+Public USER_ACCOUNT_DETAILS As Collection = [("SECRET_KEY"): (Replace(Crypt.md5(Rnd(200)), "$1$", ""))]
+Public Sub Register()
+  Dim USERNAME As String
+  Dim LASTNAME As String
+  Dim USEREMAIL As String
+  Dim USER_ACCEPT As String
+  Dim USER_PASSWD As String
+  Dim USER_RETYPE_PASSWD As String
+  Dim DISPLAYNAME As String
+  USER_ACCEPT = Request.Post["Accept"]
+  USERNAME = Request.Post["firstname"]
+  DISPLAYNAME = Request.Post["displayname"]
+  USEREMAIL = Request.Post["email"]
+  USER_PASSWD = Request.Post["password"]
+  USER_RETYPE_PASSWD = Request.Post["confirm_password"]
+  If IsNull(USER_ACCEPT) = False Then
+  If IsNull(USERNAME) = False Then
+      If RegExp.Match(USERNAME, "[a-zA-z]") = True Then
+          If Exist(Global.WHEREIS_SITE_ROOT & "/Users/" & USERNAME & "") = False And Len(USERNAME) >= 4 Then
+              If USER_PASSWD = USER_RETYPE_PASSWD Then
+                  If CFloat(Len(USER_PASSWD)) >= 7 Then
+                      If Global.CheckEMail(USEREMAIL) = True Then
+
+                          USER_ACCOUNT_DETAILS.Add(Base64$(Digest["sha256"](USER_PASSWD)), "CERBERO_USER_PASSWORD")
+                          USER_ACCOUNT_DETAILS.Add(USERNAME, "CERBERO_USERNAME")
+                          USER_ACCOUNT_DETAILS.Add(USEREMAIL, "CERBERO_USER_EMAIL")
+                          USER_ACCOUNT_DETAILS.Add(DISPLAYNAME, "CERBERO_DISPLAYNAME")
+                          USER_ACCOUNT_DETAILS.Add(Replace(Crypt.md5(Rnd(0987654321)), "$1$", ""), "API_PUBLIC")
+                          USER_ACCOUNT_DETAILS["API_PUBLIC"] = UCase(Replace(Replace(Replace(USER_ACCOUNT_DETAILS["API_PUBLIC"], "/", ""), ".", ""), "$", ""))
+                          USER_ACCOUNT_DETAILS.Add(Replace(Crypt.md5(Rnd(987654321)), "$1$", ""), "API_PRIVATE")
+                          USER_ACCOUNT_DETAILS["API_PRIVATE"] = UCase(Replace(Replace(Replace(USER_ACCOUNT_DETAILS["API_PRIVATE"], "/", ""), ".", ""), "$", ""))
+                          USER_ACCOUNT_DETAILS.Add(Date(Now) & " " & Time, "CERBERO_USER_DATE_JOIN")
+
+                        Try Mkdir Global.WHEREIS_SITE_ROOT & "/Users/" & USERNAME & ""
+
+                        If Error Then
+                          Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & Application.Root & "?signup")
+                        Endif
+
+                          File.Save(Global.WHEREIS_SITE_ROOT & "/Users/" & USERNAME & "/Data.json", JSON.Encode(USER_ACCOUNT_DETAILS))
+                          Response.SetCookie("__ursa", USERNAME, Global.WEBSITE_ROOT_URL, "/")
+                          Response.SetCookie("__apix", USER_ACCOUNT_DETAILS["SECRET_KEY"], Global.WEBSITE_ROOT_URL, "/")
+                          Usera.Send_Mail(USEREMAIL, USERNAME, DISPLAYNAME, USER_ACCOUNT_DETAILS["API_PUBLIC"], USER_ACCOUNT_DETAILS["API_PRIVATE"], USER_PASSWD)
+                          Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & Application.Root & "?profile")
+
+                      Endif
+                      Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & Application.Root & "?signup&err1=7")
+                  Endif
+                  Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & Application.Root & "?signup&err1=6")
+              Endif
+              Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & Application.Root & "?signup&err1=5")
+          Endif
+          Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & Application.Root & "?signup&err1=4")
+      Endif
+      Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & Application.Root & "?signup&err1=3")
+  Endif
+  Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & Application.Root & "?signup&err1=2")
+  Endif
+  Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & Application.Root & "?signup&err1=1")
+End
+
+Public Function Check_Mail(mail As String) As Boolean
+  
+  If RegExp.Match(mail, "[a-zA-z]") = True Then
+    If RegExp.Match(mail, ".") = True Then
+      If RegExp.Match(mail, "@") = True Then
+        Return True
+      Endif
+    Endif
+  Endif
+  Return False
+End

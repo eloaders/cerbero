@@ -1,0 +1,59 @@
+' Gambas class file
+
+Create Static
+Public WEBSITE_ROOT_URL As String = CGI["SERVER_NAME"]
+Public WEBSITE_ROOT_URL_HTTP As String = "http://" & WEBSITE_ROOT_URL
+Public WHEREIS_SITE_ROOT As String = CGI["DOCUMENT_ROOT"]
+Public Function IsMimeType(file As String, ...) As Boolean
+  
+  Dim data, s As String
+  Exec ["file", "-i", file] To data
+  
+  For Each s In Param
+    If InStr(data, s) Then Return True
+  Next
+  
+  Return False
+  
+End
+
+Public Function CheckEMail(email As String) As Boolean
+
+  Dim regex As New Regexp(email, "^[a-z0-9._-]+@[a-z0-9._-]{2,}\\.[a-z]{2,4}$")
+
+  Return regex.Offset <> -1
+
+End
+
+Public Function GravatarAV(email As String, Optional Size As String) As String
+  Dim AVHash As String
+  Dim URL As String = "https://secure.gravatar.com/avatar/"
+  Shell "echo -n " & email & " | tr '[:upper:]' '[:lower:]' | md5sum" Wait To AVHash
+  AVHash = Replace(Replace(Replace(Replace(AVHash, "\t", ""), "-", ""), "\n", ""), " ", "")
+  If IsNull(Size) Then
+    Return URL & AVHash
+  Else
+    Return URL & AVHash & "?s=" & Size
+  Endif
+End
+
+Public Function LatestKernel() As String
+  Dim KERNEL As Collection
+  KERNEL = JSON.Decode(File.Load(WHEREIS_SITE_ROOT & "/releases.json"))
+  Return KERNEL["latest_stable"]["version"]
+End
+
+Public Function ShortURL(LongURL As String) As String
+Dim Parms As String[] = Null
+Dim OutputURL As String = Temp()
+Dim hClient As HttpClient
+Dim sBuffer As String
+
+hClient = New HttpClient As "hClient"
+hClient.URL = "https://www.googleapis.com/urlshortener/v1/url"
+hClient.Async = False
+hClient.Timeout = 60
+hClient.Post("application/json", "{\"longUrl\": \"" & LongURL & "\"}", ["Content-Type: application/json"], OutputURL)
+
+Return File.Load(OutputURL)
+End

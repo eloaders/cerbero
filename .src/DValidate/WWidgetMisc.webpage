@@ -1,0 +1,29 @@
+<div class="widget"> 
+  <div class="widget-header"> <i class="icon-file"></i> 
+    <h3><%Print ("Misc")%></h3> 
+  </div> 
+   <table class="table table-striped table-bordered"> 
+     <tbody> 
+       <tr> 
+         <td><b><%Print ("Total memory:")%></b></td> 
+         <td><span class="badge"><%=MValidate.RADIVATE["USAGE"]["MEMORY_TOTAL"]%> MB</span></td> 
+       </tr> 
+       <tr> 
+         <td><b><%Print ("Used memory:")%></b></td> 
+         <td><span class="badge"><%=MValidate.RADIVATE["USAGE"]["USED_PLUS_CACHED"]%> MB</span></td> 
+       </tr> 
+       <tr> 
+         <td><b><%Print ("Total swap:")%></b></td> 
+         <td><span class="badge"><%=MValidate.RADIVATE["USAGE"]["SWAP_TOTAL"]%> MB</span></td> 
+       </tr> 
+       <tr> 
+         <td><b><%Print ("Used swap:")%></b></td> 
+         <td><span class="badge"><%=MValidate.RADIVATE["USAGE"]["SWAP_USED"]%> MB</span></td> 
+       </tr> 
+       <tr> 
+         <td><b><%Print ("Uptime:")%></b></td> 
+         <td><span class="badge"><%=("Days: ") & MValidate.RADIVATE["USAGE"]["UPTIME_DAYS"] & (" Hours: ") & MValidate.RADIVATE["USAGE"]["UPTIME_HOURS"] & (" Minutes: ") & MValidate.RADIVATE["USAGE"]["UPTIME_MINUTES"] & (" Seconds: ") & MValidate.RADIVATE["USAGE"]["UPTIME_SECONDS"]%></span></td> 
+       </tr> 
+    </tbody> 
+  </table>
+</div>

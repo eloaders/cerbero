@@ -1,0 +1,126 @@
+' Gambas module file
+
+  Public USER_DATA As Collection
+  Public USERD As Collection
+  Public USERD_VALID_COLLECT As Collection = [("VALD"): (Rnd(200))]
+  Public VALIDATE_NEW_ID As Float
+  Public Reposdr As String
+  Public EXIMA As String
+  Public cpuiddata As Collection
+  Public Cache As String
+  Public DDATE_NOW As String
+  Public GOO_GL As Collection
+Public Sub SendFileToServer()
+
+  DDATE_NOW = Date(Now)
+  DDATE_NOW = Replace(DDATE_NOW, "/", "")
+  VALIDATE_NEW_ID = Rad(Rnd(2048))
+  
+  
+  If Global.IsMimeType(Request.Files["uploadfile"], "text/plain") = True Then
+      Try Mkdir "" & Global.WHEREIS_SITE_ROOT & "/ValidDB/" & DDATE_NOW & ""
+      Move Request.Files["uploadfile"] To "" & Global.WHEREIS_SITE_ROOT & "/ValidCache/" & VALIDATE_NEW_ID & ""
+
+      Cache = UnBase64(File.Load("" & Global.WHEREIS_SITE_ROOT & "/ValidCache/" & VALIDATE_NEW_ID & ""))
+
+      Try cpuiddata = JSON.Decode(Cache)
+      If Error Then
+        Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & "/inex.r?fail")
+      Endif
+          If cpuiddata.Length > 74 Then
+
+              Try Mkdir "" & Global.WHEREIS_SITE_ROOT & "/ValidScr/" & DDATE_NOW & ""
+              File.Save("" & Global.WHEREIS_SITE_ROOT & "/ValidScr/" & DDATE_NOW & "/" & VALIDATE_NEW_ID & ".png", UnBase64(cpuiddata["SCREENSHOT"]))
+
+              cpuiddata.Remove("SCREENSHOT")
+              cpuiddata.Add("" & Global.WEBSITE_ROOT_URL_HTTP & "/ValidScr/" & DDATE_NOW & "/" & VALIDATE_NEW_ID & ".png", "SCREENSHOT_URL")
+              
+              ReportSave()
+              '[][]][][][][][]
+
+              If IsNull(Request.Cookies["__ursa"]) = False Then
+                  If Exist("" & Global.WHEREIS_SITE_ROOT & "/Users/" & Request.Cookies["__ursa"] & "") = True Then
+
+                    USERD = JSON.Decode(File.Load("" & Global.WHEREIS_SITE_ROOT & "/Users/" & Request.Cookies["__ursa"] & "/Data.json"))
+
+                    If USERD["SECRET_KEY"] = Request.Cookies["__apix"] Then
+                      
+                      If Exist("" & Global.WHEREIS_SITE_ROOT & "/Users/" & Request.Cookies["__ursa"] & "/list.json") = True Then
+                          USERD_VALID_COLLECT = JSON.Decode(File.Load("" & Global.WHEREIS_SITE_ROOT & "/Users/" & Request.Cookies["__ursa"] & "/list.json"))
+                          USERD_VALID_COLLECT.Add(DDATE_NOW & VALIDATE_NEW_ID, "" & VALIDATE_NEW_ID & "")
+                          USERD_VALID_COLLECT.Remove("VALD")
+                          File.Save("" & Global.WHEREIS_SITE_ROOT & "/Users/" & Request.Cookies["__ursa"] & "/list.json", JSON.Encode(USERD_VALID_COLLECT))
+                          cpuiddata.Remove("SUBMITED_BY")
+                          cpuiddata.Add(Request.Cookies["__ursa"], "SUBMITED_BY")
+                          'ReportSave()
+                      Else
+                          USERD_VALID_COLLECT.Add(DDATE_NOW & VALIDATE_NEW_ID, "" & VALIDATE_NEW_ID & "")
+                          USERD_VALID_COLLECT.Remove("VALD")
+                          File.Save("" & Global.WHEREIS_SITE_ROOT & "/Users/" & Request.Cookies["__ursa"] & "/list.json", JSON.Encode(USERD_VALID_COLLECT))
+                          cpuiddata.Remove("SUBMITED_BY")
+                          cpuiddata.Add(Request.Cookies["__ursa"], "SUBMITED_BY")
+                          'ReportSave()
+                      Endif
+                    Endif
+                  Endif
+              Endif
+              ' Tutaj wszystko poniżej na potrzeby api I-Nex
+              ' curl --form uploadfile=@VALID --form submit="Validate" --form user_name="Michal" --form api_key="5WK5WRHFWARQRFEBPZ7HWXADKC6SS" http://127.0.0.1/inex.r
+              If IsNull(Request.Post["api_key"]) = False Then
+                If IsNull(Request.Post["user_name"]) = False Then
+                  If Exist(Global.WHEREIS_SITE_ROOT & "/Users/" & Request.Post["user_name"] & "") Then
+                    USER_DATA = JSON.Decode(File.Load(Global.WHEREIS_SITE_ROOT & "/Users/" & Request.Post["user_name"] & "/Data.json"))
+                    If Request.Post["api_key"] = USER_DATA["API_PRIVATE"] Then
+                      If Exist(Global.WHEREIS_SITE_ROOT & "/Users/" & Request.Post["user_name"] & "/list.json") = True Then
+                        USERD_VALID_COLLECT = JSON.Decode(File.Load(Global.WHEREIS_SITE_ROOT & "/Users/" & Request.Post["user_name"] & "/list.json"))
+                        USERD_VALID_COLLECT.Add(DDATE_NOW & VALIDATE_NEW_ID, "" & VALIDATE_NEW_ID & "")
+                        USERD_VALID_COLLECT.Remove("VALD")
+                        File.Save(Global.WHEREIS_SITE_ROOT & "/Users/" & Request.Post["user_name"] & "/list.json", JSON.Encode(USERD_VALID_COLLECT))
+                        cpuiddata.Remove("SUBMITED_BY")
+                        cpuiddata.Add(Request.Post["user_name"], "SUBMITED_BY")
+                        'ReportSave()
+                      Else
+                        USERD_VALID_COLLECT.Add(DDATE_NOW & VALIDATE_NEW_ID, "" & VALIDATE_NEW_ID & "")
+                        USERD_VALID_COLLECT.Remove("VALD")
+                        File.Save(Global.WHEREIS_SITE_ROOT & "/Users/" & Request.Post["user_name"] & "/list.json", JSON.Encode(USERD_VALID_COLLECT))
+                        cpuiddata.Remove("SUBMITED_BY")
+                        cpuiddata.Add(Request.Post["user_name"], "SUBMITED_BY")
+                        'ReportSave()
+                      Endif
+                    Endif
+                  Endif
+                Endif
+              Endif
+              Try GOO_GL = JSON.Decode(Global.ShortURL(Global.WEBSITE_ROOT_URL_HTTP & "/inex.r?validate=" & DDATE_NOW & VALIDATE_NEW_ID))
+              Try cpuiddata.Add(GOO_GL, "GOO_GL")
+              ReportSave()
+              If Error Then
+                Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & "/inex.r?fail")
+              Endif
+              Kill Global.WHEREIS_SITE_ROOT & "/ValidCache/" & VALIDATE_NEW_ID
+
+              If Request.Post["redirect"] = "on" Then
+                  Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & "/inex.r?validate=" & DDATE_NOW & VALIDATE_NEW_ID & "")
+              Else
+                  Response.Begin
+                    Print Global.WEBSITE_ROOT_URL_HTTP & "/inex.r?validate=" & DDATE_NOW & VALIDATE_NEW_ID & ""
+                  Response.End
+              Endif
+          Else
+            Response.Begin
+              Kill "" & Global.WHEREIS_SITE_ROOT & "/ValidCache/" & VALIDATE_NEW_ID & ".json"
+                Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & "/inex.r?fail")
+            Response.End
+          Endif
+  Else
+    Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & "/inex.r?fail")
+  Endif
+  
+End
+
+Public Function ReportSave()
+
+  File.Save(Global.WHEREIS_SITE_ROOT & "/ValidCache/" & VALIDATE_NEW_ID & "", JSON.Encode(cpuiddata))
+  Try Shell "cat " & Global.WHEREIS_SITE_ROOT & "/ValidCache/" & VALIDATE_NEW_ID & " | /usr/bin/jsontool -j >" & Global.WHEREIS_SITE_ROOT & "/ValidDB/" & DDATE_NOW & "/" & VALIDATE_NEW_ID & ".json" Wait
+  
+End

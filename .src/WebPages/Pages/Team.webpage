@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<<WHead>>
+<body>
+<<WNavbar>>
+<<WSubnavbar>>
+
+<div class="container">
+  <div class="row">
+    <div class="span12">
+      <script type="text/javascript"><!--
+        google_ad_client = "ca-pub-0617278559483692";
+        /* cerbero */
+        google_ad_slot = "5550627982";
+        google_ad_width = 970;
+        google_ad_height = 90;
+        //-->
+      </script>
+      <script type="text/javascript"
+        src="//pagead2.googlesyndication.com/pagead/show_ads.js">
+      </script>
+    </div>
+  </div>
+</div>
+<br/>
+<br/>
+<br/>
+<div class="container">
+  <div class="row">
+  
+    <div class="span9">
+      <div id="target-1" class="widget">
+        <div class="widget-content">
+        <h1><% Print ("Team") %></h1>
+          <div class='kento-team'>
+            <div class='single-member' id='style-4'>
+              <div class='single-member-thumbnail'>
+                <img alt='' src='<%=Global.GravatarAV("eloaders@linux.pl", "100")%>' class='avatar avatar-100 photo' height='100' width='100' />
+              </div>
+              <div class='single-member-name'>Michał Głowienka</div>
+              <div class='single-member-position'>I-Nex & Cerbero Author Main Developer of project.</div>
+              <div class='social-links'>
+                <div class='facebook sl'><a href='https://www.facebook.com/mpg4.5' target="_blank"></a></div>
+                <div class='twitter sl'><a href='https://www.twitter.com/eloaders' target="_blank"></a></div>
+                <div class='googleplus sl'><a href='https://plus.google.com/u/0/103294167787784292101' target="_blank"></a></div>
+              </div>
+              <a href="http://i-nex.linux.pl/" target="_blank"><button class="btn btn-github-alt"><i class="icon-external-link"></i></button></a>
+          </div>
+          <div class='single-member' id='style-4'>
+            <div class='single-member-thumbnail'>
+              <img alt='' src='http://0.gravatar.com/avatar/bfe816517c2d807ed89e5324507ecbf4' class='avatar avatar-100 photo' height='100' width='100' />
+            </div>
+            <div class='single-member-name'>Tomasz Przybył</div>
+            <div class='single-member-position'>Bug Reports / Beta Tester</div>
+            <div class='social-links'>
+              <div class='facebook sl'><a href='https://www.facebook.com/fademind' target="_blank"></a></div>
+              <div class='googleplus sl'><a href='http://profiles.google.com/115432477407502403285' target="_blank"></a></div>
+            </div>
+            <a href="http://tomaszprzybyl-apel.blogspot.com/" target="_blank"><button class="btn btn-github-alt"><i class="icon-external-link"></i></button></a>
+          </div>
+          <div class='single-member' id='style-4'>
+            <div class='single-member-thumbnail'>
+              <img alt='' src='<%=Global.GravatarAV("michal.olber@osworld.pl", "100")%>' class='avatar avatar-100 photo' height='100' width='100' />
+            </div>
+            <div class='single-member-name'>Michał Olber</div>
+            <div class='single-member-position'>Bug Reports, Articles, Promoting</div>
+            <div class='social-links'>
+              <div class='facebook sl'><a href='https://www.facebook.com/michal.olber' target="_blank"></a></div>
+              <div class='googleplus sl'><a href='https://plus.google.com/u/0/+MichalOlber' target="_blank"></a></div>
+            </div>
+            <a href="http://osworld.pl/" target="_blank"><button class="btn btn-github-alt"><i class="icon-external-link"></i></button></a>
+          </div>
+        </div>
+        </div> <!-- /widget-content -->
+      </div> <!-- /widget -->  
+    </div> <!-- /span10 -->
+    <div class="span3">
+    </div>
+  </div>
+</div>
+
+<br/>
+<br/>
+<br/>
+<<WExtra>>
+<<WFooter>>
+</body>
+</html>

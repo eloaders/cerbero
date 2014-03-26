@@ -1,0 +1,4 @@
+' Gambas module file
+
+Public Brand_URL As String
+Public Brand_TEXT As String

@@ -1,0 +1,16 @@
+<div class="footer">
+  <div class="footer-inner">
+    <div class="container">
+      <div class="row">
+      <div class="span12">
+            eloaders &copy; 2014 <a href="http://i-nex.linux.pl/"></a>. Cerbero V: <span class="badge"><% Print Application.Version %></span></div>
+          </div> <!-- /span12 -->
+        </div> <!-- /row -->
+        </div> <!-- /container -->
+  </div> <!-- /footer-inner -->
+</div> <!-- /footer -->
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/base.js"></script>
+</body>
+</html>

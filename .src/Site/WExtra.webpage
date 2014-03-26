@@ -1,0 +1,45 @@
+<div class="extra">
+  <div class="extra-inner">
+    <div class="container">
+        <div class="row">
+          <div class="span3">
+            <h4><%=("About Cerbero")%></h4>
+              <ul>
+                <li><a href="inex.r?page=translators"><%=("Translators")%></a></li>
+                <li><a href="inex.r?page=team"><%=("Team")%></a></li>
+                <li><a href="http://i-nex.linux.pl/">I-Nex</a></li>
+                <li><a href="inex.r?page=donate" class="btn btn-success" role="button"><i class="icon-money"></i><label class="control-label"><%=("Donate")%></label></a></li>
+              </ul>
+          </div>
+          <!-- /span3 -->
+          <div class="span3">
+            <h4><%=("Support")%></h4>
+              <ul>
+                <li><a href="http://i-nex.linux.pl/bbs/categories/i-nex-validate"><%=("Ask a Question")%></a></li>
+                <li><a href="http://i-nex.linux.pl/bbs/categories/i-nex-validate"><%=("Report a bug")%></a></li> 
+              </ul>
+            <h4><%=("Friends of the project")%></h4>
+              <ul>
+                <li><a href="http://tomaszprzybyl-apel.blogspot.com/">Prośba o pomoc finansową na rehabilitację</a></li>
+                <li><a href="http://netbit73.blogspot.com/">Marcin Mach</a></li>
+                <li><a href="http://www.netext73.pl/">NeteXt'73 - optymalizator systemu</a></li>
+              </ul>
+          </div>
+          <!-- /span3 -->
+          <div class="span3">
+            <h4><%=("Something Legal")%></h4>
+              <ul>
+                <li><a href="inex.r?page=policy"><%=("Privacy Policy")%></a></li>
+              </ul>
+          </div>
+          <!-- /span3 -->
+          <div class="span3">
+            <h4><%=("Sponsors")%></h4>
+              <ul>
+                <li><a href="http://abix.info.pl/"><h4>ABIX - systemy wspomagania biznesu.</h4></a></li>
+              </ul>
+          </div>
+          <!-- /span3 -->
+        </div> <!-- /row --> 
+    </div> <!-- /container -->
+</div> <!-- /extra-inner -->

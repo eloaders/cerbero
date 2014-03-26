@@ -1,0 +1,5 @@
+<div class="widget widget-table action-table"> 
+  <div class="widget-content">
+    <h4><%=("Today has not added any reports")%></h4>
+  </div>
+</div>

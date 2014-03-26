@@ -1,0 +1,73 @@
+<div class="widget widget-nopad">
+  <div class="widget-header"> <i class="icon-facetime-video"></i>
+    <h3><%Print ("GPU")%></h3>
+  </div>
+  <!-- /widget-header -->
+  <div class="widget-content"> 
+    <div class="col-xs-6 col-md-3"> 
+      <a class="thumbnail"> 
+        <img src="<%=Global.WEBSITE_ROOT_URL_HTTP & "/Karta_graficzna/" & MValidate.RADIVATE["GPU_LOGO"]%>" alt="thumbnail"> 
+      </a> 
+    </div>
+      <table class="table table-bordered">
+      <tbody> 
+        <tr> 
+         <td><b><%Print ("Model:")%></b></td> 
+         <td><%=Replace(MValidate.RADIVATE["GPU_MODEL"], "", "")%></td> 
+        </tr> 
+        <tr> 
+         <td><b><% Print ("OpenGL Vendor:")%></b></td> 
+         <td><%=Replace(MValidate.RADIVATE["GPU_OGL_VENDOR"], "OpenGL Vendor:", "")%></td> 
+        </tr> 
+        <tr> 
+         <td><b><%Print ("OpenGL Renderer:")%></b> </td> 
+         <td><%=Replace(MValidate.RADIVATE["GPU_OGL_RENDERER"], "OpenGL Renderer:", "")%></td> 
+        </tr> 
+        <tr> 
+         <td><b><%Print ("OpenGL Version:")%></b></td> 
+         <td><span class="badge"><%=Replace(MValidate.RADIVATE["GPU_OGL_VERSION"], "OpenGL Version:", "")%></span></td> 
+        </tr> 
+        <tr> 
+         <td><b><%Print ("Client glx vendor:")%></b></td> 
+         <td><%=Replace(MValidate.RADIVATE["GPU_CLI_GLX_VENDOR"], "Client glx vendor:", "")%></td> 
+        </tr> 
+        <tr> 
+         <td><b><%Print ("Client glx version:")%></b></td> 
+         <td><span class="badge"><%=Replace(MValidate.RADIVATE["GPU_CLI_GLX_VERSION"], "Client glx version:", "")%></span></td> 
+        </tr> 
+        <tr> 
+         <td><b><%Print ("Server glx vendor:")%></b></td> 
+         <td><%=Replace(MValidate.RADIVATE["GPU_SRV_GLX_VENDOR"], "Server glx vendor:", "")%></td> 
+        </tr> 
+        <tr> 
+         <td><b><%Print ("Server glx version:")%></b></td> 
+         <td><span class="badge"><%=Replace(MValidate.RADIVATE["GPU_SRV_GLX_VERSION"], "Server glx version:", "")%></span></td> 
+        </tr> 
+        <tr> 
+         <td><b><%Print ("GLX version:")%></b></td> 
+         <td><span class="badge"><%=Replace(MValidate.RADIVATE["GPU_GLX_VERSION"], "GLX version:", "")%></span></td> 
+        </tr> 
+        <tr> 
+         <td><b><%Print ("Kernel driver in use:")%></b></td> 
+         <td><%=Replace(MValidate.RADIVATE["GPU_KRN_DRV_IN_USE"], "Kernel driver in use:", "")%></td> 
+        </tr> 
+        <tr> 
+         <td><b><%Print ("Total Memory prefetchable:")%></b></td> 
+         <td><%=Replace(MValidate.RADIVATE["GPU_TOT_MEM_PRE"], "Total Memory prefetchable:", "")%></td> 
+        </tr> 
+        <tr> 
+         <td><b><%Print ("Total Memory non-prefetchable:")%></b></td> 
+         <td><%=Replace(MValidate.RADIVATE["GPU_TOT_MEM_NON_PRE"], "Total Memory non-prefetchable:", "")%></td> 
+        </tr>
+        <tr> 
+         <td><b><%Print ("Resolutions:")%></b></td> 
+         <td><%=MValidate.RADIVATE["GPU_RESOLUTIONS"]%></td> 
+        </tr> 
+        <tr> 
+         <td><b><%Print ("Present resolution:")%></b></td> 
+         <td><%=Replace(MValidate.RADIVATE["GPU_PRESENT_RESOLUTION"], "Present resolution:", "")%></td> 
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

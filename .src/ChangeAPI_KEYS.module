@@ -1,0 +1,32 @@
+' Gambas module file
+
+Public Sub CHKeys()
+  Dim USER_DATA As Collection
+
+    If IsNull(Request.Cookies["__ursa"]) = False Then
+
+        If Exist(Global.WHEREIS_SITE_ROOT & "/Users/" & Request.Cookies["__ursa"] & "") Then
+
+          USER_DATA = JSON.Decode(File.Load(Global.WHEREIS_SITE_ROOT & "/Users/" & Request.Cookies["__ursa"] & "/Data.json"))
+
+          If USER_DATA["SECRET_KEY"] = Request.Cookies["__apix"] Then
+            If Request.Get["chgapi"] = "pub" Then
+              USER_DATA.Remove("API_PUBLIC")
+              USER_DATA.Add(Replace(Crypt.md5(Rnd(0987654321)), "$1$", ""), "API_PUBLIC")
+              USER_DATA["API_PUBLIC"] = UCase(Replace(Replace(Replace(USER_DATA["API_PUBLIC"], "/", ""), ".", ""), "$", ""))
+              File.Save(Global.WHEREIS_SITE_ROOT & "/Users/" & Request.Cookies["__ursa"] & "/Data.json", JSON.Encode(USER_DATA))
+            Endif
+            If Request.Get["chgapi"] = "pri" Then
+              USER_DATA.Remove("API_PRIVATE")
+              USER_DATA.Add(Replace(Crypt.md5(Rnd(987654321)), "$1$", ""), "API_PRIVATE")
+              USER_DATA["API_PRIVATE"] = UCase(Replace(Replace(Replace(USER_DATA["API_PRIVATE"], "/", ""), ".", ""), "$", ""))
+              File.Save(Global.WHEREIS_SITE_ROOT & "/Users/" & Request.Cookies["__ursa"] & "/Data.json", JSON.Encode(USER_DATA))
+            Endif
+          Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & "/inex.r?profile")
+          Endif
+        Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & "/inex.r?profile")
+        Endif
+    Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & "/inex.r?profile")
+    Endif
+Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & "/inex.r?profile")
+End

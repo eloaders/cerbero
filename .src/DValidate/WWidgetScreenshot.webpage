@@ -1,0 +1,10 @@
+<div class="widget">
+  <div class="widget-header"> <i class="icon-screenshot"></i>
+    <h3><%=("I-Nex Screenshot")%></h3>
+  </div>
+  <div class="widget-content">
+    <div class="col-xs-6 col-md-3"> 
+      <a class="thumbnail"><img src="<%=MValidate.RADIVATE["SCREENSHOT_URL"]%>" alt="thumbnail"></a> 
+    </div>
+  </div>
+</div> 

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title><%Print ("Login - I-Nex - Cerbero")%></title>
+<meta name="description" content="i-nex.pl serwis internetowy, natywna linuksowa wersja oprogramowania alternetywnego dla cpu-z oraz validate." />
+<meta name="keywords" content="cpu-z, validate, linux, ubuntu, cpu, motherboard, i-nex, cerbero, hardware, gpu" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="icon" type="image/png" href="favicon.png" />
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" />
+<link href="css/font-awesome.css" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/pages/signin.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  
+  <div class="navbar navbar-fixed-top">
+  
+  <div class="navbar-inner">
+    
+    <div class="container">
+      
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      
+      <a class="brand" href="inex.r">
+        <%Print ("I-Nex - Cerbero")%>
+      </a>    
+      
+      <div class="nav-collapse">
+        <ul class="nav pull-right">
+          
+          <li class="">            
+            <a href="inex.r?signup" class="">
+              <%Print ("Don't have an account?")%>
+            </a>
+            
+          </li>
+          
+          <li class="">            
+            <a href="inex.r" class="">
+              <i class="icon-chevron-left"></i>
+              <%Print ("Back to Homepage")%>
+            </a>
+            
+          </li>
+        </ul>
+        
+      </div><!--/.nav-collapse -->  
+  
+    </div> <!-- /container -->
+    
+  </div> <!-- /navbar-inner -->
+  
+</div> <!-- /navbar -->
+<div class="container">
+      <div class="row">
+        <div class="span12">
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-0617278559483692";
+/* cerbero */
+google_ad_slot = "5550627982";
+google_ad_width = 970;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="//pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+        </div>
+      </div>
+</div>

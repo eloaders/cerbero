@@ -1,0 +1,880 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2002-11-01 04:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: .project:1
+msgid "Cerbero"
+msgstr "Cerbero"
+
+#: Core.module:62 Page.module:28 Policy.webpage:32
+msgid "           I-Nex - Cerbero"
+msgstr "           I-Nex - Cerbero"
+
+#: Core.module:80 Page.module:46 Policy.webpage:48
+msgid "                    Profile"
+msgstr "                    Профиль"
+
+#: Core.module:85 Page.module:51 Policy.webpage:53
+msgid "                   Logout"
+msgstr "                   Выход"
+
+#: DLoginHead.webpage:4
+msgid "Login - I-Nex - Cerbero"
+msgstr "Вход - I-Nex - Cerbero"
+
+#: DLoginHead.webpage:32 DSignupHead.webpage:32 WHead.webpage:2
+msgid "I-Nex - Cerbero"
+msgstr "I-Nex - Cerbero"
+
+#: DLoginHead.webpage:40
+msgid "Don't have an account?"
+msgstr "Нет аккаунта?"
+
+#: DLoginHead.webpage:48 DSignupHead.webpage:46
+msgid "Back to Homepage"
+msgstr "Вернуться на главную"
+
+#: DProfileHead.webpage:4
+msgid "Account - I-Nex - Cerbero"
+msgstr "Аккаунт - I-Nex - Cerbero"
+
+#: DProfileSubnavbar.webpage:7 DUploadSubnavbar.webpage:8 WSubnavbar.webpage:7
+msgid "Upload"
+msgstr "Загрузить"
+
+#: WSubnavbar.webpage:13
+msgid "Latest added"
+msgstr "Последние добавленные"
+
+#: DSignupHead.webpage:4
+msgid "Signup - I-Nex - Cerbero"
+msgstr "Регистрация - I-Nex - Cerbero"
+
+#: DSignupHead.webpage:39
+msgid "Already have an account? Login now"
+msgstr "Уже есть аккаунт? Войдите в систему"
+
+#: DUpload.webpage:20
+msgid "Validate"
+msgstr ""
+
+#: DUpload.webpage:22
+msgid "Please browse file to publish data online"
+msgstr "Пожалуйста, выберите файл для публикации данных онлайн"
+
+#: DUpload.webpage:30
+msgid "Redirect to"
+msgstr "Перенаправление"
+
+#: DUpload.webpage:46
+msgid "Beta"
+msgstr "Бета"
+
+#: DUpload.webpage:47
+msgid "Keep in mind that the service is currently in beta. "
+msgstr "Имейте в виду, что сервис находится на стадии бета-версии. "
+
+#: DUpload.webpage:48
+msgid "Work on the introduction of new features. "
+msgstr "Работа по внедрению новых функций. "
+
+#: DUpload.webpage:49
+msgid "The need for many people to help. You can also help."
+msgstr "Необходимо много людей для помощи. Вы также можете помочь."
+
+#: DUpload.webpage:57
+msgid "I-Nex Cerbero"
+msgstr "I-Nex Cerbero"
+
+#: DUpload.webpage:58
+msgid "The best way to publication of the report is to directly send it using the I-Nex. "
+msgstr "Лучший способ публикации отчета это отправка его непосредственно с помощью I-Nex. "
+
+#: DUpload.webpage:59
+msgid "Register on the site, get your key and user name. "
+msgstr "Зарегистрируйтесь на сайте, получите ключ и имя пользователя. "
+
+#: DUpload.webpage:60
+msgid "Enter all the data in the I-Nex and then send the report."
+msgstr "Введите все данные в I-Nex, а затем отправьте отчет."
+
+#: Policy.webpage:269
+msgid "About Cerbero"
+msgstr "О Cerbero"
+
+#: Policy.webpage:272
+msgid "Donate"
+msgstr "Сделать пожертвование"
+
+#: Policy.webpage:277
+msgid "Support"
+msgstr "Поддержка"
+
+#: DUpload.webpage:107
+msgid "Other"
+msgstr "Прочее"
+
+#: Policy.webpage:287
+msgid "Privacy Policy"
+msgstr "Политика конфеденциальности"
+
+#: Policy.webpage:292
+msgid "Sponsors"
+msgstr "Спонсоры"
+
+#: DUploadUserNav.webpage:4
+msgid "Account"
+msgstr "Аккаунт"
+
+#: DUploadUserNav.webpage:8
+msgid "Signin"
+msgstr "Вход"
+
+#: DUploadUserNav.webpage:9
+msgid "Signup"
+msgstr "Регистрация"
+
+#: Donate.webpage:10
+msgid "If you want to financially support the program's I-Nex and service Cerbero. "
+msgstr "Если вы хотите оказать финансовую поддержку программы I-Nex и службы Cerbero. "
+
+#: Donate.webpage:11
+msgid "Nothing stands in the way to be able to make a small or a larger deposit and the work we put into the project. "
+msgstr ""
+
+#: Donate.webpage:12
+msgid "There are three ways. "
+msgstr "Существует три способа. "
+
+#: Donate.webpage:14
+msgid "Direct deposit into a bank account:"
+msgstr "Прямой депозит на банковский счет:"
+
+#: Donate.webpage:17
+msgid "<h3>Title: i-nex.pl - support and your forum nickname or Cerbero</h3>"
+msgstr ""
+
+#: Donate.webpage:19
+msgid "Using PayPal:"
+msgstr "С помощью PayPal:"
+
+#: Donate.webpage:22
+msgid "Możesz także pomóc pisząc tłumaczenia na swój język, lub podsyłać błędy."
+msgstr ""
+
+#: Donate.webpage:23
+msgid "Możesz zostać administratorem Forum lub osobą piszącą o nowościach na blogu."
+msgstr ""
+
+#: Donate.webpage:24
+msgid "Możesz być osobą która zarządza kontami na sourceforge oraz launchpad czy github."
+msgstr ""
+
+#: Donate.webpage:25
+msgid "Możesz być osobą która zgłasza błędy na forum."
+msgstr ""
+
+#: Donate.webpage:26
+msgid "Możesz być osobą która zarządza serwerem."
+msgstr ""
+
+#: Donate.webpage:28
+msgid "Możesz być osobą która będzie dbać o wygląd strony HTML5 & CSS3 & Bootstrap."
+msgstr ""
+
+#: Donate.webpage:35
+msgid "Last donators"
+msgstr ""
+
+#: Donate.webpage:39
+msgid "Username"
+msgstr "Пользователь"
+
+#: Donate.webpage:40
+msgid "Count"
+msgstr ""
+
+#: Donate.webpage:41
+msgid "Homepage"
+msgstr "Веб-сайт"
+
+#: Donate.webpage:82 ExtraBeforeFooter.webpage:21 Policy.webpage:285
+msgid "Something Legal"
+msgstr "Что-то юридическое"
+
+#: MLatestAdded.module:11 Upload.module:5
+msgid "VALD"
+msgstr ""
+
+#: Profile.module:30
+msgid "     I-Nex - Cerbero"
+msgstr "     I-Nex - Cerbero"
+
+#: Profile.module:41
+msgid "             Profile"
+msgstr "             Профиль"
+
+#: Profile.module:46
+msgid "              Logout"
+msgstr "              Выход"
+
+#: Profile.module:68
+msgid "           Account"
+msgstr "           Аккаунт"
+
+#: Profile.module:77
+msgid "             Account details"
+msgstr "             Информация об аккаунте"
+
+#: Profile.module:82
+msgid "             Keys"
+msgstr "             Ключи"
+
+#: Profile.module:87
+msgid "             Submitted reports"
+msgstr "             Предоставленные отчеты"
+
+#: Profile.module:111
+msgid "                  Your Login is for logging in and cannot be changed."
+msgstr "                  Ваш логин предназначен для входа в систему и не может быть изменен."
+
+#: Profile.module:120
+msgid "                  Public account name. It is used in some cases."
+msgstr "                  Публичное имя аккаунта. Оно используется в некоторых случаях."
+
+#: Profile.module:152
+msgid "            Email Address"
+msgstr "            Адрес электронной почты"
+
+#: Profile.module:160
+msgid "               Your e-mail will also be used to display Gravatar"
+msgstr "               Ваш e-mail также будет использоваться для отображения Gravatar"
+
+#: Profile.module:168
+msgid "           Homepage"
+msgstr "           Веб-сайт"
+
+#: Profile.module:181
+msgid "           Author Bio"
+msgstr "           Об авторе"
+
+#: Profile.module:192
+msgid "            Current password"
+msgstr "            Текущий пароль"
+
+#: Profile.module:201
+msgid "             New password"
+msgstr "             Новый пароль"
+
+#: Profile.module:210
+msgid "            Repeat new password"
+msgstr "            Повторите новый пароль"
+
+#: Profile.module:220
+msgid "             Save"
+msgstr "             Сохранить"
+
+#: Profile.module:234
+msgid "                     API Public "
+msgstr "                     Публичный API "
+
+#: Profile.module:243
+msgid "                             Change"
+msgstr "                             Сменить"
+
+#: Profile.module:247
+msgid "                             Public key used in some cases."
+msgstr "                             Публичный ключ, используемый в некоторых случаях."
+
+#: Profile.module:255
+msgid "                       API Private"
+msgstr "                       Личный API"
+
+#: Profile.module:264
+msgid "                           Change"
+msgstr "                           Сменить"
+
+#: Profile.module:268
+msgid "                           I-Nex use provate key to submit data online"
+msgstr "                           I-Nex использует личный ключ для отправки данных онлайн"
+
+#: Profile.module:287
+msgid "             Processor logo"
+msgstr "             Логотип процессора"
+
+#: Profile.module:290
+msgid "             CPU & GPU"
+msgstr "             CPU и GPU"
+
+#: Profile.module:293
+msgid "             Motherboard"
+msgstr "             Системная плата"
+
+#: Profile.module:296
+msgid "             Distro"
+msgstr "             Дистрибутив"
+
+#: Profile.module:299
+msgid "             Link to"
+msgstr "             Ссылка"
+
+#: Profile.module:302
+msgid "             Remove link"
+msgstr "             Удалить ссылку"
+
+#: Register.module:3
+msgid "SECRET_KEY"
+msgstr ""
+
+#: Signup.module:39
+msgid "       Signup for Free Account"
+msgstr "       Зарегистрировать бесплатный аккаунт"
+
+#: Signup.module:44
+msgid "             Create your free account:"
+msgstr "             Создайте ваш бесплатный аккаунт:"
+
+#: Signup.module:48
+msgid "                   User name:"
+msgstr "                   Имя пользователя:"
+
+#: Signup.module:66
+msgid "                   Display name:"
+msgstr "                   Отображаемое имя:"
+
+#: Signup.module:84
+msgid "                   Email Address:"
+msgstr "                   Адрес электронной почты:"
+
+#: Signup.module:101
+msgid "                   Password:"
+msgstr "                   Пароль:"
+
+#: Signup.module:118
+msgid "                   Confirm Password:"
+msgstr "                   Подтверждение пароля:"
+
+#: Signup.module:139
+msgid "                   Agree with the Terms & Conditions."
+msgstr "                   Согласен с правилами и условиями."
+
+#: Signup.module:143
+msgid "         Register"
+msgstr "         Регистрация"
+
+#: Signup.module:162
+msgid "     Already have an account?"
+msgstr "     Уже есть аккаунт?"
+
+#: Signup.module:164
+msgid "Login to your account"
+msgstr "Войдите в свой аккаунт"
+
+#: WWidgetCPU.webpage:7
+msgid "CPU Specifications"
+msgstr "Спецификации CPU"
+
+#: WWidgetCPU.webpage:19 WWidgetGPU.webpage:14
+msgid "Model:"
+msgstr "Модель:"
+
+#: WWidgetCPU.webpage:23
+msgid "CPU Clock:"
+msgstr ""
+
+#: WWidgetCPU.webpage:27
+msgid "CPU Clock By OS:"
+msgstr ""
+
+#: WWidgetCPU.webpage:31
+msgid "CPU Clock By IC:"
+msgstr ""
+
+#: WWidgetCPU.webpage:35
+msgid "CPU Clock Measure:"
+msgstr ""
+
+#: WWidgetCPU.webpage:39
+msgid "CPU Mark TSC:"
+msgstr ""
+
+#: WWidgetCPU.webpage:43
+msgid "Integrated GPU:"
+msgstr "Интегрированный GPU:"
+
+#: WWidgetCPU.webpage:47
+msgid "Family:"
+msgstr "Семейство:"
+
+#: WWidgetCPU.webpage:55
+msgid "Stepping:"
+msgstr ""
+
+#: WWidgetCPU.webpage:59
+msgid "Cores:"
+msgstr "Ядра:"
+
+#: WWidgetCPU.webpage:63
+msgid "Phy ID:"
+msgstr ""
+
+#: WWidgetCPU.webpage:67
+msgid "Adress sizes:"
+msgstr ""
+
+#: WWidgetCPU.webpage:71
+msgid "Bogomips:"
+msgstr ""
+
+#: WWidgetCPU.webpage:75
+msgid "Flags:"
+msgstr ""
+
+#: WWidgetCPU.webpage:80
+msgid "More"
+msgstr "Еще"
+
+#: WWidgetCPU.webpage:84
+msgid "x86 64-Bit Extensions:"
+msgstr ""
+
+#: WWidgetCPU.webpage:88
+msgid "Hardware Virtualization:"
+msgstr ""
+
+#: WWidgetCPU.webpage:94
+msgid "Hyper Threading:"
+msgstr "Hyper Threading:"
+
+#: WWidgetCPU.webpage:101
+msgid "Hyper Transport:"
+msgstr ""
+
+#: WWidgetCPU.webpage:108
+msgid "Power management:"
+msgstr "Управление питанием:"
+
+#: WWidgetCPU.webpage:114
+msgid "Cache L1 Data:"
+msgstr ""
+
+#: WWidgetCPU.webpage:118
+msgid "Cache L1 Instruction:"
+msgstr ""
+
+#: WWidgetCPU.webpage:122
+msgid "Cache L1 Assoc:"
+msgstr ""
+
+#: WWidgetCPU.webpage:126
+msgid "Cache L2:"
+msgstr ""
+
+#: WWidgetCPU.webpage:130
+msgid "Cache L2 Assoc:"
+msgstr ""
+
+#: WWidgetCPU.webpage:134
+msgid "Cache L2 Cacheline:"
+msgstr ""
+
+#: WWidgetCPU.webpage:138
+msgid "Cache L3:"
+msgstr ""
+
+#: WWidgetCPU.webpage:142
+msgid "Cache L3 Assoc:"
+msgstr ""
+
+#: WWidgetCPU.webpage:146
+msgid "Cache L3 Cacheline:"
+msgstr ""
+
+#: WWidgetCPU.webpage:150
+msgid "SSE Size:"
+msgstr "Размер SSE:"
+
+#: WWidgetCPUDB.webpage:2
+msgid "CPU From Database"
+msgstr "CPU из базы данных"
+
+#: WWidgetCPUDB.webpage:8
+msgid "TDP:"
+msgstr "TDP:"
+
+#: WWidgetCPUDB.webpage:12
+msgid "PPS:"
+msgstr "PPS:"
+
+#: WWidgetCPUDB.webpage:16
+msgid "Die size:"
+msgstr "Размер кристалла:"
+
+#: WWidgetCPUDB.webpage:20
+msgid "Package:"
+msgstr "Пакет:"
+
+#: WWidgetCPUDB.webpage:24
+msgid "Turboclock:"
+msgstr "Turboclock:"
+
+#: WWidgetCPUDB.webpage:28
+msgid "Voltage:"
+msgstr "Напряжение:"
+
+#: WWidgetCPUDB.webpage:32
+msgid "Part:"
+msgstr ""
+
+#: WWidgetCPUDB.webpage:36
+msgid "Socket:"
+msgstr "Сокет:"
+
+#: WWidgetCPUDB.webpage:40
+msgid "Transistors:"
+msgstr "Транзисторы:"
+
+#: WWidgetCPUDB.webpage:44
+msgid "TCaseMax:"
+msgstr ""
+
+#: WWidgetCPUDB.webpage:48
+msgid "Multiplier:"
+msgstr "Множитель:"
+
+#: WWidgetCPUDB.webpage:52
+msgid "Codename:"
+msgstr "Кодовое имя:"
+
+#: WWidgetCPUDB.webpage:56
+msgid "Memory support:"
+msgstr "Поддержка памяти:"
+
+#: WWidgetDistro.webpage:2 WWidgetLatestAdded.webpage:12
+msgid "Distribution"
+msgstr "Дистрибутив"
+
+#: WWidgetDistro.webpage:12
+msgid "Distro Vendor:"
+msgstr "Разработчик дистрибутива:"
+
+#: WWidgetDistro.webpage:16
+msgid "Distro Release:"
+msgstr "Выпуск дистрибутива:"
+
+#: WWidgetDistro.webpage:20
+msgid "Desktop environment:"
+msgstr "Окружение рабочего стола:"
+
+#: WWidgetDistro.webpage:24
+msgid "Window manager:"
+msgstr "Оконный менеджер"
+
+#: WWidgetDistro.webpage:28
+msgid "Window manager Theme:"
+msgstr "Тема оконного менеджера"
+
+#: WWidgetDistro.webpage:32
+msgid "GTK+ 2 Theme:"
+msgstr "Тема GTK+ 2:"
+
+#: WWidgetDistro.webpage:36
+msgid "GTK+ 3 Theme:"
+msgstr "Тема GTK+ 3:"
+
+#: WWidgetDistro.webpage:40
+msgid "GTK Icons:"
+msgstr "Значки GTK:"
+
+#: WWidgetDistro.webpage:44
+msgid "GTK Font:"
+msgstr "Шрифт GTK:"
+
+#: WWidgetDistro.webpage:48
+msgid "Hostname:"
+msgstr "Имя хоста:"
+
+#: WWidgetDistro.webpage:52
+msgid "Deafult DM:"
+msgstr "DM по умолчанию:"
+
+#: WWidgetDistro.webpage:56
+msgid "Timezone:"
+msgstr "Часовой пояс:"
+
+#: WWidgetDistro.webpage:60
+msgid "GLX Version:"
+msgstr "Версия GLX:"
+
+#: WWidgetDistro.webpage:64
+msgid "X.Org Version:"
+msgstr "Версия X.Org:"
+
+#: WWidgetDistro.webpage:68
+msgid "Net-tools:"
+msgstr "Net-tools:"
+
+#: WWidgetDistro.webpage:72
+msgid "Arch:"
+msgstr "Архитектура:"
+
+#: WWidgetDistro.webpage:76
+msgid "Binutils:"
+msgstr ""
+
+#: WWidgetDistro.webpage:80
+msgid "GCC Version:"
+msgstr "Версия GCC:"
+
+#: WWidgetDistro.webpage:84
+msgid "Libc Version"
+msgstr "Версия Libc"
+
+#: WWidgetDistro.webpage:88
+msgid "GNU Make Version:"
+msgstr "Версия GNU Make:"
+
+#: WWidgetDistro.webpage:92
+msgid "Dynamic linker (ldd):"
+msgstr ""
+
+#: WWidgetGPU.webpage:2
+msgid "GPU"
+msgstr "GPU"
+
+#: WWidgetGPU.webpage:18
+msgid "OpenGL Vendor:"
+msgstr "Поставщик OpenGL:"
+
+#: WWidgetGPU.webpage:22
+msgid "OpenGL Renderer:"
+msgstr ""
+
+#: WWidgetGPU.webpage:26
+msgid "OpenGL Version:"
+msgstr "Версия OpenGL:"
+
+#: WWidgetGPU.webpage:30
+msgid "Client glx vendor:"
+msgstr ""
+
+#: WWidgetGPU.webpage:34
+msgid "Client glx version:"
+msgstr ""
+
+#: WWidgetGPU.webpage:38
+msgid "Server glx vendor:"
+msgstr ""
+
+#: WWidgetGPU.webpage:42
+msgid "Server glx version:"
+msgstr ""
+
+#: WWidgetGPU.webpage:46
+msgid "GLX version:"
+msgstr "Версия GLX:"
+
+#: WWidgetGPU.webpage:50
+msgid "Kernel driver in use:"
+msgstr "Используемый драйвер ядра:"
+
+#: WWidgetGPU.webpage:54
+msgid "Total Memory prefetchable:"
+msgstr ""
+
+#: WWidgetGPU.webpage:58
+msgid "Total Memory non-prefetchable:"
+msgstr ""
+
+#: WWidgetGPU.webpage:62
+msgid "Resolutions:"
+msgstr "Разрешения:"
+
+#: WWidgetGPU.webpage:66
+msgid "Present resolution:"
+msgstr "Текущее разрешение:"
+
+#: WWidgetKernel.webpage:2
+msgid "Kernel"
+msgstr "Ядро"
+
+#: WWidgetKernel.webpage:9
+msgid "System name:"
+msgstr "Имя системы:"
+
+#: WWidgetKernel.webpage:13
+msgid "Node name:"
+msgstr ""
+
+#: WWidgetKernel.webpage:17
+msgid "Release:"
+msgstr "Релиз:"
+
+#: WWidgetKernel.webpage:21
+msgid "Version:"
+msgstr "Версия:"
+
+#: WWidgetKernel.webpage:25
+msgid "Machine:"
+msgstr ""
+
+#: WWidgetKernel.webpage:29
+msgid "Latest stable:"
+msgstr "Последняя стабильная:"
+
+#: WWidgetLatestAdded.webpage:9
+msgid "CPU Logo"
+msgstr "Логотип CPU"
+
+#: WWidgetLatestAdded.webpage:10
+msgid "CPU and GPU"
+msgstr "CPU и GPU"
+
+#: WWidgetLatestAdded.webpage:11 WWidgetMobo.webpage:2
+msgid "Motherboard"
+msgstr "Системная плата"
+
+#: WWidgetLatestAdded.webpage:13
+msgid "Link to report"
+msgstr "Ссылка на отчет"
+
+#: WWidgetMYModal.webpage:6
+msgid "CPU Flags long desc"
+msgstr ""
+
+#: WWidgetMYModal.webpage:42
+msgid "Close"
+msgstr ""
+
+#: WWidgetMisc.webpage:2
+msgid "Misc"
+msgstr "Прочее"
+
+#: WWidgetMisc.webpage:7
+msgid "Total memory:"
+msgstr "Объем памяти:"
+
+#: WWidgetMisc.webpage:11
+msgid "Used memory:"
+msgstr "Используется памяти:"
+
+#: WWidgetMisc.webpage:15
+msgid "Total swap:"
+msgstr "Объем swap:"
+
+#: WWidgetMisc.webpage:19
+msgid "Used swap:"
+msgstr "Используется swap:"
+
+#: WWidgetMisc.webpage:23
+msgid "Uptime:"
+msgstr "Время работы:"
+
+#: WWidgetMisc.webpage:24
+msgid "Days: "
+msgstr "Дни: "
+
+#: WWidgetMisc.webpage:24
+msgid " Hours: "
+msgstr " Часы: "
+
+#: WWidgetMisc.webpage:24
+msgid " Minutes: "
+msgstr " Минуты: "
+
+#: WWidgetMisc.webpage:24
+msgid " Seconds: "
+msgstr " Секунды: "
+
+#: WWidgetMobo.webpage:8
+msgid "Board Vendor:"
+msgstr "Разработчик платы:"
+
+#: WWidgetMobo.webpage:12
+msgid "Board Version:"
+msgstr "Версия платы:"
+
+#: WWidgetMobo.webpage:16
+msgid "Board Name:"
+msgstr "Название платы:"
+
+#: WWidgetMobo.webpage:20
+msgid "Board Asset Tag:"
+msgstr ""
+
+#: WWidgetMobo.webpage:24
+msgid "Bios Vendor:"
+msgstr "Разработчик BIOS:"
+
+#: WWidgetMobo.webpage:28
+msgid "Bios Version:"
+msgstr "Версия BIOS:"
+
+#: WWidgetMobo.webpage:32
+msgid "Bios Date:"
+msgstr "Дата BIOS:"
+
+#: WWidgetMobo.webpage:36
+msgid "Chassis Vendor:"
+msgstr ""
+
+#: WWidgetMobo.webpage:40
+msgid "Chassis Version:"
+msgstr ""
+
+#: WWidgetMobo.webpage:44
+msgid "Chassis Type:"
+msgstr ""
+
+#: WWidgetMobo.webpage:48
+msgid "Chassis Asset Tag:"
+msgstr ""
+
+#: WWidgetMobo.webpage:52
+msgid "Product Name:"
+msgstr "Название продукта:"
+
+#: WWidgetMobo.webpage:56
+msgid "Product Version:"
+msgstr ""
+
+#: WWidgetScreenshot.webpage:2
+msgid "I-Nex Screenshot"
+msgstr "Скриншот I-Nex"
+
+#: WWidgetUser.webpage:2
+msgid "Submited by"
+msgstr "Отправил"
+
+#: login.module:30
+msgid "             Member Login"
+msgstr "             Авторизация"
+
+#: login.module:34
+msgid "                   Please provide your details"
+msgstr "                   Пожалуйста, укажите ваши данные"
+
+#: login.module:38
+msgid "                               Username:"
+msgstr "                               Имя пользователя:"
+
+#: login.module:44
+msgid "                               Password:"
+msgstr "                               Пароль:"
+
+#: login.module:53
+msgid "                               Keep me signed in"
+msgstr "                               Запомнить меня"
+
+#: login.module:57
+msgid "                   Sign In"
+msgstr "                   Вход"
+

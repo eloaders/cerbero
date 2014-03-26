@@ -1,0 +1,398 @@
+' Gambas module file
+
+Public Sub User_Profile()
+  Dim i, All As Integer
+  Dim USER_DATA As Collection
+  Dim Dict As New Collection
+  Dim CPU_DATA As Collection
+  Dim Element As String
+
+    If IsNull(Request.Cookies["__ursa"]) = False Then
+
+        If Exist("" & Global.WHEREIS_SITE_ROOT & "/Users/" & Request.Cookies["__ursa"] & "") Then
+
+          USER_DATA = JSON.Decode(File.Load("" & Global.WHEREIS_SITE_ROOT & "/Users/" & Request.Cookies["__ursa"] & "/Data.json"))
+
+          If USER_DATA["SECRET_KEY"] = Request.Cookies["__apix"] Then
+          Response.Begin
+          Change_Password_IN_Profile()
+          DProfileHead.Render
+
+          Print "<div class=\"navbar navbar-fixed-top\">"
+          Print "  <div class=\"navbar-inner\">"
+          Print "  <div class=\"container\">"
+          Print "    <a class=\"btn btn-navbar\" data-toggle=\"collapse\" data-target=\".nav-collapse\">"
+          Print "      <span class=\"icon-bar\"></span>"
+          Print "      <span class=\"icon-bar\"></span>"
+          Print "      <span class=\"icon-bar\"></span>"
+          Print "    </a>"
+          Print "    <a class=\"brand\" href=\"" & Application.Root & "\">"
+          Print ("     I-Nex - Cerbero")
+          Print "    </a>"
+          Print "    <div class=\"nav-collapse\">"
+          Print "      <ul class=\"nav pull-right\">"
+          Print "        <li class=\"dropdown\">"
+          Print "          <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">"
+          Print "          <i class=\"icon-user\"></i>" & USER_DATA["CERBERO_USERNAME"] & "<b class=\"caret\"></b>"
+          Print "          </a>"
+          Print "        <ul class=\"dropdown-menu\">"
+          Print "          <li>"
+          Print "           <a href=\"" & Application.Root & "?profile\">"
+          Print ("             Profile")
+          Print "           </a>"
+          Print "          </li>"
+          Print "          <li>"
+          Print "           <a href=\"" & Application.Root & "?logout\">"
+          Print ("              Logout")
+          Print "           </a>"
+          Print "          </li>"
+          Print "        </ul>"
+          Print "        </li>"
+          Print "      </ul>"
+          Print "    </div><!--/.nav-collapse -->"
+          Print "  </div> <!-- /container -->"
+          Print "  </div> <!-- /navbar-inner -->"
+          Print "</div> <!-- /navbar -->"
+      
+          'Print File.Load("Profile/Subnavbar.html")
+          DProfileSubnavbar.Render
+          Print "<div class=\"main\">"
+          Print "  <div class=\"main-inner\">"
+          Print "    <div class=\"container\">"
+          Print "      <div class=\"row\">"
+          Print "  <div class=\"span12\">"
+          Print "    <div class=\"widget\">"
+          Print "      <div class=\"widget-header\">"
+          Print "          <i class=\"icon-user\"></i>"
+          Print "          <h3>"
+          Print ("           Account")
+          Print "          </h3>"
+          Print "      </div> <!-- /widget-header -->"
+          Print "      <div class=\"widget-content\">"
+
+          Print "      <div class=\"tabbable\">"
+          Print "        <ul class=\"nav nav-tabs\">"
+          Print "           <li>"
+          Print "             <li class=\"active\"><a href=\"#account_details\" data-toggle=\"tab\">"
+          Print ("             Account details")
+          Print "             </a>"
+          Print "           </li>"
+          Print "           <li>"
+          Print "             <a href=\"#keys\" data-toggle=\"tab\">"
+          Print ("             Keys")
+          Print "             </a>"
+          Print "           </li>"
+          Print "           <li>"
+          Print "            <a href=\"#submitted_reports\" data-toggle=\"tab\">"
+          Print ("             Submitted reports")
+          Print "            </a>"
+          Print "           </li>"
+          Print "        </ul>"
+          Print "        <br>"
+          Print "        <div class=\"tab-content\">"
+          Print "        <div class=\"tab-pane active\" id=\"account_details\">"
+          Print "        <form action=\"inex.r?updprofile\" method=\"post\" id=\"edit-profile\" class=\"form-horizontal\">"
+          Print "        <fieldset>"
+          '====================================================================================
+          Print "          <div class=\"control-group\">" 
+          Print "           <div class=\"controls\">"
+          Print "               <div class=\"media\">"
+          Print "                 <a class=\"thumbnail pull-left\">"
+          Print "                   <img class=\"media-object\" src=\"" & Global.GravatarAV(USER_DATA["CERBERO_USER_EMAIL"], "128") & "\" alt=\"thumbnail\">" 
+          Print "                 </a>"
+          Print "               </div>"
+          Print "           <div class=\"span\">" 
+          Print "               <div class=\"media-body\">"
+          Print "                 <div class=\"input-prepend input-append\">" 
+          Print "                   <span class=\"add-on\"><i class=\"icon-signin\"></i></span>" 
+          Print "                     <input class=\"span disabled\" type=\"text\" id=\"username\" value=\"" & USER_DATA["CERBERO_USERNAME"] & "\" disabled>"
+          Print "                   <span class=\"add-on\"><i class=\"icon-user\"></i></span>"
+          Print "                   <p class=\"help-block\">"
+          Print ("                  Your Login is for logging in and cannot be changed.")
+          Print "                   </p>"
+          Print "                 </div>"
+          Print "               <div class=\"media-body\">"
+          Print "                 <div class=\"input-prepend input-append\">" 
+          Print "                   <span class=\"add-on\"><i class=\"icon-pencil\"></i></span>" 
+          Print "                     <input class=\"span\" type=\"text\" id=\"displayname\" name=\"zdisplayname\" value=\"" & USER_DATA["CERBERO_DISPLAYNAME"] & "\">"
+          Print "                   <span class=\"add-on\"><i class=\"icon-group\"></i></span>"
+          Print "                   <p class=\"help-block\">"
+          Print ("                  Public account name. It is used in some cases.")
+          Print "                   </p>"
+          Print "                 </div>"
+          Print "               </div>"
+          Print "           </div>"
+          Print "          </div>"
+          Print "        </div>"
+          Print "       </div>"
+          '====================================================================================
+          Print "          <div class=\"control-group\">" 
+          Print "           <div class=\"controls\">"
+          Print "             <div class=\"input-prepend input-append\">" 
+          Print "               <span class=\"add-on\"><i class=\"icon-facebook\"></i></span>" 
+          Print "                 <input class=\"span1\" type=\"text\" id=\"facebookusername\" name=\"facebookusername\" value=\"" & USER_DATA["CERBERO_USER_FACEBOOK"] & "\">"
+          Print "             </div>"
+          Print "             <div class=\"input-prepend input-append\">" 
+          Print "               <span class=\"add-on\"><i class=\"icon-google-plus\"></i></span>" 
+          Print "                 <input class=\"span2\" type=\"text\" id=\"googleusername\" name=\"googleusername\" value=\"" & USER_DATA["CERBERO_USER_GOOGLE"] & "\">"
+          Print "             </div>"
+          Print "             <div class=\"input-prepend input-append\">" 
+          Print "               <span class=\"add-on\"><i class=\"icon-twitter\"></i></span>" 
+          Print "                 <input class=\"span1\" type=\"text\" id=\"twitterusername\" name=\"twitterusername\" value=\"" & USER_DATA["CERBERO_USER_TWITTER"] & "\">"
+          Print "             </div>"
+          Print "             <div class=\"input-prepend input-append\">" 
+          Print "               <span class=\"add-on\"><i class=\"icon-github\"></i></span>" 
+          Print "                 <input class=\"span1\" type=\"text\" id=\"githubusername\" name=\"githubusername\" value=\"" & USER_DATA["CERBERO_USER_GITHUB"] & "\">"
+          Print "             </div>"
+          Print "           </div>"
+          Print "         </div>"
+          '====================================================================================
+          Print "          <div class=\"control-group\">"
+          Print "           <label class=\"control-label\" for=\"email\">"
+          Print ("            Email Address")
+          Print "           </label>" 
+          Print "           <div class=\"controls\">" 
+          Print "             <div class=\"input-prepend input-append\">" 
+          Print "               <span class=\"add-on\"><i class=\"icon-comment\"></i></span>" 
+          Print "                 <input class=\"span4\" type=\"text\" id=\"email\" name=\"zemail\" value=\"" & USER_DATA["CERBERO_USER_EMAIL"] & "\">"
+          Print "               <span class=\"add-on\"><i class=\"icon-folder-open\"></i></span>"
+          Print "             <p class=\"help-block\">"
+          Print ("               Your e-mail will also be used to display Gravatar")
+          Print "             </p>"
+          Print "             </div>"
+          Print "           </div>"
+          Print "         </div>"
+          '====================================================================================
+          Print "          <div class=\"control-group\">"
+          Print "           <label class=\"control-label\" for=\"zhomepage\">"
+          Print ("           Homepage")
+          Print "           </label>" 
+          Print "           <div class=\"controls\">" 
+          Print "             <div class=\"input-prepend input-append\">" 
+          Print "               <span class=\"add-on\"><i class=\"icon-link\"></i></span>" 
+          Print "                 <input class=\"span4\" type=\"text\" id=\"zhomepage\" name=\"zhomepage\" value=\"" & USER_DATA["CERBERO_USER_HOMEPAGE"] & "\">"
+          Print "               <span class=\"add-on\"><i class=\"icon-globe\"></i></span>"
+          Print "             </div>"
+          Print "           </div>"
+          Print "         </div>"
+          '====================================================================================Author bio
+          Print "          <div class=\"control-group\">"
+          Print "           <label class=\"control-label\" for=\"authotbio\">"
+          Print ("           Author Bio")
+          Print "           </label>" 
+          Print "           <div class=\"controls\">" 
+          Print "             <textarea class=\"span5\" name=\"authorbio\" id=\"authorbio\" rows=\"9\" placeholder=\"About You\">" & USER_DATA["CERBERO_USER_AUTHOR_BIO"] & "</textarea>"
+          Print "           </div>"
+          Print "         </div>"
+          '====================================================================================
+          Print "        <br/>"
+          Print "        <br/>"
+          Print "          <div class=\"control-group\">"
+          Print "          <label class=\"control-label\" for=\"zpassword1\">"
+          Print ("            Current password")
+          Print "          </label>"
+          Print "            <div class=\"controls\">"
+          Print "            <input type=\"password\" class=\"span4\" id=\"zpassword1\" name=\"zpassword1\" >"
+          Print "            </div> <!-- /controls -->"
+          Print "          </div> <!-- /control-group -->"
+          Print ""
+          Print "          <div class=\"control-group\">"
+          Print "          <label class=\"control-label\" for=\"zpassword2\">"
+          Print ("             New password")
+          Print "          </label>"
+          Print "            <div class=\"controls\">"
+          Print "            <input type=\"password\" class=\"span4\" id=\"zpassword2\" name=\"zpassword2\" >"
+          Print "            </div> <!-- /controls -->"
+          Print "          </div> <!-- /control-group -->"
+          Print ""
+          Print "          <div class=\"control-group\">"
+          Print "          <label class=\"control-label\" for=\"zpassword2\">"
+          Print ("            Repeat new password")
+          Print "          </label>"
+          Print "            <div class=\"controls\">"
+          Print "            <input type=\"password\" class=\"span4\" id=\"zpassword3\" name=\"zpassword3\" >"
+          Print "            </div> <!-- /controls -->"
+          Print "          </div> <!-- /control-group -->"
+
+          '====================================================================================
+          Print "          <div class=\"form-actions\">"
+          Print "            <button type=\"submit\" class=\"btn btn-primary\">"
+          Print ("             Save")
+          Print "            </button>"
+          Print "          </div> <!-- /form-actions -->"
+          Print "           </fieldset>"
+          Print "            </form>"
+          Print "          </div>"
+          '====================================================================================
+          Print "          <div class=\"tab-pane\" id=\"keys\">"
+          Print "           <form id=\"edit-profile2\" class=\"form-horizontal\">"
+          Print "             <fieldset>"
+          '====================================================================================
+          Print "               <div class=\"control-group\">"
+          Print "                   <label class=\"control-label\" for=\"radiobtns\">"
+          Print "                     <strong>"
+          Print ("                     API Public ")
+          Print "                     </strong>"
+          Print "                   </label>"
+          Print "                       <div class=\"controls\">"
+          'ProfileShooseAPI.Render
+          Print "                         <div class=\"input-prepend input-append\">"
+          Print "                           <span class=\"add-on\"><i class=\"icon-key\"></i></span>" 
+          Print "                           <input class=\"span4 m-wrap disabled\" id=\"appendedInputButton\" type=\"text\" value=\"" & USER_DATA["API_PUBLIC"] & "\" disabled>"
+          Print "                           <a href=\"inex.r?chgapi=pub\" class=\"btn\" role=\"button\"><i class=\"icon-key\"></i>"
+          Print ("                             Change")
+          Print "                           </a>"
+          Print "                         </div>"
+          Print "                          <p class=\"help-block\">"
+          Print ("                             Public key used in some cases.")
+          Print "                           </p>"
+          Print "                      </div>"
+          Print "               </div>"  
+          '====================================================================================
+          Print "               <div class=\"control-group\">"
+          Print "                   <label class=\"control-label\" for=\"radiobtns\">"
+          Print "                     <strong>"
+          Print ("                       API Private")
+          Print "                     </strong>"
+          Print "                   </label>"
+          Print "                       <div class=\"controls\">"
+          'ProfileShooseAPI.Render
+          Print "                         <div class=\"input-prepend input-append\">"
+          Print "                           <span class=\"add-on\"><i class=\"icon-key\"></i></span>"
+          Print "                           <input class=\"span4 m-wrap disabled\" id=\"appendedInputButton\" type=\"text\" value=\"" & USER_DATA["API_PRIVATE"] & "\" disabled>"
+          Print "                           <a href=\"inex.r?chgapi=pri\" class=\"btn\" role=\"button\"><i class=\"icon-key\"></i>"
+          Print ("                           Change")
+          Print "                           </a>"
+          Print "                         </div>"
+          Print "                         <p class=\"help-block\">"
+          Print ("                           I-Nex use provate key to submit data online")
+          Print "                         </p>"
+          Print "                       </div>"
+          Print "               </div>"  
+          '====================================================================================
+          Print "             </fieldset>"
+          Print "           </form>"
+          Print "         </div>"
+          '====================================================================================
+          Print "          <div class=\"tab-pane\" id=\"submitted_reports\">"
+          Print "           <form id=\"edit-profile3\" class=\"form-vertical\">"
+
+          Print "           <div class=\"widget widget-table action-table\">"
+          Print "            <!-- /widget-header -->"
+          Print "            <div class=\"widget-content\">"
+          Print "             <table class=\"table table-hover\">"
+          Print "             <thead>"
+          Print "             <tr>"
+          Print "             <th>"
+          Print ("             Processor logo")
+          Print "             </th>"
+          Print "             <th>"
+          Print ("             CPU & GPU")
+          Print "             </th>"
+          Print "             <th>"
+          Print ("             Motherboard")
+          Print "             </th>"
+          Print "             <th class=\"text-center\">"
+          Print ("             Distro")
+          Print "             </th>"
+          Print "             <th class=\"text-center\">"
+          Print ("             Link to")
+          Print "             </th>"
+          Print "             <th class=\"text-center\">"
+          Print ("             Remove link")
+          Print "             </th>"
+          Print "             <th></th>"
+          Print "             </tr>"
+          Print "            </thead>"
+          Print "          <tbody>"
+
+          '====================================================================================
+          Try Dict = JSON.Decode(File.Load("" & Global.WHEREIS_SITE_ROOT & "/Users/" & Request.Cookies["__ursa"] & "/list.json"))
+          For Each Element In Dict
+           Try CPU_DATA = JSON.Decode(File.Load("" & Global.WHEREIS_SITE_ROOT & "/ValidDB/" & Left$(Element, - CInt(Len(Right$(Element, -8)))) & "/" & Right$(Element, -8) & ".json"))
+           Print "        <tr>"
+           Print "            <td class=\"col-sm-8 col-md-6\">"
+           Print "            <div class=\"media\">"
+           Print "                <a class=\"thumbnail pull-left\" href=\"" & Global.WEBSITE_ROOT_URL_HTTP & Application.Root & "?validate="; Element; "\" target=\"_blank\"\"> <img class=\"media-object\" src=\"" & Global.WEBSITE_ROOT_URL_HTTP & "/LOGOS/" & CPU_DATA["CPU_LOGO"] & "\" ></a>"
+           Print "            </div></td>"
+           Print "            <td class=\"col-sm-1 col-md-1 text-center\">"
+           Print "                <div class=\"media-body\">"
+           Print "                    <h4 class=\"media-heading\">" & CPU_DATA["CPU_VENDOR"] & "</a></h4>"
+           Print "                    <h5 class=\"media-heading\">" & CPU_DATA["CPU_NAME"] & "</a></h5>"
+           Print "                    <span>I-Nex V: </span><span class=\"text-success\"><strong>" & CPU_DATA["INEX_VERSION"] & "</strong></span>"
+           Print "                </div>"
+           Print "            <strong>" & CPU_DATA["GPU_MODEL"] & "</strong></td>"
+           Print "            <td class=\"col-sm-1 col-md-1 text-center\"><strong>" & Replace(CPU_DATA["INEX_MOTHERBOARD_VENDOR1"], "Board Vendor:", "") & " " & Replace(CPU_DATA["INEX_MOTHERBOARD_VENDOR3"], "Board Name:", "") & "</strong></td>"
+           Print "            <td class=\"col-sm-1 col-md-1 text-center\"><strong>" & Replace(CPU_DATA["DISTRO_VENDOR"], "Distro Vendor:", "") & " " & Replace(CPU_DATA["DISTRO_VENDOR2"], "Distro Release:", "") & "</strong></td>"
+           Print "            <td class=\"td-actions\">"
+           Print "            <a <a href=\"" & Global.WEBSITE_ROOT_URL_HTTP & Application.Root & "?validate="; Element; "\" target=\"_blank\" class=\"btn btn-link btn-small\">"
+           Print "            <i class=\"btn-icon-only icon-link\"></i>"
+           Print "            </a>"
+           Print "            <td class=\"td-actions\">"
+           Print "            <a <a href=\"" & Global.WEBSITE_ROOT_URL_HTTP & Application.Root & "?delvalidate="; Element; "\" class=\"btn btn-danger btn-small\">"
+           Print "            <i class=\"btn-icon-only icon-remove\"></i>"
+           Print "            </a>"
+           Print "        </tr>"
+          Next
+
+          '====================================================================================
+          Print "   </tbody>"
+          Print "  </table>"
+          Print "</div>"
+          Print "<!-- /widget-content --> "
+          Print "</div>"
+          Print "<!-- /widget --> "
+          
+          ' Print "<ul class=\"pagination\">"
+          ' For All = 0 To i 
+          ' Print "<li><a href=\"inex.r?profile&pg=" & CString(All) & "\">" & CString(All) & "</a></li>"
+          ' Next
+          ' Print "</ul>"
+          
+          Print "           </form>"
+          Print "         </div>"
+          '====================================================================================
+          Print "        </div>"
+          Print "      </div>"
+          Print "        </div> <!-- /widget-content -->"
+          Print "      </div> <!-- /widget -->"
+          Print "        </div> <!-- /span8 -->"
+          Print "    </div> <!-- /row -->"
+          Print "      </div> <!-- /container -->"
+          Print "  </div> <!-- /main-inner -->"
+          Print "</div> <!-- /main -->"
+          '====================================================================================
+          ExtraBeforeFooter.Render
+          ProfileFooter.Render
+          Response.End
+      Else
+        Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & Application.Root & "?login")
+      Endif
+    Else
+      Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & Application.Root & "?login")
+    Endif
+  Else
+    Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & Application.Root & "?login")
+  Endif
+  
+End
+
+Public Sub Change_Password_IN_Profile()
+  Dim USER_DATA As Collection
+  'Print Request.Post["email"]
+  'Print Request.Post["password1"]
+  'Print Request.Post["password2"]
+  If IsNull(Request.Cookies["__ursa"]) = False Then
+      If Exist("/var/www/Users/" & Request.Cookies["__ursa"] & "") Then
+        USER_DATA = JSON.Decode(File.Load("/var/www/Users/" & Request.Cookies["__ursa"] & "/Data.json"))
+        If USER_DATA["SECRET_KEY"] = Request.Cookies["__apix"] Then
+        Else
+          Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & "/inex.r?profile")
+        Endif
+      Else
+        Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & "/inex.r?profile")
+      Endif
+  Else
+    Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & "/inex.r?profile")
+  Endif
+End

@@ -1,0 +1,36 @@
+<div class="widget"> 
+  <div class="widget-header"> <i class="icon-file"></i> 
+    <h3><%=("Submited by")%></h3> 
+  </div>
+  <div class="widget-content"> 
+    <ul class="messages_layout"> 
+      <li class="from_user left"><a href="#" class="avatar"><img src="<%= Global.GravatarAV(MValidate.USER_DATA["CERBERO_USER_EMAIL"], "64") %>"/></a> 
+        <div class="message_wrap"> <span class="arrow"></span> 
+          <div class="info"> <a class="name"><%= MValidate.RADIVATE["SUBMITED_BY"] %></a> <span class="time"><%= MValidate.RADIVATE["DATE_TIME"] %></span> 
+          </div> 
+          <div class="text"><%= MValidate.USER_DATA["CERBERO_USER_AUTHOR_BIO"] %></div> 
+          </div> 
+          
+          <% If Not IsNull(MValidate.USER_DATA["CERBERO_USER_FACEBOOK"]) Then %>
+          <a href="https://www.facebook.com/<%=MValidate.USER_DATA["CERBERO_USER_FACEBOOK"]%>" target="_blank"><button class="btn btn-facebook-alt"><i class="icon-facebook-sign"></i></button></a> 
+          <%Endif%>
+          
+          <%If IsNull(MValidate.USER_DATA["CERBERO_USER_TWITTER"]) = False Then%>
+          <a href="https://twitter.com/<%=MValidate.USER_DATA["CERBERO_USER_TWITTER"]%>" target="_blank"><button class="btn btn-twitter-alt"><i class="icon-twitter-sign"></i></button></a> 
+          <%Endif%>
+          
+          <%If IsNull(MValidate.USER_DATA["CERBERO_USER_GOOGLE"]) = False Then%>
+          <a href="https://plus.google.com/u/0/<%=MValidate.USER_DATA["CERBERO_USER_GOOGLE"]%>" target="_blank"><button class="btn btn-google-alt"><i class="icon-google-plus-sign"></i></button></a> 
+          <% Endif%>
+          
+          <%If IsNull(MValidate.USER_DATA["CERBERO_USER_GITHUB"]) = False Then%>
+          <a href="https://github.com/<%=MValidate.USER_DATA["CERBERO_USER_GITHUB"]%>" target="_blank"><button class="btn btn-github-alt"><i class="icon-github-sign"></i></button></a> 
+          <%Endif%>
+          
+          <% If Not IsNull(MValidate.USER_DATA["CERBERO_USER_HOMEPAGE"]) Then%>
+          <a href="<%=MValidate.USER_DATA["CERBERO_USER_HOMEPAGE"]%>" target="_blank"><button class="btn btn-github-alt"><i class="icon-external-link"></i></button></a>
+          <%Endif%>
+      </li>
+    </ul>
+  </div>
+</div>

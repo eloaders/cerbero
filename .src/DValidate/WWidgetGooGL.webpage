@@ -1,0 +1,6 @@
+<div class="widget"> 
+  <div class="widget-content">
+    <input class="span5 disabled" type="text" value="<%=MValidate.RADIVATE["GOO_GL"]["id"]%>" disabled> 
+    <input class="span5 disabled" type="text" value="<%=MValidate.RADIVATE["GOO_GL"]["longUrl"]%>" disabled>
+  </div>
+</div>

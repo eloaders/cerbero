@@ -1,0 +1,99 @@
+<div class="widget widget-table action-table">
+  <div class="widget-header"> <i class="icon-cog"></i>
+    <h3><%=("Distribution")%></h3>
+  </div>
+  <!-- /widget-header -->
+  <div class="widget-content"> 
+    <div class="col-xs-6 col-md-3"> 
+      <a class="thumbnail"><img src="<%Print Detect_Dist.Return_URL(MValidate.RADIVATE["DISTRO_VENDOR"], Replace(MValidate.RADIVATE["DISTRO_VENDOR3"], "Desktop environment:", ""))%>" alt="thumbnail"></a> 
+    </div>
+      <table class="table table-striped table-bordered">
+      <tbody> 
+        <tr> 
+          <td><b><%Print ("Distro Vendor:")%></b></td> 
+          <td><%=Replace(MValidate.RADIVATE["DISTRO_VENDOR"], "Distro Vendor:", "")%></td> 
+        </tr> 
+        <tr>
+          <td><b><%Print ("Distro Release:")%></b></td> 
+          <td><%=Replace(MValidate.RADIVATE["DISTRO_VENDOR2"], "Distro Release:", "")%></td> 
+        </tr> 
+        <tr> 
+          <td><b><%Print ("Desktop environment:")%></b></td> 
+          <td><%=Replace(MValidate.RADIVATE["DISTRO_VENDOR3"], "Desktop environment:", "")%></td> 
+        </tr> 
+        <tr> 
+          <td><b><%Print ("Window manager:")%></b></td> 
+          <td><%=Replace(MValidate.RADIVATE["DISTRO_VENDOR4"], "Window manager:", "")%></td> 
+        </tr> 
+        <tr> 
+          <td><b><%Print ("Window manager Theme:")%></b></td> 
+          <td><%=Replace(MValidate.RADIVATE["DISTRO_VENDOR5"], "Window manager Theme:", "")%></td> 
+        </tr> 
+        <tr> 
+          <td><b><%Print ("GTK+ 2 Theme:")%></b></td> 
+          <td><%=Replace(MValidate.RADIVATE["DISTRO_VENDOR6"], "GTK+ 2 Theme:", "")%></td> 
+        </tr> 
+        <tr> 
+          <td><b><%Print ("GTK+ 3 Theme:")%></b></td> 
+          <td><%=Replace(MValidate.RADIVATE["DISTRO_VENDOR7"], "GTK+ 3 Theme:", "")%></td> 
+        </tr> 
+        <tr> 
+          <td><b><%Print ("GTK Icons:")%></b></td> 
+          <td><%=Replace(MValidate.RADIVATE["DISTRO_VENDOR8"], "GTK Icons:", "")%></td> 
+        </tr> 
+        <tr> 
+          <td><b><%Print ("GTK Font:")%></b></td> 
+          <td><%=Replace(MValidate.RADIVATE["DISTRO_VENDOR9"], "GTK Font:", "")%></td> 
+        </tr> 
+        <tr> 
+          <td><b><%Print ("Hostname:")%></b></td> 
+          <td><%=Replace(MValidate.RADIVATE["DISTRO_VENDOR10"], "Hostname:", "")%></td> 
+        </tr> 
+        <tr> 
+          <td><b><%Print ("Deafult DM:")%></b></td> 
+          <td><%=Replace(MValidate.RADIVATE["DISTRO_VENDOR11"], "Deafult DM:", "")%></td> 
+        </tr> 
+        <tr> 
+          <td><b><%Print ("Timezone:")%></b></td> 
+          <td><%=Replace(MValidate.RADIVATE["DISTRO_VENDOR12"], "Timezone:", "")%></td> 
+        </tr> 
+        <tr> 
+          <td><b><%Print ("GLX Version:")%></b></td> 
+          <td><span class="badge"><%=Replace(MValidate.RADIVATE["DISTRO_VENDOR13"], "GLX Version:", "")%></span></td> 
+        </tr> 
+        <tr> 
+          <td><b><%Print ("X.Org Version:")%></b></td> 
+          <td><span class="badge"><%=Replace(MValidate.RADIVATE["DISTRO_VENDOR14"], "X.Org Version:", "")%></span></td> 
+        </tr> 
+        <tr> 
+          <td><b><%Print ("Net-tools:")%></b></td> 
+          <td><span class="badge"><%=Replace(MValidate.RADIVATE["DISTRO_VENDOR15"], "Net-tools:", "")%></span></td> 
+        </tr> 
+        <tr> 
+          <td><b><%Print ("Arch:")%></b></td> 
+          <td><%=Replace(MValidate.RADIVATE["DISTRO_VENDOR16"], "Arch:", "")%></td> 
+        </tr> 
+        <tr> 
+          <td><b><%Print ("Binutils:")%></b></td> 
+          <td><span class="badge"><%=Replace(MValidate.RADIVATE["DISTRO_VENDOR17"], "Binutils", "")%></span></td> 
+        </tr> 
+        <tr>
+          <td><b><%Print ("GCC Version:")%></b></td> 
+          <td><span class="badge"><%=Replace(MValidate.RADIVATE["DISTRO_VENDOR18"], "GCC Version:", "")%></span></td> 
+        </tr> 
+        <tr> 
+          <td><b><%Print ("Libc Version")%></b></td> 
+          <td><span class="badge"><%=Replace(MValidate.RADIVATE["DISTRO_VENDOR19"], "Linux C Library:", "")%></span></td> 
+        </tr> 
+        <tr> 
+          <td><b><%Print ("GNU Make Version:")%></b></td> 
+          <td><span class="badge"><%=Replace(MValidate.RADIVATE["DISTRO_VENDOR20"], "GNU Make Version:", "")%></span></td> 
+        </tr> 
+        <tr> 
+          <td><b><%Print ("Dynamic linker (ldd):")%></b></td> 
+          <td><span class="badge"><%=Replace(MValidate.RADIVATE["DISTRO_VENDOR21"], "Dynamic linker (ldd):", "")%></span></td>
+        </tr> 
+      </tbody> 
+    </table> 
+  </div> 
+</div>

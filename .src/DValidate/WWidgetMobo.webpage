@@ -1,0 +1,63 @@
+<div class="widget widget-nopad">
+  <div class="widget-header"> <i class="icon-cogs"></i>
+    <h3><%Print ("Motherboard")%></h3>
+  </div>
+  <div class="widget-content">
+    <table class="table table-bordered">
+      <tbody> 
+        <tr> 
+         <td><b><%Print ("Board Vendor:")%></b></td> 
+         <td><%=Replace(MValidate.RADIVATE["INEX_MOTHERBOARD_VENDOR1"], "Board Vendor:", "")%></td> 
+        </tr> 
+        <tr> 
+         <td><b><%Print ("Board Version:")%></b></td> 
+         <td><%=Replace(MValidate.RADIVATE["INEX_MOTHERBOARD_VENDOR2"], "Board Version:", "")%></td> 
+        </tr> 
+        <tr> 
+         <td><b><%Print ("Board Name:")%></b></td> 
+         <td><%=Replace(MValidate.RADIVATE["INEX_MOTHERBOARD_VENDOR3"], "Board Name:", "")%></td> 
+        </tr> 
+        <tr> 
+         <td><b><%Print ("Board Asset Tag:")%></b></td> 
+         <td><%=Replace(MValidate.RADIVATE["INEX_MOTHERBOARD_VENDOR4"], "Board Asset Tag:", "")%></td> 
+        </tr> 
+        <tr> 
+         <td><b><%Print ("Bios Vendor:")%></b></td> 
+          <td><%=Replace(MValidate.RADIVATE["INEX_MOTHERBOARD_VENDOR5"], "Bios Vendor:", "")%></td> 
+        </tr> 
+        <tr> 
+         <td><b><%Print ("Bios Version:")%></b></td> 
+         <td><%=Replace(MValidate.RADIVATE["INEX_MOTHERBOARD_VENDOR6"], "Bios Version:", "")%></td> 
+        </tr> 
+        <tr> 
+         <td><b><%Print ("Bios Date:")%></b></td> 
+         <td><%=Replace(MValidate.RADIVATE["INEX_MOTHERBOARD_VENDOR7"], "Bios Date:", "")%></td> 
+        </tr> 
+        <tr>
+         <td><b><%Print ("Chassis Vendor:")%></b></td> 
+         <td><%=Replace(MValidate.RADIVATE["INEX_MOTHERBOARD_VENDOR8"], "Chassis Vendor:", "")%></td> 
+        </tr> 
+        <tr> 
+         <td><b><%Print ("Chassis Version:")%></b></td> 
+         <td><%=Replace(MValidate.RADIVATE["INEX_MOTHERBOARD_VENDOR9"], "Chassis Version:", "")%></td> 
+        </tr> 
+        <tr> 
+         <td><b><%Print ("Chassis Type:")%></b></td> 
+         <td><%=Replace(MValidate.RADIVATE["INEX_MOTHERBOARD_VENDOR10"], "Chassis Type:", "")%></td> 
+        </tr> 
+        <tr> 
+         <td><b><%Print ("Chassis Asset Tag:")%></b></td> 
+         <td><%=Replace(MValidate.RADIVATE["INEX_MOTHERBOARD_VENDOR11"], "Chassis Asset Tag:", "")%></td> 
+        </tr> 
+        <tr> 
+         <td><b><%Print ("Product Name:")%></b></td> 
+         <td><%=Replace(MValidate.RADIVATE["INEX_MOTHERBOARD_VENDOR12"], "Product Name:", "")%></td> 
+        </tr> 
+        <tr> 
+         <td><b><%Print ("Product Version:")%></b></td> 
+         <td><%=Replace(MValidate.RADIVATE["INEX_MOTHERBOARD_VENDOR13"], "Product Version:", "")%></td> 
+        </tr> 
+      </tbody>
+    </table>
+  </div>
+</div>

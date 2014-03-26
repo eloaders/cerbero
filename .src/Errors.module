@@ -1,0 +1,5 @@
+' Gambas module file
+
+Public Sub Valid_Not_Found()
+  Print File.Load("Error/Validate_Not_Found.html")
+End

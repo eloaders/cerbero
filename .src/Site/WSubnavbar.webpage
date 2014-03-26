@@ -1,0 +1,42 @@
+<div class="subnavbar">
+  <div class="subnavbar-inner">
+    <div class="container">
+      <ul class="mainnav">
+        <li>
+          <a href="inex.r">
+            <i class="icon-dashboard"></i>
+            <span><%Print ("Upload")%></span>
+          </a>
+        </li>
+        <li>
+          <a href="inex.r?added">
+            <i class="icon-list-alt"></i>
+            <span><%Print ("Latest added")%></span>
+          </a>
+        </li>
+        <li>
+          <a href="http://i-nex.linux.pl/bbs/categories/i-nex-validate">
+            <i class="icon-comment"></i>
+            <span><%Print ("Forum")%></span>
+          </a>
+        </li>
+        <li>
+          <a href="http://i-nex.linux.pl">
+            <i class="icon-home"></i>
+            <span><%Print ("I-Nex Homepage")%></span>
+          </a>
+        </li>
+        <li>
+          <a href="http://i-nex.linux.pl/install/">
+            <i class="icon-download-alt"></i>
+            <span><%Print ("Install I-Nex")%></span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- /container --> 
+  </div>
+  <!-- /subnavbar-inner --> 
+</div>
+<!-- /subnavbar -->
+<script src='http://app.sugester.pl/i-nex/widget.js' type='text/javascript'></script>

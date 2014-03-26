@@ -1,0 +1,42 @@
+' Gambas module file
+
+Export
+Create Static
+Public data As Stream
+Public MaxCount As Integer
+Public sLine As String
+Public Addeds As New String[]
+Public DDATE_NOW As String
+Public PIPKA As Collection
+Public LATEST_ADDED As Collection = [("VALD"): (Rnd(200))]
+Public PIPKA_CACHE As String
+Public Sub Added()
+Dim All As Integer
+  DDATE_NOW = Date(Now)
+  DDATE_NOW = Replace(DDATE_NOW, "/", "")
+  MBrand.Brand_TEXT = "Latest Added - I-Nex - Cerbero"
+  MBrand.Brand_URL = Global.WEBSITE_ROOT_URL_HTTP
+  If IsNull(Request.Get["added"]) = False And Len(Request.Get["added"]) = 8 Then
+    DDATE_NOW = Request.Get["added"]
+  Endif
+  If Exist(Global.WHEREIS_SITE_ROOT & "/ValidDB/" & DDATE_NOW & "") = True Then
+    data = Shell "ls --sort t " & Global.WHEREIS_SITE_ROOT & "/ValidDB/" & DDATE_NOW & " | tr ' ' '\n'" For Input
+
+      While Not Eof(data)
+           Line Input #data, sLine
+           sLine = Replace(sLine, ".json", "")
+           Addeds.Add(sLine, MaxCount)
+      Wend
+      For All = 0 To Addeds.Count - 1
+        PIPKA = JSON.Decode(File.Load(Global.WHEREIS_SITE_ROOT & "/ValidDB/" & DDATE_NOW & "/" & Addeds[All] & ".json"))
+        PIPKA.Add(DDATE_NOW & Addeds[All], "ID")
+        LATEST_ADDED.Add(PIPKA, All)
+      Next
+      LATEST_ADDED.Remove("VALD")
+    Close #data
+    WLatestAdded.Render
+  Else
+    WLatestAdded.Render
+  Endif
+End
+

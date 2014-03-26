@@ -1,0 +1,34 @@
+' Gambas module file
+
+Public Sub Delete()
+  Dim USER_DATA As Collection
+  Dim Dict As New Collection
+  Dim CPU_DATA As Collection
+  Dim Element As String
+
+    If IsNull(Request.Cookies["__ursa"]) = False Then
+
+        If Exist(Global.WHEREIS_SITE_ROOT & "/Users/" & Request.Cookies["__ursa"] & "") Then
+
+          USER_DATA = JSON.Decode(File.Load(Global.WHEREIS_SITE_ROOT & "/Users/" & Request.Cookies["__ursa"] & "/Data.json"))
+
+          If USER_DATA["SECRET_KEY"] = Request.Cookies["__apix"] Then
+            Dict = JSON.Decode(File.Load(Global.WHEREIS_SITE_ROOT & "/Users/" & Request.Cookies["__ursa"] & "/list.json"))
+            For Each Element In Dict
+              If Element = Request.Get["delvalidate"] Then
+                Kill Global.WHEREIS_SITE_ROOT & "/ValidDB/" & Left$(Request.Get["delvalidate"], - CInt(Len(Right$(Request.Get["delvalidate"], -8)))) & "/" & Right$(Request.Get["delvalidate"], -8) & ".json"
+                Kill Global.WHEREIS_SITE_ROOT & "/ValidScr/" & Left$(Request.Get["delvalidate"], - CInt(Len(Right$(Request.Get["delvalidate"], -8)))) & "/" & Right$(Request.Get["delvalidate"], -8) & ".png"
+                Dict.Remove(Right$(Request.Get["delvalidate"], -8))
+                File.Save(Global.WHEREIS_SITE_ROOT & "/Users/" & Request.Cookies["__ursa"] & "/list.json", JSON.Encode(Dict))
+              Endif
+            Next
+
+          Endif
+
+        Endif
+
+    Endif
+    Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & "/inex.r?profile")
+
+End
+

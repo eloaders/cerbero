@@ -1,0 +1,12 @@
+' Gambas module file
+
+Public Sub Remove_Cook()
+  If IsNull(Request.Cookies["__ursa"]) = False Then
+    If IsNull(Request.Cookies["__apix"]) = False Then
+    Response.RemoveCookie("__apix", "", Global.WEBSITE_ROOT_URL, "/")
+    Response.RemoveCookie("__ursa", "", Global.WEBSITE_ROOT_URL, "/")
+    Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & Application.Root)
+    Endif
+  Endif
+  Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & Application.Root)
+End

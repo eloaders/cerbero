@@ -1,0 +1,57 @@
+' Gambas module file
+
+Public Sub Return_URL(Distname As String, DE As String) As String
+Dim URL As String = Global.WEBSITE_ROOT_URL_HTTP & "/Distlogos/"
+ 
+ If Distname Like "*Ubuntu*" And DE Like "*KDE*" Then
+ Return URL & "kubuntu.png"
+ Endif
+ If Distname Like "*Ubuntu*" And DE Like "*XFCE*" Then
+ Return URL & "xubuntu.png"
+ Endif
+ If Distname Like "*Mint*" And DE Like "*KDE*" Then
+ Return URL & "Mint/linux_mint_KDE_BIG_sticker.png"
+ Endif
+ If Distname Like "*Mint*" And DE Like "*LXDE*" Then
+ Return URL & "Mint/linux_mint_KDE_BIG_sticker.png"
+ Endif
+ If Distname Like "*Mint*" And DE Like "*Fluxbox*" Then
+ Return URL & "Mint/linux_mint_Fluxbox_BIG_sticker.png"
+ Endif
+ If Distname Like "*Mint*" And DE Like "*XFCE*" Then
+ Return URL & "Mint/linux_mint_XFCE_Big_sticker.png"
+ Endif
+ 
+ Select Case Distname
+  Case Like "*Mint*"
+  Return URL & "mint.png"
+  Case Like "*Ubuntu*"
+  Return URL & "ubuntu.png"
+  Case Like "*xUbuntu*"
+  Return URL & "xubuntu.png"
+  Case Like "*SUSE*"
+  Return URL & "opensuse.png"
+  Case Like "*Manjaro*"
+  Return URL & "manjaro.png"
+  Case Like "*Fedora*"
+  Return URL & "fedora.png"
+  Case Like "*Debian*"
+  Return URL & "debian.png"
+  Case Like "*Arch Linux*"
+  Return URL & "archlinux.png"
+  Case Like "*Sabayon*"
+  Return URL & "sabayon.png"
+  Case Like "*Gentoo*"
+  Return URL & "gentoo.png"
+  Case Like "*Red Hat Linux*"
+  Return URL & "redhat.png"
+  Case Like "*Slackware*"
+  Return URL & "slackware.png"
+  Case Like "*LMDE*"
+  Return URL & "Mint/linux_mint_LMDE_Big_sticker.png"
+  Case Like "*elementary OS*"
+  Return URL & "elementaryos.png"
+  Case Like "*LinuxDeepin*"
+  Return URL & "LinuxDeepin.png"
+ End Select
+ End

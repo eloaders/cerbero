@@ -1,0 +1,159 @@
+<%
+Dim Flags As String[]
+Dim OneFlag As String
+Flags = Split(Replace(MValidate.RADIVATE["CPU_FLAGS"], "Flags:", ""), ",", "'")
+%>
+<div class="widget widget-nopad">
+  <div class="widget-header"> <i class="icon-wrench"></i>
+    <h3><%=("CPU Specifications")%></h3>
+  </div>
+  <div class="widget-content">
+    <div class="widget big-stats-container">
+      <div class="widget-content">
+        <table class="table table-bordered">
+        <tbody> 
+          <tr>
+            <td><img src="<%=Global.WEBSITE_ROOT_URL_HTTP%>/LOGOS/<%=MValidate.RADIVATE["CPU_LOGO"]%>" alt="thumbnail"></td> 
+            <td><button type="button" class="btn btn-primary btn-large"><%=MValidate.RADIVATE["CPU_VENDOR"]%></button></td> 
+          </tr> 
+        <tr> 
+          <td><b><%Print ("Model:")%></b></td> 
+          <td><%=MValidate.RADIVATE["CPU_NAME"]%></td> 
+        </tr> 
+        <tr>
+          <td><b><%Print ("CPU Clock:")%></b></td> 
+          <td><%=MValidate.RADIVATE["CPU_SPEED"]%></td> 
+        </tr>
+        <tr>
+          <td><b><%Print ("CPU Clock By OS:")%></b></td> 
+          <td><%=MValidate.RADIVATE["CPUID"]["CPU_CLOCK_BY_OS"]%> MHz</td> 
+        </tr>
+        <tr>
+          <td><b><%Print ("CPU Clock By IC:")%></b></td> 
+          <td><%=MValidate.RADIVATE["CPUID"]["CPU_CLOCK_BY_IC"]%> MHz</td> 
+        </tr>
+        <tr>
+          <td><b><%Print ("CPU Clock Measure:")%></b></td> 
+          <td><%=MValidate.RADIVATE["CPUID"]["CPU_CLOCK_MEASURE"]%> MHz</td> 
+        </tr>
+        <tr>
+          <td><b><%Print ("CPU Mark TSC:")%></b></td> 
+          <td><%=MValidate.RADIVATE["CPUID"]["MARK_TSC"]%></td> 
+        </tr>
+         <tr>
+          <td><b><%Print ("Integrated GPU:")%></b></td> 
+          <td><%=Replace(MValidate.RADIVATE["CPU_INTEGRATED_GRAPH"], "Integrated GPU:", "")%></td> 
+        </tr>
+        <tr>
+         <td><b><%Print ("Family:")%></b></td> 
+         <td><span class="badge"><%=Replace(MValidate.RADIVATE["CPU_FAMILY"], "Family:", "")%></span></td> 
+        </tr> 
+        <tr> 
+         <td><b><%Print ("Model:")%></b></td> 
+         <td><span class="badge"><%=Replace(MValidate.RADIVATE["CPU_MODEL"], "Model:", "")%></span></td> 
+        </tr> 
+        <tr> 
+         <td><b><%Print ("Stepping:")%></b></td> 
+         <td><span class="badge"><%=Replace(MValidate.RADIVATE["CPU_STEPPING"], "Stepping:", "")%></span></td> 
+        </tr> 
+        <tr> 
+         <td><b><%Print ("Cores:")%></b></td> 
+         <td><span class="badge"><%=Replace(MValidate.RADIVATE["CPU_CORES"], "Cores:", "")%></span></td> 
+        </tr> 
+        <tr> 
+         <td><b><%Print ("Phy ID:")%></b></td> 
+         <td><span class="badge"><%=Replace(MValidate.RADIVATE["CPU_PHY"], "Phy id:", "")%></span></td> 
+        </tr> 
+        <tr> 
+         <td><b><%Print ("Adress sizes:")%></b></td> 
+         <td><%=Replace(MValidate.RADIVATE["CPU_ADRE_SIZES"], "Address sizes:", "")%></td> 
+        </tr> 
+        <tr> 
+          <td><b><%Print ("Bogomips:")%></b></td> 
+          <td><span class="badge"><%=Replace(MValidate.RADIVATE["CPU_BOGOMIPS"], "Bogomips:", "")%></span></td> 
+        </tr> 
+        <tr> 
+         <td><b><%Print ("Flags:")%></b></td> 
+         <td>
+         <%For Each OneFlag In Flags%>
+         <%Print "<span class=\"badge\">"; OneFlag; "</span> ";%>
+         <%Next%>
+          <a href="#myModal" role="button" class="btn" data-toggle="modal"><%Print ("More")%></a> 
+         </td> 
+        </tr> 
+        <tr> 
+          <td><b><%Print ("x86 64-Bit Extensions:")%></b></td> 
+          <td><%=MValidate.RADIVATE["CPU_X86_64"]%></td>
+        </tr>
+        <tr> 
+          <td><b><%Print ("Hardware Virtualization:")%></b></td> 
+          <td><%=MValidate.RADIVATE["CPU_HW_VIRT"]%></td>
+        </tr>
+        
+        <%If MValidate.RADIVATE["CPU_VENDOR"] Like "*intel*" Then%>
+        <tr>
+          <td><b><%Print ("Hyper Threading:")%></b></td>
+          <td><%=MValidate.RADIVATE["CPU_HT"]%></td>
+        </tr>
+        <%Endif%>
+        
+        <%If MValidate.RADIVATE["CPU_VENDOR"] Like "*amd*" Then%>
+        <tr>
+          <td><b><%Print ("Hyper Transport:")%></b></td>
+          <td><%=MValidate.RADIVATE["CPU_HT"]%></td>
+        </tr>
+        <%Endif%>
+        
+        <%If IsNull(Replace(MValidate.RADIVATE["CPU_POWER_MANGAMENT"], "Power mangament: ", "")) = False Then%>
+        <tr> 
+         <td><b><%Print ("Power management:")%></b></td> 
+         <td><span class="label label-info"><%=Replace(MValidate.RADIVATE["CPU_POWER_MANGAMENT"], "Power mangament:", "")%></span></td> 
+        </tr>
+        <%Endif%>
+        
+        <tr> 
+         <td><b><%Print ("Cache L1 Data:")%></b></td> 
+         <td><span class="label label-info"><%=Replace(MValidate.RADIVATE["CPU_CACHE_L1D"], "L1 Data:", "")%></span></td> 
+        </tr> 
+        <tr> 
+         <td><b><%Print ("Cache L1 Instruction:")%></b></td> 
+         <td><span class="label label-info"><%=Replace(MValidate.RADIVATE["CPU_CACHE_L1I"], "L1 instruction:", "")%></span></td> 
+        </tr> 
+        <tr> 
+         <td><b><%Print ("Cache L1 Assoc:")%></b></td> 
+         <td><span class="label label-info"><%=MValidate.RADIVATE["CPUID"]["L1_ASSOC"]%></span></td> 
+        </tr>
+        <tr> 
+         <td><b><%Print ("Cache L2:")%></b></td> 
+         <td><span class="label label-info"><%=Replace(MValidate.RADIVATE["CPU_CACHE_L2"], "Level 2:", "")%></span></td> 
+        </tr> 
+        <tr> 
+         <td><b><%Print ("Cache L2 Assoc:")%></b></td>
+         <td><span class="label label-info"><%=MValidate.RADIVATE["CPUID"]["L2_ASSOC"]%></span></td> 
+        </tr> 
+        <tr> 
+         <td><b><%Print ("Cache L2 Cacheline:")%></b></td> 
+         <td><span class="label label-info"><%=MValidate.RADIVATE["CPUID"]["L2_CACHELINE"]%></span></td> 
+        </tr> 
+        <tr> 
+         <td><b><%Print ("Cache L3:")%></b></td> 
+         <td><span class="label label-info"><%=Replace(MValidate.RADIVATE["CPU_CACHE_L3"], "Level 3:", "")%></span></td> 
+        </tr> 
+        <tr> 
+         <td><b><%Print ("Cache L3 Assoc:")%></b></td> 
+         <td><span class="label label-info"><%=MValidate.RADIVATE["CPUID"]["L3_ASSOC"]%></span></td> 
+        </tr> 
+        <tr> 
+         <td><b><%Print ("Cache L3 Cacheline:")%></b></td> 
+         <td><span class="label label-info"><%=MValidate.RADIVATE["CPUID"]["L3_CACHELINE"]%></span></td> 
+        </tr> 
+        <tr> 
+         <td><b><%Print ("SSE Size:")%></b></td> 
+         <td><span class="label label-info"><%=MValidate.RADIVATE["CPUID"]["SSE_SIZE"]%></span></td> 
+        </tr> 
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+</div>

@@ -1,0 +1,116 @@
+' Gambas module file
+
+Public Sub CHProf()
+  Dim USER_DATA As Collection
+  Dim Dict As New Collection
+  Dim CPU_DATA As Collection
+  Dim Element As String
+  
+    If IsNull(Request.Cookies["__ursa"]) = False Then
+
+        If Exist(Global.WHEREIS_SITE_ROOT & "/Users/" & Request.Cookies["__ursa"] & "") Then
+
+          USER_DATA = JSON.Decode(File.Load(Global.WHEREIS_SITE_ROOT & "/Users/" & Request.Cookies["__ursa"] & "/Data.json"))
+
+          If USER_DATA["SECRET_KEY"] = Request.Cookies["__apix"] Then
+
+            If Request.Post.Exist("zpassword1") Then
+              If (Base64$(Digest["sha256"](Request.Post["zpassword1"]))) = USER_DATA["CERBERO_USER_PASSWORD"] Then
+                If IsNull(Request.Post["zpassword2"]) = False Then
+                  If Request.Post["zpassword2"] = Request.Post["zpassword3"] Then
+                    If CFloat(Len(Request.Post["zpassword2"])) >= 7 Then
+
+                      USER_DATA.Remove("CERBERO_USER_PASSWORD")
+                      USER_DATA.Add(Base64$(Digest["sha256"](Request.Post["zpassword3"])), "CERBERO_USER_PASSWORD")
+                      File.Save(Global.WHEREIS_SITE_ROOT & "/Users/" & Request.Cookies["__ursa"] & "/Data.json", JSON.Encode(USER_DATA))
+
+                    Endif
+                  Endif
+                Endif
+              Endif
+            Endif
+
+            If Request.Post.Exist("zdisplayname") Then
+              If Len(Request.Post["zdisplayname"]) >= 4 Then
+
+                USER_DATA.Remove("CERBERO_DISPLAYNAME")
+                USER_DATA.Add(Request.Post["zdisplayname"], "CERBERO_DISPLAYNAME")
+                File.Save(Global.WHEREIS_SITE_ROOT & "/Users/" & Request.Cookies["__ursa"] & "/Data.json", JSON.Encode(USER_DATA))
+
+              Endif
+              Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & "/inex.r?profile")
+            Endif
+
+            If Request.Post.Exist("zemail") Then
+              If RegExp.Match(Request.Post["zemail"], "[a-zA-z]") = True Then
+                If RegExp.Match(Request.Post["zemail"], "@") = True Then
+                  If Global.CheckEMail(Request.Post["zemail"]) = True Then
+
+                  USER_DATA.Remove("CERBERO_USER_EMAIL")
+                  USER_DATA.Add(Request.Post["zemail"], "CERBERO_USER_EMAIL")
+                  File.Save(Global.WHEREIS_SITE_ROOT & "/Users/" & Request.Cookies["__ursa"] & "/Data.json", JSON.Encode(USER_DATA))
+
+                  Endif
+                  Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & "/inex.r?profile")
+                Endif
+                Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & "/inex.r?profile")
+              Endif
+              Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & "/inex.r?profile")
+            Endif
+
+            If Request.Post.Exist("zhomepage") Then
+              If Request.Post["zhomepage"] Begins "http://" Then
+
+                USER_DATA.Remove("CERBERO_USER_HOMEPAGE")
+                USER_DATA.Add(Request.Post["zhomepage"], "CERBERO_USER_HOMEPAGE")
+                File.Save(Global.WHEREIS_SITE_ROOT & "/Users/" & Request.Cookies["__ursa"] & "/Data.json", JSON.Encode(USER_DATA))
+
+              Endif
+              Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & "/inex.r?profile")
+            Endif
+            
+            If Request.Post.Exist("facebookusername") Then
+                USER_DATA.Remove("CERBERO_USER_FACEBOOK")
+                USER_DATA.Add(Request.Post["facebookusername"], "CERBERO_USER_FACEBOOK")
+                File.Save(Global.WHEREIS_SITE_ROOT & "/Users/" & Request.Cookies["__ursa"] & "/Data.json", JSON.Encode(USER_DATA))
+            Endif
+            
+            If Request.Post.Exist("googleusername") Then
+                USER_DATA.Remove("CERBERO_USER_GOOGLE")
+                USER_DATA.Add(Request.Post["googleusername"], "CERBERO_USER_GOOGLE")
+                File.Save(Global.WHEREIS_SITE_ROOT & "/Users/" & Request.Cookies["__ursa"] & "/Data.json", JSON.Encode(USER_DATA))
+            Endif
+            
+            If Request.Post.Exist("twitterusername") Then
+                USER_DATA.Remove("CERBERO_USER_TWITTER")
+                USER_DATA.Add(Request.Post["twitterusername"], "CERBERO_USER_TWITTER")
+                File.Save(Global.WHEREIS_SITE_ROOT & "/Users/" & Request.Cookies["__ursa"] & "/Data.json", JSON.Encode(USER_DATA))
+            Endif
+            
+            If Request.Post.Exist("githubusername") Then
+                USER_DATA.Remove("CERBERO_USER_GITHUB")
+                USER_DATA.Add(Request.Post["githubusername"], "CERBERO_USER_GITHUB")
+                File.Save(Global.WHEREIS_SITE_ROOT & "/Users/" & Request.Cookies["__ursa"] & "/Data.json", JSON.Encode(USER_DATA))
+            Endif
+            
+            If Request.Post.Exist("authorbio") Then
+              If IsNull(Request.Post["authorbio"]) = False Then
+
+                USER_DATA.Remove("CERBERO_USER_AUTHOR_BIO")
+                USER_DATA.Add(Request.Post["authorbio"], "CERBERO_USER_AUTHOR_BIO")
+                File.Save(Global.WHEREIS_SITE_ROOT & "/Users/" & Request.Cookies["__ursa"] & "/Data.json", JSON.Encode(USER_DATA))
+
+              Endif
+              Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & "/inex.r?profile")
+            Endif
+            
+            Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & "/inex.r?profile")
+          Endif
+        Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & "/inex.r?profile")
+        Endif
+    Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & "/inex.r?profile")
+    Endif
+
+    Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & "/inex.r?profile")
+
+End
