@@ -33,6 +33,7 @@
         <div class="widget-content">
         <h1><% Print ("Team") %></h1>
           <div class='kento-team'>
+          
             <div class='single-member' id='style-4'>
               <div class='single-member-thumbnail'>
                 <img alt='' src='<%=Global.GravatarAV("eloaders@linux.pl", "100")%>' class='avatar avatar-100 photo' height='100' width='100' />
@@ -45,7 +46,8 @@
                 <div class='googleplus sl'><a href='https://plus.google.com/u/0/103294167787784292101' target="_blank"></a></div>
               </div>
               <a href="http://i-nex.linux.pl/" target="_blank"><button class="btn btn-github-alt"><i class="icon-external-link"></i></button></a>
-          </div>
+            </div>
+          
           <div class='single-member' id='style-4'>
             <div class='single-member-thumbnail'>
               <img alt='' src='http://0.gravatar.com/avatar/bfe816517c2d807ed89e5324507ecbf4' class='avatar avatar-100 photo' height='100' width='100' />
@@ -58,6 +60,7 @@
             </div>
             <a href="http://tomaszprzybyl-apel.blogspot.com/" target="_blank"><button class="btn btn-github-alt"><i class="icon-external-link"></i></button></a>
           </div>
+          
           <div class='single-member' id='style-4'>
             <div class='single-member-thumbnail'>
               <img alt='' src='<%=Global.GravatarAV("michal.olber@osworld.pl", "100")%>' class='avatar avatar-100 photo' height='100' width='100' />
@@ -70,6 +73,38 @@
             </div>
             <a href="http://osworld.pl/" target="_blank"><button class="btn btn-github-alt"><i class="icon-external-link"></i></button></a>
           </div>
+          
+          <div class='single-member' id='style-4'>
+            <div class='single-member-thumbnail'>
+              <img alt='' src='https://build.opensuse.org/user/icon/DarkSS' class='avatar avatar-100 photo' height='100' width='100' />
+            </div>
+            <div class='single-member-name'>Dmitriy Perlow</div>
+            <div class='single-member-position'>Bug Reports, OpenSUSE OBS Maintainer and Fedora rpm's</div>
+            <a href="https://build.opensuse.org/user/show/DarkSS" target="_blank"><button class="btn btn-github-alt"><i class="icon-external-link"></i></button></a>
+          </div>
+          
+          <div class='single-member' id='style-4'>
+            <div class='single-member-thumbnail'>
+              <img alt='' src='<%=Global.GravatarAV("netbit73@gmail.com", "100")%>' class='avatar avatar-100 photo' height='100' width='100' />
+            </div>
+            <div class='single-member-name'>Marcin Mach</div>
+            <div class='single-member-position'>Bash consultant</div>
+            <a href="http://www.netext73.pl/" target="_blank"><button class="btn btn-github-alt"><i class="icon-external-link"></i></button></a>
+          </div>
+          
+          <div class='single-member' id='style-4'>
+            <div class='single-member-thumbnail'>
+              <img alt='' src='http://a.disquscdn.com/uploads/users/66/1122/avatar92.jpg' class='avatar avatar-100 photo' height='100' width='100' />
+            </div>
+            <div class='single-member-name'>Tomasz Miś</div>
+            <div class='single-member-position'>Promoting</div>
+            <div class='social-links'>
+              <div class='facebook sl'><a href='https://www.facebook.com/tomasz.mis.94' target="_blank"></a></div>
+              <div class='googleplus sl'><a href='https://plus.google.com/108802061876127476645' target="_blank"></a></div>
+            </div>
+            <a href="http://www.netext73.pl/" target="_blank"><button class="btn btn-github-alt"><i class="icon-external-link"></i></button></a>
+          </div>
+          
         </div>
         </div> <!-- /widget-content -->
       </div> <!-- /widget -->  
