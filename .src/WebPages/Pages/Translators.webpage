@@ -39,12 +39,13 @@
                 <img alt='' src='<%=Global.GravatarAV("eloaders@linux.pl", "100")%>' class='avatar avatar-100 photo' height='100' width='100' />
               </div>
               <div class='single-member-name'>Michał Głowienka</div>
-              <div class='single-member-position'>Polish Translations</div>
+              <div class='single-member-position'>English & Polish Translations</div>
               <div class='social-links'>
                 <div class='facebook sl'><a href='https://www.facebook.com/mpg4.5'></a></div>
                 <div class='twitter sl'><a href='https://www.twitter.com/eloaders'></a></div>
                 <div class='googleplus sl'><a href='https://plus.google.com/u/0/103294167787784292101'></a></div>
               </div>
+              <a href="http://i-nex.linux.pl/" target="_blank"><button class="btn btn-github-alt"><i class="icon-external-link"></i></button></a>
           </div>
           <div class='single-member' id='style-4'>
             <div class='single-member-thumbnail'>
@@ -56,6 +57,7 @@
               <div class='facebook sl'><a href='https://www.facebook.com/fademind'></a></div>
               <div class='googleplus sl'><a href='http://profiles.google.com/115432477407502403285'></a></div>
             </div>
+            <a href="http://tomaszprzybyl-apel.blogspot.com/" target="_blank"><button class="btn btn-github-alt"><i class="icon-external-link"></i></button></a>
           </div>
           <div class='single-member' id='style-4'>
             <div class='single-member-thumbnail'>
@@ -67,9 +69,28 @@
               <div class='facebook sl'><a href='https://www.facebook.com/michal.olber'></a></div>
               <div class='googleplus sl'><a href='https://plus.google.com/u/0/+MichalOlber'></a></div>
             </div>
+            <a href="http://osworld.pl/" target="_blank"><button class="btn btn-github-alt"><i class="icon-external-link"></i></button></a>
+          </div>
+          <div class='single-member' id='style-4'>
+            <div class='single-member-thumbnail'>
+              <img alt='' src='<%=Global.GravatarAV("dmitri.s93@gmail.com", "100")%>' class='avatar avatar-100 photo' height='100' width='100' />
+            </div>
+            <div class='single-member-name'>Dmitry Serov</div>
+            <div class='single-member-position'>Russian Translations</div>
+            <a href="https://launchpad.net/~dmitri-s93" target="_blank"><button class="btn btn-github-alt"><i class="icon-external-link"></i></button></a>
+          </div>
+          <div class='single-member' id='style-4'>
+            <div class='single-member-thumbnail'>
+              <img alt='' src='<%=Global.GravatarAV("radwanski.michal@outlook.com", "100")%>' class='avatar avatar-100 photo' height='100' width='100' />
+            </div>
+            <div class='single-member-name'>Michał Radwański</div>
+            <div class='single-member-position'>French Translations</div>
+            <div class='social-links'>
+              <div class='facebook sl'><a href='https://www.facebook.com/profile.php?id=100005982613868'></a></div>
+            </div>
+            <a href="https://launchpad.net/~radwanski-michal-a" target="_blank"><button class="btn btn-github-alt"><i class="icon-external-link"></i></button></a>
           </div>
         </div>
-        
         </div> <!-- /widget-content -->
       </div> <!-- /widget -->  
     </div> <!-- /span10 -->
