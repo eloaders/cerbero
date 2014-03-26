@@ -43,8 +43,8 @@ Dim All As Integer
           <ul class="pagination">
           <%Try Shell "ls " & Global.WHEREIS_SITE_ROOT & "/ValidDB/" Wait To CPUusage%>
           <%Try CPUusageLines = Split(CPUusage, "\n")%>  
-          <%For All = 1 To CPUusageLines.Count - 3%>
-          <li><a href="inex.r?added=<%= CPUusageLines[All]%>"><%= CString(All)%></a></li>
+          <%For All = 1 To CPUusageLines.Count - 2%>
+          <li><a href="inex.r?added=<%= CPUusageLines[All]%>&str=<%=CString(All)%>"><%= CString(All)%></a></li>
           <%Next%>
           <li><a href="inex.r?added">&raquo;</a></li>
           </ul>
