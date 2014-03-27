@@ -51,6 +51,8 @@ Dim URL As String = Global.WEBSITE_ROOT_URL_HTTP & "/Distlogos/"
   Return URL & "Mint/linux_mint_LMDE_Big_sticker.png"
   Case Like "*elementary OS*"
   Return URL & "elementaryos.png"
+  Case Like "*elementaryOS*"
+  Return URL & "elementaryos.png"
   Case Like "*LinuxDeepin*"
   Return URL & "LinuxDeepin.png"
  End Select
