@@ -46,20 +46,6 @@ msgstr ""
 msgid "Account - I-Nex - Cerbero"
 msgstr ""
 
-#: DProfileSubnavbar.webpage:7 DUploadSubnavbar.webpage:8 WSubnavbar.webpage:7
-msgid "Upload"
-msgstr ""
-
-#: DProfileSubnavbar.webpage:13 DUploadSubnavbar.webpage:16
-#: WSubnavbar.webpage:13
-msgid "Latest added"
-msgstr ""
-
-#: DProfileSubnavbar.webpage:19 DUploadSubnavbar.webpage:23
-#: WSubnavbar.webpage:19
-msgid "Forum"
-msgstr ""
-
 #: DSignupHead.webpage:4
 msgid "Signup - I-Nex - Cerbero"
 msgstr ""
@@ -96,22 +82,34 @@ msgstr ""
 msgid "The need for many people to help. You can also help."
 msgstr ""
 
-#: DUpload.webpage:57
+#: DUpload.webpage:55
 msgid "I-Nex Cerbero"
 msgstr ""
 
-#: DUpload.webpage:58
+#: DUpload.webpage:56
 msgid ""
 "The best way to publication of the report is to directly send it using the I-"
 "Nex. "
 msgstr ""
 
-#: DUpload.webpage:59
+#: DUpload.webpage:57
 msgid "Register on the site, get your key and user name. "
 msgstr ""
 
-#: DUpload.webpage:60
+#: DUpload.webpage:58
 msgid "Enter all the data in the I-Nex and then send the report."
+msgstr ""
+
+#: DUploadSubnavbar.webpage:8 WSubnavbar.webpage:7
+msgid "Upload"
+msgstr ""
+
+#: DUploadSubnavbar.webpage:16 WSubnavbar.webpage:13
+msgid "Latest added"
+msgstr ""
+
+#: DUploadSubnavbar.webpage:23 WSubnavbar.webpage:19
+msgid "Forum"
 msgstr ""
 
 #: DUploadSubnavbar.webpage:29 WSubnavbar.webpage:25

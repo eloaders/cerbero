@@ -41,7 +41,7 @@ src="//pagead2.googlesyndication.com/pagead/show_ads.js">
 <div class="container">
   <div class="row">
   
-    <div class="span6">
+    <div class="span4">
       <div id="target-1" class="widget">
         <div class="widget-content">
         <h1><% Print ("Beta") %></h1>
@@ -49,16 +49,37 @@ src="//pagead2.googlesyndication.com/pagead/show_ads.js">
           <p><% Print ("Work on the introduction of new features. ")%></p>
           <p><% Print ("The need for many people to help. You can also help.")%></p>
         </div> <!-- /widget-content -->
-      </div> <!-- /widget -->  
-    </div> <!-- /span6 -->
-    
-    <div class="span6">
+      </div> <!-- /widget -->
+      
       <div id="target-1" class="widget">
         <div class="widget-content">
         <h1><% Print ("I-Nex Cerbero") %></h1>
           <p><% Print ("The best way to publication of the report is to directly send it using the I-Nex. ")%></p>
           <p><% Print ("Register on the site, get your key and user name. ")%></p>
           <p><% Print ("Enter all the data in the I-Nex and then send the report.")%></p>
+        </div> <!-- /widget-content -->
+      </div> <!-- /widget -->  
+    </div> <!-- /span6 -->
+    
+    <div class="span4">
+      <div id="target-1" class="widget">
+        <div class="widget-content">
+          <div class="media"> 
+            <a class="thumbnail"> 
+              <img class="media-object" src="http://i-nex.linux.pl/wp-content/uploads/inexcerb.png" alt="thumbnail"> 
+            </a> 
+          </div> 
+        </div> <!-- /widget-content -->
+      </div> <!-- /widget -->  
+    </div> <!-- /span6 -->
+    
+    <div class="span4">
+      <div id="target-1" class="widget">
+        <div class="widget-content">
+          <div id="recentcomments" class="dsq-widget">
+            <script type="text/javascript" src="http://cerbero.disqus.com/recent_comments_widget.js?num_items=5&hide_avatars=0&avatar_size=32&excerpt_length=200"></script>
+          </div>
+          <a href="http://disqus.com/">Powered by Disqus</a>
         </div> <!-- /widget-content -->
       </div> <!-- /widget -->  
     </div> <!-- /span6 -->

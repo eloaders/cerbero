@@ -55,7 +55,7 @@ Public Sub User_Profile()
           Print "</div> <!-- /navbar -->"
       
           'Print File.Load("Profile/Subnavbar.html")
-          DProfileSubnavbar.Render
+          WSubnavbar.Render
           Print "<div class=\"main\">"
           Print "  <div class=\"main-inner\">"
           Print "    <div class=\"container\">"
