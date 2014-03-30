@@ -1,4 +1,4 @@
-<div class="widget widget-table action-table">
+<div class="widget">
   <div class="widget-header"> <i class="icon-cog"></i>
     <h3><%=("Distribution")%></h3>
   </div>
@@ -7,7 +7,7 @@
     <div class="col-xs-6 col-md-3"> 
       <a class="thumbnail"><img src="<%Print Detect_Dist.Return_URL(MValidate.RADIVATE["DISTRO_VENDOR"], Replace(MValidate.RADIVATE["DISTRO_VENDOR3"], "Desktop environment:", ""))%>" alt="thumbnail"></a> 
     </div>
-      <table class="table table-striped table-bordered">
+      <table class="table table-striped table-bordered"> 
       <tbody> 
         <tr> 
           <td><b><%Print ("Distro Vendor:")%></b></td> 

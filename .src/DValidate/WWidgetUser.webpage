@@ -5,8 +5,9 @@
   <div class="widget-content"> 
     <ul class="messages_layout"> 
       <li class="from_user left"><a href="#" class="avatar"><img src="<%= Global.GravatarAV(MValidate.USER_DATA["CERBERO_USER_EMAIL"], "64") %>"/></a> 
-        <div class="message_wrap"> <span class="arrow"></span> 
-          <div class="info"> <a class="name"><%= MValidate.RADIVATE["SUBMITED_BY"] %></a> <span class="time"><%= MValidate.RADIVATE["DATE_TIME"] %></span> 
+        <div class="message_wrap"><span class="arrow"></span> 
+          <div class="info"> 
+            <a class="name"><%= MValidate.RADIVATE["SUBMITED_BY"] %></a> <span class="time"><%= MValidate.RADIVATE["DATE_TIME"] %></span> 
           </div> 
           <div class="text"><%= MValidate.USER_DATA["CERBERO_USER_AUTHOR_BIO"] %></div> 
           </div> 

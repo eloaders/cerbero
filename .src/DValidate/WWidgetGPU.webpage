@@ -1,4 +1,4 @@
-<div class="widget widget-nopad">
+<div class="widget">
   <div class="widget-header"> <i class="icon-facetime-video"></i>
     <h3><%Print ("GPU")%></h3>
   </div>
@@ -9,7 +9,7 @@
         <img src="<%=Global.WEBSITE_ROOT_URL_HTTP & "/Karta_graficzna/" & MValidate.RADIVATE["GPU_LOGO"]%>" alt="thumbnail"> 
       </a> 
     </div>
-      <table class="table table-bordered">
+      <table class="table table-striped table-bordered"> 
       <tbody> 
         <tr> 
          <td><b><%Print ("Model:")%></b></td> 

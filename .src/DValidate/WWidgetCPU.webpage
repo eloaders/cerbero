@@ -10,7 +10,7 @@ Flags = Split(Replace(MValidate.RADIVATE["CPU_FLAGS"], "Flags:", ""), ",", "'")
   <div class="widget-content">
     <div class="widget big-stats-container">
       <div class="widget-content">
-        <table class="table table-bordered">
+        <table class="table table-striped table-bordered"> 
         <tbody> 
           <tr>
             <td><img src="<%=Global.WEBSITE_ROOT_URL_HTTP%>/LOGOS/<%=MValidate.RADIVATE["CPU_LOGO"]%>" alt="thumbnail"></td> 
@@ -71,16 +71,23 @@ Flags = Split(Replace(MValidate.RADIVATE["CPU_FLAGS"], "Flags:", ""), ",", "'")
         <tr> 
           <td><b><%Print ("Bogomips:")%></b></td> 
           <td><span class="badge"><%=Replace(MValidate.RADIVATE["CPU_BOGOMIPS"], "Bogomips:", "")%></span></td> 
-        </tr> 
+        </tr>
         <tr> 
          <td><b><%Print ("Flags:")%></b></td> 
          <td>
          <%For Each OneFlag In Flags%>
+         <%If IsSpace(OneFlag) = False Then%>
          <%Print "<span class=\"badge\">"; OneFlag; "</span> ";%>
+         <%Endif%>
          <%Next%>
-          <a href="#myModal" role="button" class="btn" data-toggle="modal"><%Print ("More")%></a> 
          </td> 
-        </tr> 
+        </tr>
+        </tbody>
+        </table>
+        <span class="arrow">
+        <a href="#myModal" role="button" class="btn" data-toggle="modal"><%Print ("More")%></a> 
+        </span>
+        <table class="table table-striped table-bordered"> 
         <tr> 
           <td><b><%Print ("x86 64-Bit Extensions:")%></b></td> 
           <td><%=MValidate.RADIVATE["CPU_X86_64"]%></td>
@@ -110,48 +117,40 @@ Flags = Split(Replace(MValidate.RADIVATE["CPU_FLAGS"], "Flags:", ""), ",", "'")
          <td><span class="label label-info"><%=Replace(MValidate.RADIVATE["CPU_POWER_MANGAMENT"], "Power mangament:", "")%></span></td> 
         </tr>
         <%Endif%>
+        </tbody>
+        </table>
         
+        <table class="table table-striped table-bordered"> 
         <tr> 
          <td><b><%Print ("Cache L1 Data:")%></b></td> 
          <td><span class="label label-info"><%=Replace(MValidate.RADIVATE["CPU_CACHE_L1D"], "L1 Data:", "")%></span></td> 
-        </tr> 
-        <tr> 
          <td><b><%Print ("Cache L1 Instruction:")%></b></td> 
          <td><span class="label label-info"><%=Replace(MValidate.RADIVATE["CPU_CACHE_L1I"], "L1 instruction:", "")%></span></td> 
-        </tr> 
-        <tr> 
          <td><b><%Print ("Cache L1 Assoc:")%></b></td> 
-         <td><span class="label label-info"><%=MValidate.RADIVATE["CPUID"]["L1_ASSOC"]%></span></td> 
-        </tr>
+         <td><span class="label label-info"><%=MValidate.RADIVATE["CPUID"]["L1_ASSOC"]%></span></td>
+        </tr> 
         <tr> 
          <td><b><%Print ("Cache L2:")%></b></td> 
          <td><span class="label label-info"><%=Replace(MValidate.RADIVATE["CPU_CACHE_L2"], "Level 2:", "")%></span></td> 
-        </tr> 
-        <tr> 
          <td><b><%Print ("Cache L2 Assoc:")%></b></td>
-         <td><span class="label label-info"><%=MValidate.RADIVATE["CPUID"]["L2_ASSOC"]%></span></td> 
-        </tr> 
-        <tr> 
+         <td><span class="label label-info"><%=MValidate.RADIVATE["CPUID"]["L2_ASSOC"]%></span></td>
          <td><b><%Print ("Cache L2 Cacheline:")%></b></td> 
-         <td><span class="label label-info"><%=MValidate.RADIVATE["CPUID"]["L2_CACHELINE"]%></span></td> 
+         <td><span class="label label-info"><%=MValidate.RADIVATE["CPUID"]["L2_CACHELINE"]%></span></td>
         </tr> 
         <tr> 
          <td><b><%Print ("Cache L3:")%></b></td> 
          <td><span class="label label-info"><%=Replace(MValidate.RADIVATE["CPU_CACHE_L3"], "Level 3:", "")%></span></td> 
-        </tr> 
-        <tr> 
          <td><b><%Print ("Cache L3 Assoc:")%></b></td> 
-         <td><span class="label label-info"><%=MValidate.RADIVATE["CPUID"]["L3_ASSOC"]%></span></td> 
-        </tr> 
-        <tr> 
+         <td><span class="label label-info"><%=MValidate.RADIVATE["CPUID"]["L3_ASSOC"]%></span></td>
          <td><b><%Print ("Cache L3 Cacheline:")%></b></td> 
-         <td><span class="label label-info"><%=MValidate.RADIVATE["CPUID"]["L3_CACHELINE"]%></span></td> 
-        </tr> 
+         <td><span class="label label-info"><%=MValidate.RADIVATE["CPUID"]["L3_CACHELINE"]%></span></td>
+        </tr>  
+      </table>
+      <table class="table table-striped table-bordered">
         <tr> 
          <td><b><%Print ("SSE Size:")%></b></td> 
          <td><span class="label label-info"><%=MValidate.RADIVATE["CPUID"]["SSE_SIZE"]%></span></td> 
-        </tr> 
-        </tbody>
+        </tr>
       </table>
     </div>
   </div>

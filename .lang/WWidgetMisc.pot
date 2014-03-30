@@ -18,39 +18,39 @@ msgstr ""
 msgid "Misc"
 msgstr ""
 
-#: WWidgetMisc.webpage:7
+#: WWidgetMisc.webpage:8
 msgid "Total memory:"
 msgstr ""
 
-#: WWidgetMisc.webpage:11
+#: WWidgetMisc.webpage:12
 msgid "Used memory:"
 msgstr ""
 
-#: WWidgetMisc.webpage:15
+#: WWidgetMisc.webpage:16
 msgid "Total swap:"
 msgstr ""
 
-#: WWidgetMisc.webpage:19
+#: WWidgetMisc.webpage:20
 msgid "Used swap:"
 msgstr ""
 
-#: WWidgetMisc.webpage:23
+#: WWidgetMisc.webpage:24
 msgid "Uptime:"
 msgstr ""
 
-#: WWidgetMisc.webpage:24
+#: WWidgetMisc.webpage:25
 msgid "Days: "
 msgstr ""
 
-#: WWidgetMisc.webpage:24
+#: WWidgetMisc.webpage:25
 msgid " Hours: "
 msgstr ""
 
-#: WWidgetMisc.webpage:24
+#: WWidgetMisc.webpage:25
 msgid " Minutes: "
 msgstr ""
 
-#: WWidgetMisc.webpage:24
+#: WWidgetMisc.webpage:25
 msgid " Seconds: "
 msgstr ""
 

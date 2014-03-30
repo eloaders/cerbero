@@ -1,8 +1,9 @@
 <div class="widget"> 
   <div class="widget-header"> <i class="icon-file"></i> 
     <h3><%Print ("Misc")%></h3> 
-  </div> 
-   <table class="table table-striped table-bordered"> 
+  </div>
+  <div class="widget-content">
+  <table class="table table-striped table-bordered"> 
      <tbody> 
        <tr> 
          <td><b><%Print ("Total memory:")%></b></td> 
@@ -26,4 +27,5 @@
        </tr> 
     </tbody> 
   </table>
+  </div>
 </div>

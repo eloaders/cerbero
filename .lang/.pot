@@ -476,55 +476,55 @@ msgstr ""
 msgid "Flags:"
 msgstr ""
 
-#: WWidgetCPU.webpage:80
+#: WWidgetCPU.webpage:87
 msgid "More"
 msgstr ""
 
-#: WWidgetCPU.webpage:84
+#: WWidgetCPU.webpage:91
 msgid "x86 64-Bit Extensions:"
 msgstr ""
 
-#: WWidgetCPU.webpage:88
+#: WWidgetCPU.webpage:95
 msgid "Hardware Virtualization:"
 msgstr ""
 
-#: WWidgetCPU.webpage:94
+#: WWidgetCPU.webpage:101
 msgid "Hyper Threading:"
 msgstr ""
 
-#: WWidgetCPU.webpage:101
+#: WWidgetCPU.webpage:108
 msgid "Hyper Transport:"
 msgstr ""
 
-#: WWidgetCPU.webpage:108
+#: WWidgetCPU.webpage:115
 msgid "Power management:"
 msgstr ""
 
-#: WWidgetCPU.webpage:114
+#: WWidgetCPU.webpage:124
 msgid "Cache L1 Data:"
 msgstr ""
 
-#: WWidgetCPU.webpage:118
+#: WWidgetCPU.webpage:126
 msgid "Cache L1 Instruction:"
 msgstr ""
 
-#: WWidgetCPU.webpage:122
+#: WWidgetCPU.webpage:128
 msgid "Cache L1 Assoc:"
 msgstr ""
 
-#: WWidgetCPU.webpage:126
+#: WWidgetCPU.webpage:132
 msgid "Cache L2:"
 msgstr ""
 
-#: WWidgetCPU.webpage:130
+#: WWidgetCPU.webpage:134
 msgid "Cache L2 Assoc:"
 msgstr ""
 
-#: WWidgetCPU.webpage:134
+#: WWidgetCPU.webpage:136
 msgid "Cache L2 Cacheline:"
 msgstr ""
 
-#: WWidgetCPU.webpage:138
+#: WWidgetCPU.webpage:140
 msgid "Cache L3:"
 msgstr ""
 
@@ -532,7 +532,7 @@ msgstr ""
 msgid "Cache L3 Assoc:"
 msgstr ""
 
-#: WWidgetCPU.webpage:146
+#: WWidgetCPU.webpage:144
 msgid "Cache L3 Cacheline:"
 msgstr ""
 
@@ -796,39 +796,39 @@ msgstr ""
 msgid "Misc"
 msgstr ""
 
-#: WWidgetMisc.webpage:7
+#: WWidgetMisc.webpage:8
 msgid "Total memory:"
 msgstr ""
 
-#: WWidgetMisc.webpage:11
+#: WWidgetMisc.webpage:12
 msgid "Used memory:"
 msgstr ""
 
-#: WWidgetMisc.webpage:15
+#: WWidgetMisc.webpage:16
 msgid "Total swap:"
 msgstr ""
 
-#: WWidgetMisc.webpage:19
+#: WWidgetMisc.webpage:20
 msgid "Used swap:"
 msgstr ""
 
-#: WWidgetMisc.webpage:23
+#: WWidgetMisc.webpage:24
 msgid "Uptime:"
 msgstr ""
 
-#: WWidgetMisc.webpage:24
+#: WWidgetMisc.webpage:25
 msgid "Days: "
 msgstr ""
 
-#: WWidgetMisc.webpage:24
+#: WWidgetMisc.webpage:25
 msgid " Hours: "
 msgstr ""
 
-#: WWidgetMisc.webpage:24
+#: WWidgetMisc.webpage:25
 msgid " Minutes: "
 msgstr ""
 
-#: WWidgetMisc.webpage:24
+#: WWidgetMisc.webpage:25
 msgid " Seconds: "
 msgstr ""
 
