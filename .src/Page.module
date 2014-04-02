@@ -14,6 +14,10 @@ Public Sub Pages()
     MBrand.Brand_URL = Global.WEBSITE_ROOT_URL_HTTP
     MBrand.Brand_TEXT = ("Team")
     Team.Render
+  Else If Request.Get["page"] = "sitenews" Then
+    MBrand.Brand_URL = Global.WEBSITE_ROOT_URL_HTTP
+    MBrand.Brand_TEXT = ("Team")
+    MLatests_Posts.PrintLatestsPosts()
   Else
     Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & Application.Root)
   Endif

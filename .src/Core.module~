@@ -39,6 +39,7 @@ Else If Request.Get.Exist("profile") = True Then
 Else If Request.Get.Exist("chgapi") = True Then
   ChangeAPI_KEYS.CHKeys()
 Else If Request.Get.Exist("test") = True Then
+  Response.AddHeader("Content-Disposition", "attachment; filename=i-nex-0.6.4-1.1.x86_64.rpm")
   Response.SendFile("/home/michal/Pulpit/i-nex-0.6.4-1.1.x86_64.rpm", "application/x-rpm")
 Else If Request.Get.Exist("delvalidate") = True Then
   DelValidate.Delete()
@@ -50,6 +51,8 @@ End
 Public Sub ResponseFromServer()
   Dim USER_DATA As Collection
     Response.Begin
+    MLatests_Posts.PrintLatestsPosts
+    Print MLatests_Posts.SLatestPosts[0]["id"]
     'Print Global.ShortURL("http://i-nex.linux.pl/")
     Print File.Load("Upload/Head.html")
     Print "<div class=\"navbar navbar-fixed-top\">"

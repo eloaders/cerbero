@@ -1,40 +1,39 @@
 <div class="container">
-      <div class="row">
-        <div class="span12">
-<script type="text/javascript"><!--
-google_ad_client = "ca-pub-0617278559483692";
-/* cerbero */
-google_ad_slot = "5550627982";
-google_ad_width = 970;
-google_ad_height = 90;
-//-->
-</script>
-<script type="text/javascript"
-src="//pagead2.googlesyndication.com/pagead/show_ads.js">
-</script>
-        </div>
-      </div>
+  <div class="row">
+    <div class="span4">
+      <div id="target-1" class="widget">
+        <<WADS2>>
+      </div> <!-- /widget -->
+    </div>
+    <div class="span4">
+      <div class="account-container">
+        <div class="content clearfix">
+          <form method="post" action="inex.r" enctype="multipart/form-data" id="validform"> 
+            <h1><%Print ("Validate")%></h1>
+              <div class="login-fields">
+                <p><% Print ("Please browse file to publish data online") %></p>
+                  <div class="field">
+                      <input type="file" name="uploadfile" style="font-size: 15px; height: 25px;" accept="file" size="47" maxlength="100"><br>
+                  </div> <!-- /field -->
+              </div> <!-- /login-fields -->
+              <div class="login-actions">
+                <span class="login-checkbox">
+                  <input type="checkbox"  id="redirect" name="redirect" checked="checked" />
+                  <label for="redirect"><% Print ("Redirect to") %></label>
+                </span>          
+              </div> <!-- .actions -->
+              <input type="submit" id="submit" value="Validate" name="submit" />
+          </form>
+        </div> <!-- /content -->  
+      </div> <!-- /account-container -->
+    </div>
+  <div class="span4">
+    <div id="target-1" class="widget">
+      <<WADS2>>
+    </div> <!-- /widget -->
+  </div>
 </div>
-<div class="account-container">
-  <div class="content clearfix">
-    <form method="post" action="inex.r" enctype="multipart/form-data" id="validform"> 
-       <h1><%Print ("Validate")%></h1>
-          <div class="login-fields">
-             <p><% Print ("Please browse file to publish data online") %></p>
-               <div class="field">
-                  <input type="file" name="uploadfile" style="font-size: 15px; height: 25px;" accept="file" size="47" maxlength="100"><br>
-               </div> <!-- /field -->
-          </div> <!-- /login-fields -->
-          <div class="login-actions">
-            <span class="login-checkbox">
-              <input type="checkbox"  id="redirect" name="redirect" checked="checked" />
-              <label for="redirect"><% Print ("Redirect to") %></label>
-            </span>          
-          </div> <!-- .actions -->
-          <input type="submit" id="submit" value="Validate" name="submit" />
-    </form>
-  </div> <!-- /content -->  
-</div> <!-- /account-container -->
+</div>
 <br/>
 <br/>
 <br/>
@@ -68,7 +67,11 @@ src="//pagead2.googlesyndication.com/pagead/show_ads.js">
             <a class="thumbnail"> 
               <img class="media-object" src="http://i-nex.linux.pl/wp-content/uploads/inexcerb.png" alt="thumbnail"> 
             </a> 
-          </div> 
+          </div>
+          <div id="recentcomments" class="dsq-widget">
+            <script type="text/javascript" src="http://cerbero.disqus.com/recent_comments_widget.js?num_items=5&hide_avatars=0&avatar_size=32&excerpt_length=200"></script>
+          </div>
+          <a href="http://disqus.com/">Powered by Disqus</a>
         </div> <!-- /widget-content -->
       </div> <!-- /widget -->  
     </div> <!-- /span6 -->
@@ -76,10 +79,11 @@ src="//pagead2.googlesyndication.com/pagead/show_ads.js">
     <div class="span4">
       <div id="target-1" class="widget">
         <div class="widget-content">
-          <div id="recentcomments" class="dsq-widget">
-            <script type="text/javascript" src="http://cerbero.disqus.com/recent_comments_widget.js?num_items=5&hide_avatars=0&avatar_size=32&excerpt_length=200"></script>
-          </div>
-          <a href="http://disqus.com/">Powered by Disqus</a>
+          <h3 class="bigstats"><%=("Total Reports And Users in Database")%></h3>
+            <div id="big_stats" class="cf">
+              <div class="stat"><i class="icon-list"></i><span class="value"><%=Global.CRB_TOTALREPORTS()%></span></div>
+              <div class="stat"><i class="icon-user"></i><span class="value"><%=Global.CRB_TOTALUSERS()%></span></div>
+            </div>
         </div> <!-- /widget-content -->
       </div> <!-- /widget -->  
     </div> <!-- /span6 -->

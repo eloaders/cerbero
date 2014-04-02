@@ -1,0 +1,22 @@
+<div class="widget">
+  <div class="widget-header"> <i class="icon-bookmark"></i>
+    <h3><%=("System commands outputs")%></h3>
+  </div>
+  <!-- /widget-header -->
+  <div class="widget-content">
+    <div class="shortcuts">
+      <%If MValidate.RADIVATE["DMESGS"] Begins "http://crb.i-nex.pl" Then%>
+      <a href="<%=MValidate.RADIVATE["DMESGS"]%>" target="_blank" class="shortcut"><i class="shortcut-icon icon-list-alt"></i><span class="shortcut-label">Dmesg</span></a>
+      <%Endif%>
+      <%If MValidate.RADIVATE["LSPCIS"] Begins "http://crb.i-nex.pl" Then%>
+      <a href="<%=MValidate.RADIVATE["LSPCIS"]%>" target="_blank" class="shortcut"><i class="shortcut-icon icon-bookmark"></i><span class="shortcut-label">Lspci</span></a>
+      <%Endif%>
+      <%If MValidate.RADIVATE["LSUSBS"] Begins "http://crb.i-nex.pl" Then%>
+      <a href="<%=MValidate.RADIVATE["LSUSBS"]%>" target="_blank" class="shortcut"><i class="shortcut-icon icon-signal"></i> <span class="shortcut-label">Lsusb</span></a>
+      <%Endif%>
+      <%If MValidate.RADIVATE["CPUINFOS"] Begins "http://crb.i-nex.pl" Then%>
+      <a href="<%=MValidate.RADIVATE["CPUINFOS"]%>" target="_blank" class="shortcut"><i class="shortcut-icon icon-signal"></i> <span class="shortcut-label">Cpuinfo</span></a>
+      <%Endif%>
+    </div>
+  </div> 
+</div>

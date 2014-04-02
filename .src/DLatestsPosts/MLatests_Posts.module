@@ -1,0 +1,9 @@
+' Gambas module file
+
+Export
+Create Static
+Public SLatestPosts As Collection
+Public Sub PrintLatestsPosts()
+  SLatestPosts = JSON.Decode(File.Load("/var/www/latest_posts.json"))
+  'WLatestsPosts.Render
+End

@@ -92,6 +92,15 @@ Public Sub SendFileToServer()
                 Endif
               Endif
               Try GOO_GL = JSON.Decode(Global.ShortURL(Global.WEBSITE_ROOT_URL_HTTP & "/inex.r?validate=" & DDATE_NOW & VALIDATE_NEW_ID))
+              
+              Try cpuiddata.Add(Global.CRB_OUTPUTS(cpuiddata["DMESG"], "DMESG validate=" & DDATE_NOW & VALIDATE_NEW_ID, cpuiddata["SUBMITED_BY"]), "DMESGS")
+              Try cpuiddata.Add(Global.CRB_OUTPUTS(cpuiddata["LSPCI"], "LSPCI validate=" & DDATE_NOW & VALIDATE_NEW_ID, cpuiddata["SUBMITED_BY"]), "LSPCIS")
+              Try cpuiddata.Add(Global.CRB_OUTPUTS(cpuiddata["LSUSB"], "LSUSB validate=" & DDATE_NOW & VALIDATE_NEW_ID, cpuiddata["SUBMITED_BY"]), "LSUSBS")
+              Try cpuiddata.Add(Global.CRB_OUTPUTS(cpuiddata["CPUINFO"], "CPUINFO validate=" & DDATE_NOW & VALIDATE_NEW_ID, cpuiddata["SUBMITED_BY"]), "CPUINFOS")
+              
+              cpuiddata.Remove("DMESG")
+              cpuiddata.Remove("LSPCI")
+              cpuiddata.Remove("LSUSB")
               Try cpuiddata.Add(GOO_GL, "GOO_GL")
               ReportSave()
               If Error Then

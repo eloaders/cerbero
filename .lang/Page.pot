@@ -22,15 +22,15 @@ msgstr ""
 msgid "Team"
 msgstr ""
 
-#: Page.module:36
+#: Page.module:40
 msgid "           I-Nex - Cerbero"
 msgstr ""
 
-#: Page.module:54
+#: Page.module:58
 msgid "                    Profile"
 msgstr ""
 
-#: Page.module:59
+#: Page.module:63
 msgid "                   Logout"
 msgstr ""
 

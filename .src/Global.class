@@ -57,3 +57,34 @@ hClient.Post("application/json", "{\"longUrl\": \"" & LongURL & "\"}", ["Content
 
 Return File.Load(OutputURL)
 End
+
+Public Function CRB_OUTPUTS(DATA As String, Optional PASTENAME As String, Optional AUTHOR As String) As String
+  
+Dim Parms As String[] = Null
+Dim OutputURL As String = Temp()
+Dim hClient As HttpClient
+Dim sBuffer As String
+
+hClient = New HttpClient As "hClient"
+hClient.URL = "http://crb.i-nex.pl/api/create"
+hClient.Async = False
+hClient.Timeout = 60
+hClient.Post("application/x-www-form-urlencoded", "text='" & DATA & "'&title=" & PASTENAME & "&name=" & AUTHOR & "", ["Content-Type: application/x-www-form-urlencoded"], OutputURL)
+
+Return Replace(File.Load(OutputURL), "\n", "")
+  
+End
+
+Public Function CRB_TOTALREPORTS() As String
+  Dim Total_Reports As String
+  Shell "ls " & WHEREIS_SITE_ROOT & "/ValidDB/* | grep json | sort | wc -l" Wait To Total_Reports
+  Total_Reports = Replace(Total_Reports, "\n", "")
+  Return Total_Reports
+End
+
+Public Function CRB_TOTALUSERS() As String
+  Dim Total_USERS As String
+  Shell "ls " & WHEREIS_SITE_ROOT & "/Users/ | sort | wc -l" Wait To Total_USERS
+  Total_USERS = Replace(Total_USERS, "\n", "")
+  Return Total_USERS
+End

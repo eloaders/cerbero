@@ -14,15 +14,15 @@ msgstr ""
 msgid "Cerbero"
 msgstr ""
 
-#: Core.module:65 Page.module:36 Policy.webpage:32
+#: Core.module:65 Page.module:40 Policy.webpage:32
 msgid "           I-Nex - Cerbero"
 msgstr ""
 
-#: Core.module:83 Page.module:54 Policy.webpage:48
+#: Core.module:83 Page.module:58 Policy.webpage:48
 msgid "                    Profile"
 msgstr ""
 
-#: Core.module:88 Page.module:59 Policy.webpage:53
+#: Core.module:88 Page.module:63 Policy.webpage:53
 msgid "                   Logout"
 msgstr ""
 
@@ -54,50 +54,54 @@ msgstr ""
 msgid "Already have an account? Login now"
 msgstr ""
 
-#: DUpload.webpage:20
+#: DUpload.webpage:11
 msgid "Validate"
 msgstr ""
 
-#: DUpload.webpage:22
+#: DUpload.webpage:13
 msgid "Please browse file to publish data online"
 msgstr ""
 
-#: DUpload.webpage:30
+#: DUpload.webpage:21
 msgid "Redirect to"
 msgstr ""
 
-#: DUpload.webpage:46
+#: DUpload.webpage:45
 msgid "Beta"
 msgstr ""
 
-#: DUpload.webpage:47
+#: DUpload.webpage:46
 msgid "Keep in mind that the service is currently in beta. "
 msgstr ""
 
-#: DUpload.webpage:48
+#: DUpload.webpage:47
 msgid "Work on the introduction of new features. "
 msgstr ""
 
-#: DUpload.webpage:49
+#: DUpload.webpage:48
 msgid "The need for many people to help. You can also help."
 msgstr ""
 
-#: DUpload.webpage:55
+#: DUpload.webpage:54
 msgid "I-Nex Cerbero"
 msgstr ""
 
-#: DUpload.webpage:56
+#: DUpload.webpage:55
 msgid ""
 "The best way to publication of the report is to directly send it using the I-"
 "Nex. "
 msgstr ""
 
-#: DUpload.webpage:57
+#: DUpload.webpage:56
 msgid "Register on the site, get your key and user name. "
 msgstr ""
 
-#: DUpload.webpage:58
+#: DUpload.webpage:57
 msgid "Enter all the data in the I-Nex and then send the report."
+msgstr ""
+
+#: DUpload.webpage:81
+msgid "Total Reports And Users in Database"
 msgstr ""
 
 #: DUploadSubnavbar.webpage:8 WSubnavbar.webpage:7
@@ -212,11 +216,11 @@ msgstr ""
 msgid "VALD"
 msgstr ""
 
-#: Page.module:11 Translators.webpage:33 WExtra.webpage:7
+#: Page.module:11 Translators.webpage:16 WExtra.webpage:7
 msgid "Translators"
 msgstr ""
 
-#: Page.module:15 Team.webpage:33 WExtra.webpage:8
+#: Page.module:15 Team.webpage:16 WExtra.webpage:8
 msgid "Team"
 msgstr ""
 
@@ -402,6 +406,10 @@ msgstr ""
 
 #: Signup.module:164
 msgid "Login to your account"
+msgstr ""
+
+#: WAditional.webpage:2
+msgid "System commands outputs"
 msgstr ""
 
 #: WExtra.webpage:17

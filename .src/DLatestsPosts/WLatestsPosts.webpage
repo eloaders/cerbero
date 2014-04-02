@@ -1,0 +1,12 @@
+<%
+Dim OneFlag As String
+%>
+<html>
+<body>
+<%For Each OneFlag In MLatests_Posts.SLatestPosts%>
+<%If IsSpace(OneFlag) = False Then%>
+<%Print OneFlag%>
+<%Endif%>
+<%Next%>
+</body>
+</html>

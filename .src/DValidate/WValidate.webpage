@@ -13,7 +13,10 @@
           <<WWidgetCPU>>
           <<WWidgetCPUDB>>
           <<WWidgetGPU>>
-          <<WWidgetMobo>> 
+          <<WWidgetMobo>>
+          <%If IsNull(MValidate.RADIVATE["DMESGS"]) = False Then%>
+          <<WAditional>>
+          <%Endif%>
         </div>
         <div class="span6">
           <<WWidgetScreenshot>>
