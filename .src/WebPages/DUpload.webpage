@@ -2,12 +2,14 @@
   <div class="row">
     <div class="span4">
       <div id="target-1" class="widget">
-        <<WADS2>>
+        <div class="widget-content">
+          <<WADS2>>
+        </div> <!-- /widget-content -->
       </div> <!-- /widget -->
     </div>
     <div class="span4">
-      <div class="account-container">
-        <div class="content clearfix">
+      <div id="target-1" class="widget">
+        <div class="widget-content">
           <form method="post" action="inex.r" enctype="multipart/form-data" id="validform"> 
             <h1><%Print ("Validate")%></h1>
               <div class="login-fields">
@@ -29,7 +31,9 @@
     </div>
   <div class="span4">
     <div id="target-1" class="widget">
-      <<WADS2>>
+      <div class="widget-content">
+        <<WADS2>>
+      </div> <!-- /widget-content -->
     </div> <!-- /widget -->
   </div>
 </div>
@@ -63,11 +67,6 @@
     <div class="span4">
       <div id="target-1" class="widget">
         <div class="widget-content">
-          <div class="media"> 
-            <a class="thumbnail"> 
-              <img class="media-object" src="http://i-nex.linux.pl/wp-content/uploads/inexcerb.png" alt="thumbnail"> 
-            </a> 
-          </div>
           <div id="recentcomments" class="dsq-widget">
             <script type="text/javascript" src="http://cerbero.disqus.com/recent_comments_widget.js?num_items=5&hide_avatars=0&avatar_size=32&excerpt_length=200"></script>
           </div>
@@ -84,6 +83,11 @@
               <div class="stat"><i class="icon-list"></i><span class="value"><%=Global.CRB_TOTALREPORTS()%></span></div>
               <div class="stat"><i class="icon-user"></i><span class="value"><%=Global.CRB_TOTALUSERS()%></span></div>
             </div>
+          <div class="media"> 
+            <a class="thumbnail"> 
+              <img class="media-object" src="http://i-nex.linux.pl/wp-content/uploads/inexcerb.png" alt="thumbnail"> 
+            </a> 
+          </div>
         </div> <!-- /widget-content -->
       </div> <!-- /widget -->  
     </div> <!-- /span6 -->

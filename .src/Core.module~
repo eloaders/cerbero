@@ -51,8 +51,6 @@ End
 Public Sub ResponseFromServer()
   Dim USER_DATA As Collection
     Response.Begin
-    MLatests_Posts.PrintLatestsPosts
-    Print MLatests_Posts.SLatestPosts[0]["id"]
     'Print Global.ShortURL("http://i-nex.linux.pl/")
     Print File.Load("Upload/Head.html")
     Print "<div class=\"navbar navbar-fixed-top\">"

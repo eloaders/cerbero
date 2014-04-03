@@ -34,9 +34,10 @@
           </div>
           <!-- /span3 -->
           <div class="span3">
-            <h4><%=("Sponsors")%></h4>
+            <h4><span class="badge"><%=("Sponsors")%></span></h4>
               <ul>
-                <li><a href="http://abix.info.pl/"><h4>ABIX - systemy wspomagania biznesu.</h4></a></li>
+                <li><a href="http://abix.info.pl/"><h2>ABIX - systemy wspomagania biznesu.</h2></a></li>
+                <li><a href="http://abix.info.pl/oferta-dla-biznesu/"><h4>Oprogramowanie ERP, bezpieczny system operacyjny, sprzęt edukacyjny, nowoczesne komputery, kompleksowa obsługa, szkolenia dla nauczycieli</h4></a></li>
               </ul>
           </div>
           <!-- /span3 -->

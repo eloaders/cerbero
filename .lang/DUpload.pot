@@ -14,51 +14,51 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: DUpload.webpage:11
+#: DUpload.webpage:13
 msgid "Validate"
 msgstr ""
 
-#: DUpload.webpage:13
+#: DUpload.webpage:15
 msgid "Please browse file to publish data online"
 msgstr ""
 
-#: DUpload.webpage:21
+#: DUpload.webpage:23
 msgid "Redirect to"
 msgstr ""
 
-#: DUpload.webpage:45
+#: DUpload.webpage:49
 msgid "Beta"
 msgstr ""
 
-#: DUpload.webpage:46
+#: DUpload.webpage:50
 msgid "Keep in mind that the service is currently in beta. "
 msgstr ""
 
-#: DUpload.webpage:47
+#: DUpload.webpage:51
 msgid "Work on the introduction of new features. "
 msgstr ""
 
-#: DUpload.webpage:48
+#: DUpload.webpage:52
 msgid "The need for many people to help. You can also help."
 msgstr ""
 
-#: DUpload.webpage:54
+#: DUpload.webpage:58
 msgid "I-Nex Cerbero"
 msgstr ""
 
-#: DUpload.webpage:55
+#: DUpload.webpage:59
 msgid "The best way to publication of the report is to directly send it using the I-Nex. "
 msgstr ""
 
-#: DUpload.webpage:56
+#: DUpload.webpage:60
 msgid "Register on the site, get your key and user name. "
 msgstr ""
 
-#: DUpload.webpage:57
+#: DUpload.webpage:61
 msgid "Enter all the data in the I-Nex and then send the report."
 msgstr ""
 
-#: DUpload.webpage:81
+#: DUpload.webpage:80
 msgid "Total Reports And Users in Database"
 msgstr ""
 

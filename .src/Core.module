@@ -10,8 +10,8 @@ Endif
 If CGI["HTTP_ACCEPT_LANGUAGE"] Like "*fr*" Then
   System.Language = "fr_FR.UTF-8"
 Endif 
-If Request.Get.Exist("search") = True Then
-  
+If Request.Get["js"] = "whcookies.js" Then
+  WCookies.Render
 Else If Request.Get.Exist("signin") = True Then
   Signs.Sign_in()
 Else If Request.Get.Exist("updprofile") = True Then

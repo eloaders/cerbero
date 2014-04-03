@@ -6,6 +6,7 @@ msgstr ""
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -14,15 +15,15 @@ msgstr ""
 msgid "Cerbero"
 msgstr "Cerbero"
 
-#: Core.module:62 Page.module:28 Policy.webpage:32
+#: Core.module:65 Page.module:40 Policy.webpage:32
 msgid "           I-Nex - Cerbero"
 msgstr "           I-Nex - Cerbero"
 
-#: Core.module:80 Page.module:46 Policy.webpage:48
+#: Core.module:83 Page.module:58 Policy.webpage:48
 msgid "                    Profile"
 msgstr "                    Profil"
 
-#: Core.module:85 Page.module:51 Policy.webpage:53
+#: Core.module:88 Page.module:63 Policy.webpage:53
 msgid "                   Logout"
 msgstr "                   Wyloguj"
 
@@ -46,14 +47,6 @@ msgstr "Wróć na stronę główną"
 msgid "Account - I-Nex - Cerbero"
 msgstr "Konto - I-Nex - Cerbero"
 
-#: DProfileSubnavbar.webpage:7 DUploadSubnavbar.webpage:8 WSubnavbar.webpage:7
-msgid "Upload"
-msgstr "Wyślij"
-
-#: WSubnavbar.webpage:13
-msgid "Latest added"
-msgstr "Ostatnio dodane"
-
 #: DSignupHead.webpage:4
 msgid "Signup - I-Nex - Cerbero"
 msgstr "Rejestracja - I-Nex - Cerbero"
@@ -62,73 +55,74 @@ msgstr "Rejestracja - I-Nex - Cerbero"
 msgid "Already have an account? Login now"
 msgstr "Posiadasz już konto? Zaloguj się"
 
-#: DUpload.webpage:20
+#: DUpload.webpage:13
 msgid "Validate"
 msgstr "Zweryfikuj"
 
-#: DUpload.webpage:22
+#: DUpload.webpage:15
 msgid "Please browse file to publish data online"
 msgstr "Wybierz plik raportu z dysku, i opublikuj online."
 
-#: DUpload.webpage:30
+#: DUpload.webpage:23
 msgid "Redirect to"
 msgstr "Przekieruj do"
 
-#: DUpload.webpage:46
+#: DUpload.webpage:49
 msgid "Beta"
 msgstr "Beta"
 
-#: DUpload.webpage:47
+#: DUpload.webpage:50
 msgid "Keep in mind that the service is currently in beta. "
 msgstr "Miej na uwadze, serwis jest nadal w fazie beta. "
 
-#: DUpload.webpage:48
+#: DUpload.webpage:51
 msgid "Work on the introduction of new features. "
 msgstr "Trwają pracę nad nowymi funkcjami oraz naprawą błędów. "
 
-#: DUpload.webpage:49
+#: DUpload.webpage:52
 msgid "The need for many people to help. You can also help."
 msgstr "Potrzeba wiele osób do pomocy. Ty także możesz pomóc."
 
-#: DUpload.webpage:57
+#: DUpload.webpage:58
 msgid "I-Nex Cerbero"
 msgstr "I-Nex Cerbero"
 
-#: DUpload.webpage:58
+#: DUpload.webpage:59
 msgid "The best way to publication of the report is to directly send it using the I-Nex. "
 msgstr ""
 
-#: DUpload.webpage:59
+#: DUpload.webpage:60
 msgid "Register on the site, get your key and user name. "
 msgstr "Zarejestruj się na stronie, zdobądź swój klucz prywatny oraz login. "
 
-#: DUpload.webpage:60
+#: DUpload.webpage:61
 msgid "Enter all the data in the I-Nex and then send the report."
 msgstr "Wpisz wszystkie potrzebne dane w konfiguracji wysyłania raportów i wyślij raport."
 
-#: Policy.webpage:269
-msgid "About Cerbero"
-msgstr "O Cerbero"
+#: DUpload.webpage:80
+msgid "Total Reports And Users in Database"
+msgstr ""
 
-#: Policy.webpage:272
-msgid "Donate"
-msgstr "Wspomóż projekt"
+#: DUploadSubnavbar.webpage:8 WSubnavbar.webpage:7
+msgid "Upload"
+msgstr "Wyślij"
 
-#: Policy.webpage:277
-msgid "Support"
-msgstr "Wsparcie"
+#: DUploadSubnavbar.webpage:16 WSubnavbar.webpage:13
+msgid "Latest added"
+msgstr "Ostatnio dodane"
 
-#: DUpload.webpage:107
-msgid "Other"
-msgstr "Pozostałe"
+#: DUploadSubnavbar.webpage:23 WSubnavbar.webpage:19
+msgid "Forum"
+msgstr ""
 
-#: Policy.webpage:287
-msgid "Privacy Policy"
-msgstr "Polityka prywatności"
+#: DUploadSubnavbar.webpage:29 WSubnavbar.webpage:25
+#, fuzzy
+msgid "I-Nex Homepage"
+msgstr "Strona główna"
 
-#: Policy.webpage:292
-msgid "Sponsors"
-msgstr "Sponsorzy"
+#: DUploadSubnavbar.webpage:35 WSubnavbar.webpage:31
+msgid "Install I-Nex"
+msgstr ""
 
 #: DUploadUserNav.webpage:4
 msgid "Account"
@@ -141,6 +135,10 @@ msgstr "Zaloguj"
 #: DUploadUserNav.webpage:9
 msgid "Signup"
 msgstr "Zarejestruj"
+
+#: Donate.webpage:9 Policy.webpage:272 WExtra.webpage:10
+msgid "Donate"
+msgstr "Wspomóż projekt"
 
 #: Donate.webpage:10
 msgid "If you want to financially support the program's I-Nex and service Cerbero. "
@@ -186,33 +184,58 @@ msgstr "Możesz być osobą która zgłasza błędy na forum."
 msgid "Możesz być osobą która zarządza serwerem."
 msgstr "Możesz być osobą która zarządza serwerem."
 
-#: Donate.webpage:28
+#: Donate.webpage:27
 msgid "Możesz być osobą która będzie dbać o wygląd strony HTML5 & CSS3 & Bootstrap."
 msgstr "Możesz być osobą która będzie dbać o wygląd strony HTML5 & CSS3 & Bootstrap."
 
-#: Donate.webpage:35
+#: Donate.webpage:34
 msgid "Last donators"
 msgstr "Najnowsi sponsorzy"
 
-#: Donate.webpage:39
+#: Donate.webpage:38
 msgid "Username"
 msgstr "Użytkownik"
 
-#: Donate.webpage:40
+#: Donate.webpage:39
 msgid "Count"
 msgstr "Kwota"
 
-#: Donate.webpage:41
+#: Donate.webpage:40
 msgid "Homepage"
 msgstr "Strona główna"
-
-#: Donate.webpage:82 ExtraBeforeFooter.webpage:21 Policy.webpage:285
-msgid "Something Legal"
-msgstr "W pełni legalne"
 
 #: MLatestAdded.module:11 Upload.module:5
 msgid "VALD"
 msgstr "VALD"
+
+#: Page.module:11 Translators.webpage:16 WExtra.webpage:7
+#, fuzzy
+msgid "Translators"
+msgstr "Tranzystory:"
+
+#: Page.module:15 Team.webpage:16 WExtra.webpage:8
+msgid "Team"
+msgstr ""
+
+#: Policy.webpage:269 WExtra.webpage:5
+msgid "About Cerbero"
+msgstr "O Cerbero"
+
+#: Policy.webpage:277 WExtra.webpage:15
+msgid "Support"
+msgstr "Wsparcie"
+
+#: Policy.webpage:285 WExtra.webpage:29
+msgid "Something Legal"
+msgstr "W pełni legalne"
+
+#: Policy.webpage:287 WExtra.webpage:31
+msgid "Privacy Policy"
+msgstr "Polityka prywatności"
+
+#: Policy.webpage:292 WExtra.webpage:36
+msgid "Sponsors"
+msgstr "Sponsorzy"
 
 #: Profile.module:30
 msgid "     I-Nex - Cerbero"
@@ -378,6 +401,38 @@ msgstr "     Posiadasz już konto?"
 msgid "Login to your account"
 msgstr "Zaloguj się do swojego konta"
 
+#: WAditional.webpage:2
+msgid "System commands outputs"
+msgstr ""
+
+#: WCookies.webpage:30
+msgid "I understand"
+msgstr ""
+
+#: WCookies.webpage:30
+msgid "Learn more"
+msgstr ""
+
+#: WCookies.webpage:30
+msgid "This site uses cookies (cookies), so that our service can work better."
+msgstr ""
+
+#: WCookies.webpage:30
+msgid "http://www.allaboutcookies.org/"
+msgstr ""
+
+#: WExtra.webpage:17
+msgid "Ask a Question"
+msgstr ""
+
+#: WExtra.webpage:18
+msgid "Report a bug"
+msgstr ""
+
+#: WExtra.webpage:20
+msgid "Friends of the project"
+msgstr ""
+
 #: WWidgetCPU.webpage:7
 msgid "CPU Specifications"
 msgstr "Specyfikacja procesora"
@@ -438,55 +493,55 @@ msgstr ""
 msgid "Flags:"
 msgstr "Flagi:"
 
-#: WWidgetCPU.webpage:80
+#: WWidgetCPU.webpage:87
 msgid "More"
 msgstr "Więcej"
 
-#: WWidgetCPU.webpage:84
+#: WWidgetCPU.webpage:91
 msgid "x86 64-Bit Extensions:"
 msgstr "64 bitowe rozszerzenia"
 
-#: WWidgetCPU.webpage:88
+#: WWidgetCPU.webpage:95
 msgid "Hardware Virtualization:"
 msgstr ""
 
-#: WWidgetCPU.webpage:94
+#: WWidgetCPU.webpage:101
 msgid "Hyper Threading:"
 msgstr "Hyper Threading:"
 
-#: WWidgetCPU.webpage:101
+#: WWidgetCPU.webpage:108
 msgid "Hyper Transport:"
 msgstr ""
 
-#: WWidgetCPU.webpage:108
+#: WWidgetCPU.webpage:115
 msgid "Power management:"
 msgstr "Zarządzanie poborem energii:"
 
-#: WWidgetCPU.webpage:114
+#: WWidgetCPU.webpage:124
 msgid "Cache L1 Data:"
 msgstr ""
 
-#: WWidgetCPU.webpage:118
+#: WWidgetCPU.webpage:126
 msgid "Cache L1 Instruction:"
 msgstr ""
 
-#: WWidgetCPU.webpage:122
+#: WWidgetCPU.webpage:128
 msgid "Cache L1 Assoc:"
 msgstr ""
 
-#: WWidgetCPU.webpage:126
+#: WWidgetCPU.webpage:132
 msgid "Cache L2:"
 msgstr ""
 
-#: WWidgetCPU.webpage:130
+#: WWidgetCPU.webpage:134
 msgid "Cache L2 Assoc:"
 msgstr ""
 
-#: WWidgetCPU.webpage:134
+#: WWidgetCPU.webpage:136
 msgid "Cache L2 Cacheline:"
 msgstr ""
 
-#: WWidgetCPU.webpage:138
+#: WWidgetCPU.webpage:140
 msgid "Cache L3:"
 msgstr ""
 
@@ -494,7 +549,7 @@ msgstr ""
 msgid "Cache L3 Assoc:"
 msgstr ""
 
-#: WWidgetCPU.webpage:146
+#: WWidgetCPU.webpage:144
 msgid "Cache L3 Cacheline:"
 msgstr ""
 
@@ -758,41 +813,41 @@ msgstr ""
 msgid "Misc"
 msgstr "Pozostałe"
 
-#: WWidgetMisc.webpage:7
+#: WWidgetMisc.webpage:8
 msgid "Total memory:"
 msgstr "Łączna pamięć operacyjna:"
 
-#: WWidgetMisc.webpage:11
+#: WWidgetMisc.webpage:12
 msgid "Used memory:"
 msgstr "Użyta pamięć:"
 
-#: WWidgetMisc.webpage:15
+#: WWidgetMisc.webpage:16
 msgid "Total swap:"
 msgstr "Łączna przestrzeń wymiany:"
 
-#: WWidgetMisc.webpage:19
+#: WWidgetMisc.webpage:20
 msgid "Used swap:"
 msgstr "Wykorzystana przestrzeń wymiany:"
 
-#: WWidgetMisc.webpage:23
+#: WWidgetMisc.webpage:24
 msgid "Uptime:"
 msgstr "Czas pracy:"
 
-#: WWidgetMisc.webpage:24
-msgid "Days: "
-msgstr "Dni: "
-
-#: WWidgetMisc.webpage:24
+#: WWidgetMisc.webpage:25
 msgid " Hours: "
 msgstr " Godziny: "
 
-#: WWidgetMisc.webpage:24
+#: WWidgetMisc.webpage:25
 msgid " Minutes: "
 msgstr " Minuty: "
 
-#: WWidgetMisc.webpage:24
+#: WWidgetMisc.webpage:25
 msgid " Seconds: "
 msgstr " Sekundy: "
+
+#: WWidgetMisc.webpage:25
+msgid "Days: "
+msgstr "Dni: "
 
 #: WWidgetMobo.webpage:8
 msgid "Board Vendor:"
@@ -846,6 +901,10 @@ msgstr ""
 msgid "Product Version:"
 msgstr ""
 
+#: WWidgetNotAdded.webpage:2
+msgid "Today has not added any reports"
+msgstr ""
+
 #: WWidgetScreenshot.webpage:2
 msgid "I-Nex Screenshot"
 msgstr "Zrzut ekranu:"
@@ -878,3 +937,5 @@ msgstr "                               Zapamiętaj mnie na tym komputerze"
 msgid "                   Sign In"
 msgstr "                   Zaloguj się"
 
+#~ msgid "Other"
+#~ msgstr "Pozostałe"
