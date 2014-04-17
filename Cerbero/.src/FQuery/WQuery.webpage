@@ -1,0 +1,70 @@
+<%
+Dim i As Integer
+%>
+<!DOCTYPE html>
+<html lang="en">
+<<WHead>>
+<body>
+<<WNavbar>>
+<<WSubnavbar>>
+<div class="main">
+  <div class="main-inner">
+    <div class="container">
+      <div class="row">
+        <div class="span12">
+          <div class="widget widget-table action-table"> 
+            <div class="widget-content"> 
+              <table class="table table-hover"> 
+                <thead> 
+                  <tr> 
+                    <th><%Print ("CPU Logo")%></th>
+                    <th><%Print ("CPU and GPU")%></th> 
+                    <th><%Print ("Motherboard")%></th> 
+                    <th class="text-center"><%Print ("Distribution")%></th> 
+                    <th class="text-center"><%Print ("Link to report")%></th>
+                  </tr> 
+                </thead> 
+                <tbody>
+                <%For i = 0 To MQuery.CPUusagelines.Count - 2%>
+                <%MQuery.CPUusageLines[i] = Replace(Replace(Replace(MQuery.CPUusageLines[i], ":", ""), "/", ""), "json", "")%>
+                <%MQuery.CPUusageLines[i] = Right$(Left$(MQuery.CPUusagelines[i], -1), -1)%>
+                <%MQuery.QWEry = JSON.Decode(File.Load(Global.WHEREIS_SITE_ROOT & "/ValidDB/" & Replace(MQuery.CPUusagelines[i], Right$(MQuery.CPUusagelines[i], -8), "") & "/" & Right$(MQuery.CPUusagelines[i], -8) & ".json"))%>
+                <tr> 
+                  <td class="col-sm-8 col-md-6"> 
+                    <div class="media"> 
+                    <a class="thumbnail pull-left" href="<%Print Global.WEBSITE_ROOT_URL_HTTP & Application.Root & "?validate=" & MQuery.CPUusageLines[i]%>" target="_blank"><img class="media-object" src="<%Print Global.WEBSITE_ROOT_URL_HTTP & "/LOGOS/" & MQuery.QWEry["CPU_LOGO"]%>"></a> 
+                    </div>
+                  </td> 
+                  <td class="col-sm-1 col-md-1 text-center"> 
+                  <div class="media-body"> 
+                    <h4 class="media-heading"><%Print MQuery.QWEry["CPU_VENDOR"]%></a></h4> 
+                    <h5 class="media-heading"><%Print MQuery.QWEry["CPU_NAME"]%></a></h5> 
+                    <span>I-Nex V: </span><span class="text-success"><strong><%Print MQuery.QWEry["INEX_VERSION"]%></strong></span> 
+                  </div> 
+                    <strong><%Print MQuery.QWEry["GPU_MODEL"]%></strong></td> 
+                  <td class="col-sm-1 col-md-1 text-center">
+                    <strong><%Print Replace(MQuery.QWEry["INEX_MOTHERBOARD_VENDOR1"], "Board Vendor:", "")%></strong>
+                    <strong><%Print Replace(MQuery.QWEry["INEX_MOTHERBOARD_VENDOR3"], "Board Name:", "")%></strong>
+                  </td> 
+                  <td class="col-sm-1 col-md-1 text-center">
+                    <strong><%Print Replace(MQuery.QWEry["DISTRO_VENDOR"], "Distro Vendor:", "") & " " & Replace(MQuery.QWEry["DISTRO_VENDOR2"], "Distro Release:", "")%></strong>
+                  </td> 
+                  <td class="td-actions"> 
+                    <a <a href="<%Print Global.WEBSITE_ROOT_URL_HTTP & Application.Root & "?validate=" & MQuery.CPUusageLines[i]%>" target="_blank" class="btn btn-link btn-small"> 
+                      <i class="btn-icon-only icon-link"></i> 
+                    </a>
+                  </tr>
+                <%Next%>
+                </tbody> 
+              </table> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div> 
+</div>
+<<WExtra>>
+<<WFooter>> 
+</body>
+</html>

@@ -8,21 +8,30 @@
     </a>
     <<WBrand>>
     <div class="nav-collapse"> 
-           <ul class="nav pull-right"> 
-             <li class="dropdown"> 
-                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"> 
-                   <i class="icon-user"></i><%= MNavbar.USERNAME_ACCOUT_TEXT %><b class="caret"></b> 
-                 </a> 
-             <ul class="dropdown-menu"> 
-                  <li><a href="<%= MNavbar.PROFILE_LOGIN_URL %>"><%= MNavbar.PROFILE_LOGIN_TEXT %></a></li>
-                  <li><a href="<%= MNavbar.PROFILE_LOGOUT_SIGNIN_URL %>"><%= MNavbar.PROFILE_LOGOUT_SIGNIN_TEXT %></a></li>
-             </ul> 
-           </li> 
-         </ul> 
-       </div><!--/.nav-collapse -->   
-    </div>
-    <!-- /container --> 
+      <ul class="nav pull-right">
+        <%If Usera.User_Logged() = True And Usera.User_IsAdmin() = True Then%>
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-large icon-cog"></i>  <%=("Options")%><b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="javascript:;"><i class="icon-large icon-plus"></i>  <%=("Add CPU Vendor to DB")%></a></li>
+            <li><a href="javascript:;"><i class="icon-large icon-list-ul"></i>  <%=("List CPU Database")%></a></li>
+            <li><a href="javascript:;"><i class="icon-large icon-list-ul"></i>  <%=("Admin Panel")%></a></li>
+          </ul>
+        </li>
+        <%Endif%>
+        <li class="dropdown"> 
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"> 
+            <i class="icon-large icon-user"></i>  <%= MNavbar.USERNAME_ACCOUT_TEXT %><b class="caret"></b> 
+          </a> 
+        <ul class="dropdown-menu"> 
+          <li><a href="<%= MNavbar.PROFILE_LOGIN_URL %>"><i class="icon-large icon-edit"></i>  <%= MNavbar.PROFILE_LOGIN_TEXT %></a></li>
+          <li><a href="<%= MNavbar.PROFILE_LOGOUT_SIGNIN_URL %>"><i class="icon-large icon-eject"></i>  <%= MNavbar.PROFILE_LOGOUT_SIGNIN_TEXT %></a></li>
+        </ul> 
+        </li> 
+        </ul>
+      <form class="navbar-search pull-right">
+        <input class="search-query" type="text" name="query" value="" autocomplete="on" placeholder="<%=("Search by CPU Name")%>" />
+      </form>
+    </div>  
   </div>
-  <!-- /navbar-inner --> 
 </div>
-<!-- /navbar -->
+</div>

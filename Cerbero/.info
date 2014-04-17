@@ -48,6 +48,33 @@ PrintLatestsPosts
 M
 
 
+#MQuery
+
+CA
+CPUusage
+V
+Process
+
+CPUusageOutput
+V
+s
+
+Cached
+V
+s
+
+CPUusageLines
+V
+String[]
+
+QWEry
+V
+Collection
+
+Main
+M
+
+
 #MValidate
 
 CA

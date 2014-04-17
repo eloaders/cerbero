@@ -15,17 +15,9 @@ msgstr ""
 msgid "Cerbero"
 msgstr "Cerbero"
 
-#: Core.module:65 Page.module:40 Policy.webpage:32
-msgid "           I-Nex - Cerbero"
-msgstr "           I-Nex - Cerbero"
-
-#: Core.module:83 Page.module:58 Policy.webpage:48
-msgid "                    Profile"
-msgstr "                    Profil"
-
-#: Core.module:88 Page.module:63 Policy.webpage:53
-msgid "                   Logout"
-msgstr "                   Wyloguj"
+#: .project:2
+msgid "I-Nex - Cerbero - CPU-Z Validation Clone Service"
+msgstr ""
 
 #: DLoginHead.webpage:4
 msgid "Login - I-Nex - Cerbero"
@@ -217,6 +209,18 @@ msgstr "Tranzystory:"
 msgid "Team"
 msgstr ""
 
+#: Page.module:40 Policy.webpage:32
+msgid "           I-Nex - Cerbero"
+msgstr "           I-Nex - Cerbero"
+
+#: Page.module:58 Policy.webpage:48
+msgid "                    Profile"
+msgstr "                    Profil"
+
+#: Page.module:63 Policy.webpage:53
+msgid "                   Logout"
+msgstr "                   Wyloguj"
+
 #: Policy.webpage:269 WExtra.webpage:5
 msgid "About Cerbero"
 msgstr "O Cerbero"
@@ -237,119 +241,107 @@ msgstr "Polityka prywatności"
 msgid "Sponsors"
 msgstr "Sponsorzy"
 
-#: Profile.module:30
-msgid "     I-Nex - Cerbero"
-msgstr "     I-Nex - Cerbero"
-
-#: Profile.module:41
-msgid "             Profile"
-msgstr "             Profil"
-
-#: Profile.module:46
-msgid "              Logout"
-msgstr "              Wyloguj"
-
-#: Profile.module:68
+#: Profile.module:31
 msgid "           Account"
 msgstr "           Konto"
 
-#: Profile.module:77
+#: Profile.module:40
 msgid "             Account details"
 msgstr "             Szczegóły konta"
 
-#: Profile.module:82
+#: Profile.module:45
 msgid "             Keys"
 msgstr "             Klucze"
 
-#: Profile.module:87
+#: Profile.module:50
 msgid "             Submitted reports"
 msgstr "             Przesłane raporty"
 
-#: Profile.module:111
+#: Profile.module:74
 msgid "                  Your Login is for logging in and cannot be changed."
 msgstr "                  Twoja nazwa użytkownika jest używana do logowania się i nie może być zmieniona."
 
-#: Profile.module:120
+#: Profile.module:83
 msgid "                  Public account name. It is used in some cases."
 msgstr "                  Publiczna nazwa konta użytkownika. Jest wykorzystywana w niektórych przypadkach."
 
-#: Profile.module:152
+#: Profile.module:115
 msgid "            Email Address"
 msgstr "            E-mail"
 
-#: Profile.module:160
+#: Profile.module:123
 msgid "               Your e-mail will also be used to display Gravatar"
 msgstr "               Twój e-mail może zostać użyty do wyświetlania Gravatara."
 
-#: Profile.module:168
+#: Profile.module:131
 msgid "           Homepage"
 msgstr "           Strona domowa"
 
-#: Profile.module:181
+#: Profile.module:144
 msgid "           Author Bio"
 msgstr "           O autorze"
 
-#: Profile.module:192
+#: Profile.module:155
 msgid "            Current password"
 msgstr "            Aktualne hasło"
 
-#: Profile.module:201
+#: Profile.module:164
 msgid "             New password"
 msgstr "             Nowe hasło"
 
-#: Profile.module:210
+#: Profile.module:173
 msgid "            Repeat new password"
 msgstr "            Powtórz hasło"
 
-#: Profile.module:220
+#: Profile.module:183
 msgid "             Save"
 msgstr "             Zapisz"
 
-#: Profile.module:234
+#: Profile.module:197
 msgid "                     API Public "
 msgstr "                     Publiczne API "
 
-#: Profile.module:243
+#: Profile.module:206
 msgid "                             Change"
 msgstr "                             Zmiana"
 
-#: Profile.module:247
+#: Profile.module:210
 msgid "                             Public key used in some cases."
 msgstr "                             Klucz publiczny jest używany w niektórych przypadkach."
 
-#: Profile.module:255
+#: Profile.module:218
 msgid "                       API Private"
 msgstr "                       Prywatne API"
 
-#: Profile.module:264
+#: Profile.module:227
 msgid "                           Change"
 msgstr "                           Zmiana"
 
-#: Profile.module:268
+#: Profile.module:231
 msgid "                           I-Nex use provate key to submit data online"
 msgstr "                           I-Nex wykorzystuje klucz prywatny do wysyłania danych na serwer"
 
-#: Profile.module:287
+#: Profile.module:250
 msgid "             Processor logo"
 msgstr "             Logo procesora"
 
-#: Profile.module:290
+#: Profile.module:253
 msgid "             CPU & GPU"
 msgstr "             Procesor i Karta graficzna"
 
-#: Profile.module:293
+#: Profile.module:256
 msgid "             Motherboard"
 msgstr "             Płyta główna"
 
-#: Profile.module:296
+#: Profile.module:259
 msgid "             Distro"
 msgstr "             Dystrybucja"
 
-#: Profile.module:299
+#: Profile.module:262
 msgid "             Link to"
 msgstr "             Odnośnik do"
 
-#: Profile.module:302
+#: Profile.module:265
 msgid "             Remove link"
 msgstr "             Usuń odnośnik"
 
@@ -433,6 +425,39 @@ msgstr ""
 msgid "Friends of the project"
 msgstr ""
 
+#: WNavbar.webpage:12
+msgid "Options"
+msgstr ""
+
+#: WNavbar.webpage:14
+msgid "Add CPU Vendor to DB"
+msgstr ""
+
+#: WNavbar.webpage:15
+#, fuzzy
+msgid "List CPU Database"
+msgstr "Dane o CPU z bazy danych:"
+
+#: WQuery.webpage:19 WWidgetLatestAdded.webpage:9
+msgid "CPU Logo"
+msgstr ""
+
+#: WQuery.webpage:20 WWidgetLatestAdded.webpage:10
+msgid "CPU and GPU"
+msgstr ""
+
+#: WQuery.webpage:21 WWidgetLatestAdded.webpage:11 WWidgetMobo.webpage:2
+msgid "Motherboard"
+msgstr "Płyta główna"
+
+#: WQuery.webpage:22 WWidgetDistro.webpage:2 WWidgetLatestAdded.webpage:12
+msgid "Distribution"
+msgstr "Dystrybucja"
+
+#: WQuery.webpage:23 WWidgetLatestAdded.webpage:13
+msgid "Link to report"
+msgstr ""
+
 #: WWidgetCPU.webpage:7
 msgid "CPU Specifications"
 msgstr "Specyfikacja procesora"
@@ -497,63 +522,63 @@ msgstr "Flagi:"
 msgid "More"
 msgstr "Więcej"
 
-#: WWidgetCPU.webpage:91
+#: WWidgetCPU.webpage:92
 msgid "x86 64-Bit Extensions:"
 msgstr "64 bitowe rozszerzenia"
 
-#: WWidgetCPU.webpage:95
+#: WWidgetCPU.webpage:96
 msgid "Hardware Virtualization:"
 msgstr ""
 
-#: WWidgetCPU.webpage:101
+#: WWidgetCPU.webpage:102
 msgid "Hyper Threading:"
 msgstr "Hyper Threading:"
 
-#: WWidgetCPU.webpage:108
+#: WWidgetCPU.webpage:109
 msgid "Hyper Transport:"
 msgstr ""
 
-#: WWidgetCPU.webpage:115
+#: WWidgetCPU.webpage:116
 msgid "Power management:"
 msgstr "Zarządzanie poborem energii:"
 
-#: WWidgetCPU.webpage:124
+#: WWidgetCPU.webpage:125
 msgid "Cache L1 Data:"
 msgstr ""
 
-#: WWidgetCPU.webpage:126
+#: WWidgetCPU.webpage:127
 msgid "Cache L1 Instruction:"
 msgstr ""
 
-#: WWidgetCPU.webpage:128
+#: WWidgetCPU.webpage:129
 msgid "Cache L1 Assoc:"
 msgstr ""
 
-#: WWidgetCPU.webpage:132
+#: WWidgetCPU.webpage:133
 msgid "Cache L2:"
 msgstr ""
 
-#: WWidgetCPU.webpage:134
+#: WWidgetCPU.webpage:135
 msgid "Cache L2 Assoc:"
 msgstr ""
 
-#: WWidgetCPU.webpage:136
+#: WWidgetCPU.webpage:137
 msgid "Cache L2 Cacheline:"
 msgstr ""
 
-#: WWidgetCPU.webpage:140
+#: WWidgetCPU.webpage:141
 msgid "Cache L3:"
 msgstr ""
 
-#: WWidgetCPU.webpage:142
+#: WWidgetCPU.webpage:143
 msgid "Cache L3 Assoc:"
 msgstr ""
 
-#: WWidgetCPU.webpage:144
+#: WWidgetCPU.webpage:145
 msgid "Cache L3 Cacheline:"
 msgstr ""
 
-#: WWidgetCPU.webpage:150
+#: WWidgetCPU.webpage:151
 msgid "SSE Size:"
 msgstr ""
 
@@ -612,10 +637,6 @@ msgstr "Nazwa kodowa"
 #: WWidgetCPUDB.webpage:56
 msgid "Memory support:"
 msgstr "Obsługa pamięci:"
-
-#: WWidgetDistro.webpage:2 WWidgetLatestAdded.webpage:12
-msgid "Distribution"
-msgstr "Dystrybucja"
 
 #: WWidgetDistro.webpage:12
 msgid "Distro Vendor:"
@@ -785,22 +806,6 @@ msgstr "Architektura:"
 msgid "Latest stable:"
 msgstr "Ostatnie stabilne wydanie jądra Linux:"
 
-#: WWidgetLatestAdded.webpage:9
-msgid "CPU Logo"
-msgstr ""
-
-#: WWidgetLatestAdded.webpage:10
-msgid "CPU and GPU"
-msgstr ""
-
-#: WWidgetLatestAdded.webpage:11 WWidgetMobo.webpage:2
-msgid "Motherboard"
-msgstr "Płyta główna"
-
-#: WWidgetLatestAdded.webpage:13
-msgid "Link to report"
-msgstr ""
-
 #: WWidgetMYModal.webpage:6
 msgid "CPU Flags long desc"
 msgstr "Wszystkie dostępne flagi procesora"
@@ -939,3 +944,12 @@ msgstr "                   Zaloguj się"
 
 #~ msgid "Other"
 #~ msgstr "Pozostałe"
+
+#~ msgid "              Logout"
+#~ msgstr "              Wyloguj"
+
+#~ msgid "             Profile"
+#~ msgstr "             Profil"
+
+#~ msgid "     I-Nex - Cerbero"
+#~ msgstr "     I-Nex - Cerbero"

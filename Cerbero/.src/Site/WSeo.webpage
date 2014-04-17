@@ -1,19 +1,29 @@
 <!-- http://ogp.me/-->
-<link rel="canonical" href="<%= MBrand.Brand_URL %>"/>
+<meta name="description" content="<%= MBrand.Brand_TEXT %>"/>
+<link rel="canonical" href="<%= MBrand.Brand_URL %>" />
+<link rel="publisher" href="https://plus.google.com/u/0/+Micha%C5%82G%C5%82owienkaPiotr"/>
 <meta property="og:locale" content="pl_PL"/>
 <meta property="og:locale:alternate" content="fr_FR" />
 <meta property="og:locale:alternate" content="en_US" />
 <meta property="og:locale:alternate" content="ru_RU" />
-<meta property="og:type" content="article"/>
-<meta property="og:title" content="<%=MValidate.RADIVATE["CPUID"]["BRAND_STR"]%>"/>
+<meta property="og:type" content="article" />
+<meta property="og:title" content="<%=MValidate.RADIVATE["CPUID"]["BRAND_STR"]%>" />
 <meta property="og:description" content="<%= MBrand.Brand_TEXT %>" />
 <meta property="og:url" content="<%= MBrand.Brand_URL %>" />
+<meta property="og:site_name" content="I-Nex.pl" />
+<meta property="article:publisher" content="https://www.facebook.com/inexlinux" />
+<meta property="article:author" content="https://www.facebook.com/mpg4.5" />
 <meta property="article:tag" content="<%=MValidate.RADIVATE["CPU_NAME"]%>" />
 <meta property="article:tag" content="<%=Replace(MValidate.RADIVATE["CPU_SOCKET"], "Socket:", "")%>" />
 <meta property="article:tag" content="<%=Replace(MValidate.RADIVATE["DISTRO_VENDOR"], "Distro Vendor:", "")%>" />
 <meta property="article:tag" content="<%=Replace(MValidate.RADIVATE["GPU_MODEL"], "", "")%>" />
+<meta property="article:section" content="CPU Reports" />
 <meta property="article:published_time" content="<%= Replace(MValidate.RADIVATE["DATE_TIME"], "/", "-") %>" />
 <meta property="og:image" content="<%=MValidate.RADIVATE["SCREENSHOT_URL"]%>" />
 <meta property="og:image" content="<%=Global.WEBSITE_ROOT_URL_HTTP%>/LOGOS/<%=MValidate.RADIVATE["CPU_LOGO"]%>" />
 <meta property="og:image" content="<%Print Detect_Dist.Return_URL(MValidate.RADIVATE["DISTRO_VENDOR"], Replace(MValidate.RADIVATE["DISTRO_VENDOR3"], "Desktop environment:", ""))%>"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:site" content="@eloaders"/>
+<meta name="twitter:domain" content="I-Nex.pl"/>
+<meta name="twitter:creator" content="@eloaders"/>
 <!-- /http://ogp.me/-->

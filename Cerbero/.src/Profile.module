@@ -17,44 +17,7 @@ Public Sub User_Profile()
           Response.Begin
           Change_Password_IN_Profile()
           DProfileHead.Render
-
-          Print "<div class=\"navbar navbar-fixed-top\">"
-          Print "  <div class=\"navbar-inner\">"
-          Print "  <div class=\"container\">"
-          Print "    <a class=\"btn btn-navbar\" data-toggle=\"collapse\" data-target=\".nav-collapse\">"
-          Print "      <span class=\"icon-bar\"></span>"
-          Print "      <span class=\"icon-bar\"></span>"
-          Print "      <span class=\"icon-bar\"></span>"
-          Print "    </a>"
-          Print "    <a class=\"brand\" href=\"" & Application.Root & "\">"
-          Print ("     I-Nex - Cerbero")
-          Print "    </a>"
-          Print "    <div class=\"nav-collapse\">"
-          Print "      <ul class=\"nav pull-right\">"
-          Print "        <li class=\"dropdown\">"
-          Print "          <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">"
-          Print "          <i class=\"icon-user\"></i>" & USER_DATA["CERBERO_USERNAME"] & "<b class=\"caret\"></b>"
-          Print "          </a>"
-          Print "        <ul class=\"dropdown-menu\">"
-          Print "          <li>"
-          Print "           <a href=\"" & Application.Root & "?profile\">"
-          Print ("             Profile")
-          Print "           </a>"
-          Print "          </li>"
-          Print "          <li>"
-          Print "           <a href=\"" & Application.Root & "?logout\">"
-          Print ("              Logout")
-          Print "           </a>"
-          Print "          </li>"
-          Print "        </ul>"
-          Print "        </li>"
-          Print "      </ul>"
-          Print "    </div><!--/.nav-collapse -->"
-          Print "  </div> <!-- /container -->"
-          Print "  </div> <!-- /navbar-inner -->"
-          Print "</div> <!-- /navbar -->"
-      
-          'Print File.Load("Profile/Subnavbar.html")
+          WNavbar.Render
           WSubnavbar.Render
           Print "<div class=\"main\">"
           Print "  <div class=\"main-inner\">"

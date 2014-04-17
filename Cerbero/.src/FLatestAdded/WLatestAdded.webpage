@@ -26,7 +26,11 @@ Dim All As Integer
           <%Try CPUusageLines = Split(CPUusage, "\n")%>
           
           <%For All = 0 To CPUusageLines.Count - 2%>
+          <%If CPUusageLines[All] = Request.Get["added"] Then%>
+          <li class="active"><a href="#"><%=CString(All)%><span class="sr-only">(current)</span></a></li>
+          <%Else%>
           <li><a href="inex.r?added=<%= CPUusageLines[All]%>&str=<%=CString(All)%>&nth=<%= Left$(CPUusageLines[All], - 6)%>&day=<%= Right$(Left$(CPUusageLines[All], - 4), -2)%>"><%= CString(All)%></a></li>
+          <%Endif%>
           <%Next%>
           <li><a href="inex.r?added">&raquo;</a></li>
           </ul>

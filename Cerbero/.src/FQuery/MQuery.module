@@ -1,0 +1,19 @@
+' Gambas module file
+
+Export
+Create Static
+Public CPUusage As Process
+Public CPUusageOutput As String
+Public Cached As String
+Public CPUusageLines As String[]
+Public QWEry As Collection
+Public Sub Main()
+  Dim i As Integer
+  Shell "cd " & CGI["DOCUMENT_ROOT"] & "/ValidDB && grep \"CPU_NAME\" ./*/* | grep -i \"" & Request.Get["query"] & "\" | awk {'print $1'} | sort" Wait To Cached
+  CPUusagelines = Split(Cached, "\n")
+  MBrand.Brand_TEXT = "Search - I-Nex - Cerbero"
+  MBrand.Brand_URL = Global.WEBSITE_ROOT_URL_HTTP
+  Response.Begin
+  WQuery.Render
+  Response.End
+End

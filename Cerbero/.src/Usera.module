@@ -19,6 +19,25 @@ Return False
 Endif
 End
 
+Public Function User_IsAdmin() As Boolean
+If IsNull(Request.Cookies["__ursa"]) = False Then
+    If Exist(Global.WHEREIS_SITE_ROOT & "/Users/" & Request.Cookies["__ursa"] & "") Then
+      USER_DATA = JSON.Decode(File.Load(Global.WHEREIS_SITE_ROOT & "/Users/" & Request.Cookies["__ursa"] & "/Data.json"))
+      If USER_DATA["SECRET_KEY"] = Request.Cookies["__apix"] Then
+        If Exist(Global.WHEREIS_SITE_ROOT & "/Users/" & Request.Cookies["__ursa"] & "/IS_Admin") Then
+          Return True
+        Endif
+      Return False
+      Endif
+      Return False
+    Endif
+    Return False
+Else
+Return False
+Endif
+End
+
+
 Public Function Send_Mail(email As String, username As String, displayname As String, API_PUBLIC As String, API_PRIVATE As String, Password As String)
   Dim Message As String
   Message = "Your Login: "

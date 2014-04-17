@@ -85,7 +85,8 @@ Flags = Split(Replace(MValidate.RADIVATE["CPU_FLAGS"], "Flags:", ""), ",", "'")
         </tbody>
         </table>
         <span class="arrow">
-        <a href="#myModal" role="button" class="btn" data-toggle="modal"><%Print ("More")%></a> 
+        <a href="#myModal" role="button" class="btn" data-toggle="modal"><%Print ("More")%></a>
+        <<WADSlinki>>
         </span>
         <table class="table table-striped table-bordered"> 
         <tr> 
