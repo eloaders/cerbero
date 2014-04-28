@@ -27,7 +27,7 @@ Public Sub PrintValidateData()
   
 
   MBrand.Brand_URL = Global.WEBSITE_ROOT_URL_HTTP & "/inex.r?validate=" & Request.Get["validate"]
-  MBrand.Brand_TEXT = "ID: - " & DWDATE & Right$(Request.Get["validate"], -8) & " " & RADIVATE["CPUID"]["BRAND_STR"]
+  MBrand.Brand_TEXT = RADIVATE["CPUID"]["BRAND_STR"]
   If IsNull(RADIVATE["SUBMITED_BY"]) = False Then
     If Exist(Global.WHEREIS_SITE_ROOT & "/Users/" & RADIVATE["SUBMITED_BY"] & "") Then
       USER_DATA = JSON.Decode(File.Load(Global.WHEREIS_SITE_ROOT & "/Users/" & RADIVATE["SUBMITED_BY"] & "/Data.json"))

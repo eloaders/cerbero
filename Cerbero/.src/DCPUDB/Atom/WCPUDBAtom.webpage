@@ -1,0 +1,90 @@
+<%
+Dim i As Integer
+%>
+<!DOCTYPE html>
+<html lang="en">
+<<WHead>>
+<body>
+<<WNavbar>>
+<div class="main">
+  <div class="main-inner">
+    <div class="container">
+      <div class="row">
+        <div class="span6">
+          <div class="widget widget-table action-table"> 
+            <div class="widget-content"> 
+              <table class="table table-striped table-bordered"> 
+              <%MCPUDBAtom.AtomCPUList = JSON.Decode(File.Load("/var/www/CPUDB/intel"))%>
+              <thead> 
+                  <tr> 
+                    <th><%Print ("CPU Model Name")%></th>
+                    <th><%Print ("CPU Frequency")%></th>
+                    <th><%Print ("CPU Package")%></th>
+                    <th><%Print ("CPU Codename")%></th>
+                    <th><%Print ("CPU Edit")%></th>
+                  </tr> 
+              </thead>
+              <tbody>
+              <%For i = 0 To MCPUDBAtom.AtomCPUList["DATABASE"].Count - 2%>
+              <tr>
+              <td><%Print MCPUDBAtom.AtomCPUList["DATABASE"][i]["PROCESSOR_MODEL_NAME"]%></td>
+              <td><%Print MCPUDBAtom.AtomCPUList["DATABASE"][i]["PROCESSOR_FREQUENCY"]%></td>
+              <td><%Print MCPUDBAtom.AtomCPUList["DATABASE"][i]["PROCESSOR_PACKAGE"]%></td>
+              <td><%Print MCPUDBAtom.AtomCPUList["DATABASE"][i]["PROCESSOR_CODENAME"]%></td>
+              <td class="td-actions"> 
+                <a href="" target="_blank" class="btn btn-link btn-small"> 
+                  <i class="btn-icon-only icon-link"></i> 
+                </a>
+              </td>
+              </tr>
+              <%Next%>
+              </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        
+        <div class="span6">
+          <div class="widget widget-table action-table"> 
+            <div class="widget-content"> 
+              <table class="table table-striped table-bordered"> 
+              <%MCPUDBAtom.AtomCPUList = JSON.Decode(File.Load("/var/www/CPUDB/amd"))%>
+              <thead> 
+                  <tr> 
+                    <th><%Print ("CPU Model Name")%></th>
+                    <th><%Print ("CPU Frequency")%></th>
+                    <th><%Print ("CPU Package")%></th>
+                    <th><%Print ("CPU Codename")%></th>
+                    <th><%Print ("CPU Edit")%></th>
+                  </tr> 
+              </thead>
+              <tbody>
+              <%For i = 0 To MCPUDBAtom.AtomCPUList["DATABASE"].Count - 2%>
+              <tr>
+              <td><%Print MCPUDBAtom.AtomCPUList["DATABASE"][i]["PROCESSOR_MODEL_NAME"]%></td>
+              <td><%Print MCPUDBAtom.AtomCPUList["DATABASE"][i]["PROCESSOR_FREQUENCY"]%></td>
+              <td><%Print MCPUDBAtom.AtomCPUList["DATABASE"][i]["PROCESSOR_PACKAGE"]%></td>
+              <td><%Print MCPUDBAtom.AtomCPUList["DATABASE"][i]["PROCESSOR_CODENAME"]%></td>
+              <td class="td-actions"> 
+                <a href="" target="_blank" class="btn btn-link btn-small"> 
+                  <i class="btn-icon-only icon-link"></i> 
+                </a>
+                <a href="" target="_blank" class="btn btn-link btn-small"> 
+                  <i class="btn-icon-only icon-link"></i> 
+                </a>
+              </td>
+              </tr>
+              <%Next%>
+              </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div> 
+</div>
+<<WExtra>>
+<<WFooter>> 
+</body>
+</html>

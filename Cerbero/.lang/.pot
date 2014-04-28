@@ -18,117 +18,39 @@ msgstr ""
 msgid "I-Nex - Cerbero - CPU-Z Validation Clone Service"
 msgstr ""
 
-#: DLoginHead.webpage:4
-msgid "Login - I-Nex - Cerbero"
-msgstr ""
-
-#: DLoginHead.webpage:32 DSignupHead.webpage:32 WHead.webpage:2
-msgid "I-Nex - Cerbero"
-msgstr ""
-
-#: DLoginHead.webpage:40
-msgid "Don't have an account?"
-msgstr ""
-
-#: DLoginHead.webpage:48 DSignupHead.webpage:46
-msgid "Back to Homepage"
-msgstr ""
-
-#: DProfileHead.webpage:4
-msgid "Account - I-Nex - Cerbero"
-msgstr ""
-
 #: DSignupHead.webpage:4
 msgid "Signup - I-Nex - Cerbero"
+msgstr ""
+
+#: DSignupHead.webpage:32 WHead.webpage:4
+msgid "I-Nex - Cerbero"
 msgstr ""
 
 #: DSignupHead.webpage:39
 msgid "Already have an account? Login now"
 msgstr ""
 
-#: DUpload.webpage:13
+#: DSignupHead.webpage:46
+msgid "Back to Homepage"
+msgstr ""
+
+#: DUpload.webpage:17
+msgid "Upload Report"
+msgstr ""
+
+#: DUpload.webpage:21
 msgid "Validate"
 msgstr ""
 
-#: DUpload.webpage:15
+#: DUpload.webpage:23
 msgid "Please browse file to publish data online"
 msgstr ""
 
-#: DUpload.webpage:23
+#: DUpload.webpage:36
 msgid "Redirect to"
 msgstr ""
 
-#: DUpload.webpage:49
-msgid "Beta"
-msgstr ""
-
-#: DUpload.webpage:50
-msgid "Keep in mind that the service is currently in beta. "
-msgstr ""
-
-#: DUpload.webpage:51
-msgid "Work on the introduction of new features. "
-msgstr ""
-
-#: DUpload.webpage:52
-msgid "The need for many people to help. You can also help."
-msgstr ""
-
-#: DUpload.webpage:58
-msgid "I-Nex Cerbero"
-msgstr ""
-
-#: DUpload.webpage:59
-msgid ""
-"The best way to publication of the report is to directly send it using the I-"
-"Nex. "
-msgstr ""
-
-#: DUpload.webpage:60
-msgid "Register on the site, get your key and user name. "
-msgstr ""
-
-#: DUpload.webpage:61
-msgid "Enter all the data in the I-Nex and then send the report."
-msgstr ""
-
-#: DUpload.webpage:80
-msgid "Total Reports And Users in Database"
-msgstr ""
-
-#: DUploadSubnavbar.webpage:8 WSubnavbar.webpage:7
-msgid "Upload"
-msgstr ""
-
-#: DUploadSubnavbar.webpage:16 WSubnavbar.webpage:13
-msgid "Latest added"
-msgstr ""
-
-#: DUploadSubnavbar.webpage:23 WSubnavbar.webpage:19
-msgid "Forum"
-msgstr ""
-
-#: DUploadSubnavbar.webpage:29 WSubnavbar.webpage:25
-msgid "I-Nex Homepage"
-msgstr ""
-
-#: DUploadSubnavbar.webpage:35 WSubnavbar.webpage:31
-msgid "Install I-Nex"
-msgstr ""
-
-#: DUploadUserNav.webpage:4
-msgid "Account"
-msgstr ""
-
-#: DUploadUserNav.webpage:8
-msgid "Signin"
-msgstr ""
-
-#: DUploadUserNav.webpage:9
-msgid "Signup"
-msgstr ""
-
-#: Donate.webpage:15 Page.module:7 WExtra.webpage:10
+#: Donate.webpage:13 Page.module:7 WExtra.webpage:22
 msgid "Donate"
 msgstr ""
 
@@ -192,15 +114,15 @@ msgstr ""
 msgid "Last donators"
 msgstr ""
 
-#: Donate.webpage:44
+#: Donate.webpage:46
 msgid "Username"
 msgstr ""
 
-#: Donate.webpage:45
+#: Donate.webpage:47
 msgid "Count"
 msgstr ""
 
-#: Donate.webpage:46
+#: Donate.webpage:48 WProfile.webpage:132
 msgid "Homepage"
 msgstr ""
 
@@ -208,168 +130,68 @@ msgstr ""
 msgid "VALD"
 msgstr ""
 
-#: Page.module:13 Translators.webpage:16 WExtra.webpage:7
+#: MNavbar.module:14 WProfile.webpage:70
+msgid "Profile"
+msgstr ""
+
+#: MNavbar.module:16
+msgid "Logout"
+msgstr ""
+
+#: MNavbar.module:18 WProfile.webpage:66
+msgid "Account"
+msgstr ""
+
+#: MNavbar.module:20
+msgid "Sign In"
+msgstr ""
+
+#: MNavbar.module:22
+msgid "Sign Up"
+msgstr ""
+
+#: MQuery.module:14
+msgid "Search - I-Nex - Cerbero"
+msgstr ""
+
+#: Page.module:13 Translators.webpage:212 WExtra.webpage:19
 msgid "Translators"
 msgstr ""
 
-#: Page.module:17 Team.webpage:16 WExtra.webpage:8
+#: Page.module:17 Team.webpage:213 WExtra.webpage:16
 msgid "Team"
 msgstr ""
 
-#: Profile.module:31
-msgid "           Account"
-msgstr ""
-
-#: Profile.module:40
-msgid "             Account details"
-msgstr ""
-
-#: Profile.module:45
-msgid "             Keys"
-msgstr ""
-
-#: Profile.module:50
-msgid "             Submitted reports"
-msgstr ""
-
-#: Profile.module:74
-msgid "                  Your Login is for logging in and cannot be changed."
-msgstr ""
-
-#: Profile.module:83
-msgid "                  Public account name. It is used in some cases."
-msgstr ""
-
-#: Profile.module:115
-msgid "            Email Address"
-msgstr ""
-
-#: Profile.module:123
-msgid "               Your e-mail will also be used to display Gravatar"
-msgstr ""
-
-#: Profile.module:131
-msgid "           Homepage"
-msgstr ""
-
-#: Profile.module:144
-msgid "           Author Bio"
-msgstr ""
-
-#: Profile.module:155
-msgid "            Current password"
-msgstr ""
-
-#: Profile.module:164
-msgid "             New password"
-msgstr ""
-
-#: Profile.module:173
-msgid "            Repeat new password"
-msgstr ""
-
-#: Profile.module:183
-msgid "             Save"
-msgstr ""
-
-#: Profile.module:197
-msgid "                     API Public "
-msgstr ""
-
-#: Profile.module:206
-msgid "                             Change"
-msgstr ""
-
-#: Profile.module:210
-msgid "                             Public key used in some cases."
-msgstr ""
-
-#: Profile.module:218
-msgid "                       API Private"
-msgstr ""
-
-#: Profile.module:227
-msgid "                           Change"
-msgstr ""
-
-#: Profile.module:231
-msgid "                           I-Nex use provate key to submit data online"
-msgstr ""
-
-#: Profile.module:250
-msgid "             Processor logo"
-msgstr ""
-
-#: Profile.module:253
-msgid "             CPU & GPU"
-msgstr ""
-
-#: Profile.module:256
-msgid "             Motherboard"
-msgstr ""
-
-#: Profile.module:259
-msgid "             Distro"
-msgstr ""
-
-#: Profile.module:262
-msgid "             Link to"
-msgstr ""
-
-#: Profile.module:265
-msgid "             Remove link"
+#: Policy.webpage:18
+msgid "Polityka prywatności serwisu i-nex.pl"
 msgstr ""
 
 #: Register.module:3
 msgid "SECRET_KEY"
 msgstr ""
 
-#: Signup.module:39
-msgid "       Signup for Free Account"
-msgstr ""
-
-#: Signup.module:44
-msgid "             Create your free account:"
-msgstr ""
-
-#: Signup.module:48
-msgid "                   User name:"
-msgstr ""
-
-#: Signup.module:66
-msgid "                   Display name:"
-msgstr ""
-
-#: Signup.module:84
-msgid "                   Email Address:"
-msgstr ""
-
-#: Signup.module:101
-msgid "                   Password:"
-msgstr ""
-
-#: Signup.module:118
-msgid "                   Confirm Password:"
-msgstr ""
-
-#: Signup.module:139
-msgid "                   Agree with the Terms & Conditions."
-msgstr ""
-
-#: Signup.module:143
-msgid "         Register"
-msgstr ""
-
-#: Signup.module:162
-msgid "     Already have an account?"
-msgstr ""
-
-#: Signup.module:164
-msgid "Login to your account"
-msgstr ""
-
 #: WAditional.webpage:2
 msgid "System commands outputs"
+msgstr ""
+
+#: WCPUDBAtom.webpage:19
+msgid "CPU Model Name"
+msgstr ""
+
+#: WCPUDBAtom.webpage:20
+msgid "CPU Frequency"
+msgstr ""
+
+#: WCPUDBAtom.webpage:21
+msgid "CPU Package"
+msgstr ""
+
+#: WCPUDBAtom.webpage:22
+msgid "CPU Codename"
+msgstr ""
+
+#: WCPUDBAtom.webpage:23
+msgid "CPU Edit"
 msgstr ""
 
 #: WCookies.webpage:30
@@ -388,199 +210,357 @@ msgstr ""
 msgid "I understand"
 msgstr ""
 
-#: WExtra.webpage:5
+#: WExtra.webpage:7
 msgid "About Cerbero"
 msgstr ""
 
-#: WExtra.webpage:15
+#: WExtra.webpage:33
 msgid "Support"
 msgstr ""
 
-#: WExtra.webpage:17
+#: WExtra.webpage:37
 msgid "Ask a Question"
 msgstr ""
 
-#: WExtra.webpage:18
+#: WExtra.webpage:38
 msgid "Report a bug"
 msgstr ""
 
-#: WExtra.webpage:20
+#: WExtra.webpage:41
 msgid "Friends of the project"
 msgstr ""
 
-#: WExtra.webpage:29
+#: WExtra.webpage:55
 msgid "Something Legal"
 msgstr ""
 
-#: WExtra.webpage:31
+#: WExtra.webpage:59
 msgid "Privacy Policy"
 msgstr ""
 
-#: WExtra.webpage:36
+#: WExtra.webpage:68
 msgid "Sponsors"
 msgstr ""
 
-#: WNavbar.webpage:12
-msgid "Options"
+#: WFalseQuery.webpage:10 WQuery.webpage:13
+msgid "Search by:"
 msgstr ""
 
-#: WNavbar.webpage:14
-msgid "Add CPU Vendor to DB"
+#: WFalseQuery.webpage:13
+msgid "Search failed."
 msgstr ""
 
-#: WNavbar.webpage:15
-msgid "List CPU Database"
+#: WFalseQuery.webpage:14
+msgid "The minimum number of characters is too small."
 msgstr ""
 
-#: WNavbar.webpage:16
-msgid "Admin Panel"
+#: WFalseQuery.webpage:15
+msgid "The minimum number of characters = 4"
 msgstr ""
 
-#: WNavbar.webpage:31
+#: WHeroWidget.webpage:17
+msgid "Total registered users"
+msgstr ""
+
+#: WHeroWidget.webpage:28
+msgid "Total reports in database"
+msgstr ""
+
+#: WHeroWidget.webpage:50
+msgid "Today submitted reports"
+msgstr ""
+
+#: WJumbotron.webpage:180
+msgid "Open-Source Linux CPU, GPU, Motherboard Database Website"
+msgstr ""
+
+#: WLogin.webpage:4 WLoginnedin.webpage:4
+msgid "Cerbero - Login"
+msgstr ""
+
+#: WLogin.webpage:29 WLoginnedin.webpage:28
+msgid "Please sign in"
+msgstr ""
+
+#: WLogin.webpage:48
+msgid "Remember Me"
+msgstr ""
+
+#: WLoginnedin.webpage:31
+msgid "You are currently logged in."
+msgstr ""
+
+#: WNavbar.webpage:53
+msgid "Site"
+msgstr ""
+
+#: WNavbar.webpage:55
+msgid "Upload"
+msgstr ""
+
+#: WNavbar.webpage:56
+msgid "Latest added"
+msgstr ""
+
+#: WNavbar.webpage:58
+msgid "Forum"
+msgstr ""
+
+#: WNavbar.webpage:59
+msgid "I-Nex Homepage"
+msgstr ""
+
+#: WNavbar.webpage:60
+msgid "Install I-Nex"
+msgstr ""
+
+#: WNavbar.webpage:67
 msgid "Search by CPU Name"
 msgstr ""
 
-#: WQuery.webpage:19 WWidgetLatestAdded.webpage:9
+#: WNavbar.webpage:98
+msgid "PA"
+msgstr ""
+
+#: WNavbar.webpage:99
+msgid "CList"
+msgstr ""
+
+#: WNavbar.webpage:100
+msgid "CAdd"
+msgstr ""
+
+#: WProfile.webpage:71
+msgid "API Keys"
+msgstr ""
+
+#: WProfile.webpage:72
+msgid "Submitted Reports"
+msgstr ""
+
+#: WProfile.webpage:83
+msgid "Login"
+msgstr ""
+
+#: WProfile.webpage:90
+msgid "Display name"
+msgstr ""
+
+#: WProfile.webpage:97
+msgid "Facebook"
+msgstr ""
+
+#: WProfile.webpage:104
+msgid "Google"
+msgstr ""
+
+#: WProfile.webpage:111
+msgid "Twitter"
+msgstr ""
+
+#: WProfile.webpage:118
+msgid "Github"
+msgstr ""
+
+#: WProfile.webpage:125
+msgid "Email"
+msgstr ""
+
+#: WProfile.webpage:139
+msgid "About You"
+msgstr ""
+
+#: WProfile.webpage:142
+msgid "Some text about you :)"
+msgstr ""
+
+#: WProfile.webpage:148
+msgid "Save"
+msgstr ""
+
+#: WProfile.webpage:162
+msgid "Old Password"
+msgstr ""
+
+#: WProfile.webpage:169
+msgid "New Password"
+msgstr ""
+
+#: WProfile.webpage:176
+msgid "Repeat new password"
+msgstr ""
+
+#: WProfile.webpage:184
+msgid "Change"
+msgstr ""
+
+#: WProfile.webpage:215
+msgid "Remember! I-Nex use only Private API Key to publish data online"
+msgstr ""
+
+#: WProfile.webpage:222 WQuery.webpage:19 WWidgetLatestAdded.webpage:12
 msgid "CPU Logo"
 msgstr ""
 
-#: WQuery.webpage:20 WWidgetLatestAdded.webpage:10
+#: WProfile.webpage:223 WQuery.webpage:20 WWidgetLatestAdded.webpage:13
 msgid "CPU and GPU"
 msgstr ""
 
-#: WQuery.webpage:21 WWidgetLatestAdded.webpage:11 WWidgetMobo.webpage:2
+#: WProfile.webpage:224 WQuery.webpage:21 WWidgetLatestAdded.webpage:14
+#: WWidgetMobo.webpage:2
 msgid "Motherboard"
 msgstr ""
 
-#: WQuery.webpage:22 WWidgetDistro.webpage:2 WWidgetLatestAdded.webpage:12
+#: WProfile.webpage:225 WQuery.webpage:22 WWidgetDistro.webpage:2
+#: WWidgetLatestAdded.webpage:15
 msgid "Distribution"
 msgstr ""
 
-#: WQuery.webpage:23 WWidgetLatestAdded.webpage:13
-msgid "Link to report"
+#: WProfile.webpage:226 WQuery.webpage:23 WWidgetLatestAdded.webpage:16
+msgid "Link"
 msgstr ""
 
-#: WWidgetCPU.webpage:7
+#: WProfile.webpage:227
+msgid "Remove"
+msgstr ""
+
+#: WRegister.webpage:4
+msgid "Cerbero - Register"
+msgstr ""
+
+#: WRegister.webpage:29
+msgid "Register"
+msgstr ""
+
+#: WRegister.webpage:90
+msgid "Agree with the Terms & Conditions."
+msgstr ""
+
+#: WReturnTop.webpage:31
+msgid "Click to return on the top page"
+msgstr ""
+
+#: WWidgetCPU.webpage:2
 msgid "CPU Specifications"
 msgstr ""
 
-#: WWidgetCPU.webpage:19 WWidgetGPU.webpage:14
+#: WWidgetCPU.webpage:12 WWidgetGPU.webpage:11
 msgid "Model:"
 msgstr ""
 
-#: WWidgetCPU.webpage:23
+#: WWidgetCPU.webpage:16
 msgid "CPU Clock:"
 msgstr ""
 
-#: WWidgetCPU.webpage:27
+#: WWidgetCPU.webpage:20
 msgid "CPU Clock By OS:"
 msgstr ""
 
-#: WWidgetCPU.webpage:31
+#: WWidgetCPU.webpage:24
 msgid "CPU Clock By IC:"
 msgstr ""
 
-#: WWidgetCPU.webpage:35
+#: WWidgetCPU.webpage:28
 msgid "CPU Clock Measure:"
 msgstr ""
 
-#: WWidgetCPU.webpage:39
+#: WWidgetCPU.webpage:32
 msgid "CPU Mark TSC:"
 msgstr ""
 
-#: WWidgetCPU.webpage:43
+#: WWidgetCPU.webpage:36
 msgid "Integrated GPU:"
 msgstr ""
 
-#: WWidgetCPU.webpage:47
+#: WWidgetCPU.webpage:40
 msgid "Family:"
 msgstr ""
 
-#: WWidgetCPU.webpage:55
+#: WWidgetCPU.webpage:48
 msgid "Stepping:"
 msgstr ""
 
-#: WWidgetCPU.webpage:59
+#: WWidgetCPU.webpage:52
 msgid "Cores:"
 msgstr ""
 
-#: WWidgetCPU.webpage:63
+#: WWidgetCPU.webpage:56
 msgid "Phy ID:"
 msgstr ""
 
-#: WWidgetCPU.webpage:67
+#: WWidgetCPU.webpage:60
 msgid "Adress sizes:"
 msgstr ""
 
-#: WWidgetCPU.webpage:71
+#: WWidgetCPU.webpage:64
 msgid "Bogomips:"
 msgstr ""
 
-#: WWidgetCPU.webpage:75
+#: WWidgetCPU.webpage:68
 msgid "Flags:"
 msgstr ""
 
-#: WWidgetCPU.webpage:87
+#: WWidgetCPU.webpage:81
 msgid "More"
 msgstr ""
 
-#: WWidgetCPU.webpage:92
+#: WWidgetCPU.webpage:87
 msgid "x86 64-Bit Extensions:"
 msgstr ""
 
-#: WWidgetCPU.webpage:96
+#: WWidgetCPU.webpage:91
 msgid "Hardware Virtualization:"
 msgstr ""
 
-#: WWidgetCPU.webpage:102
+#: WWidgetCPU.webpage:97
 msgid "Hyper Threading:"
 msgstr ""
 
-#: WWidgetCPU.webpage:109
+#: WWidgetCPU.webpage:104
 msgid "Hyper Transport:"
 msgstr ""
 
-#: WWidgetCPU.webpage:116
+#: WWidgetCPU.webpage:111
 msgid "Power management:"
 msgstr ""
 
-#: WWidgetCPU.webpage:125
+#: WWidgetCPU.webpage:120
 msgid "Cache L1 Data:"
 msgstr ""
 
-#: WWidgetCPU.webpage:127
+#: WWidgetCPU.webpage:122
 msgid "Cache L1 Instruction:"
 msgstr ""
 
-#: WWidgetCPU.webpage:129
+#: WWidgetCPU.webpage:124
 msgid "Cache L1 Assoc:"
 msgstr ""
 
-#: WWidgetCPU.webpage:133
+#: WWidgetCPU.webpage:128
 msgid "Cache L2:"
 msgstr ""
 
-#: WWidgetCPU.webpage:135
+#: WWidgetCPU.webpage:130
 msgid "Cache L2 Assoc:"
 msgstr ""
 
-#: WWidgetCPU.webpage:137
+#: WWidgetCPU.webpage:132
 msgid "Cache L2 Cacheline:"
 msgstr ""
 
-#: WWidgetCPU.webpage:141
+#: WWidgetCPU.webpage:136
 msgid "Cache L3:"
 msgstr ""
 
-#: WWidgetCPU.webpage:143
+#: WWidgetCPU.webpage:138
 msgid "Cache L3 Assoc:"
 msgstr ""
 
-#: WWidgetCPU.webpage:145
+#: WWidgetCPU.webpage:140
 msgid "Cache L3 Cacheline:"
 msgstr ""
 
-#: WWidgetCPU.webpage:151
+#: WWidgetCPU.webpage:146
 msgid "SSE Size:"
 msgstr ""
 
@@ -640,87 +620,87 @@ msgstr ""
 msgid "Memory support:"
 msgstr ""
 
-#: WWidgetDistro.webpage:12
+#: WWidgetDistro.webpage:11
 msgid "Distro Vendor:"
 msgstr ""
 
-#: WWidgetDistro.webpage:16
+#: WWidgetDistro.webpage:15
 msgid "Distro Release:"
 msgstr ""
 
-#: WWidgetDistro.webpage:20
+#: WWidgetDistro.webpage:19
 msgid "Desktop environment:"
 msgstr ""
 
-#: WWidgetDistro.webpage:24
+#: WWidgetDistro.webpage:23
 msgid "Window manager:"
 msgstr ""
 
-#: WWidgetDistro.webpage:28
+#: WWidgetDistro.webpage:27
 msgid "Window manager Theme:"
 msgstr ""
 
-#: WWidgetDistro.webpage:32
+#: WWidgetDistro.webpage:31
 msgid "GTK+ 2 Theme:"
 msgstr ""
 
-#: WWidgetDistro.webpage:36
+#: WWidgetDistro.webpage:35
 msgid "GTK+ 3 Theme:"
 msgstr ""
 
-#: WWidgetDistro.webpage:40
+#: WWidgetDistro.webpage:39
 msgid "GTK Icons:"
 msgstr ""
 
-#: WWidgetDistro.webpage:44
+#: WWidgetDistro.webpage:43
 msgid "GTK Font:"
 msgstr ""
 
-#: WWidgetDistro.webpage:48
+#: WWidgetDistro.webpage:47
 msgid "Hostname:"
 msgstr ""
 
-#: WWidgetDistro.webpage:52
+#: WWidgetDistro.webpage:51
 msgid "Deafult DM:"
 msgstr ""
 
-#: WWidgetDistro.webpage:56
+#: WWidgetDistro.webpage:55
 msgid "Timezone:"
 msgstr ""
 
-#: WWidgetDistro.webpage:60
+#: WWidgetDistro.webpage:59
 msgid "GLX Version:"
 msgstr ""
 
-#: WWidgetDistro.webpage:64
+#: WWidgetDistro.webpage:63
 msgid "X.Org Version:"
 msgstr ""
 
-#: WWidgetDistro.webpage:68
+#: WWidgetDistro.webpage:67
 msgid "Net-tools:"
 msgstr ""
 
-#: WWidgetDistro.webpage:72
+#: WWidgetDistro.webpage:71
 msgid "Arch:"
 msgstr ""
 
-#: WWidgetDistro.webpage:76
+#: WWidgetDistro.webpage:75
 msgid "Binutils:"
 msgstr ""
 
-#: WWidgetDistro.webpage:80
+#: WWidgetDistro.webpage:79
 msgid "GCC Version:"
 msgstr ""
 
-#: WWidgetDistro.webpage:84
+#: WWidgetDistro.webpage:83
 msgid "Libc Version"
 msgstr ""
 
-#: WWidgetDistro.webpage:88
+#: WWidgetDistro.webpage:87
 msgid "GNU Make Version:"
 msgstr ""
 
-#: WWidgetDistro.webpage:92
+#: WWidgetDistro.webpage:91
 msgid "Dynamic linker (ldd):"
 msgstr ""
 
@@ -728,55 +708,55 @@ msgstr ""
 msgid "GPU"
 msgstr ""
 
-#: WWidgetGPU.webpage:18
+#: WWidgetGPU.webpage:15
 msgid "OpenGL Vendor:"
 msgstr ""
 
-#: WWidgetGPU.webpage:22
+#: WWidgetGPU.webpage:19
 msgid "OpenGL Renderer:"
 msgstr ""
 
-#: WWidgetGPU.webpage:26
+#: WWidgetGPU.webpage:23
 msgid "OpenGL Version:"
 msgstr ""
 
-#: WWidgetGPU.webpage:30
+#: WWidgetGPU.webpage:27
 msgid "Client glx vendor:"
 msgstr ""
 
-#: WWidgetGPU.webpage:34
+#: WWidgetGPU.webpage:31
 msgid "Client glx version:"
 msgstr ""
 
-#: WWidgetGPU.webpage:38
+#: WWidgetGPU.webpage:35
 msgid "Server glx vendor:"
 msgstr ""
 
-#: WWidgetGPU.webpage:42
+#: WWidgetGPU.webpage:39
 msgid "Server glx version:"
 msgstr ""
 
-#: WWidgetGPU.webpage:46
+#: WWidgetGPU.webpage:43
 msgid "GLX version:"
 msgstr ""
 
-#: WWidgetGPU.webpage:50
+#: WWidgetGPU.webpage:47
 msgid "Kernel driver in use:"
 msgstr ""
 
-#: WWidgetGPU.webpage:54
+#: WWidgetGPU.webpage:51
 msgid "Total Memory prefetchable:"
 msgstr ""
 
-#: WWidgetGPU.webpage:58
+#: WWidgetGPU.webpage:55
 msgid "Total Memory non-prefetchable:"
 msgstr ""
 
-#: WWidgetGPU.webpage:62
+#: WWidgetGPU.webpage:59
 msgid "Resolutions:"
 msgstr ""
 
-#: WWidgetGPU.webpage:66
+#: WWidgetGPU.webpage:63
 msgid "Present resolution:"
 msgstr ""
 
@@ -808,11 +788,15 @@ msgstr ""
 msgid "Latest stable:"
 msgstr ""
 
-#: WWidgetMYModal.webpage:6
+#: WWidgetLatestAdded.webpage:6 WWidgetNotAdded.webpage:2
+msgid "Latest Added"
+msgstr ""
+
+#: WWidgetMYModal.webpage:8
 msgid "CPU Flags long desc"
 msgstr ""
 
-#: WWidgetMYModal.webpage:42
+#: WWidgetMYModal.webpage:33
 msgid "Close"
 msgstr ""
 
@@ -908,11 +892,11 @@ msgstr ""
 msgid "Product Version:"
 msgstr ""
 
-#: WWidgetNotAdded.webpage:2
+#: WWidgetNotAdded.webpage:5
 msgid "Today has not added any reports"
 msgstr ""
 
-#: WWidgetScreenshot.webpage:2
+#: WWidgetScreenshot.webpage:50
 msgid "I-Nex Screenshot"
 msgstr ""
 
@@ -920,26 +904,18 @@ msgstr ""
 msgid "Submited by"
 msgstr ""
 
-#: login.module:30
-msgid "             Member Login"
+#: WWidgetUser.webpage:18
+msgid "More About"
 msgstr ""
 
-#: login.module:34
-msgid "                   Please provide your details"
+#: WWidgetUser.webpage:24
+msgid "Social: "
 msgstr ""
 
-#: login.module:38
-msgid "                               Username:"
+#: WWidgetUser.webpage:47
+msgid "Bio:"
 msgstr ""
 
-#: login.module:44
-msgid "                               Password:"
-msgstr ""
-
-#: login.module:53
-msgid "                               Keep me signed in"
-msgstr ""
-
-#: login.module:57
-msgid "                   Sign In"
+#: WWidgetUser.webpage:54
+msgid "I've heard enough about"
 msgstr ""

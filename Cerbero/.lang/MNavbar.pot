@@ -14,3 +14,23 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+#: MNavbar.module:14
+msgid "Profile"
+msgstr ""
+
+#: MNavbar.module:16
+msgid "Logout"
+msgstr ""
+
+#: MNavbar.module:18
+msgid "Account"
+msgstr ""
+
+#: MNavbar.module:20
+msgid "Sign In"
+msgstr ""
+
+#: MNavbar.module:22
+msgid "Sign Up"
+msgstr ""
+

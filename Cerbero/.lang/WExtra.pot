@@ -14,47 +14,47 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: WExtra.webpage:5
+#: WExtra.webpage:7
 msgid "About Cerbero"
 msgstr ""
 
-#: WExtra.webpage:7
-msgid "Translators"
-msgstr ""
-
-#: WExtra.webpage:8
+#: WExtra.webpage:16
 msgid "Team"
 msgstr ""
 
-#: WExtra.webpage:10
+#: WExtra.webpage:19
+msgid "Translators"
+msgstr ""
+
+#: WExtra.webpage:22
 msgid "Donate"
 msgstr ""
 
-#: WExtra.webpage:15
+#: WExtra.webpage:33
 msgid "Support"
 msgstr ""
 
-#: WExtra.webpage:17
+#: WExtra.webpage:37
 msgid "Ask a Question"
 msgstr ""
 
-#: WExtra.webpage:18
+#: WExtra.webpage:38
 msgid "Report a bug"
 msgstr ""
 
-#: WExtra.webpage:20
+#: WExtra.webpage:41
 msgid "Friends of the project"
 msgstr ""
 
-#: WExtra.webpage:29
+#: WExtra.webpage:55
 msgid "Something Legal"
 msgstr ""
 
-#: WExtra.webpage:31
+#: WExtra.webpage:59
 msgid "Privacy Policy"
 msgstr ""
 
-#: WExtra.webpage:36
+#: WExtra.webpage:68
 msgid "Sponsors"
 msgstr ""
 

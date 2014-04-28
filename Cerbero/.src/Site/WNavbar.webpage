@@ -1,37 +1,127 @@
-<div class="navbar navbar-fixed-top">
-  <div class="navbar-inner">
-    <div class="container">
-    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-    <span class="icon-bar"></span>
-    <span class="icon-bar"></span>
-    <span class="icon-bar"></span>
-    </a>
-    <<WBrand>>
-    <div class="nav-collapse"> 
-      <ul class="nav pull-right">
-        <%If Usera.User_Logged() = True And Usera.User_IsAdmin() = True Then%>
-        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-large icon-cog"></i>  <%=("Options")%><b class="caret"></b></a>
+<<WPageHeader>>
+<style type="text/css">
+    /* Special class on .container surrounding .navbar, used for positioning it into place. */ 
+.navbar-wrapper { 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  z-index: 20; 
+  margin-top: 20px; 
+} 
+ 
+/* Flip around the padding for proper display in narrow viewports */ 
+.navbar-wrapper .container { 
+  padding-left: 0; 
+  padding-right: 0; 
+} 
+.navbar-wrapper .navbar { 
+  padding-left: 15px; 
+  padding-right: 15px; 
+} 
+ 
+.navbar-content 
+{ 
+    width:320px; 
+    padding: 15px; 
+    padding-bottom:0px; 
+} 
+.navbar-content:before, .navbar-content:after 
+{ 
+    display: table; 
+    content: ""; 
+    line-height: 0; 
+}
+.navbar-footer  
+{ 
+    background-color:#DDD; 
+} 
+.navbar-footer-content { padding:15px 15px 15px 15px; }   
+</style>
+<div class="container">
+  <div class="navbar navbar-default">
+    <div class="navbar-header">
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+       </button>
+       <<WBrand>>
+    </div>
+    <div class="navbar-collapse collapse navbar-inverse-collapse">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bars"></i>  <%=("Site")%> <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="<%=Application.Root%>"><i class="fa fa-upload"></i>  <%Print ("Upload")%></a></li>
+              <li><a href="<%=Application.Root%>?added"><i class="fa fa-th-list"></i>  <%Print ("Latest added")%></a></li>
+              <li class="divider"></li>
+              <li><a href="http://i-nex.linux.pl/bbs/categories/i-nex-validate"><%Print ("Forum")%></a></li>
+              <li><a href="http://i-nex.linux.pl"><%Print ("I-Nex Homepage")%></a></li>
+              <li><a href="http://i-nex.linux.pl/install/"><%Print ("Install I-Nex")%></a></li>
+            </ul>
+        </li>
+      </ul>
+      <div class="col-sm-3 col-md-3">
+        <form class="navbar-form" role="search">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="<%=("Search by CPU Name")%>" name="query">
+            <div class="input-group-btn">
+                <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+        </form>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user fa-lg"></i>  <%= MNavbar.USERNAME_ACCOUT_TEXT %> <b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="javascript:;"><i class="icon-large icon-plus"></i>  <%=("Add CPU Vendor to DB")%></a></li>
-            <li><a href="javascript:;"><i class="icon-large icon-list-ul"></i>  <%=("List CPU Database")%></a></li>
-            <li><a href="javascript:;"><i class="icon-large icon-list-ul"></i>  <%=("Admin Panel")%></a></li>
+            <li>
+              <%If Usera.User_Logged() = True Then%>
+              <div class="navbar-content">
+                <div class="row">
+                  <div class="col-md-5">
+                    <%If Usera.User_Logged() = True Then%>
+                    <img src="<%=Global.GravatarAV(Usera.USER_DATA["CERBERO_USER_EMAIL"], "128")%>" alt="Alternate Text" class="img-responsive" />
+                    <%Else%>
+                    <img src="http://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/twDq00QDud4/s120-c/photo.jpg" alt="Alternate Text" class="img-responsive" />
+                    <%Endif%>
+                      <p class="text-center small">
+                      <a href="#">Change Photo</a></p>
+                  </div>
+                  <div class="col-md-7">
+                    <span><%=Usera.USER_DATA["CERBERO_USERNAME"]%></span>
+                      <p class="text-muted small"><%=Usera.USER_DATA["CERBERO_USER_EMAIL"]%></p>
+                      <div class="divider">
+                      </div>
+                      <%If Usera.User_Logged() = True And Usera.User_IsAdmin() = True Then%>
+                      <div class="btn-group">
+                        <a href="#" class="btn btn-primary btn-sm active"><%=("PA")%></a>
+                        <a href="#" class="btn btn-primary btn-sm active"><%=("CList")%></a>
+                        <a href="#" class="btn btn-primary btn-sm active"><%=("CAdd")%></a>
+                      </div>
+                      <%Endif%>
+                  </div>
+                </div>
+              </div>
+              <%Endif%>
+              <div class="navbar-footer">
+                <div class="navbar-footer-content">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <a href="<%= MNavbar.PROFILE_LOGIN_URL %>" class="btn btn-default btn-sm"><%= MNavbar.PROFILE_LOGIN_TEXT %></a>
+                    </div>
+                    <div class="col-md-6">
+                      <a href="<%= MNavbar.PROFILE_LOGOUT_SIGNIN_URL %>" class="btn btn-default btn-sm pull-right"><%= MNavbar.PROFILE_LOGOUT_SIGNIN_TEXT %></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
           </ul>
         </li>
-        <%Endif%>
-        <li class="dropdown"> 
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown"> 
-            <i class="icon-large icon-user"></i>  <%= MNavbar.USERNAME_ACCOUT_TEXT %><b class="caret"></b> 
-          </a> 
-        <ul class="dropdown-menu"> 
-          <li><a href="<%= MNavbar.PROFILE_LOGIN_URL %>"><i class="icon-large icon-edit"></i>  <%= MNavbar.PROFILE_LOGIN_TEXT %></a></li>
-          <li><a href="<%= MNavbar.PROFILE_LOGOUT_SIGNIN_URL %>"><i class="icon-large icon-eject"></i>  <%= MNavbar.PROFILE_LOGOUT_SIGNIN_TEXT %></a></li>
-        </ul> 
-        </li> 
-        </ul>
-      <form class="navbar-search pull-right">
-        <input class="search-query" type="text" name="query" value="" autocomplete="on" placeholder="<%=("Search by CPU Name")%>" />
-      </form>
-    </div>  
+      </ul>
+    </div>
   </div>
 </div>
-</div>
+<<WADS>>

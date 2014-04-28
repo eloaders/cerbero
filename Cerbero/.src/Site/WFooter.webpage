@@ -1,9 +1,11 @@
-<div class="footer">
-  <div class="footer-inner">
-    <div class="container">
-      <div class="row">
-        <div class="span12">eloaders &copy; 2014<a href="<%= Global.WEBSITE_ROOT_URL_HTTP %>"></a>. Cerbero V: <span class="badge"><%=Application.Version%></span></div>
-      </div>
+<div class="container">
+  <footer id="footer">
+    <div class="navbar navbar-default">
+      <p class="navbar-text pull-left">eloaders &copy; 2014. Cerbero V:<span class="badge"><%=Application.Version%></span></p>
+      <a href="https://www.facebook.com/inexlinux" class="navbar-btn btn-facebook btn pull-right" target="_blank"><i class="fa fa-facebook"></i> Facebook</a>
+      <a href="https://twitter.com/eloaders" class="navbar-btn btn-twitter btn pull-right" target="_blank"><i class="fa fa-twitter"></i> Twitter</a>
+      <a href="https://plus.google.com/u/0/103294167787784292101" class="navbar-btn btn-google-plus btn pull-right" target="_blank"><i class="fa fa-google-plus"></i> Google+</a>
+      <a href="https://github.com/eloaders/I-Nex" class="navbar-btn btn-github btn pull-right" target="_blank"><i class="fa fa-github"></i> Github</a>
     </div>
   </div>
-</div>
+</footer>

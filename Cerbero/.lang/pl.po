@@ -23,7 +23,7 @@ msgstr ""
 msgid "Login - I-Nex - Cerbero"
 msgstr "Logowanie - I-Nex - Cerbero"
 
-#: DLoginHead.webpage:32 DSignupHead.webpage:32 WHead.webpage:2
+#: DLoginHead.webpage:32 DSignupHead.webpage:32 WHead.webpage:4
 msgid "I-Nex - Cerbero"
 msgstr "I-Nex - Cerbero"
 
@@ -95,24 +95,24 @@ msgstr "Wpisz wszystkie potrzebne dane w konfiguracji wysyłania raportów i wy�
 msgid "Total Reports And Users in Database"
 msgstr ""
 
-#: DUploadSubnavbar.webpage:8 WSubnavbar.webpage:7
+#: DUploadSubnavbar.webpage:8 WNavbar.webpage:15 WSubnavbar.webpage:7
 msgid "Upload"
 msgstr "Wyślij"
 
-#: DUploadSubnavbar.webpage:16 WSubnavbar.webpage:13
+#: DUploadSubnavbar.webpage:16 WNavbar.webpage:16 WSubnavbar.webpage:13
 msgid "Latest added"
 msgstr "Ostatnio dodane"
 
-#: DUploadSubnavbar.webpage:23 WSubnavbar.webpage:19
+#: DUploadSubnavbar.webpage:23 WNavbar.webpage:19 WSubnavbar.webpage:19
 msgid "Forum"
 msgstr ""
 
-#: DUploadSubnavbar.webpage:29 WSubnavbar.webpage:25
+#: DUploadSubnavbar.webpage:29 WNavbar.webpage:20 WSubnavbar.webpage:25
 #, fuzzy
 msgid "I-Nex Homepage"
 msgstr "Strona główna"
 
-#: DUploadSubnavbar.webpage:35 WSubnavbar.webpage:31
+#: DUploadSubnavbar.webpage:35 WNavbar.webpage:21 WSubnavbar.webpage:31
 msgid "Install I-Nex"
 msgstr ""
 
@@ -128,71 +128,71 @@ msgstr "Zaloguj"
 msgid "Signup"
 msgstr "Zarejestruj"
 
-#: Donate.webpage:9 Policy.webpage:272 WExtra.webpage:10
+#: Donate.webpage:15 Page.module:7 WExtra.webpage:10
 msgid "Donate"
 msgstr "Wspomóż projekt"
 
-#: Donate.webpage:10
+#: Donate.webpage:16
 msgid "If you want to financially support the program's I-Nex and service Cerbero. "
 msgstr "Jeśli chcesz wesprzeć finansowo program I-Nex oraz usługę Cerbero. "
 
-#: Donate.webpage:11
+#: Donate.webpage:17
 msgid "Nothing stands in the way to be able to make a small or a larger deposit and the work we put into the project. "
 msgstr "Nic nie stoi na przeszkodzie, aby dokonać symbolicznej wpłaty na rozwój projektu jak i w ramach podziękowania za obecną pracę włożoną w projekt. "
 
-#: Donate.webpage:12
+#: Donate.webpage:18
 msgid "There are three ways. "
 msgstr "Istnieją trzy sposoby. "
 
-#: Donate.webpage:14
+#: Donate.webpage:20
 msgid "Direct deposit into a bank account:"
 msgstr "Wpłata na konto bankowe:"
 
-#: Donate.webpage:17
+#: Donate.webpage:23
 msgid "<h3>Title: i-nex.pl - support and your forum nickname or Cerbero</h3>"
 msgstr "<h3>Tytułem: i-nex.pl - wsparcie Twój Nick z forum lub serwisu Cerbero</h3>"
 
-#: Donate.webpage:19
+#: Donate.webpage:25
 msgid "Using PayPal:"
 msgstr "Użyj PayPal:"
 
-#: Donate.webpage:22
+#: Donate.webpage:28
 msgid "Możesz także pomóc pisząc tłumaczenia na swój język, lub podsyłać błędy."
 msgstr "Możesz także pomóc pisząc tłumaczenia na swój język, lub podsyłać błędy."
 
-#: Donate.webpage:23
+#: Donate.webpage:29
 msgid "Możesz zostać administratorem Forum lub osobą piszącą o nowościach na blogu."
 msgstr "Możesz zostać administratorem Forum lub osobą piszącą o nowościach na blogu."
 
-#: Donate.webpage:24
+#: Donate.webpage:30
 msgid "Możesz być osobą która zarządza kontami na sourceforge oraz launchpad czy github."
 msgstr "Możesz być osobą która zarządza kontami na sourceforge oraz launchpad czy github."
 
-#: Donate.webpage:25
+#: Donate.webpage:31
 msgid "Możesz być osobą która zgłasza błędy na forum."
 msgstr "Możesz być osobą która zgłasza błędy na forum."
 
-#: Donate.webpage:26
+#: Donate.webpage:32
 msgid "Możesz być osobą która zarządza serwerem."
 msgstr "Możesz być osobą która zarządza serwerem."
 
-#: Donate.webpage:27
+#: Donate.webpage:33
 msgid "Możesz być osobą która będzie dbać o wygląd strony HTML5 & CSS3 & Bootstrap."
 msgstr "Możesz być osobą która będzie dbać o wygląd strony HTML5 & CSS3 & Bootstrap."
 
-#: Donate.webpage:34
+#: Donate.webpage:40
 msgid "Last donators"
 msgstr "Najnowsi sponsorzy"
 
-#: Donate.webpage:38
+#: Donate.webpage:44
 msgid "Username"
 msgstr "Użytkownik"
 
-#: Donate.webpage:39
+#: Donate.webpage:45
 msgid "Count"
 msgstr "Kwota"
 
-#: Donate.webpage:40
+#: Donate.webpage:46
 msgid "Homepage"
 msgstr "Strona główna"
 
@@ -200,46 +200,19 @@ msgstr "Strona główna"
 msgid "VALD"
 msgstr "VALD"
 
-#: Page.module:11 Translators.webpage:16 WExtra.webpage:7
+#: MQuery.module:14
+#, fuzzy
+msgid "Search - I-Nex - Cerbero"
+msgstr "Rejestracja - I-Nex - Cerbero"
+
+#: Page.module:13 Translators.webpage:16 WExtra.webpage:7
 #, fuzzy
 msgid "Translators"
 msgstr "Tranzystory:"
 
-#: Page.module:15 Team.webpage:16 WExtra.webpage:8
+#: Page.module:17 Team.webpage:16 WExtra.webpage:8
 msgid "Team"
 msgstr ""
-
-#: Page.module:40 Policy.webpage:32
-msgid "           I-Nex - Cerbero"
-msgstr "           I-Nex - Cerbero"
-
-#: Page.module:58 Policy.webpage:48
-msgid "                    Profile"
-msgstr "                    Profil"
-
-#: Page.module:63 Policy.webpage:53
-msgid "                   Logout"
-msgstr "                   Wyloguj"
-
-#: Policy.webpage:269 WExtra.webpage:5
-msgid "About Cerbero"
-msgstr "O Cerbero"
-
-#: Policy.webpage:277 WExtra.webpage:15
-msgid "Support"
-msgstr "Wsparcie"
-
-#: Policy.webpage:285 WExtra.webpage:29
-msgid "Something Legal"
-msgstr "W pełni legalne"
-
-#: Policy.webpage:287 WExtra.webpage:31
-msgid "Privacy Policy"
-msgstr "Polityka prywatności"
-
-#: Policy.webpage:292 WExtra.webpage:36
-msgid "Sponsors"
-msgstr "Sponsorzy"
 
 #: Profile.module:31
 msgid "           Account"
@@ -397,6 +370,28 @@ msgstr "Zaloguj się do swojego konta"
 msgid "System commands outputs"
 msgstr ""
 
+#: WCPUDBAtom.webpage:20
+msgid "CPU Model Name"
+msgstr ""
+
+#: WCPUDBAtom.webpage:21
+msgid "CPU Frequency"
+msgstr ""
+
+#: WCPUDBAtom.webpage:22
+#, fuzzy
+msgid "CPU Package"
+msgstr "Obudowa:"
+
+#: WCPUDBAtom.webpage:23
+#, fuzzy
+msgid "CPU Codename"
+msgstr "Nazwa kodowa"
+
+#: WCPUDBAtom.webpage:24
+msgid "CPU Edit"
+msgstr ""
+
 #: WCookies.webpage:30
 msgid "I understand"
 msgstr ""
@@ -413,6 +408,14 @@ msgstr ""
 msgid "http://www.allaboutcookies.org/"
 msgstr ""
 
+#: WExtra.webpage:5
+msgid "About Cerbero"
+msgstr "O Cerbero"
+
+#: WExtra.webpage:15
+msgid "Support"
+msgstr "Wsparcie"
+
 #: WExtra.webpage:17
 msgid "Ask a Question"
 msgstr ""
@@ -425,18 +428,46 @@ msgstr ""
 msgid "Friends of the project"
 msgstr ""
 
-#: WNavbar.webpage:12
-msgid "Options"
+#: WExtra.webpage:29
+msgid "Something Legal"
+msgstr "W pełni legalne"
+
+#: WExtra.webpage:31
+msgid "Privacy Policy"
+msgstr "Polityka prywatności"
+
+#: WExtra.webpage:36
+msgid "Sponsors"
+msgstr "Sponsorzy"
+
+#: WFalseQuery.webpage:13
+msgid "Search failed."
 msgstr ""
 
-#: WNavbar.webpage:14
+#: WFalseQuery.webpage:14
+msgid "The minimum number of characters is too small. The minimum number of characters = 4"
+msgstr ""
+
+#: WNavbar.webpage:13
+msgid "Site"
+msgstr ""
+
+#: WNavbar.webpage:26
+msgid "Search by CPU Name"
+msgstr ""
+
+#: WNavbar.webpage:36
 msgid "Add CPU Vendor to DB"
 msgstr ""
 
-#: WNavbar.webpage:15
+#: WNavbar.webpage:37
 #, fuzzy
 msgid "List CPU Database"
 msgstr "Dane o CPU z bazy danych:"
+
+#: WNavbar.webpage:38
+msgid "Admin Panel"
+msgstr ""
 
 #: WQuery.webpage:19 WWidgetLatestAdded.webpage:9
 msgid "CPU Logo"
@@ -942,14 +973,23 @@ msgstr "                               Zapamiętaj mnie na tym komputerze"
 msgid "                   Sign In"
 msgstr "                   Zaloguj się"
 
-#~ msgid "Other"
-#~ msgstr "Pozostałe"
-
-#~ msgid "              Logout"
-#~ msgstr "              Wyloguj"
+#~ msgid "     I-Nex - Cerbero"
+#~ msgstr "     I-Nex - Cerbero"
 
 #~ msgid "             Profile"
 #~ msgstr "             Profil"
 
-#~ msgid "     I-Nex - Cerbero"
-#~ msgstr "     I-Nex - Cerbero"
+#~ msgid "              Logout"
+#~ msgstr "              Wyloguj"
+
+#~ msgid "Other"
+#~ msgstr "Pozostałe"
+
+#~ msgid "                   Logout"
+#~ msgstr "                   Wyloguj"
+
+#~ msgid "                    Profile"
+#~ msgstr "                    Profil"
+
+#~ msgid "           I-Nex - Cerbero"
+#~ msgstr "           I-Nex - Cerbero"

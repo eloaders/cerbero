@@ -1,37 +1,62 @@
-<div class="widget"> 
-  <div class="widget-header"> <i class="icon-file"></i> 
-    <h3><%=("Submited by")%></h3> 
+<div class="panel panel-primary">
+  <div class="panel-heading">
+      <h3 class="panel-title"><i class="fa fa-user"></i>  <%=("Submited by")%></h3>
   </div>
-  <div class="widget-content"> 
-    <ul class="messages_layout"> 
-      <li class="from_user left"><a href="#" class="avatar"><img src="<%= Global.GravatarAV(MValidate.USER_DATA["CERBERO_USER_EMAIL"], "64") %>"/></a> 
-        <div class="message_wrap"><span class="arrow"></span> 
-          <div class="info"> 
-            <a class="name"><%= MValidate.RADIVATE["SUBMITED_BY"] %></a> <span class="time"><%= MValidate.RADIVATE["DATE_TIME"] %></span> 
-          </div> 
-          <div class="text"><%= MValidate.USER_DATA["CERBERO_USER_AUTHOR_BIO"] %></div> 
-          </div> 
+  <div class="panel-body">
+    <div class="span3 well">
+        <center>
+        <a href="#aboutModal" data-toggle="modal" data-target="#myModal"><img src="<%= Global.GravatarAV(MValidate.USER_DATA["CERBERO_USER_EMAIL"], "140") %>" name="aboutme" width="140" height="140" class="img-circle"></a>
+        <h3><%= MValidate.RADIVATE["SUBMITED_BY"] %></h3>
+        <em>click my face for more</em>
+    </center>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                    <h4 class="modal-title" id="myModalLabel"><%=("More About")%> <%= MValidate.RADIVATE["SUBMITED_BY"] %></h4>
+                    </div>
+                <div class="modal-body">
+                    <center>
+                    <img src="<%= Global.GravatarAV(MValidate.USER_DATA["CERBERO_USER_EMAIL"], "140") %>" name="aboutme" width="140" height="140" border="0" class="img-circle"></a>
+                    <h3 class="media-heading"><%= MValidate.RADIVATE["SUBMITED_BY"] %></h3>
+                    <span><strong><%=("Social: ")%></strong></span>
+                    <% If Not IsNull(MValidate.USER_DATA["CERBERO_USER_FACEBOOK"]) Then %>
+                        <a class="btn btn-xs btn-facebook" href="https://www.facebook.com/<%=MValidate.USER_DATA["CERBERO_USER_FACEBOOK"]%>" target="_blank"><i class="fa fa-facebook"></i>Facebook</a>
+                    <%Endif%>
           
-          <% If Not IsNull(MValidate.USER_DATA["CERBERO_USER_FACEBOOK"]) Then %>
-          <a href="https://www.facebook.com/<%=MValidate.USER_DATA["CERBERO_USER_FACEBOOK"]%>" target="_blank"><button class="btn btn-facebook-alt"><i class="icon-facebook-sign"></i></button></a> 
-          <%Endif%>
+                    <%If IsNull(MValidate.USER_DATA["CERBERO_USER_TWITTER"]) = False Then%>
+                        <a class="btn btn-xs btn-twitter" href="https://twitter.com/<%=MValidate.USER_DATA["CERBERO_USER_TWITTER"]%>" target="_blank"><i class="fa fa-twitter"></i>Twitter</a>
+                    <%Endif%>
           
-          <%If IsNull(MValidate.USER_DATA["CERBERO_USER_TWITTER"]) = False Then%>
-          <a href="https://twitter.com/<%=MValidate.USER_DATA["CERBERO_USER_TWITTER"]%>" target="_blank"><button class="btn btn-twitter-alt"><i class="icon-twitter-sign"></i></button></a> 
-          <%Endif%>
+                    <%If IsNull(MValidate.USER_DATA["CERBERO_USER_GOOGLE"]) = False Then%>
+                        <a class="btn btn-xs btn-google-plus" href="https://plus.google.com/u/0/<%=MValidate.USER_DATA["CERBERO_USER_GOOGLE"]%>" target="_blank"><i class="fa fa-google-plus"></i>Google +</a>
+                    <% Endif%>
           
-          <%If IsNull(MValidate.USER_DATA["CERBERO_USER_GOOGLE"]) = False Then%>
-          <a href="https://plus.google.com/u/0/<%=MValidate.USER_DATA["CERBERO_USER_GOOGLE"]%>" target="_blank"><button class="btn btn-google-alt"><i class="icon-google-plus-sign"></i></button></a> 
-          <% Endif%>
+                    <%If IsNull(MValidate.USER_DATA["CERBERO_USER_GITHUB"]) = False Then%>
+                        <a class="btn btn-xs btn-github" href="https://github.com/<%=MValidate.USER_DATA["CERBERO_USER_GITHUB"]%>" target="_blank"><i class="fa fa-github"></i>Github</a>
+                    <%Endif%>
           
-          <%If IsNull(MValidate.USER_DATA["CERBERO_USER_GITHUB"]) = False Then%>
-          <a href="https://github.com/<%=MValidate.USER_DATA["CERBERO_USER_GITHUB"]%>" target="_blank"><button class="btn btn-github-alt"><i class="icon-github-sign"></i></button></a> 
-          <%Endif%>
-          
-          <% If Not IsNull(MValidate.USER_DATA["CERBERO_USER_HOMEPAGE"]) Then%>
-          <a href="<%=MValidate.USER_DATA["CERBERO_USER_HOMEPAGE"]%>" target="_blank"><button class="btn btn-github-alt"><i class="icon-external-link"></i></button></a>
-          <%Endif%>
-      </li>
-    </ul>
-  </div>
+                    <% If Not IsNull(MValidate.USER_DATA["CERBERO_USER_HOMEPAGE"]) Then%>
+                        <a class="btn btn-primary btn-xs" href="<%=MValidate.USER_DATA["CERBERO_USER_HOMEPAGE"]%>" target="_blank"><i class="fa fa-external-link"></i>Homepage</a>
+                    <%Endif%>
+                    </center>
+                    <hr>
+                    <center>
+                    <p class="text-left"><strong><%=("Bio:")%></strong><br>
+                        <%= MValidate.USER_DATA["CERBERO_USER_AUTHOR_BIO"] %></p>
+                    <br>
+                    </center>
+                </div>
+                <div class="modal-footer">
+                    <center>
+                    <button type="button" class="btn btn-default" data-dismiss="modal"><%=("I've heard enough about")%> <%= MValidate.RADIVATE["SUBMITED_BY"] %></button>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </div>

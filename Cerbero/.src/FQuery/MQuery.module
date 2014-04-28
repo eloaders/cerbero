@@ -11,9 +11,13 @@ Public Sub Main()
   Dim i As Integer
   Shell "cd " & CGI["DOCUMENT_ROOT"] & "/ValidDB && grep \"CPU_NAME\" ./*/* | grep -i \"" & Request.Get["query"] & "\" | awk {'print $1'} | sort" Wait To Cached
   CPUusagelines = Split(Cached, "\n")
-  MBrand.Brand_TEXT = "Search - I-Nex - Cerbero"
+  MBrand.Brand_TEXT = ("Search - I-Nex - Cerbero")
   MBrand.Brand_URL = Global.WEBSITE_ROOT_URL_HTTP
   Response.Begin
-  WQuery.Render
+  If Len(Request.Get["query"]) >= 4 And IsSpace(Request.Get["query"]) = False Then
+    WQuery.Render
+  Else
+    WFalseQuery.Render
+  Endif
   Response.End
 End

@@ -1,9 +1,9 @@
-<div class="widget"> 
-  <div class="widget-header"> <i class="icon-file"></i> 
-    <h3><%=("Kernel")%></h3> 
+<div class="panel panel-primary">
+  <div class="panel-heading">
+      <h3 class="panel-title"><i class="fa fa-linux"></i>  <%=("Kernel")%></h3>
   </div>
-  <div class="widget-content"> 
-      <a class="thumbnail"><img src="tux.png" alt="thumbnail"></a> 
+  <div class="panel-body">
+    <a class="thumbnail"><img src="tux.png" alt="thumbnail"></a> 
    <table class="table table-striped table-bordered"> 
      <tbody> 
        <tr> 

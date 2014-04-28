@@ -1,6 +1,7 @@
 ' Gambas module file
 
 Public Sub Main()
+Settings["W/w"] = "ggggg"
 If CGI["HTTP_ACCEPT_LANGUAGE"] Like "*ru*" Then
   System.Language = "ru_RU.UTF-8"
 Endif
@@ -46,6 +47,10 @@ Else If Request.Get.Exist("delvalidate") = True Then
   DelValidate.Delete()
 Else If Request.Get.Exist("query") = True Then
   MQuery.Main()
+Else If Request.Get.Exist("adminpanel") = True And Usera.User_IsAdmin() = True Then
+  WAdminPanel.Render
+Else If Request.Get.Exist("cpudb[atom]") = True Then
+  WCPUDBAtom.Render
 Else
   ResponseFromServer()
 Endif
@@ -53,7 +58,7 @@ End
 
 Public Sub ResponseFromServer()
   Dim USER_DATA As Collection
-  MBrand.Brand_URL = Global.WEBSITE_ROOT_URL_HTTP & "/inex.r"
+  MBrand.Brand_URL = Global.WEBSITE_ROOT_URL_HTTP & Application.Root
   MBrand.Brand_TEXT = "I-Nex - Cerbero"
   Response.Begin
     Print "<!DOCTYPE html>"
@@ -61,7 +66,6 @@ Public Sub ResponseFromServer()
     WHead.Render
     Print "<body>"
     WNavbar.Render
-    DUploadSubnavbar.Render
     DUpload.Render
   Response.End
   

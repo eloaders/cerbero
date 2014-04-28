@@ -8,20 +8,17 @@ Dim All As Integer
 <<WHead>>
 <body>
 <<WNavbar>>
-<<WSubnavbar>>
-<div class="main">
-  <div class="main-inner">
     <div class="container">
       <div class="row">
-        <div class="span12">
+        <div class="col-lg-12">
           <%If MLatestAdded.Addeds.Count > 0 Then%>
           <<WWidgetLatestAdded>>
           <%Else%>
           <<WWidgetNotAdded>>
           <%Endif%>
         </div>
-        <div class="span12">
-          <ul class="pagination">
+        <div class="col-lg-12">
+          <ul class="pagination pagination-sm">
           <%Try Shell "ls " & Global.WHEREIS_SITE_ROOT & "/ValidDB/" Wait To CPUusage%>
           <%Try CPUusageLines = Split(CPUusage, "\n")%>
           
@@ -29,17 +26,15 @@ Dim All As Integer
           <%If CPUusageLines[All] = Request.Get["added"] Then%>
           <li class="active"><a href="#"><%=CString(All)%><span class="sr-only">(current)</span></a></li>
           <%Else%>
-          <li><a href="inex.r?added=<%= CPUusageLines[All]%>&str=<%=CString(All)%>&nth=<%= Left$(CPUusageLines[All], - 6)%>&day=<%= Right$(Left$(CPUusageLines[All], - 4), -2)%>"><%= CString(All)%></a></li>
+          <li><a href="<%=Application.Root%>?added=<%= CPUusageLines[All]%>&str=<%=CString(All)%>&nth=<%= Left$(CPUusageLines[All], - 6)%>&day=<%= Right$(Left$(CPUusageLines[All], - 4), -2)%>"><%= CString(All)%></a></li>
           <%Endif%>
           <%Next%>
-          <li><a href="inex.r?added">&raquo;</a></li>
+          <li><a href="<%=Application.Root%>?added">&raquo;</a></li>
           </ul>
         </div>
         </div>
       </div>
     </div> 
-  </div> 
-</div>
 
 <<WExtra>>
 <<WFooter>> 

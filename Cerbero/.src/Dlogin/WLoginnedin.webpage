@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title><%=("Cerbero - Login")%></title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="flatly/bootstrap.css" rel="stylesheet" id="bootstrap-css">
+<style type="text/css">
+body { 
+background: url(Parallax/back.png);
+background-color: #444;
+background: url(Parallax/pinlayer2.png),url(Parallax/pinlayer1.png),url(Parallax/back.png);    
+}
+.vertical-offset-100{
+padding-top:100px;
+}    
+</style>
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="Parallax/TweenLite.min.js"></script>
+<!-- This is a very simple parallax effect achieved by simple CSS 3 multiple backgrounds, made by http://twitter.com/msurguy -->
+</head>
+<body>
+<div class="container">
+    <div class="row vertical-offset-100">
+      <div class="col-lg-7 col-md-offset-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title"><%=("Please sign in")%></h3>
+         </div>
+          <div class="panel-body">
+            <h2><%=("You are currently logged in.")%></h2>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>  
+<script type="text/javascript">
+  $(document).ready(function(){
+  $(document).mousemove(function(e){
+     TweenLite.to($('body'), 
+        .5, 
+        { css: 
+            {
+                'background-position':parseInt(event.pageX/8) + "px "+parseInt(event.pageY/12)+"px, "+parseInt(event.pageX/15)+"px "+parseInt(event.pageY/15)+"px, "+parseInt(event.pageX/30)+"px "+parseInt(event.pageY/30)+"px"
+            }
+        });
+  });
+});  
+</script>
+</body>
+</html>

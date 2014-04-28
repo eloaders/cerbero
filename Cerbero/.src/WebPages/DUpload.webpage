@@ -1,118 +1,60 @@
+
+<<WJumbotron>>
+<<WHeroWidget>>
 <div class="container">
   <div class="row">
-    <div class="span4">
-      <div id="target-1" class="widget">
-        <div class="widget-content">
-          <<WADS2>>
-        </div> <!-- /widget-content -->
-      </div> <!-- /widget -->
+    <div class="col-lg-12">
+      <div class="col-lg-4">
+        <div class="panel panel-primary">
+          <div class="panel-body">
+            <<WADS2>>
+          </div>
+        </div>
+      </div>
+
+<div class="col-lg-4">
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h3 class="panel-title"><%=("Upload Report")%></h3>
     </div>
-    <div class="span4">
-      <div id="target-1" class="widget">
-        <div class="widget-content">
+    <div class="panel-body">
           <form method="post" action="inex.r" enctype="multipart/form-data" id="validform"> 
             <h1><%Print ("Validate")%></h1>
               <div class="login-fields">
                 <p><% Print ("Please browse file to publish data online") %></p>
-                  <div class="field">
-                      <input type="file" name="uploadfile" style="font-size: 15px; height: 25px;" accept="file" size="47" maxlength="100"><br>
-                  </div> <!-- /field -->
-              </div> <!-- /login-fields -->
+                  <div style="position:relative;">
+                    <a class='btn btn-primary' href='javascript:;'>
+                      Choose File...
+                      <input type="file" style='position:absolute;z-index:2;top:0;left:0;filter: alpha(opacity=0);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";opacity:0;background-color:transparent;color:transparent;' name="uploadfile" size="40"  onchange='$("#upload-file-info").html($(this).val());'>
+                    </a>
+                    &nbsp;
+                    <span class='label label-info' id="upload-file-info"></span>
+                  </div>
+              </div>
               <div class="login-actions">
                 <span class="login-checkbox">
                   <input type="checkbox"  id="redirect" name="redirect" checked="checked" />
                   <label for="redirect"><% Print ("Redirect to") %></label>
                 </span>          
-              </div> <!-- .actions -->
+              </div>
               <input type="submit" id="submit" value="Validate" name="submit" />
           </form>
-        </div> <!-- /content -->  
-      </div> <!-- /account-container -->
     </div>
-  <div class="span4">
-    <div id="target-1" class="widget">
-      <div class="widget-content">
-        <<WADS2>>
-      </div> <!-- /widget-content -->
-    </div> <!-- /widget -->
+  </div>
+      </div>
+      <div class="col-lg-4">
+  <div class="panel panel-primary">
+    <div class="panel-body">
+      <<WADS2>>
+    </div>
+  </div>
+      </div>
+    </div>
   </div>
 </div>
-</div>
-<br/>
-<br/>
-<br/>
-<div class="container">
-  <div class="row">
-  
-    <div class="span4">
-      <div id="target-1" class="widget">
-        <div class="widget-content">
-        <h1><% Print ("Beta") %></h1>
-          <p><% Print ("Keep in mind that the service is currently in beta. ")%></p>
-          <p><% Print ("Work on the introduction of new features. ")%></p>
-          <p><% Print ("The need for many people to help. You can also help.")%></p>
-        </div> <!-- /widget-content -->
-      </div> <!-- /widget -->
-      
-      <div id="target-1" class="widget">
-        <div class="widget-content">
-        <h1><% Print ("I-Nex Cerbero") %></h1>
-          <p><% Print ("The best way to publication of the report is to directly send it using the I-Nex. ")%></p>
-          <p><% Print ("Register on the site, get your key and user name. ")%></p>
-          <p><% Print ("Enter all the data in the I-Nex and then send the report.")%></p>
-        </div> <!-- /widget-content -->
-      </div> <!-- /widget -->  
-    </div> <!-- /span6 -->
-    
-    <div class="span4">
-      <div id="target-1" class="widget">
-        <div class="widget-content">
-          <div id="recentcomments" class="dsq-widget">
-            <script type="text/javascript" src="http://cerbero.disqus.com/recent_comments_widget.js?num_items=5&hide_avatars=0&avatar_size=32&excerpt_length=200"></script>
-          </div>
-          <a href="http://disqus.com/">Powered by Disqus</a>
-        </div> <!-- /widget-content -->
-      </div> <!-- /widget -->  
-    </div> <!-- /span6 -->
-    
-    <div class="span4">
-      <div id="target-1" class="widget">
-        <div class="widget-content">
-          <h3 class="bigstats"><%=("Total Reports And Users in Database")%></h3>
-            <div id="big_stats" class="cf">
-              <div class="stat"><i class="icon-list"></i><span class="value"><%=Global.CRB_TOTALREPORTS()%></span></div>
-              <div class="stat"><i class="icon-user"></i><span class="value"><%=Global.CRB_TOTALUSERS()%></span></div>
-            </div>
-          <div class="media"> 
-            <a class="thumbnail"> 
-              <img class="media-object" src="http://i-nex.linux.pl/wp-content/uploads/inexcerb.png" alt="thumbnail"> 
-            </a> 
-          </div>
-        </div> <!-- /widget-content -->
-      </div> <!-- /widget -->  
-    </div> <!-- /span6 -->
-    
-  </div>
-</div>
-<div class="container">
-  <div class="row">
-    <div class="span12">
-                <div class="widget-content">
-                  <div class="control-group">
-                      <div class="controls">
-                           <a href="https://www.facebook.com/inexlinux"><button class="btn btn-facebook-alt"><i class="icon-facebook-sign"></i> Facebook</button></a>
-                           <a href="https://twitter.com/eloaders"><button class="btn btn-twitter-alt"><i class="icon-twitter-sign"></i> Twitter</button></a>
-                           <a href="https://plus.google.com/u/0/103294167787784292101"><button class="btn btn-google-alt"><i class="icon-google-plus-sign"></i> Google+</button></a>
-                           <a href="https://github.com/eloaders/I-Nex"><button class="btn btn-github-alt"><i class="icon-github-sign"></i> Github</button></a>
-                      </div> <!-- /controls -->  
-                  </div> <!-- /control-group -->
-                </div>
-    </div> <!-- /span12 -->
-  </div>
-</div>
-<br/>
-<br/>
-<br/>
+
+
+
 <<WExtra>>
 <<WFooter>>
 </body>

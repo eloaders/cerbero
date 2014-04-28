@@ -1,0 +1,8 @@
+' Gambas class file
+
+Public i As Integer 
+Public All As Integer
+Public USER_DATA As Collection
+Public Dict As New Collection
+Public CPU_DATA As Collection
+Public Element As String

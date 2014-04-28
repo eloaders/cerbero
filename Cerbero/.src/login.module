@@ -4,14 +4,7 @@ Public Sub Sign()
   Dim USER_DATA As Collection
   If Usera.User_Logged() = True Then
               Response.Begin
-              DLoginHead.Render
-              'Print File.Load("Login/head")
-              Print "<div class=\"account-container\">"
-              Print "   <div class=\"content clearfix\">"
-              Print "           <h2>You are currently logged in.</h2>"
-              Print "   </div> <!-- /content -->"
-              Print "</div> <!-- /account-container -->"
-              Print File.Load("Login/Footer")
+              WLoginnedin.Render
               Response.End
   Else
      Print_Login()
@@ -21,45 +14,6 @@ End
 Public Sub Print_Login()
       
       Response.Begin
-      'Print File.Load("Login/head")
-      DLoginHead.Render
-      Print "<div class=\"account-container\">"
-      Print "   <div class=\"content clearfix\">"
-      Print "       <form action=\"inex.r?signin\" method=\"post\">"
-      Print "           <h1>"
-      Print ("             Member Login")
-      Print "           </h1>"
-      Print "           <div class=\"login-fields\">"
-      Print "                 <p>"
-      Print ("                   Please provide your details")
-      Print "                 </p>"
-      Print "                 <div class=\"field\">"
-      Print "                             <label for=\"username\">"
-      Print ("                               Username:")
-      Print "                             </label>"
-      Print "                             <input type=\"text\" id=\"username\" name=\"username\" value=\"\" placeholder=\"Login\" class=\"login username-field\" />"
-      Print "                 </div> <!-- /field -->"
-      Print "                 <div class=\"field\">"
-      Print "                             <label for=\"password\">"
-      Print ("                               Password:")
-      Print "                             </label>"
-      Print "                             <input type=\"password\" id=\"password\" name=\"password\" value=\"\" placeholder=\"Password\" class=\"login password-field\"/>"
-      Print "                 </div> <!-- /password -->"
-      Print "           </div> <!-- /login-fields -->"
-      Print "           <div class=\"login-actions\">"
-      Print "                 <span class=\"login-checkbox\">"
-      Print "                             <input id=\"Field\" name=\"keepmeloginedin\" type=\"checkbox\" class=\"field login-checkbox\" value=\"keepmeloginedin\" tabindex=\"4\" />"
-      Print "                             <label class=\"choice\" for=\"Field\">"
-      Print ("                               Keep me signed in")
-      Print "                             </label>"
-      Print "                 </span>"
-      Print "                 <button class=\"button btn btn-success btn-large\">"
-      Print ("                   Sign In")
-      Print "                 </button>"
-      Print "           </div> <!-- .actions -->"
-      Print "       </form>"
-      Print "   </div> <!-- /content -->"
-      Print "</div> <!-- /account-container -->"
-      Print File.Load("Login/Footer")
+      WLogin.Render
       Response.End
 End

@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: Donate.webpage:15
+#: Donate.webpage:13
 msgid "Donate"
 msgstr ""
 
@@ -70,15 +70,15 @@ msgstr ""
 msgid "Last donators"
 msgstr ""
 
-#: Donate.webpage:44
+#: Donate.webpage:46
 msgid "Username"
 msgstr ""
 
-#: Donate.webpage:45
+#: Donate.webpage:47
 msgid "Count"
 msgstr ""
 
-#: Donate.webpage:46
+#: Donate.webpage:48
 msgid "Homepage"
 msgstr ""
 

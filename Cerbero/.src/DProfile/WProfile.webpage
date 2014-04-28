@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<<WHead>>
+<body>
+<<WNavbar>>
+<style type="text/css">
+    /*Panel tabs*/
+.panel-tabs {
+    position: relative;
+    bottom: 30px;
+    clear:both;
+    border-bottom: 1px solid transparent;
+}
+
+.panel-tabs > li {
+    float: left;
+    margin-bottom: -1px;
+}
+
+.panel-tabs > li > a {
+    margin-right: 2px;
+    margin-top: 4px;
+    line-height: .85;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+    color: #ffffff;
+}
+
+.panel-tabs > li > a:hover {
+    border-color: transparent;
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.panel-tabs > li.active > a,
+.panel-tabs > li.active > a:hover,
+.panel-tabs > li.active > a:focus {
+    color: #fff;
+    cursor: default;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background-color: rgba(255,255,255, .23);
+    border-bottom-color: transparent;
+}    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title"><i class="fa fa-user"></i>  <%=("Account")%></h3>
+          <span class="pull-right">
+            <!-- Tabs -->
+            <ul class="nav panel-tabs">
+              <li class="active"><a href="#tab1" data-toggle="tab"><i class="fa fa-user">  </i><%=("Profile")%></a></li>
+              <li><a href="#tab2" data-toggle="tab"><i class="fa fa-key"></i>  <%=("API Keys")%></a></li>
+              <li><a href="#tab3" data-toggle="tab"><i class="fa fa-reply"></i>  <%=("Submitted Reports")%></a></li>
+            </ul>
+          </span>
+        </div>
+        <div class="panel-body">
+          <div class="tab-content">
+            <div class="tab-pane active" id="tab1">
+<div class="col-lg-6">
+<form action="<%=Application.Root%>?updprofile" method="post" class="form-horizontal">
+  <fieldset>
+    <div class="form-group">
+      <label for="username" class="col-lg-2 control-label"><%=("Login")%></label>
+      <div class="col-lg-6">
+        <input class="form-control" type="text" id="username" value="<%=Usera.USER_DATA["CERBERO_USERNAME"]%>" readonly>
+      </div>
+    </div>
+  
+    <div class="form-group">
+      <label for="displayname" class="col-lg-2 control-label"><%=("Display name")%></label>
+      <div class="col-lg-6">
+        <input class="form-control" type="text" id="displayname" name="zdisplayname" value="<%=Usera.USER_DATA["CERBERO_DISPLAYNAME"]%>">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="facebookusername" class="col-lg-2 control-label"><%=("Facebook")%></label>
+      <div class="col-lg-6">
+        <input class="form-control" type="text" id="facebookusername" name="facebookusername" value="<%=Usera.USER_DATA["CERBERO_USER_FACEBOOK"]%>">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="googleusername" class="col-lg-2 control-label"><%=("Google")%></label>
+      <div class="col-lg-6">
+        <input class="form-control" type="text" id="googleusername" name="googleusername" value="<%=Usera.USER_DATA["CERBERO_USER_GOOGLE"]%>">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="twitterusername" class="col-lg-2 control-label"><%=("Twitter")%></label>
+      <div class="col-lg-6">
+        <input class="form-control" type="text" id="twitterusername" name="twitterusername" value="<%=Usera.USER_DATA["CERBERO_USER_TWITTER"]%>">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="githubusername" class="col-lg-2 control-label"><%=("Github")%></label>
+      <div class="col-lg-6">
+        <input class="form-control" type="text" id="githubusername" name="githubusername" value="<%=Usera.USER_DATA["CERBERO_USER_GITHUB"]%>">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="email" class="col-lg-2 control-label"><%=("Email")%></label>
+      <div class="col-lg-6">
+        <input class="form-control" type="text" id="email" name="zemail" value="<%=Usera.USER_DATA["CERBERO_USER_EMAIL"]%>">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="zhomepage" class="col-lg-2 control-label"><%=("Homepage")%></label>
+      <div class="col-lg-6">
+        <input class="form-control" type="text" id="zhomepage" name="zhomepage" value="<%=Usera.USER_DATA["CERBERO_USER_HOMEPAGE"]%>">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="authorbio" class="col-lg-2 control-label"><%=("About You")%></label>
+      <div class="col-lg-6">
+        <textarea class="form-control" name="authorbio" id="authorbio" rows="9" placeholder="About You"><%=Usera.USER_DATA["CERBERO_USER_AUTHOR_BIO"]%></textarea>
+        <span class="help-block"><%=("Some text about you :)")%></span>
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <div class="col-lg-6">
+        <button type="submit" class="btn btn-primary"><%=("Save")%></button>
+      </div>
+    </div>
+  </fieldset>
+</form>
+</div>
+
+<div class="col-lg-6">
+<div class="panel">
+<img class="pic img-circle" src="<%=Global.GravatarAV(Usera.USER_DATA["CERBERO_USER_EMAIL"], "128")%>">
+</div>
+<form action="<%=Application.Root%>?updprofile" method="post" class="form-horizontal">
+  <fieldset>
+    <div class="form-group">
+      <label for="zpassword1" class="col-lg-2 control-label"><%=("Old Password")%></label>
+      <div class="col-lg-6">
+        <input type="password" class="form-control" id="zpassword1" name="zpassword1">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="zpassword2" class="col-lg-2 control-label"><%=("New Password")%></label>
+      <div class="col-lg-6">
+        <input type="password" class="form-control" id="zpassword2" name="zpassword2">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="zpassword3" class="col-lg-2 control-label"><%=("Repeat new password")%></label>
+      <div class="col-lg-6">
+        <input type="password" class="form-control" id="zpassword3" name="zpassword3">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <div class="col-lg-6">
+        <button type="submit" class="btn btn-primary"><%=("Change")%></button>
+      </div>
+    </div>
+  </fieldset>
+</form>
+</div>
+            </div>
+            <div class="tab-pane" id="tab2">
+              <div class="col-lg-10 col-md-offset-1">
+                <div class="form-group has-success">
+                  <label class="control-label">API KEY Public</label>
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-key fa-lg"></i></span>
+                    <input type="text" class="form-control" value="<%=Usera.USER_DATA["API_PUBLIC"]%>" readonly>
+                    <div class="input-group-btn">
+                      <a href="<%=Global.WEBSITE_ROOT_URL_HTTP%><%=Application.Root%>?chgapi=pub" class="btn btn-info" role="button"><i class="fa fa-refresh fa-lg"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group has-error">
+                  <label class="control-label">API KEY Private</label>
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-key fa-lg"></i></span>
+                    <input type="text" class="form-control" value="<%=Usera.USER_DATA["API_PRIVATE"]%>" readonly>
+                    <div class="input-group-btn">
+                      <a href="<%=Global.WEBSITE_ROOT_URL_HTTP%><%=Application.Root%>?chgapi=pri" class="btn btn-danger" role="button"><i class="fa fa-refresh fa-lg"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-offset-3 text-center">
+                <strong><%=("Remember! I-Nex use only Private API Key to publish data online")%></strong>
+              </div>
+            </div>
+            <div class="tab-pane" id="tab3">
+              <table class="table table-striped table-bordered"> 
+                <thead>
+                  <tr>
+                    <th class="text-center"><%Print ("CPU Logo")%></th>
+                    <th class="text-center"><%Print ("CPU and GPU")%></th> 
+                    <th class="text-center"><%Print ("Motherboard")%></th> 
+                    <th><%Print ("Distribution")%></th> 
+                    <th><%Print ("Link")%></th>
+                    <th><%Print ("Remove")%></th>
+                  </tr>
+                </thead>
+                <tbody>
+                <%Try Dict = JSON.Decode(File.Load(Global.WHEREIS_SITE_ROOT & "/Users/" & Request.Cookies["__ursa"] & "/list.json"))%>
+                <%For Each Element In Dict%>
+                <%Try CPU_DATA = JSON.Decode(File.Load(Global.WHEREIS_SITE_ROOT & "/ValidDB/" & Left$(Element, - CInt(Len(Right$(Element, -8)))) & "/" & Right$(Element, -8) & ".json"))%>
+                  <tr>
+                    <td class="col-sm-2"> 
+                      <div class="media">
+                        <a class="thumbnail pull-left" href="<%=Global.WEBSITE_ROOT_URL_HTTP%><%=Application.Root%>?validate=<%=Element%>" target="_blank"> <img class="media-object" src="<%=Global.WEBSITE_ROOT_URL_HTTP%>/LOGOS/<%=CPU_DATA["CPU_LOGO"]%>"></a>
+                      </div>
+                    </td> 
+                    <td class="col-sm-9 col-md-9 text-left"> 
+                      <div class="media-body">
+                        <h4 class="media-heading"><%=CPU_DATA["CPU_VENDOR"]%></a></h4>
+                        <h5 class="media-heading"><%=CPU_DATA["CPU_NAME"]%></a></h5>
+                        <span>I-Nex V: </span><span class="text-success"><strong><%=CPU_DATA["INEX_VERSION"]%></strong></span>
+                      </div>
+                      <strong><%=CPU_DATA["GPU_MODEL"]%></strong>
+                    </td>
+                    <td class="col-lg-4 col-lg-4 text-left">
+                      <strong><%=Replace(CPU_DATA["INEX_MOTHERBOARD_VENDOR1"], "Board Vendor:", "")%><%=Replace(CPU_DATA["INEX_MOTHERBOARD_VENDOR3"], "Board Name:", "")%></strong>
+                    </td>
+                    <td class="col-lg-4 col-lg-4 text-left">
+                      <strong><%=Replace(CPU_DATA["DISTRO_VENDOR"], "Distro Vendor:", "")%><%=Replace(CPU_DATA["DISTRO_VENDOR2"], "Distro Release:", "")%></strong>
+                    </td>
+                    <td class="td-actions">
+                      <a href="<%=Global.WEBSITE_ROOT_URL_HTTP%><%=Application.Root%>?validate=<%=Element%>" target="_blank" class="btn btn-primary btn-xs" role="button">
+                        <i class="fa fa-external-link"></i>
+                      </a>
+                    </td>
+                    <td class="td-actions">
+                      <a href="<%=Global.WEBSITE_ROOT_URL_HTTP%><%=Application.Root%>?delvalidate=<%=Element%>" target="_blank" class="btn btn-danger btn-xs" role="button">
+                        <i class="fa fa-trash-o"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <%Next%>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>    
+      </div>    
+    </div>    
+  </div>    
+</div>    
+</div>                        
+<<WExtra>>
+<<WFooter>>
+</body>
+</html>

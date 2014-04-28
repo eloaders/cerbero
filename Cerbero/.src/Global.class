@@ -88,3 +88,13 @@ Public Function CRB_TOTALUSERS() As String
   Total_USERS = Replace(Total_USERS, "\n", "")
   Return Total_USERS
 End
+
+Public Function CRB_TODAYREPORTS() As String
+  Dim Today_Reports As String
+  Dim DDATE_NOW As String
+  DDATE_NOW = Date(Now)
+  DDATE_NOW = Replace(DDATE_NOW, "/", "")
+  Shell "ls " & WHEREIS_SITE_ROOT & "/ValidDB/" & DDATE_NOW & "* | sort | wc -l" Wait To Today_Reports
+  Today_Reports = Replace(Today_Reports, "\n", "")
+  Return Today_Reports
+End

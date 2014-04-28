@@ -91,7 +91,7 @@ Public Sub SendFileToServer()
                   Endif
                 Endif
               Endif
-              Try GOO_GL = JSON.Decode(Global.ShortURL(Global.WEBSITE_ROOT_URL_HTTP & "/inex.r?validate=" & DDATE_NOW & VALIDATE_NEW_ID))
+              Try GOO_GL = JSON.Decode(Global.ShortURL(Global.WEBSITE_ROOT_URL_HTTP & "/" & Application.Root & "?validate=" & DDATE_NOW & VALIDATE_NEW_ID))
               
               If IsNull(cpuiddata["DMESG"]) = False Then
               Try cpuiddata.Add(Global.CRB_OUTPUTS(cpuiddata["DMESG"], "DMESG validate=" & DDATE_NOW & VALIDATE_NEW_ID, cpuiddata["SUBMITED_BY"]), "DMESGS")
@@ -112,25 +112,25 @@ Public Sub SendFileToServer()
               Try cpuiddata.Add(GOO_GL, "GOO_GL")
               ReportSave()
               If Error Then
-                Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & "/inex.r?fail")
+                Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & "/" & Application.Root & "?fail")
               Endif
               Kill Global.WHEREIS_SITE_ROOT & "/ValidCache/" & VALIDATE_NEW_ID
 
               If Request.Post["redirect"] = "on" Then
-                  Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & "/inex.r?validate=" & DDATE_NOW & VALIDATE_NEW_ID & "")
+                  Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & "/" & Application.Root & "?validate=" & DDATE_NOW & VALIDATE_NEW_ID & "")
               Else
                   Response.Begin
-                    Print Global.WEBSITE_ROOT_URL_HTTP & "/inex.r?validate=" & DDATE_NOW & VALIDATE_NEW_ID & ""
+                    Print Global.WEBSITE_ROOT_URL_HTTP & "/" & Application.Root & "?validate=" & DDATE_NOW & VALIDATE_NEW_ID & ""
                   Response.End
               Endif
           Else
             Response.Begin
               Kill "" & Global.WHEREIS_SITE_ROOT & "/ValidCache/" & VALIDATE_NEW_ID & ".json"
-                Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & "/inex.r?fail")
+                Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & "/" & Application.Root & "?fail")
             Response.End
           Endif
   Else
-    Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & "/inex.r?fail")
+    Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & "/" & Application.Root & "?fail")
   Endif
   
 End

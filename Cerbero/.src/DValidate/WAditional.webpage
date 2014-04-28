@@ -1,22 +1,23 @@
-<div class="widget">
-  <div class="widget-header"> <i class="icon-bookmark"></i>
-    <h3><%=("System commands outputs")%></h3>
-  </div>
-  <!-- /widget-header -->
-  <div class="widget-content">
-    <div class="shortcuts">
-      <%If MValidate.RADIVATE["DMESGS"] Begins "http://crb.i-nex.pl" Then%>
-      <a href="<%=MValidate.RADIVATE["DMESGS"]%>" target="_blank" class="shortcut"><i class="shortcut-icon icon-list-alt"></i><span class="shortcut-label">Dmesg</span></a>
-      <%Endif%>
-      <%If MValidate.RADIVATE["LSPCIS"] Begins "http://crb.i-nex.pl" Then%>
-      <a href="<%=MValidate.RADIVATE["LSPCIS"]%>" target="_blank" class="shortcut"><i class="shortcut-icon icon-bookmark"></i><span class="shortcut-label">Lspci</span></a>
-      <%Endif%>
-      <%If MValidate.RADIVATE["LSUSBS"] Begins "http://crb.i-nex.pl" Then%>
-      <a href="<%=MValidate.RADIVATE["LSUSBS"]%>" target="_blank" class="shortcut"><i class="shortcut-icon icon-signal"></i> <span class="shortcut-label">Lsusb</span></a>
-      <%Endif%>
-      <%If MValidate.RADIVATE["CPUINFOS"] Begins "http://crb.i-nex.pl" Then%>
-      <a href="<%=MValidate.RADIVATE["CPUINFOS"]%>" target="_blank" class="shortcut"><i class="shortcut-icon icon-signal"></i> <span class="shortcut-label">Cpuinfo</span></a>
-      <%Endif%>
+<div class="panel panel-info">
+    <div class="panel-heading">
+      <h3 class="panel-title"><%=("System commands outputs")%></h3>
     </div>
-  </div> 
+    <div class="panel-body">
+    <%If MValidate.RADIVATE["DMESGS"] Begins "http://crb.i-nex.pl" Then%>
+        <a class="btn btn-sm btn-info" href="<%=MValidate.RADIVATE["DMESGS"]%>" target="_blank">
+          <i class="glyphicon glyphicon-link pull-left"></i><span>Dmesg<br><small>/var/log/dmesg</small></span></a> 
+    <%Endif%>
+    <%If MValidate.RADIVATE["LSPCIS"] Begins "http://crb.i-nex.pl" Then%>
+        <a class="btn btn-sm btn-primary" href="<%=MValidate.RADIVATE["LSPCIS"]%>" target="_blank">
+          <i class="glyphicon glyphicon-user pull-left"></i><span>Lspci<br><small>Term command: lspci</small></span></a> 
+     <%Endif%>
+     <%If MValidate.RADIVATE["LSUSBS"] Begins "http://crb.i-nex.pl" Then%>
+        <a class="btn btn-sm btn-success " href="<%=MValidate.RADIVATE["LSUSBS"]%>" target="_blank">
+         <i class="glyphicon glyphicon-dashboard pull-left"></i><span>Lsusb<br><small>Term command: lsusb</small></span></a> 
+     <%Endif%>
+     <%If MValidate.RADIVATE["CPUINFOS"] Begins "http://crb.i-nex.pl" Then%>
+        <a class="btn btn-sm btn-danger" href="<%=MValidate.RADIVATE["CPUINFOS"]%>" target="_blank">
+         <i class="glyphicon glyphicon-tasks pull-left"></i><span>Cpuinfo<br><small>cat /proc/cpuinfo</small></span></a> 
+     <%Endif%>
+  </div>
 </div>

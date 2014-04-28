@@ -14,11 +14,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: WWidgetMYModal.webpage:6
+#: WWidgetMYModal.webpage:8
 msgid "CPU Flags long desc"
 msgstr ""
 
-#: WWidgetMYModal.webpage:42
+#: WWidgetMYModal.webpage:33
 msgid "Close"
 msgstr ""
 

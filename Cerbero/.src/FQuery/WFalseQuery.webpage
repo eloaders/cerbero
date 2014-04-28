@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<<WHead>>
+<body>
+<<WNavbar>>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title"><i class="fa fa-list-alt"></i>  <%=("Search by:")%> „<%=Request.Get["query"]%>”</h3>
+            </div>
+            <div class="panel-body">
+              <h1 class="text-center"><%=("Search failed.")%></h1>
+              <h2 class="text-center"><%=("The minimum number of characters is too small.")%></h2> 
+              <h2 class="text-center"><%=("The minimum number of characters = 4")%></h2> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+<<WExtra>>
+<<WFooter>> 
+</body>

@@ -22,11 +22,11 @@ Public Sub CHKeys()
               USER_DATA["API_PRIVATE"] = UCase(Replace(Replace(Replace(USER_DATA["API_PRIVATE"], "/", ""), ".", ""), "$", ""))
               File.Save(Global.WHEREIS_SITE_ROOT & "/Users/" & Request.Cookies["__ursa"] & "/Data.json", JSON.Encode(USER_DATA))
             Endif
-          Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & "/inex.r?profile")
+          Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & Application.Root & "?profile#tab2")
           Endif
-        Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & "/inex.r?profile")
+        Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & Application.Root & "?profile#tab2")
         Endif
-    Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & "/inex.r?profile")
+    Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & Application.Root & "?profile#tab2")
     Endif
-Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & "/inex.r?profile")
+Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & Application.Root & "?profile#tab2")
 End

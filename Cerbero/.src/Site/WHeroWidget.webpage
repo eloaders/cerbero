@@ -1,0 +1,56 @@
+<style type="text/css">
+.hero-widget { text-align: center; padding-top: 20px; padding-bottom: 20px; } 
+.hero-widget .icon { display: block; font-size: 96px; line-height: 96px; margin-bottom: 10px; text-align: center; } 
+.hero-widget var { display: block; height: 64px; font-size: 64px; line-height: 64px; font-style: normal; } 
+.hero-widget label { font-size: 17px; } 
+.hero-widget .options { margin-top: 10px; }    
+</style>
+<br />
+<div class="container">
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="hero-widget well well-sm">
+        <div class="icon">
+          <i class="fa fa-users"></i>
+        </div>
+        <div class="text">
+          <var><%=Global.CRB_TOTALUSERS()%></var>
+          <label class="text-muted"><%=("Total registered users")%></label>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="hero-widget well well-sm">
+        <div class="icon">
+          <i class="fa fa-list"></i>
+        </div>
+        <div class="text">
+          <var><%=Global.CRB_TOTALREPORTS()%></var>
+          <label class="text-muted"><%=("Total reports in database")%></label>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="hero-widget well well-sm">
+        <div class="icon">
+          <i class="fa fa-wrench"></i>
+        </div>
+        <div class="text">
+          <var><%=Application.Version%></var>
+          <label class="text-muted">Cerbero Version</label>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="hero-widget well well-sm">
+        <div class="icon">
+          <i class="fa fa-cloud-upload"></i>
+        </div>
+        <div class="text">
+          <var><%=Global.CRB_TODAYREPORTS()%></var>
+          <label class="text-muted"><%=("Today submitted reports")%></label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

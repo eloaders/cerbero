@@ -1,46 +1,82 @@
-<div class="extra">
-  <div class="extra-inner">
-    <div class="container">
-        <div class="row">
-          <div class="span3">
-            <h4><%=("About Cerbero")%></h4>
-              <ul>
-                <li><a href="inex.r?page=translators"><%=("Translators")%></a></li>
-                <li><a href="inex.r?page=team"><%=("Team")%></a></li>
-                <li><a href="http://i-nex.linux.pl/">I-Nex</a></li>
-                <li><a href="inex.r?page=donate" class="btn btn-success" role="button"><i class="icon-money"></i><label class="control-label"><%=("Donate")%></label></a></li>
-              </ul>
+
+<div class="container">    
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="col-md-3">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h2 class="panel-title"><i class="fa fa-bookmark fa-lg"></i>  <span class="label label-default"><%=("About Cerbero")%></span></h2>
           </div>
-          <!-- /span3 -->
-          <div class="span3">
-            <h4><%=("Support")%></h4>
-              <ul>
-                <li><a href="http://i-nex.linux.pl/bbs/categories/i-nex-validate"><%=("Ask a Question")%></a></li>
-                <li><a href="http://i-nex.linux.pl/bbs/categories/i-nex-validate"><%=("Report a bug")%></a></li> 
+          <div class="panel-body">
+            <div class="col-md-3 col-md-3 col-md-3">
+              <ul class="list-unstyled">
+                <p>
+                  <li><a href="http://i-nex.linux.pl/" class="btn btn-default"><i class="fa fa-users fa-2x"></i>  I-Nex</a></li>
+                </p>
+                <p>
+                  <li><a href="<%=Application.Root%>?page=team" class="btn btn-primary"><i class="fa fa-users fa-2x"></i>  <%=("Team")%></a></li>
+                </p>
+                <p>
+                  <li><a href="<%=Application.Root%>?page=translators" class="btn btn-success"><i class="fa fa-users fa-2x"></i>  <%=("Translators")%></a></li>
+                </p>
+                <p>
+                  <li><a href="<%=Application.Root%>?page=donate" class="btn btn-info"><i class="fa fa-money fa-2x"></i>  <%=("Donate")%></a></li>
+                </p>
               </ul>
-            <h4><%=("Friends of the project")%></h4>
-              <ul>
-                <li><a href="http://tomaszprzybyl-apel.blogspot.com/">Prośba o pomoc finansową na rehabilitację</a></li>
-                <li><a href="http://netbit73.blogspot.com/">Marcin Mach</a></li>
-                <li><a href="http://www.netext73.pl/">NeteXt'73 - optymalizator systemu</a></li>
-              </ul>
+            </div>
           </div>
-          <!-- /span3 -->
-          <div class="span3">
-            <h4><%=("Something Legal")%></h4>
-              <ul>
-                <li><a href="inex.r?page=policy"><%=("Privacy Policy")%></a></li>
-              </ul>
+          <div class="panel-footer"></div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h2 class="panel-title"><i class="fa fa-bookmark fa-lg"></i>  <span class="label label-default"><%=("Support")%></span></h2>
           </div>
-          <!-- /span3 -->
-          <div class="span3">
-            <h4><span class="badge"><%=("Sponsors")%></span></h4>
-              <ul>
-                <li><a href="http://abix.info.pl/"><h2>ABIX - systemy wspomagania biznesu.</h2></a></li>
-                <li><a href="http://abix.info.pl/oferta-dla-biznesu/"><h4>Oprogramowanie ERP, bezpieczny system operacyjny, sprzęt edukacyjny, nowoczesne komputery, kompleksowa obsługa, szkolenia dla nauczycieli</h4></a></li>
-              </ul>
+          <div class="panel-body">
+            <ul class="list-group">
+              <li class="list-group-item"><a href="http://i-nex.linux.pl/bbs/categories/i-nex-validate"><i class="fa fa-comments"></i>  <%=("Ask a Question")%></a></li>
+              <li class="list-group-item"><a href="http://i-nex.linux.pl/bbs/categories/i-nex-validate"><i class="fa fa-exclamation"></i>  <%=("Report a bug")%></a></li>              
+            </ul>
+            <ul class="list-inline">
+              <li><%=("Friends of the project")%><li>
+            </ul>
           </div>
-          <!-- /span3 -->
-        </div> <!-- /row --> 
-    </div> <!-- /container -->
-</div> <!-- /extra-inner -->
+          <ul class="list-group">
+            <li class="list-group-item"><a href="http://tomaszprzybyl-apel.blogspot.com/">Prośba o pomoc finansową na rehabilitację</a></li>
+            <li class="list-group-item"><a href="http://netbit73.blogspot.com/">Marcin Mach</a></li>
+            <li class="list-group-item"><a href="http://www.netext73.pl/">NeteXt'73 - optymalizator systemu</a></li>
+          </ul>
+          <div class="panel-footer"></div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h2 class="panel-title"><i class="fa fa-bookmark fa-lg"></i>  <span class="label label-default"><%=("Something Legal")%></span></h2>
+          </div>
+          <div class="panel-body">
+            <ul class="list-unstyled">
+              <li><a href="<%=Application.Root%>?page=policy"><%=("Privacy Policy")%></a></li>
+            </ul>
+          </div>
+          <div class="panel-footer"></div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h2 class="panel-title"><i class="fa fa-bookmark fa-lg"></i>  <span class="label label-default"><%=("Sponsors")%></span></h2>
+          </div>
+          <div class="panel-body">
+            <ul class="list-unstyled">
+              <li><a href="http://abix.info.pl/"><h2>ABIX - systemy wspomagania biznesu.</h2></a></li>
+              <li><a href="http://abix.info.pl/oferta-dla-biznesu/"><h4>Oprogramowanie ERP, bezpieczny system operacyjny, sprzęt edukacyjny, nowoczesne komputery, kompleksowa obsługa, szkolenia dla nauczycieli</h4></a></li>
+            </ul>
+          </div>
+          <div class="panel-footer"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

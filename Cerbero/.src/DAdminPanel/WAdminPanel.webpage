@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<<WHead>>
+<body>
+<<WNavbar>>
+<div class="main"> 
+  <div class="main-inner"> 
+    <div class="container"> 
+      <div class="row"> 
+  <div class="span12"> 
+    <div class="widget"> 
+      <div class="widget-header"> 
+          <i class="icon-user"></i> 
+          <h3> 
+           Konto 
+          </h3> 
+      </div> <!-- /widget-header --> 
+      <div class="widget-content"> 
+      <div class="tabbable"> 
+        <ul class="nav nav-tabs"> 
+           <li> 
+             <li class="active"><a href="#account_details" data-toggle="tab"> 
+             Szczegóły konta 
+             </a> 
+           </li> 
+           <li> 
+             <a href="#keys" data-toggle="tab"> 
+             Klucze 
+             </a> 
+           </li> 
+           <li> 
+            <a href="#submitted_reports" data-toggle="tab"> 
+             Przesłane raporty 
+            </a> 
+           </li> 
+        </ul> 
+        <br> 
+        <div class="tab-content"> 
+        <div class="tab-pane active" id="account_details"> 
+        <form action="inex.r?updprofile" method="post" id="edit-profile" class="form-horizontal"> 
+        <fieldset> 
+          <div class="control-group"> 
+           <div class="controls"> 
+               <div class="media"> 
+                 <a class="thumbnail pull-left"> 
+                   <img class="media-object" src="https://secure.gravatar.com/avatar/0afdb189b52f3e5b44ddf66545bb5dfe?s=128" alt="thumbnail"> 
+                 </a> 
+               </div> 
+           <div class="span"> 
+               <div class="media-body"> 
+                 <div class="input-prepend input-append"> 
+                   <span class="add-on"><i class="icon-signin"></i></span> 
+                     <input class="span disabled" type="text" id="username" value="eloaders" disabled> 
+                   <span class="add-on"><i class="icon-user"></i></span> 
+                   <p class="help-block"> 
+                  Twoja nazwa użytkownika jest używana do logowania się i nie może być zmieniona. 
+                   </p> 
+                 </div> 
+               <div class="media-body"> 
+                 <div class="input-prepend input-append"> 
+                   <span class="add-on"><i class="icon-pencil"></i></span> 
+                     <input class="span" type="text" id="displayname" name="zdisplayname" value="michal"> 
+                   <span class="add-on"><i class="icon-group"></i></span> 
+                   <p class="help-block"> 
+                  Publiczna nazwa konta użytkownika. Jest wykorzystywana w niektórych przypadkach. 
+                   </p> 
+                 </div> 
+               </div> 
+           </div> 
+          </div> 
+        </div> 
+       </div> 
+          <div class="control-group"> 
+           <div class="controls"> 
+             <div class="input-prepend input-append"> 
+               <span class="add-on"><i class="icon-facebook"></i></span> 
+                 <input class="span1" type="text" id="facebookusername" name="facebookusername" value="mpg4.5"> 
+             </div> 
+             <div class="input-prepend input-append"> 
+               <span class="add-on"><i class="icon-google-plus"></i></span> 
+                 <input class="span2" type="text" id="googleusername" name="googleusername" value="103294167787784292101"> 
+             </div> 
+             <div class="input-prepend input-append"> 
+               <span class="add-on"><i class="icon-twitter"></i></span> 
+                 <input class="span1" type="text" id="twitterusername" name="twitterusername" value="eloaders"> 
+             </div> 
+             <div class="input-prepend input-append"> 
+               <span class="add-on"><i class="icon-github"></i></span> 
+                 <input class="span1" type="text" id="githubusername" name="githubusername" value="eloaders"> 
+             </div> 
+           </div> 
+         </div> 
+          <div class="control-group"> 
+           <label class="control-label" for="email"> 
+            E-mail 
+           </label> 
+           <div class="controls"> 
+             <div class="input-prepend input-append"> 
+               <span class="add-on"><i class="icon-comment"></i></span> 
+                 <input class="span4" type="text" id="email" name="zemail" value="eloaders@yahoo.com"> 
+               <span class="add-on"><i class="icon-folder-open"></i></span> 
+             <p class="help-block"> 
+               Twój e-mail może zostać użyty do wyświetlania Gravatara. 
+             </p> 
+             </div> 
+           </div> 
+         </div> 
+          <div class="control-group"> 
+           <label class="control-label" for="zhomepage"> 
+           Strona domowa 
+           </label> 
+           <div class="controls"> 
+             <div class="input-prepend input-append"> 
+               <span class="add-on"><i class="icon-link"></i></span> 
+                 <input class="span4" type="text" id="zhomepage" name="zhomepage" value="http://i-nex.linux.pl/"> 
+               <span class="add-on"><i class="icon-globe"></i></span> 
+             </div> 
+           </div> 
+         </div> 
+          <div class="control-group"> 
+           <label class="control-label" for="authotbio"> 
+           O autorze 
+           </label> 
+           <div class="controls"> 
+             <textarea class="span5" name="authorbio" id="authorbio" rows="9" placeholder="About You">{[]}I am working on a little program with Gambas. I am a novice programmer.^^</textarea> 
+           </div> 
+         </div> 
+        <br/> 
+        <br/> 
+          <div class="control-group"> 
+          <label class="control-label" for="zpassword1"> 
+            Aktualne hasło 
+          </label> 
+            <div class="controls"> 
+            <input type="password" class="span4" id="zpassword1" name="zpassword1" > 
+            </div> <!-- /controls --> 
+          </div> <!-- /control-group --> 
+ 
+          <div class="control-group"> 
+          <label class="control-label" for="zpassword2"> 
+             Nowe hasło 
+          </label> 
+            <div class="controls"> 
+            <input type="password" class="span4" id="zpassword2" name="zpassword2" > 
+            </div> <!-- /controls --> 
+          </div> <!-- /control-group --> 
+ 
+          <div class="control-group"> 
+          <label class="control-label" for="zpassword2"> 
+            Powtórz hasło 
+          </label> 
+            <div class="controls"> 
+            <input type="password" class="span4" id="zpassword3" name="zpassword3" > 
+            </div> <!-- /controls --> 
+          </div> <!-- /control-group --> 
+          <div class="form-actions"> 
+            <button type="submit" class="btn btn-primary"> 
+             Zapisz 
+            </button> 
+          </div> <!-- /form-actions --> 
+           </fieldset> 
+            </form> 
+          </div> 
+          <div class="tab-pane" id="keys"> 
+           <form id="edit-profile2" class="form-horizontal"> 
+             <fieldset> 
+               <div class="control-group"> 
+                   <label class="control-label" for="radiobtns"> 
+                     <strong> 
+                     Publiczne API  
+                     </strong> 
+                   </label> 
+                       <div class="controls"> 
+                         <div class="input-prepend input-append"> 
+                           <span class="add-on"><i class="icon-key"></i></span> 
+                           <input class="span4 m-wrap disabled" id="appendedInputButton" type="text" value="YTQ8SBGEAHI0QX8FEFRRFRKWAVZOH1" disabled> 
+                           <a href="inex.r?chgapi=pub" class="btn" role="button"><i class="icon-key"></i> 
+                             Zmiana 
+                           </a> 
+                         </div> 
+                          <p class="help-block"> 
+                             Klucz publiczny jest używany w niektórych przypadkach. 
+                           </p> 
+                      </div> 
+               </div> 
+               <div class="control-group"> 
+                   <label class="control-label" for="radiobtns"> 
+                     <strong> 
+                       Prywatne API 
+                     </strong> 
+                   </label> 
+                       <div class="controls"> 
+                         <div class="input-prepend input-append"> 
+                           <span class="add-on"><i class="icon-key"></i></span> 
+                           <input class="span4 m-wrap disabled" id="appendedInputButton" type="text" value="KFMEK2ZTW4ZGNDPW3BLHS2D5X5PX30" disabled> 
+                           <a href="inex.r?chgapi=pri" class="btn" role="button"><i class="icon-key"></i> 
+                           Zmiana 
+                           </a> 
+                         </div> 
+                         <p class="help-block"> 
+                           I-Nex wykorzystuje klucz prywatny do wysyłania danych na serwer 
+                         </p> 
+                       </div> 
+               </div> 
+             </fieldset> 
+           </form> 
+         </div> 
+          <div class="tab-pane" id="submitted_reports"> 
+           <form id="edit-profile3" class="form-vertical"> 
+           <div class="widget widget-table action-table"> 
+            <!-- /widget-header --> 
+            <div class="widget-content"> 
+             <table class="table table-hover"> 
+             <thead> 
+             <tr> 
+             <th> 
+             Logo procesora 
+             </th> 
+             <th> 
+             Procesor i Karta graficzna 
+             </th> 
+             <th> 
+             Płyta główna 
+             </th> 
+             <th class="text-center"> 
+             Dystrybucja 
+             </th> 
+             <th class="text-center"> 
+             Odnośnik do 
+             </th> 
+             <th class="text-center"> 
+             Usuń odnośnik 
+             </th> 
+             <th></th> 
+             </tr> 
+            </thead> 
+          <tbody> 
+        <tr> 
+            <td class="col-sm-8 col-md-6"> 
+            <div class="media"> 
+                <a class="thumbnail pull-left" href="http://127.0.0.1/inex.r?validate=033120146.14483493222752" target="_blank""> <img class="media-object" src="http://127.0.0.1/LOGOS/263.gif" ></a> 
+            </div></td> 
+            <td class="col-sm-1 col-md-1 text-center"> 
+                <div class="media-body"> 
+                    <h4 class="media-heading"> INTEL</a></h4> 
+                    <h5 class="media-heading"> (R) Atom(TM) CPU D425   </a></h5> 
+                    <span>I-Nex V: </span><span class="text-success"><strong>0.6.4</strong></span> 
+                </div> 
+            <strong> Intel Corporation Atom Processor D4xx/D5xx/N4xx/N5xx Integrated Graphics Controller</strong></td> 
+            <td class="col-sm-1 col-md-1 text-center"><strong>   Intel Corporation    D425KT</strong></td> 
+            <td class="col-sm-1 col-md-1 text-center"><strong> Ubuntu  13.10</strong></td> 
+            <td class="td-actions"> 
+            <a <a href="http://127.0.0.1/inex.r?validate=033120146.14483493222752" target="_blank" class="btn btn-link btn-small"> 
+            <i class="btn-icon-only icon-link"></i> 
+            </a> 
+            <td class="td-actions"> 
+            <a <a href="http://127.0.0.1/inex.r?delvalidate=033120146.14483493222752" class="btn btn-danger btn-small"> 
+            <i class="btn-icon-only icon-remove"></i> 
+            </a> 
+        </tr> 
+   </tbody> 
+  </table> 
+</div> 
+<!-- /widget-content -->  
+</div> 
+<!-- /widget -->  
+           </form> 
+         </div> 
+        </div> 
+      </div> 
+        </div> <!-- /widget-content --> 
+      </div> <!-- /widget --> 
+        </div> <!-- /span8 --> 
+    </div> <!-- /row --> 
+      </div> <!-- /container --> 
+  </div> <!-- /main-inner --> 
+</div> <!-- /main --> 
+
+<br/>
+<br/>
+<br/>
+<<WExtra>>
+<<WFooter>>
+</body>
+</html>

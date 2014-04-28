@@ -18,59 +18,59 @@ msgstr ""
 msgid "GPU"
 msgstr ""
 
-#: WWidgetGPU.webpage:14
+#: WWidgetGPU.webpage:11
 msgid "Model:"
 msgstr ""
 
-#: WWidgetGPU.webpage:18
+#: WWidgetGPU.webpage:15
 msgid "OpenGL Vendor:"
 msgstr ""
 
-#: WWidgetGPU.webpage:22
+#: WWidgetGPU.webpage:19
 msgid "OpenGL Renderer:"
 msgstr ""
 
-#: WWidgetGPU.webpage:26
+#: WWidgetGPU.webpage:23
 msgid "OpenGL Version:"
 msgstr ""
 
-#: WWidgetGPU.webpage:30
+#: WWidgetGPU.webpage:27
 msgid "Client glx vendor:"
 msgstr ""
 
-#: WWidgetGPU.webpage:34
+#: WWidgetGPU.webpage:31
 msgid "Client glx version:"
 msgstr ""
 
-#: WWidgetGPU.webpage:38
+#: WWidgetGPU.webpage:35
 msgid "Server glx vendor:"
 msgstr ""
 
-#: WWidgetGPU.webpage:42
+#: WWidgetGPU.webpage:39
 msgid "Server glx version:"
 msgstr ""
 
-#: WWidgetGPU.webpage:46
+#: WWidgetGPU.webpage:43
 msgid "GLX version:"
 msgstr ""
 
-#: WWidgetGPU.webpage:50
+#: WWidgetGPU.webpage:47
 msgid "Kernel driver in use:"
 msgstr ""
 
-#: WWidgetGPU.webpage:54
+#: WWidgetGPU.webpage:51
 msgid "Total Memory prefetchable:"
 msgstr ""
 
-#: WWidgetGPU.webpage:58
+#: WWidgetGPU.webpage:55
 msgid "Total Memory non-prefetchable:"
 msgstr ""
 
-#: WWidgetGPU.webpage:62
+#: WWidgetGPU.webpage:59
 msgid "Resolutions:"
 msgstr ""
 
-#: WWidgetGPU.webpage:66
+#: WWidgetGPU.webpage:63
 msgid "Present resolution:"
 msgstr ""
 

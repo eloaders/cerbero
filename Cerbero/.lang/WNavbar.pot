@@ -14,23 +14,43 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: WNavbar.webpage:12
-msgid "Options"
+#: WNavbar.webpage:53
+msgid "Site"
 msgstr ""
 
-#: WNavbar.webpage:14
-msgid "Add CPU Vendor to DB"
+#: WNavbar.webpage:55
+msgid "Upload"
 msgstr ""
 
-#: WNavbar.webpage:15
-msgid "List CPU Database"
+#: WNavbar.webpage:56
+msgid "Latest added"
 msgstr ""
 
-#: WNavbar.webpage:16
-msgid "Admin Panel"
+#: WNavbar.webpage:58
+msgid "Forum"
 msgstr ""
 
-#: WNavbar.webpage:31
+#: WNavbar.webpage:59
+msgid "I-Nex Homepage"
+msgstr ""
+
+#: WNavbar.webpage:60
+msgid "Install I-Nex"
+msgstr ""
+
+#: WNavbar.webpage:67
 msgid "Search by CPU Name"
+msgstr ""
+
+#: WNavbar.webpage:98
+msgid "PA"
+msgstr ""
+
+#: WNavbar.webpage:99
+msgid "CList"
+msgstr ""
+
+#: WNavbar.webpage:100
+msgid "CAdd"
 msgstr ""
 

@@ -15,6 +15,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: WWidgetNotAdded.webpage:2
+msgid "Latest Added"
+msgstr ""
+
+#: WWidgetNotAdded.webpage:5
 msgid "Today has not added any reports"
 msgstr ""
 

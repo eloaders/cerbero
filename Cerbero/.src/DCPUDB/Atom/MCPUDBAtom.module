@@ -1,0 +1,12 @@
+' Gambas module file
+
+Export
+Create Static
+Public AtomCPUList As Collection
+
+Public Sub Main()
+  AtomCPUList = JSON.Decode(File.Load("/var/www/CPUDB/atom"))
+  Response.Begin
+  Print ((AtomCPUList["DATABASE"].Count - 2) / 10)
+  Response.End
+End

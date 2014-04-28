@@ -38,7 +38,7 @@ Public Sub CHProf()
                 File.Save(Global.WHEREIS_SITE_ROOT & "/Users/" & Request.Cookies["__ursa"] & "/Data.json", JSON.Encode(USER_DATA))
 
               Endif
-              Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & "/inex.r?profile")
+              Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & Application.Root & "?profile")
             Endif
 
             If Request.Post.Exist("zemail") Then
@@ -51,11 +51,11 @@ Public Sub CHProf()
                   File.Save(Global.WHEREIS_SITE_ROOT & "/Users/" & Request.Cookies["__ursa"] & "/Data.json", JSON.Encode(USER_DATA))
 
                   Endif
-                  Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & "/inex.r?profile")
+                  Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & Application.Root & "?profile")
                 Endif
-                Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & "/inex.r?profile")
+                Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & Application.Root & "?profile")
               Endif
-              Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & "/inex.r?profile")
+              Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & Application.Root & "?profile")
             Endif
 
             If Request.Post.Exist("zhomepage") Then
@@ -66,7 +66,7 @@ Public Sub CHProf()
                 File.Save(Global.WHEREIS_SITE_ROOT & "/Users/" & Request.Cookies["__ursa"] & "/Data.json", JSON.Encode(USER_DATA))
 
               Endif
-              Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & "/inex.r?profile")
+              Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & Application.Root & "?profile")
             Endif
             
             If Request.Post.Exist("facebookusername") Then
@@ -101,16 +101,16 @@ Public Sub CHProf()
                 File.Save(Global.WHEREIS_SITE_ROOT & "/Users/" & Request.Cookies["__ursa"] & "/Data.json", JSON.Encode(USER_DATA))
 
               Endif
-              Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & "/inex.r?profile")
+              Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & Application.Root & "?profile")
             Endif
             
-            Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & "/inex.r?profile")
+            Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & Application.Root & "?profile")
           Endif
-        Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & "/inex.r?profile")
+        Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & Application.Root & "?profile")
         Endif
-    Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & "/inex.r?profile")
+    Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & Application.Root & "?profile")
     Endif
 
-    Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & "/inex.r?profile")
+    Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & Application.Root & "?profile")
 
 End

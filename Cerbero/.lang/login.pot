@@ -14,27 +14,3 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: login.module:30
-msgid "             Member Login"
-msgstr ""
-
-#: login.module:34
-msgid "                   Please provide your details"
-msgstr ""
-
-#: login.module:38
-msgid "                               Username:"
-msgstr ""
-
-#: login.module:44
-msgid "                               Password:"
-msgstr ""
-
-#: login.module:53
-msgid "                               Keep me signed in"
-msgstr ""
-
-#: login.module:57
-msgid "                   Sign In"
-msgstr ""
-

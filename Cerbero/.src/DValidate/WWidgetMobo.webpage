@@ -1,8 +1,8 @@
-<div class="widget">
-  <div class="widget-header"> <i class="icon-cogs"></i>
-    <h3><%Print ("Motherboard")%></h3>
+<div class="panel panel-primary">
+  <div class="panel-heading">
+      <h3 class="panel-title"><i class="fa fa-power-off"></i>  <%Print ("Motherboard")%></h3>
   </div>
-  <div class="widget-content">
+  <div class="panel-body">
     <table class="table table-striped table-bordered"> 
       <tbody> 
         <tr> 

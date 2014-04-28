@@ -1,2 +1,4 @@
 ' Gambas class file
 
+Public Flags As String[] = Split(Replace(MValidate.RADIVATE["CPU_FLAGS"], "Flags:", ""), ",", "'")
+Public OneFlag As String

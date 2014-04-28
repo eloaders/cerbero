@@ -18,3 +18,19 @@ msgstr ""
 msgid "Submited by"
 msgstr ""
 
+#: WWidgetUser.webpage:18
+msgid "More About"
+msgstr ""
+
+#: WWidgetUser.webpage:24
+msgid "Social: "
+msgstr ""
+
+#: WWidgetUser.webpage:47
+msgid "Bio:"
+msgstr ""
+
+#: WWidgetUser.webpage:54
+msgid "I've heard enough about"
+msgstr ""
+

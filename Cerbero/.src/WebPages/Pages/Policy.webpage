@@ -6,7 +6,6 @@ Dim USER_DATA As Collection
 <<WHead>>
 <body>
 <<WNavbar>>
-<<WSubnavbar>>
 
 <br/>
 <br/>
@@ -14,10 +13,12 @@ Dim USER_DATA As Collection
 <div class="container">
   <div class="row">
   
-    <div class="span12">
-      <div id="target-1" class="widget">
-        <div class="widget-content">
-<h1>Polityka prywatności serwisu i-nex.pl</h1>
+    <div class="col-lg-12">
+      <div class="panel panel-success">
+        <div class="panel-heading">
+          <h1 class="panel-title"><i class="fa fa-tachometer"></i>  <% Print ("Polityka prywatności serwisu i-nex.pl") %></h1>
+        </div>
+        <div class="panel-body">
 <h3>1. Informacje ogólne.</h3>
 <ol>
 <li>

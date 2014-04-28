@@ -1,1 +1,1 @@
-<a class="brand" href="<%= MBrand.Brand_URL %>"><%= MBrand.Brand_TEXT %></a>
+<a class="navbar-brand" href="<%= MBrand.Brand_URL %>"><%= MBrand.Brand_TEXT %></a>

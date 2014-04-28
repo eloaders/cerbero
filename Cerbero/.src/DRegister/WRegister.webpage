@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title><%=("Cerbero - Register")%></title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="flatly/css/font-awesome.css">
+<link rel="stylesheet" href="flatly/bootstrap.css" rel="stylesheet" id="bootstrap-css">
+<style type="text/css">
+body { 
+background: url(Parallax/back.png);
+background-color: #444;
+background: url(Parallax/pinlayer2.png),url(Parallax/pinlayer1.png),url(Parallax/back.png);    
+}
+.vertical-offset-100{
+padding-top:100px;
+}    
+</style>
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="Parallax/TweenLite.min.js"></script>
+<!-- This is a very simple parallax effect achieved by simple CSS 3 multiple backgrounds, made by http://twitter.com/msurguy -->
+</head>
+<body>
+<div class="container">
+    <div class="row vertical-offset-100">
+      <div class="col-md-4 col-md-offset-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title"><%=("Register")%></h3>
+         </div>
+          <div class="panel-body">
+            <form action="<%=Application.Root%>?register" method="post" accept-charset="UTF-8" role="form">
+              <fieldset>
+                <div class="form-group">
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-user fa-lg"></i></span>
+                    <input class="form-control" placeholder="Login" name="firstname" type="text">
+                  </div>
+                </div>
+                <%If Request.Get["err1"] = "2" Then%>
+                <div class="alert alert-warning fade in">
+                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                  <strong>Holy shit!</strong> User login is null
+                </div>
+                <%Endif%>
+                <%If Request.Get["err1"] = "3" Then%>
+                <div class="alert alert-warning fade in">
+                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                  <strong>Holy shit!</strong> User login must be a-z letters
+                </div>
+                <%Endif%>
+                <%If Request.Get["err1"] = "4" Then%>
+                <div class="alert alert-warning fade in">
+                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                  <strong>Holy shit!</strong> User exist
+                </div>
+                <%Endif%>
+                <div class="form-group">
+                  <input class="form-control" placeholder="Display name" name="displayname" type="text">
+                </div>
+                <div class="form-group">
+                  <input class="form-control" placeholder="Email" name="email" type="text">
+                </div>
+                <%If Request.Get["err1"] = "7" Then%>
+                <div class="alert alert-warning fade in">
+                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                  <strong>Holy shit!</strong> Email is not valid
+                </div>
+                <%Endif%>
+                <div class="form-group">
+                  <input class="form-control" placeholder="Password" name="password" type="password" value="">
+                </div>
+                <%If Request.Get["err1"] = "6" Then%>
+                <div class="alert alert-warning fade in">
+                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                  <strong>Holy shit!</strong> Password is to small, minimum 7 characters
+                </div>
+                <%Endif%>
+                <div class="form-group">
+                  <input class="form-control" placeholder="Confirm Password" name="confirm_password" type="password" value="">
+                </div>
+                <%If Request.Get["err1"] = "5" Then%>
+                <div class="alert alert-warning fade in">
+                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                  <strong>Holy shit!</strong> Password is not = Confirm Password
+                </div>
+                <%Endif%>
+                <div class="checkbox">
+                  <input id="Field" name="Accept" type="checkbox" value="Accept">
+                  <label class="choice" for="Field"><%=("Agree with the Terms & Conditions.")%></label> 
+                </div>
+                <%If Request.Get["err1"] = "1" Then%>
+                <div class="alert alert-warning fade in">
+                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                  <strong>Holy shit!</strong> You must accept Terms & Conditions.
+                </div>
+                <%Endif%>
+              <input class="btn btn-lg btn-success btn-block" type="submit" value="Register">
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>  
+<script type="text/javascript">
+  $(document).ready(function(){
+  $(document).mousemove(function(e){
+     TweenLite.to($('body'), 
+        .5, 
+        { css: 
+            {
+                'background-position':parseInt(event.pageX/8) + "px "+parseInt(event.pageY/12)+"px, "+parseInt(event.pageX/15)+"px "+parseInt(event.pageY/15)+"px, "+parseInt(event.pageX/30)+"px "+parseInt(event.pageY/30)+"px"
+            }
+        });
+  });
+});  </script>
+</body>
+</html>

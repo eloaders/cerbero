@@ -18,87 +18,87 @@ msgstr ""
 msgid "Distribution"
 msgstr ""
 
-#: WWidgetDistro.webpage:12
+#: WWidgetDistro.webpage:11
 msgid "Distro Vendor:"
 msgstr ""
 
-#: WWidgetDistro.webpage:16
+#: WWidgetDistro.webpage:15
 msgid "Distro Release:"
 msgstr ""
 
-#: WWidgetDistro.webpage:20
+#: WWidgetDistro.webpage:19
 msgid "Desktop environment:"
 msgstr ""
 
-#: WWidgetDistro.webpage:24
+#: WWidgetDistro.webpage:23
 msgid "Window manager:"
 msgstr ""
 
-#: WWidgetDistro.webpage:28
+#: WWidgetDistro.webpage:27
 msgid "Window manager Theme:"
 msgstr ""
 
-#: WWidgetDistro.webpage:32
+#: WWidgetDistro.webpage:31
 msgid "GTK+ 2 Theme:"
 msgstr ""
 
-#: WWidgetDistro.webpage:36
+#: WWidgetDistro.webpage:35
 msgid "GTK+ 3 Theme:"
 msgstr ""
 
-#: WWidgetDistro.webpage:40
+#: WWidgetDistro.webpage:39
 msgid "GTK Icons:"
 msgstr ""
 
-#: WWidgetDistro.webpage:44
+#: WWidgetDistro.webpage:43
 msgid "GTK Font:"
 msgstr ""
 
-#: WWidgetDistro.webpage:48
+#: WWidgetDistro.webpage:47
 msgid "Hostname:"
 msgstr ""
 
-#: WWidgetDistro.webpage:52
+#: WWidgetDistro.webpage:51
 msgid "Deafult DM:"
 msgstr ""
 
-#: WWidgetDistro.webpage:56
+#: WWidgetDistro.webpage:55
 msgid "Timezone:"
 msgstr ""
 
-#: WWidgetDistro.webpage:60
+#: WWidgetDistro.webpage:59
 msgid "GLX Version:"
 msgstr ""
 
-#: WWidgetDistro.webpage:64
+#: WWidgetDistro.webpage:63
 msgid "X.Org Version:"
 msgstr ""
 
-#: WWidgetDistro.webpage:68
+#: WWidgetDistro.webpage:67
 msgid "Net-tools:"
 msgstr ""
 
-#: WWidgetDistro.webpage:72
+#: WWidgetDistro.webpage:71
 msgid "Arch:"
 msgstr ""
 
-#: WWidgetDistro.webpage:76
+#: WWidgetDistro.webpage:75
 msgid "Binutils:"
 msgstr ""
 
-#: WWidgetDistro.webpage:80
+#: WWidgetDistro.webpage:79
 msgid "GCC Version:"
 msgstr ""
 
-#: WWidgetDistro.webpage:84
+#: WWidgetDistro.webpage:83
 msgid "Libc Version"
 msgstr ""
 
-#: WWidgetDistro.webpage:88
+#: WWidgetDistro.webpage:87
 msgid "GNU Make Version:"
 msgstr ""
 
-#: WWidgetDistro.webpage:92
+#: WWidgetDistro.webpage:91
 msgid "Dynamic linker (ldd):"
 msgstr ""
 
