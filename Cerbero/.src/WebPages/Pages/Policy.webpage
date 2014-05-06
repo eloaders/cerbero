@@ -1,6 +1,3 @@
-<%
-Dim USER_DATA As Collection
-%>
 <!DOCTYPE html>
 <html lang="en">
 <<WHead>>

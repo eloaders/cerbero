@@ -3,40 +3,35 @@
 <<WHead>>
 <body>
 <<WNavbar>>
-
-<div class="main">
-  <div class="main-inner">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <<WWidgetCPU>>
-          <<WWidgetCPUDB>>
-          <<WWidgetGPU>>
-          <<WWidgetMobo>>
-          <%If IsNull(MValidate.RADIVATE["DMESGS"]) = False Then%>
-          <<WAditional>>
-          <%Endif%>
-        </div>
-        <div class="col-lg-6">
-          <<WWidgetScreenshot>>
-          <<WWidgetDistro>>
-          <<WWidgetKernel>>
-          <%If MValidate.RADIVATE.Exist("USAGE") = True Then%>
-          <<WWidgetMisc>>
-          <%Endif%>
-          <%If MValidate.SHOW_USER = True Then%>
-          <<WWidgetUser>>
-          <%Endif%>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6">
+      <<WWidgetCPU>>
+      <<WWidgetCPUDB>>
+      <<WWidgetGPU>>
+      <<WWidgetMobo>>
+      <%If IsNull(MValidate.RADIVATE["DMESGS"]) = False Then%>
+      <<WAditional>>
+      <%Endif%>
+    </div>
+    <div class="col-lg-6">
+      <<WWidgetScreenshot>>
+      <<WWidgetDistro>>
+      <<WWidgetKernel>>
+      <%If MValidate.RADIVATE.Exist("USAGE") = True Then%>
+      <<WWidgetMisc>>
+      <%Endif%>
+      <%If MValidate.SHOW_USER = True Then%>
+      <<WWidgetUser>>
+      <%Endif%>
           
-          <%If MValidate.RADIVATE.Exist("GOO_GL") = True Then%>
-          <<WWidgetGooGL>>
-          <%Endif%>
-          <<WDisqus>>
-        </div> 
-      </div>
+      <%If MValidate.RADIVATE.Exist("GOO_GL") = True Then%>
+      <<WWidgetGooGL>>
+      <%Endif%>
+      <<WDisqus>>
     </div> 
-  </div> 
-</div>
+  </div>
+</div> 
 
 <<WWidgetMYModal>>
 <<WExtra>>

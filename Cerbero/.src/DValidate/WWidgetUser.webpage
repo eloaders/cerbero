@@ -4,9 +4,9 @@
   </div>
   <div class="panel-body">
     <div class="span3 well">
-        <center>
+    <center>
         <a href="#aboutModal" data-toggle="modal" data-target="#myModal"><img src="<%= Global.GravatarAV(MValidate.USER_DATA["CERBERO_USER_EMAIL"], "140") %>" name="aboutme" width="140" height="140" class="img-circle"></a>
-        <h3><%= MValidate.RADIVATE["SUBMITED_BY"] %></h3>
+          <h3><%= MValidate.RADIVATE["SUBMITED_BY"] %></h3>
         <em>click my face for more</em>
     </center>
     </div>
@@ -24,19 +24,19 @@
                     <h3 class="media-heading"><%= MValidate.RADIVATE["SUBMITED_BY"] %></h3>
                     <span><strong><%=("Social: ")%></strong></span>
                     <% If Not IsNull(MValidate.USER_DATA["CERBERO_USER_FACEBOOK"]) Then %>
-                        <a class="btn btn-xs btn-facebook" href="https://www.facebook.com/<%=MValidate.USER_DATA["CERBERO_USER_FACEBOOK"]%>" target="_blank"><i class="fa fa-facebook"></i>Facebook</a>
+                        <a class="btn btn-xs btn-facebook" href="<%=MValidate.USER_DATA["CERBERO_USER_FACEBOOK"]%>" target="_blank"><i class="fa fa-facebook"></i>Facebook</a>
                     <%Endif%>
           
                     <%If IsNull(MValidate.USER_DATA["CERBERO_USER_TWITTER"]) = False Then%>
-                        <a class="btn btn-xs btn-twitter" href="https://twitter.com/<%=MValidate.USER_DATA["CERBERO_USER_TWITTER"]%>" target="_blank"><i class="fa fa-twitter"></i>Twitter</a>
+                        <a class="btn btn-xs btn-twitter" href="<%=MValidate.USER_DATA["CERBERO_USER_TWITTER"]%>" target="_blank"><i class="fa fa-twitter"></i>Twitter</a>
                     <%Endif%>
           
                     <%If IsNull(MValidate.USER_DATA["CERBERO_USER_GOOGLE"]) = False Then%>
-                        <a class="btn btn-xs btn-google-plus" href="https://plus.google.com/u/0/<%=MValidate.USER_DATA["CERBERO_USER_GOOGLE"]%>" target="_blank"><i class="fa fa-google-plus"></i>Google +</a>
+                        <a class="btn btn-xs btn-google-plus" href="<%=MValidate.USER_DATA["CERBERO_USER_GOOGLE"]%>" target="_blank"><i class="fa fa-google-plus"></i>Google +</a>
                     <% Endif%>
           
                     <%If IsNull(MValidate.USER_DATA["CERBERO_USER_GITHUB"]) = False Then%>
-                        <a class="btn btn-xs btn-github" href="https://github.com/<%=MValidate.USER_DATA["CERBERO_USER_GITHUB"]%>" target="_blank"><i class="fa fa-github"></i>Github</a>
+                        <a class="btn btn-xs btn-github" href="<%=MValidate.USER_DATA["CERBERO_USER_GITHUB"]%>" target="_blank"><i class="fa fa-github"></i>Github</a>
                     <%Endif%>
           
                     <% If Not IsNull(MValidate.USER_DATA["CERBERO_USER_HOMEPAGE"]) Then%>
@@ -45,7 +45,8 @@
                     </center>
                     <hr>
                     <center>
-                    <p class="text-left"><strong><%=("Bio:")%></strong><br>
+                    <p class="text-left"><strong><%=("Bio:")%></strong>
+                    <br>
                         <%= MValidate.USER_DATA["CERBERO_USER_AUTHOR_BIO"] %></p>
                     <br>
                     </center>

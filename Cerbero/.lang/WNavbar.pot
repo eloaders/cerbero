@@ -14,43 +14,43 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: WNavbar.webpage:53
+#: WNavbar.webpage:23
 msgid "Site"
 msgstr ""
 
-#: WNavbar.webpage:55
+#: WNavbar.webpage:25
 msgid "Upload"
 msgstr ""
 
-#: WNavbar.webpage:56
+#: WNavbar.webpage:26
 msgid "Latest added"
 msgstr ""
 
-#: WNavbar.webpage:58
+#: WNavbar.webpage:28
 msgid "Forum"
 msgstr ""
 
-#: WNavbar.webpage:59
+#: WNavbar.webpage:29
 msgid "I-Nex Homepage"
 msgstr ""
 
-#: WNavbar.webpage:60
+#: WNavbar.webpage:30
 msgid "Install I-Nex"
 msgstr ""
 
-#: WNavbar.webpage:67
+#: WNavbar.webpage:37
 msgid "Search by CPU Name"
 msgstr ""
 
-#: WNavbar.webpage:98
+#: WNavbar.webpage:66
 msgid "PA"
 msgstr ""
 
-#: WNavbar.webpage:99
+#: WNavbar.webpage:67
 msgid "CList"
 msgstr ""
 
-#: WNavbar.webpage:100
+#: WNavbar.webpage:68
 msgid "CAdd"
 msgstr ""
 

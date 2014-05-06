@@ -109,18 +109,19 @@ Public Sub SendFileToServer()
               cpuiddata.Remove("DMESG")
               cpuiddata.Remove("LSPCI")
               cpuiddata.Remove("LSUSB")
+              cpuiddata.Remove("CPUINFO")
               Try cpuiddata.Add(GOO_GL, "GOO_GL")
               ReportSave()
               If Error Then
-                Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & "/" & Application.Root & "?fail")
+                Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & Application.Root & "?fail")
               Endif
               Kill Global.WHEREIS_SITE_ROOT & "/ValidCache/" & VALIDATE_NEW_ID
 
               If Request.Post["redirect"] = "on" Then
-                  Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & "/" & Application.Root & "?validate=" & DDATE_NOW & VALIDATE_NEW_ID & "")
+                  Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & Application.Root & "?validate=" & DDATE_NOW & VALIDATE_NEW_ID & "")
               Else
                   Response.Begin
-                    Print Global.WEBSITE_ROOT_URL_HTTP & "/" & Application.Root & "?validate=" & DDATE_NOW & VALIDATE_NEW_ID & ""
+                    Print Global.WEBSITE_ROOT_URL_HTTP & Application.Root & "?validate=" & DDATE_NOW & VALIDATE_NEW_ID & ""
                   Response.End
               Endif
           Else

@@ -44,10 +44,8 @@ Public Function LatestKernel() As String
 End
 
 Public Function ShortURL(LongURL As String) As String
-Dim Parms As String[] = Null
 Dim OutputURL As String = Temp()
 Dim hClient As HttpClient
-Dim sBuffer As String
 
 hClient = New HttpClient As "hClient"
 hClient.URL = "https://www.googleapis.com/urlshortener/v1/url"
@@ -59,11 +57,9 @@ Return File.Load(OutputURL)
 End
 
 Public Function CRB_OUTPUTS(DATA As String, Optional PASTENAME As String, Optional AUTHOR As String) As String
-  
-Dim Parms As String[] = Null
+
 Dim OutputURL As String = Temp()
 Dim hClient As HttpClient
-Dim sBuffer As String
 
 hClient = New HttpClient As "hClient"
 hClient.URL = "http://crb.i-nex.pl/api/create"

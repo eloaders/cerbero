@@ -1,0 +1,205 @@
+<%
+Dim RQG As Integer
+RQG = Request.Get["cpudb[atom]edit"]
+%>
+<!DOCTYPE html>
+<html lang="en">
+<<WHead>>
+<body>
+<<WNavbar>>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="panel panel-success">
+        <div class="panel-heading">
+          <h3 class="panel-title"><i class="fa fa-tachometer"></i>  <%=("CPU Specifications")%></h3>
+        </div>
+        <div class="panel-body">
+        <%MCPUDBAtom.AtomCPUList = JSON.Decode(File.Load("/var/www/CPUDB/atom"))%>
+<form class="form-horizontal">
+  <fieldset>
+    <div class="form-group">
+      <label for="PROCESSOR_MODEL_NAME" class="col-lg-2 control-label">Email</label>
+      <div class="col-lg-10">
+        <input type="text" class="form-control" id="PROCESSOR_MODEL_NAME" name="PROCESSOR_MODEL_NAME" value="<%Print MCPUDBAtom.AtomCPUList["DATABASE"][RQG]["PROCESSOR_MODEL_NAME"]%>">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="PROCESSOR_SOCKET_IMAGE" class="col-lg-2 control-label">Email</label>
+      <div class="col-lg-10">
+        <input type="text" class="form-control" id="PROCESSOR_SOCKET_IMAGE" name="PROCESSOR_SOCKET_IMAGE" value="<%Print MCPUDBAtom.AtomCPUList["DATABASE"][RQG]["PROCESSOR_SOCKET_IMAGE"]%>">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="PROCESSOR_SOCKET" class="col-lg-2 control-label">Email</label>
+      <div class="col-lg-10">
+        <input type="text" class="form-control" id="PROCESSOR_SOCKET" name="PROCESSOR_SOCKET" value="<%Print MCPUDBAtom.AtomCPUList["DATABASE"][RQG]["PROCESSOR_SOCKET"]%>">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="PROCESSOR_TRANSISTORS" class="col-lg-2 control-label">Email</label>
+      <div class="col-lg-10">
+        <input type="text" class="form-control" id="PROCESSOR_TRANSISTORS" name="PROCESSOR_TRANSISTORS" value="<%Print MCPUDBAtom.AtomCPUList["DATABASE"][RQG]["PROCESSOR_TRANSISTORS"]%>">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="PROCESSOR_DIE_SIZE" class="col-lg-2 control-label">Email</label>
+      <div class="col-lg-10">
+        <input type="text" class="form-control" id="PROCESSOR_DIE_SIZE" name="PROCESSOR_DIE_SIZE" value="<%Print MCPUDBAtom.AtomCPUList["DATABASE"][RQG]["PROCESSOR_DIE_SIZE"]%>">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="PROCESSOR_PACKAGE" class="col-lg-2 control-label">Email</label>
+      <div class="col-lg-10">
+        <input type="text" class="form-control" id="PROCESSOR_PACKAGE" name="PROCESSOR_PACKAGE" value="<%Print MCPUDBAtom.AtomCPUList["DATABASE"][RQG]["PROCESSOR_PACKAGE"]%>">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="PROCESSOR_TCASEMAX" class="col-lg-2 control-label">Email</label>
+      <div class="col-lg-10">
+        <input type="text" class="form-control" id="PROCESSOR_TCASEMAX" name="PROCESSOR_TCASEMAX" value="<%Print MCPUDBAtom.AtomCPUList["DATABASE"][RQG]["PROCESSOR_TCASEMAX"]%>">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="PROCESSOR_FREQUENCY" class="col-lg-2 control-label">Email</label>
+      <div class="col-lg-10">
+        <input type="text" class="form-control" id="PROCESSOR_FREQUENCY" name="PROCESSOR_FREQUENCY" value="<%Print MCPUDBAtom.AtomCPUList["DATABASE"][RQG]["PROCESSOR_FREQUENCY"]%>">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="PROCESSOR_TURBOCLOCK" class="col-lg-2 control-label">Email</label>
+      <div class="col-lg-10">
+        <input type="text" class="form-control" id="PROCESSOR_TURBOCLOCK" name="PROCESSOR_TURBOCLOCK" value="<%Print MCPUDBAtom.AtomCPUList["DATABASE"][RQG]["PROCESSOR_TURBOCLOCK"]%>">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="PROCESSOR_MULTIPLIER" class="col-lg-2 control-label">Email</label>
+      <div class="col-lg-10">
+        <input type="text" class="form-control" id="PROCESSOR_MULTIPLIER" name="PROCESSOR_MULTIPLIER" value="<%Print MCPUDBAtom.AtomCPUList["DATABASE"][RQG]["PROCESSOR_MULTIPLIER"]%>">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="PROCESSOR_VOLTAGE" class="col-lg-2 control-label">Email</label>
+      <div class="col-lg-10">
+        <input type="text" class="form-control" id="PROCESSOR_VOLTAGE" name="PROCESSOR_VOLTAGE" value="<%Print MCPUDBAtom.AtomCPUList["DATABASE"][RQG]["PROCESSOR_VOLTAGE"]%>">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="PROCESSOR_TDP" class="col-lg-2 control-label">Email</label>
+      <div class="col-lg-10">
+        <input type="text" class="form-control" id="PROCESSOR_TDP" name="PROCESSOR_TDP" value="<%Print MCPUDBAtom.AtomCPUList["DATABASE"][RQG]["PROCESSOR_TDP"]%>">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="PROCESSOR_CODENAME" class="col-lg-2 control-label">Email</label>
+      <div class="col-lg-10">
+        <input type="text" class="form-control" id="PROCESSOR_CODENAME" name="PROCESSOR_CODENAME" value="<%Print MCPUDBAtom.AtomCPUList["DATABASE"][RQG]["PROCESSOR_CODENAME"]%>">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="PROCESSOR_PART" class="col-lg-2 control-label">Email</label>
+      <div class="col-lg-10">
+        <input type="text" class="form-control" id="PROCESSOR_PART" name="PROCESSOR_PART" value="<%Print MCPUDBAtom.AtomCPUList["DATABASE"][RQG]["PROCESSOR_PART"]%>">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="PROCESSOR_PRODUCTION_STATUS" class="col-lg-2 control-label">Email</label>
+      <div class="col-lg-10">
+        <input type="text" class="form-control" id="PROCESSOR_PRODUCTION_STATUS" name="PROCESSOR_PRODUCTION_STATUS" value="<%Print MCPUDBAtom.AtomCPUList["DATABASE"][RQG]["PROCESSOR_PRODUCTION_STATUS"]%>">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="PROCESSOR_RELEASED" class="col-lg-2 control-label">Email</label>
+      <div class="col-lg-10">
+        <input type="text" class="form-control" id="PROCESSOR_TDP" name="PROCESSOR_RELEASED" value="<%Print MCPUDBAtom.AtomCPUList["DATABASE"][RQG]["PROCESSOR_RELEASED"]%>">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="PROCESSOR_MEMORYSUPPORT" class="col-lg-2 control-label">Email</label>
+      <div class="col-lg-10">
+        <input type="text" class="form-control" id="PROCESSOR_MEMORYSUPPORT" name="PROCESSOR_MEMORYSUPPORT" value="<%Print MCPUDBAtom.AtomCPUList["DATABASE"][RQG]["PROCESSOR_MEMORYSUPPORT"]%>">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="PROCESSOR_OFCORES" class="col-lg-2 control-label">Email</label>
+      <div class="col-lg-10">
+        <input type="text" class="form-control" id="PROCESSOR_OFCORES" name="PROCESSOR_OFCORES" value="<%Print MCPUDBAtom.AtomCPUList["DATABASE"][RQG]["PROCESSOR_OFCORES"]%>">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="PROCESSOR_SMPCPUS" class="col-lg-2 control-label">Email</label>
+      <div class="col-lg-10">
+        <input type="text" class="form-control" id="PROCESSOR_SMPCPUS" name="PROCESSOR_SMPCPUS" value="<%Print MCPUDBAtom.AtomCPUList["DATABASE"][RQG]["PROCESSOR_SMPCPUS"]%>">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="PROCESSOR_INTEGRATEDGRAPHIC" class="col-lg-2 control-label">Email</label>
+      <div class="col-lg-10">
+        <input type="text" class="form-control" id="PROCESSOR_INTEGRATEDGRAPHIC" name="PROCESSOR_INTEGRATEDGRAPHIC" value="<%Print MCPUDBAtom.AtomCPUList["DATABASE"][RQG]["PROCESSOR_INTEGRATEDGRAPHIC"]%>">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="PROCESSOR_CACHEL1" class="col-lg-2 control-label">Email</label>
+      <div class="col-lg-10">
+        <input type="text" class="form-control" id="PROCESSOR_CACHEL1" name="PROCESSOR_CACHEL1" value="<%Print MCPUDBAtom.AtomCPUList["DATABASE"][RQG]["PROCESSOR_CACHEL1"]%>">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="PROCESSOR_CACHEL2" class="col-lg-2 control-label">Email</label>
+      <div class="col-lg-10">
+        <input type="text" class="form-control" id="PROCESSOR_CACHEL2" name="PROCESSOR_CACHEL2" value="<%Print MCPUDBAtom.AtomCPUList["DATABASE"][RQG]["PROCESSOR_CACHEL2"]%>">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="PROCESSOR_CACHEL3" class="col-lg-2 control-label">Email</label>
+      <div class="col-lg-10">
+        <input type="text" class="form-control" id="PROCESSOR_CACHEL3" name="PROCESSOR_CACHEL3" value="<%Print MCPUDBAtom.AtomCPUList["DATABASE"][RQG]["PROCESSOR_CACHEL3"]%>">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="PROCESSOR_MARKET" class="col-lg-2 control-label">Email</label>
+      <div class="col-lg-10">
+        <input type="text" class="form-control" id="PROCESSOR_MARKET" name="PROCESSOR_MARKET" value="<%Print MCPUDBAtom.AtomCPUList["DATABASE"][RQG]["PROCESSOR_MARKET"]%>">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <div class="col-lg-10 col-lg-offset-2">
+        <button class="btn btn-default">Cancel</button>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </fieldset>
+</form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>   
+<<WExtra>>
+<<WFooter>> 
+</body>
+</html>

@@ -1,7 +1,6 @@
 ' Gambas module file
 
 Public Sub Sign()
-  Dim USER_DATA As Collection
   If Usera.User_Logged() = True Then
               Response.Begin
               WLoginnedin.Render

@@ -2,9 +2,6 @@
 
 Public Sub CHProf()
   Dim USER_DATA As Collection
-  Dim Dict As New Collection
-  Dim CPU_DATA As Collection
-  Dim Element As String
   
     If IsNull(Request.Cookies["__ursa"]) = False Then
 
@@ -101,16 +98,10 @@ Public Sub CHProf()
                 File.Save(Global.WHEREIS_SITE_ROOT & "/Users/" & Request.Cookies["__ursa"] & "/Data.json", JSON.Encode(USER_DATA))
 
               Endif
-              Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & Application.Root & "?profile")
             Endif
-            
-            Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & Application.Root & "?profile")
           Endif
-        Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & Application.Root & "?profile")
         Endif
-    Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & Application.Root & "?profile")
     Endif
-
     Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & Application.Root & "?profile")
 
 End

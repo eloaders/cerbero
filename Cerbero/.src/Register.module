@@ -3,7 +3,6 @@
 Public USER_ACCOUNT_DETAILS As Collection = [("SECRET_KEY"): (Replace(Crypt.md5(Rnd(200)), "$1$", ""))]
 Public Sub Register()
   Dim USERNAME As String
-  Dim LASTNAME As String
   Dim USEREMAIL As String
   Dim USER_ACCEPT As String
   Dim USER_PASSWD As String

@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: WWidgetScreenshot.webpage:50
+#: WWidgetScreenshot.webpage:13
 msgid "I-Nex Screenshot"
 msgstr ""
 

@@ -1,57 +1,22 @@
  <style type="text/css">
-.panel-image {
-    position: relative;   
-}
-.panel-image img.panel-image-preview {
-    width: 100%;
-  border-radius: 4px 4px 0px 0px;
-}
-
-.panel-image label {
-    display: block;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    height: 100%;
-    width: 100%;
-}
-
-.panel-heading ~ .panel-image img.panel-image-preview {
-  border-radius: 0px;
-}
-
-.panel-body {
-   overflow: hidden;
-}
-
-.panel-image ~ input[type=checkbox] {
-    position:absolute;
-    top:- 30px;
-    z-index: -1;   
-}
-
-.panel-image ~ input[type=checkbox] ~ .panel-body {
-  height: 0px;
-  padding: 0px;
-}
-
-.panel-image ~ input[type=checkbox]:checked ~ .panel-body {
-    height: auto;
-  padding: 15px;
-}
-
-.panel-image ~ .panel-footer a {
-    padding: 0px 10px;
-  font-size: 1.3em;
-  color: rgb(100, 100, 100);
-}
+.panel-image{position:relative}
+.panel-image img.panel-image-preview{width:100%;border-radius:4px 4px 0 0}
+.panel-image label{display:block;position:absolute;top:0;left:0;height:100%;width:100%}
+.panel-heading ~ .panel-image img.panel-image-preview{border-radius:0}
+.panel-body{overflow:hidden}
+.panel-image ~ input[type=checkbox]{position:absolute;top:0 30px;z-index:-1}
+.panel-image ~ input[type=checkbox] ~ .panel-body{height:0;padding:0}
+.panel-image ~ input[type=checkbox]:checked ~ .panel-body{height:auto;padding:15px}
+.panel-image ~ .panel-footer a{font-size:1.3em;color:rgb(100,100,100);padding:0 10px}
 </style>
 <div class="panel panel-default">
   <div class="panel-heading">
     <h3 class="panel-title"><%=("I-Nex Screenshot")%></h3>
   </div>
   <div class="panel-image hide-panel-body">
-    <img src="<%=MValidate.RADIVATE["SCREENSHOT_URL"]%>" class="panel-image-preview" />
+    <center>
+    <img src="<%=MValidate.RADIVATE["SCREENSHOT_URL"]%>" class="img-responsive" />
+    </center>
     <label for="toggle-3"></label>
   </div>
   <input type="checkbox" id="toggle-3" class="panel-image-toggle">
@@ -60,9 +25,6 @@
     <p>This is main window of I-Nex app. You can share this image or save on hdd. You can also attach this image in forums, chats, blog posts.</p>
   </div>
   <div class="panel-footer text-center">
-    <a href="#download"><span class="glyphicon glyphicon-download"></span></a>
-    <a href="#facebook"><span class="fa fa-facebook"></span></a>
-    <a href="#twitter"><span class="fa fa-twitter"></span></a>
-    <a href="#share"><span class="glyphicon glyphicon-share-alt"></span></a>
+    <a href="<%=Global.WEBSITE_ROOT_URL_HTTP%><%=Application.Root%>?validate=<%=Request.Get["validate"]%>&download" class="btn btn-default btn-success btn-lg btn-block"><span class="glyphicon glyphicon-circle-arrow-down"></span> Download</a>
   </div>
 </div>

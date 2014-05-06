@@ -1,11 +1,6 @@
 ' Gambas module file
 
 Public Sub User_Profile()
-  Dim i, All As Integer
-  Dim USER_DATA As Collection
-  Dim Dict As New Collection
-  Dim CPU_DATA As Collection
-  Dim Element As String
 
   If Usera.User_Logged() = True Then
     MBrand.Brand_URL = Global.WEBSITE_ROOT_URL_HTTP & Application.Root

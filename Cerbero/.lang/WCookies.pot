@@ -14,19 +14,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: WCookies.webpage:30
+#: WCookies.webpage:0
 msgid "This site uses cookies (cookies), so that our service can work better."
 msgstr ""
 
-#: WCookies.webpage:30
+#: WCookies.webpage:0
 msgid "http://www.allaboutcookies.org/"
 msgstr ""
 
-#: WCookies.webpage:30
+#: WCookies.webpage:0
 msgid "Learn more"
 msgstr ""
 
-#: WCookies.webpage:30
+#: WCookies.webpage:0
 msgid "I understand"
 msgstr ""
 

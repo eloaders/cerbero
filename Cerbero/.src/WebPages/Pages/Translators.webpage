@@ -4,202 +4,35 @@
 <body>
 <<WNavbar>>
 <style type='text/css'>
-@charset "utf-8";
-/* CSS Document */
-.kento-team{
-text-align: center;
-  width: 100%;
-}
-#style-1, #style-2{
-display:inline-block;
-height:auto;
-margin:0 20px 40px;
-width:auto;
-}
-/*Style 1*/
-#style-1 .single-member-thumbnail{
-height:200px;
-overflow:hidden;
-width:200px;
-border:5px solid #FFFFFF;
-/*border-radius*/
--webkit-border-radius:50%;
-   -moz-border-radius:50%;
-        border-radius:50%;
-/*box-shadow*/
--webkit-box-shadow:0 0 8px -3px #000000;
-   -moz-box-shadow:0 0 8px -3px #000000;
-        box-shadow:0 0 8px -3px #000000;
-}
-/*Style 2*/
-
-#style-2 .single-member-thumbnail{
-border:5px solid #FFFFFF;
-/*border-radius*/
--webkit-border-radius:4px;
-   -moz-border-radius:4px;
-        border-radius:4px;
-/*box-shadow*/
--webkit-box-shadow:0 0 4px -1px #000000;
-   -moz-box-shadow:0 0 4px -1px #000000;
-        box-shadow:0 0 4px -1px #000000;
-height:200px;
-overflow:hidden;
-width:200px;
-}
-/*Style 3 */
-#style-3{
-display:inline-block;
-height:auto;
-margin:0 20px 40px;
-text-align:left;
-width:100%;
-}
-#style-3 .single-member-thumbnail, #style-3 .single-member-name, #style-3 .single-member-position, #style-3 .social-links{
-display:inline-block;
-margin-bottom:-20px;
-margin-right:20px;
-}
-#style-3 .single-member-thumbnail{
-border:5px solid #FFFFFF;
-height:50px;
-overflow:hidden;
-width:50px;
-}
-#style-3 .single-member-thumbnail img{
-/*border-radius*/
--webkit-border-radius:0 !important;
-   -moz-border-radius:0 !important;
-        border-radius:0 !important;
-}
-/*Style 4*/
-
-
-#style-4{
-display:inline-block;
-height:auto;
-margin:0 20px 40px;
-text-align:left;
-width:100%;
-}
-#style-4 .single-member-thumbnail, #style-4 .single-member-name, #style-4 .single-member-position, #style-4 .social-links{
-display:inline-block;
-margin-bottom:-20px;
-margin-right:20px;
-}
-#style-4 .single-member-thumbnail{
-border:3px solid #FFFFFF;
-/*border-radius*/
--webkit-border-radius:50%;
-   -moz-border-radius:50%;
-        border-radius:50%;
-/*box-shadow*/
--webkit-box-shadow:0 0 5px -1px #000000;
-   -moz-box-shadow:0 0 5px -1px #000000;
-        box-shadow:0 0 5px -1px #000000;
-height:50px;
-overflow:hidden;
-width:50px;
-}
-#style-4 .single-member-thumbnail img{
-/*border-radius*/
--webkit-border-radius:0 !important;
-   -moz-border-radius:0 !important;
-        border-radius:0 !important;
-}
-.single-member-thumbnail img{
-height:100%;
-width:100%;
-}
-.single-member-position{
-font-size:12px;
-padding:5px 0;
-}
-.single-member .social-links .sl{
-/*transition*/
--webkit-transition:all 0.8s ease 0s;
-   -moz-transition:all 0.8s ease 0s;
-     -o-transition:all 0.8s ease 0s;
-        transition:all 0.8s ease 0s;
-}
-.single-member .social-links .sl:hover{
-opacity:0.6;
-}
-.single-member .social-links .facebook, 
-.single-member .social-links .twitter, 
-.single-member .social-links .googleplus,
-.single-member .social-links .linkedin,
-.single-member .social-links .youtube,
-.single-member .social-links .skype{
-background-color:#FF0000;
-display:inline-block;
-height:25px;
-margin:2px;
-width:25px;
-}
-.single-member .social-links .facebook a, 
-.single-member .social-links .twitter a, 
-.single-member .social-links .googleplus a,
-.single-member .social-links .linkedin a,
-.single-member .social-links .youtube a,
-.single-member .social-links .skype a{
-display:block;
-height:100%;
-width:100%;
-}
-.single-member .social-links .facebook{
-background-color:#3B5998;
-background:url("social-icon.png") repeat scroll 0 -25px rgba(0, 0, 0, 0);
-}
-.single-member .social-links .facebook:hover{
-background-color:#3B5998;
-background:url("social-icon.png") repeat scroll 0 0px rgba(0, 0, 0, 0);
-}
-.single-member .social-links .twitter{
-background:url("social-icon.png") repeat scroll -35px -25px rgba(0, 0, 0, 0);
-background-color:#28AAE1;
-}
-.single-member .social-links .twitter:hover{
-background:url("social-icon.png") repeat scroll -35px 0px rgba(0, 0, 0, 0);
-background-color:#28AAE1;
-}
-.single-member .social-links .googleplus{
-background:url("social-icon.png") repeat scroll -70px -25px rgba(0, 0, 0, 0);
-background-color:#CA3625;
-}
-.single-member .social-links .googleplus:hover{
-background:url("social-icon.png") repeat scroll -70px 0px rgba(0, 0, 0, 0);
-background-color:#CA3625;
-}
-.single-member .social-links .linkedin{
-background:url("social-icon.png") repeat scroll -105px -25px rgba(0, 0, 0, 0);
-background-color:#0097bd;
-}
-.single-member .social-links .linkedin:hover{
-background:url("social-icon.png") repeat scroll -105px 0px rgba(0, 0, 0, 0);
-background-color:#0097bd;
-}
-.single-member .social-links .youtube{
-background:url("social-icon.png") repeat scroll -142px -25px rgba(0, 0, 0, 0);
-background-color:#cf3427;
-}
-.single-member .social-links .youtube:hover{
-background:url("social-icon.png") repeat scroll -142px 0px rgba(0, 0, 0, 0);
-background-color:#cf3427;
-}
-.single-member .social-links .skype{
-background:url("social-icon.png") repeat scroll -213px -25px rgba(0, 0, 0, 0);
-background-color:#3e9dd7;
-}
-.single-member .social-links .skype:hover{
-background:url("social-icon.png") repeat scroll -213px 0px rgba(0, 0, 0, 0);
-background-color:#3e9dd7;
-}
-.single-member-name{
-font-size:18px;
-font-weight:600;
-margin-top:10px;
-}
+@charset utf-8;
+.kento-team{text-align:center;width:100%}
+#style-1,#style-2{display:inline-block;height:auto;width:auto;margin:0 20px 40px}
+#style-1 .single-member-thumbnail{height:200px;overflow:hidden;width:200px;border:5px solid #FFFFFF;-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;-webkit-box-shadow:0 0 8px -3px #000000;-moz-box-shadow:0 0 8px -3px #000000;box-shadow:0 0 8px -3px #000000}
+#style-2 .single-member-thumbnail{border:5px solid #FFFFFF;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;-webkit-box-shadow:0 0 4px -1px #000000;-moz-box-shadow:0 0 4px -1px #000000;box-shadow:0 0 4px -1px #000000;height:200px;overflow:hidden;width:200px}
+#style-3 .single-member-thumbnail{border:5px solid #FFFFFF;height:50px;overflow:hidden;width:50px}
+#style-4 .single-member-thumbnail{border:3px solid #FFFFFF;-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;-webkit-box-shadow:0 0 5px -1px #000000;-moz-box-shadow:0 0 5px -1px #000000;box-shadow:0 0 5px -1px #000000;height:50px;overflow:hidden;width:50px}
+.single-member-thumbnail img{height:100%;width:100%}
+.single-member-position{font-size:12px;padding:5px 0}
+.single-member .social-links .sl{-webkit-transition:all .8s ease 0;-moz-transition:all .8s ease 0;-o-transition:all .8s ease 0;transition:all .8s ease 0}
+.single-member .social-links .sl:hover{opacity:0.6}
+.single-member .social-links .facebook,.single-member .social-links .twitter,.single-member .social-links .googleplus,.single-member .social-links .linkedin,.single-member .social-links .youtube,.single-member .social-links .skype{background-color:#FF0000;display:inline-block;height:25px;width:25px;margin:2px}
+.single-member .social-links .facebook a,.single-member .social-links .twitter a,.single-member .social-links .googleplus a,.single-member .social-links .linkedin a,.single-member .social-links .youtube a,.single-member .social-links .skype a{display:block;height:100%;width:100%}
+.single-member .social-links .facebook{background-color:#3B5998;background:url(social-icon.png) repeat scroll 0 -25px rgba(0,0,0,0)}
+.single-member .social-links .facebook:hover{background-color:#3B5998;background:url(social-icon.png) repeat scroll 0 0 rgba(0,0,0,0)}
+.single-member .social-links .twitter{background:url(social-icon.png) repeat scroll -35px -25px rgba(0,0,0,0);background-color:#28AAE1}
+.single-member .social-links .twitter:hover{background:url(social-icon.png) repeat scroll -35px 0 rgba(0,0,0,0);background-color:#28AAE1}
+.single-member .social-links .googleplus{background:url(social-icon.png) repeat scroll -70px -25px rgba(0,0,0,0);background-color:#CA3625}
+.single-member .social-links .googleplus:hover{background:url(social-icon.png) repeat scroll -70px 0 rgba(0,0,0,0);background-color:#CA3625}
+.single-member .social-links .linkedin{background:url(social-icon.png) repeat scroll -105px -25px rgba(0,0,0,0);background-color:#0097bd}
+.single-member .social-links .linkedin:hover{background:url(social-icon.png) repeat scroll -105px 0 rgba(0,0,0,0);background-color:#0097bd}
+.single-member .social-links .youtube{background:url(social-icon.png) repeat scroll -142px -25px rgba(0,0,0,0);background-color:#cf3427}
+.single-member .social-links .youtube:hover{background:url(social-icon.png) repeat scroll -142px 0 rgba(0,0,0,0);background-color:#cf3427}
+.single-member .social-links .skype{background:url(social-icon.png) repeat scroll -213px -25px rgba(0,0,0,0);background-color:#3e9dd7}
+.single-member .social-links .skype:hover{background:url(social-icon.png) repeat scroll -213px 0 rgba(0,0,0,0);background-color:#3e9dd7}
+.single-member-name{font-size:18px;font-weight:600;margin-top:10px}
+#style-3,#style-4{display:inline-block;height:auto;text-align:left;width:100%;margin:0 20px 40px}
+#style-3 .single-member-thumbnail,#style-3 .single-member-name,#style-3 .single-member-position,#style-3 .social-links,#style-4 .single-member-thumbnail,#style-4 .single-member-name,#style-4 .single-member-position,#style-4 .social-links{display:inline-block;margin-bottom:-20px;margin-right:20px}
+#style-3 .single-member-thumbnail img,#style-4 .single-member-thumbnail img{-webkit-border-radius:0!important;-moz-border-radius:0!important;border-radius:0!important}
 </style>
 <br/>
 <br/>

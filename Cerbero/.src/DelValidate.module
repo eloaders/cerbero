@@ -3,7 +3,6 @@
 Public Sub Delete()
   Dim USER_DATA As Collection
   Dim Dict As New Collection
-  Dim CPU_DATA As Collection
   Dim Element As String
 
     If IsNull(Request.Cookies["__ursa"]) = False Then
@@ -28,7 +27,7 @@ Public Sub Delete()
         Endif
 
     Endif
-    Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & "/inex.r?profile")
+    Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & Application.Root & "?profile")
 
 End
 

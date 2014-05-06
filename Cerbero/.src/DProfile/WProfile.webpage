@@ -4,60 +4,21 @@
 <body>
 <<WNavbar>>
 <style type="text/css">
-    /*Panel tabs*/
-.panel-tabs {
-    position: relative;
-    bottom: 30px;
-    clear:both;
-    border-bottom: 1px solid transparent;
-}
-
-.panel-tabs > li {
-    float: left;
-    margin-bottom: -1px;
-}
-
-.panel-tabs > li > a {
-    margin-right: 2px;
-    margin-top: 4px;
-    line-height: .85;
-    border: 1px solid transparent;
-    border-radius: 4px 4px 0 0;
-    color: #ffffff;
-}
-
-.panel-tabs > li > a:hover {
-    border-color: transparent;
-    color: #ffffff;
-    background-color: transparent;
-}
-
-.panel-tabs > li.active > a,
-.panel-tabs > li.active > a:hover,
-.panel-tabs > li.active > a:focus {
-    color: #fff;
-    cursor: default;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
-    background-color: rgba(255,255,255, .23);
-    border-bottom-color: transparent;
-}    </style>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[class*=badger]{position:relative;background:#fff;border:1px solid #ddd;border-radius:6px;margin:15px 0;padding:39px 19px 14px;}
+[class*=badger]:after{content:attr(data-badger);position:absolute;top:0;font-size:12px;font-weight:bold;background:#999;color:#fff;padding:3px 7px;}
+.badger-left:after{left:0;border-radius:6px 0 6px 0;}
+.badger-right:after{right:0;border-radius:0 6px 0 6px;}
+.badger-danger:after{background:#d9534f;}
+.badger-warning:after{background:#f0ad4e;}
+.badger-success:after{background:#5cb85c;}
+.badger-info:after{background:#5bc0de;}
+.badger-inverse:after{background:#222;}
+.panel-tabs{position:relative;bottom:30px;clear:both;border-bottom:1px solid transparent;}
+.panel-tabs > li{float:left;margin-bottom:-1px;}
+.panel-tabs > li > a{margin-right:2px;margin-top:4px;line-height:.85;border:1px solid transparent;border-radius:4px 4px 0 0;color:#ffffff;}
+.panel-tabs > li > a:hover{color:#ffffff;background-color:transparent;border-color:transparent;}
+.panel-tabs > li.active > a,.panel-tabs > li.active > a:hover,.panel-tabs > li.active > a:focus{color:#fff;cursor:default;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;background-color:rgba(255,255,255,.23);border-bottom-color:transparent;}
+</style>
 <br>
 <div class="container">
   <div class="row">
@@ -80,72 +41,75 @@
 <div class="col-lg-6">
 <form action="<%=Application.Root%>?updprofile" method="post" class="form-horizontal">
   <fieldset>
+    <div class="badger-left badger-inverse" data-badger="<%=("Base")%>">
     <div class="form-group">
-      <label for="username" class="col-lg-2 control-label"><%=("Login")%></label>
-      <div class="col-lg-6">
+      <label for="username" class="col-lg-2 control-label"><i class="fa fa-user"></i> <%=("Login")%></label>
+      <div class="col-lg-10">
         <input class="form-control" type="text" id="username" value="<%=Usera.USER_DATA["CERBERO_USERNAME"]%>" readonly>
       </div>
     </div>
   
     <div class="form-group">
-      <label for="displayname" class="col-lg-2 control-label"><%=("Display name")%></label>
-      <div class="col-lg-6">
+      <label for="displayname" class="col-lg-3 control-label"><%=("Display name")%></label>
+      <div class="col-lg-9">
         <input class="form-control" type="text" id="displayname" name="zdisplayname" value="<%=Usera.USER_DATA["CERBERO_DISPLAYNAME"]%>">
       </div>
     </div>
-    
+    </div>
+    <div class="badger-left badger-inverse" data-badger="<%=("Social links")%>">
     <div class="form-group">
-      <label for="facebookusername" class="col-lg-2 control-label"><%=("Facebook")%></label>
-      <div class="col-lg-6">
+      <label for="facebookusername" class="col-lg-1 control-label"><i class="fa fa-facebook-square fa-2x"></i></label>
+      <div class="col-lg-11">
         <input class="form-control" type="text" id="facebookusername" name="facebookusername" value="<%=Usera.USER_DATA["CERBERO_USER_FACEBOOK"]%>">
       </div>
     </div>
     
     <div class="form-group">
-      <label for="googleusername" class="col-lg-2 control-label"><%=("Google")%></label>
-      <div class="col-lg-6">
+      <label for="googleusername" class="col-lg-1 control-label"><i class="fa fa-google-plus-square fa-2x"></i></label>
+      <div class="col-lg-11">
         <input class="form-control" type="text" id="googleusername" name="googleusername" value="<%=Usera.USER_DATA["CERBERO_USER_GOOGLE"]%>">
       </div>
     </div>
     
     <div class="form-group">
-      <label for="twitterusername" class="col-lg-2 control-label"><%=("Twitter")%></label>
-      <div class="col-lg-6">
+      <label for="twitterusername" class="col-lg-1 control-label"><i class="fa fa-twitter-square fa-2x"></i></label>
+      <div class="col-lg-11">
         <input class="form-control" type="text" id="twitterusername" name="twitterusername" value="<%=Usera.USER_DATA["CERBERO_USER_TWITTER"]%>">
       </div>
     </div>
     
     <div class="form-group">
-      <label for="githubusername" class="col-lg-2 control-label"><%=("Github")%></label>
-      <div class="col-lg-6">
+      <label for="githubusername" class="col-lg-1 control-label"><i class="fa fa-github fa-2x"></i></label>
+      <div class="col-lg-11">
         <input class="form-control" type="text" id="githubusername" name="githubusername" value="<%=Usera.USER_DATA["CERBERO_USER_GITHUB"]%>">
       </div>
     </div>
-    
+    </div>
+    <div class="badger-left badger-inverse" data-badger="<%=("Additional")%>">
     <div class="form-group">
-      <label for="email" class="col-lg-2 control-label"><%=("Email")%></label>
-      <div class="col-lg-6">
+      <label for="email" class="col-lg-2 control-label"><i class="fa fa-envelope-o"></i> <%=("Email")%></label>
+      <div class="col-lg-10">
         <input class="form-control" type="text" id="email" name="zemail" value="<%=Usera.USER_DATA["CERBERO_USER_EMAIL"]%>">
       </div>
     </div>
     
     <div class="form-group">
-      <label for="zhomepage" class="col-lg-2 control-label"><%=("Homepage")%></label>
-      <div class="col-lg-6">
+      <label for="zhomepage" class="col-lg-4 control-label"><i class="fa fa-globe"></i> <%=("Homepage")%></label>
+      <div class="col-lg-8">
         <input class="form-control" type="text" id="zhomepage" name="zhomepage" value="<%=Usera.USER_DATA["CERBERO_USER_HOMEPAGE"]%>">
       </div>
     </div>
     
     <div class="form-group">
       <label for="authorbio" class="col-lg-2 control-label"><%=("About You")%></label>
-      <div class="col-lg-6">
+      <div class="col-lg-10">
         <textarea class="form-control" name="authorbio" id="authorbio" rows="9" placeholder="About You"><%=Usera.USER_DATA["CERBERO_USER_AUTHOR_BIO"]%></textarea>
         <span class="help-block"><%=("Some text about you :)")%></span>
       </div>
     </div>
-    
+    </div>
     <div class="form-group">
-      <div class="col-lg-6">
+      <div class="col-lg-10">
         <button type="submit" class="btn btn-primary"><%=("Save")%></button>
       </div>
     </div>
@@ -159,27 +123,28 @@
 </div>
 <form action="<%=Application.Root%>?updprofile" method="post" class="form-horizontal">
   <fieldset>
+    <div class="badger-right badger-danger" data-badger="<%=("Password")%>">
     <div class="form-group">
-      <label for="zpassword1" class="col-lg-2 control-label"><%=("Old Password")%></label>
-      <div class="col-lg-6">
+      <label for="zpassword1" class="col-lg-3 control-label"><%=("Old Password")%></label>
+      <div class="col-lg-9">
         <input type="password" class="form-control" id="zpassword1" name="zpassword1">
       </div>
     </div>
     
     <div class="form-group">
-      <label for="zpassword2" class="col-lg-2 control-label"><%=("New Password")%></label>
-      <div class="col-lg-6">
+      <label for="zpassword2" class="col-lg-3 control-label"><%=("New Password")%></label>
+      <div class="col-lg-9">
         <input type="password" class="form-control" id="zpassword2" name="zpassword2">
       </div>
     </div>
     
     <div class="form-group">
-      <label for="zpassword3" class="col-lg-2 control-label"><%=("Repeat new password")%></label>
-      <div class="col-lg-6">
+      <label for="zpassword3" class="col-lg-3 control-label"><%=("Repeat new password")%></label>
+      <div class="col-lg-9">
         <input type="password" class="form-control" id="zpassword3" name="zpassword3">
       </div>
     </div>
-    
+    </div>
     <div class="form-group">
       <div class="col-lg-6">
         <button type="submit" class="btn btn-primary"><%=("Change")%></button>
@@ -258,7 +223,7 @@
                       </a>
                     </td>
                     <td class="td-actions">
-                      <a href="<%=Global.WEBSITE_ROOT_URL_HTTP%><%=Application.Root%>?delvalidate=<%=Element%>" target="_blank" class="btn btn-danger btn-xs" role="button">
+                      <a href="<%=Global.WEBSITE_ROOT_URL_HTTP%><%=Application.Root%>?delvalidate=<%=Element%>" class="btn btn-danger btn-xs" role="button">
                         <i class="fa fa-trash-o"></i>
                       </a>
                     </td>

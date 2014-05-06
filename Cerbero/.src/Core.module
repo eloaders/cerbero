@@ -1,7 +1,7 @@
 ' Gambas module file
 
 Public Sub Main()
-Settings["W/w"] = "ggggg"
+Settings["W/W"] = 11
 If CGI["HTTP_ACCEPT_LANGUAGE"] Like "*ru*" Then
   System.Language = "ru_RU.UTF-8"
 Endif
@@ -41,23 +41,26 @@ Else If Request.Get.Exist("profile") = True Then
 Else If Request.Get.Exist("chgapi") = True Then
   ChangeAPI_KEYS.CHKeys()
 Else If Request.Get.Exist("test") = True Then
-  Response.AddHeader("Content-Disposition", "attachment; filename=i-nex-0.6.4-1.1.x86_64.rpm")
-  Response.SendFile("/home/michal/Pulpit/i-nex-0.6.4-1.1.x86_64.rpm", "application/x-rpm")
+  Response.AddHeader("Content-Disposition", "attachment; filename=14.0309370877082.png")
+  Response.SendFile("/var/www/ValidScr/04072014/14.0309370877082.png", "image/png")
 Else If Request.Get.Exist("delvalidate") = True Then
   DelValidate.Delete()
 Else If Request.Get.Exist("query") = True Then
   MQuery.Main()
-Else If Request.Get.Exist("adminpanel") = True And Usera.User_IsAdmin() = True Then
+Else If Request.Get.Exist("padm") = True And Usera.User_IsAdmin() = True Then
   WAdminPanel.Render
 Else If Request.Get.Exist("cpudb[atom]") = True Then
+  Response.Begin
   WCPUDBAtom.Render
+  Response.End
+Else If Request.Get.Exist("cpudb[atom]edit") = True Then
+  WCPUDBAtomEdit.Render
 Else
   ResponseFromServer()
 Endif
 End
 
 Public Sub ResponseFromServer()
-  Dim USER_DATA As Collection
   MBrand.Brand_URL = Global.WEBSITE_ROOT_URL_HTTP & Application.Root
   MBrand.Brand_TEXT = "I-Nex - Cerbero"
   Response.Begin

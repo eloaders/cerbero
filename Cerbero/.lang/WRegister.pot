@@ -18,11 +18,11 @@ msgstr ""
 msgid "Cerbero - Register"
 msgstr ""
 
-#: WRegister.webpage:29
+#: WRegister.webpage:23
 msgid "Register"
 msgstr ""
 
-#: WRegister.webpage:90
+#: WRegister.webpage:84
 msgid "Agree with the Terms & Conditions."
 msgstr ""
 

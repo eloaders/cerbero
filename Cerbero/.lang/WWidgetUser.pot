@@ -30,7 +30,7 @@ msgstr ""
 msgid "Bio:"
 msgstr ""
 
-#: WWidgetUser.webpage:54
+#: WWidgetUser.webpage:55
 msgid "I've heard enough about"
 msgstr ""
 

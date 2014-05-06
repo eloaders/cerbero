@@ -18,11 +18,11 @@ msgstr ""
 msgid "Cerbero - Login"
 msgstr ""
 
-#: WLogin.webpage:29
+#: WLogin.webpage:23
 msgid "Please sign in"
 msgstr ""
 
-#: WLogin.webpage:48
+#: WLogin.webpage:42
 msgid "Remember Me"
 msgstr ""
 

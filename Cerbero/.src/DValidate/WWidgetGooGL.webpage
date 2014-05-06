@@ -1,10 +1,18 @@
 <div class="panel panel-primary">
   <div class="panel-body">
-    <div class="col-lg-12">
-    <input class="col-lg-12 disabled" type="text" value="<%=MValidate.RADIVATE["GOO_GL"]["id"]%>" disabled> 
+    <div class="form-group has-success">
+      <label class="control-label"><%=("Long url")%></label>
+      <div class="input-group">
+        <span class="input-group-addon"><i class="fa fa-link fa-lg"></i></span>
+        <input type="text" class="form-control" value="<%=MValidate.RADIVATE["GOO_GL"]["longUrl"]%>" readonly>
+      </div>
     </div>
-    <div class="col-lg-12">
-    <input class="col-lg-12 disabled" type="text" value="<%=MValidate.RADIVATE["GOO_GL"]["longUrl"]%>" disabled>
+    <div class="form-group has-error">
+      <label class="control-label"><%=("Goo.gl Short url")%></label>
+      <div class="input-group">
+        <span class="input-group-addon"><i class="fa fa-link fa-lg"></i></span>
+        <input type="text" class="form-control" value="<%=MValidate.RADIVATE["GOO_GL"]["id"]%>" readonly>
+      </div>
     </div>
   </div>
 </div>

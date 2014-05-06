@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title><%Print ("I-Nex - Cerbero")%></title>
+  <title><%=("I-Nex - Cerbero")%></title>
   <meta name="description" content="i-nex.pl serwis internetowy, natywna linuksowa wersja oprogramowania alternetywnego dla cpu-z oraz validate." />
   <meta name="keywords" content="cpu-z, validate, linux, ubuntu, cpu, motherboard, i-nex, cerbero, hardware, gpu" />
   <meta name="viewport" content="width=device-width, initial-scale=1">

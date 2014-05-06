@@ -10,9 +10,6 @@ Public Sub PrintValidateData()
 
   Dim VALIDATE_ID As String
   Dim DWDATE As String
-  Dim Flags As String[]
-  Dim OneFlag As String
-  Dim i As Integer
   
   DWDATE = Replace(Request.Get["validate"], Right$(Request.Get["validate"], -8), "")
   
@@ -36,7 +33,11 @@ Public Sub PrintValidateData()
       SHOW_USER = False
     Endif
   Endif
-
+  
+  If Request.Get.Exist("download") = True Then
+    Response.AddHeader("Content-Disposition", "attachment; filename=" & DWDATE & Right$(Request.Get["validate"], -8) & ".png")
+    Response.SendFile("" & Global.WHEREIS_SITE_ROOT & "" "/ValidScr/" & DWDATE & "/" & Right$(Request.Get["validate"], -8) & ".png", "image/png")
+  Endif
   Response.Begin
   WValidate.Render
   Response.End
@@ -45,4 +46,5 @@ Public Sub PrintValidateData()
       Errors.Valid_Not_Found()
       Response.End
   Endif
+
 End

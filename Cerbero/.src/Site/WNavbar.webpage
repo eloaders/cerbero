@@ -1,42 +1,12 @@
 <<WPageHeader>>
 <style type="text/css">
-    /* Special class on .container surrounding .navbar, used for positioning it into place. */ 
-.navbar-wrapper { 
-  position: absolute; 
-  top: 0; 
-  left: 0; 
-  right: 0; 
-  z-index: 20; 
-  margin-top: 20px; 
-} 
- 
-/* Flip around the padding for proper display in narrow viewports */ 
-.navbar-wrapper .container { 
-  padding-left: 0; 
-  padding-right: 0; 
-} 
-.navbar-wrapper .navbar { 
-  padding-left: 15px; 
-  padding-right: 15px; 
-} 
- 
-.navbar-content 
-{ 
-    width:320px; 
-    padding: 15px; 
-    padding-bottom:0px; 
-} 
-.navbar-content:before, .navbar-content:after 
-{ 
-    display: table; 
-    content: ""; 
-    line-height: 0; 
-}
-.navbar-footer  
-{ 
-    background-color:#DDD; 
-} 
-.navbar-footer-content { padding:15px 15px 15px 15px; }   
+.navbar-wrapper{position:absolute;top:0;left:0;right:0;z-index:20;margin-top:20px}
+.navbar-wrapper .container{padding-left:0;padding-right:0}
+.navbar-wrapper .navbar{padding-left:15px;padding-right:15px}
+.navbar-content{width:320px;padding:15px 15px 0}
+.navbar-content:before,.navbar-content:after{display:table;content:"";line-height:0}
+.navbar-footer{background-color:#DDD}
+.navbar-footer-content{padding:15px}
 </style>
 <div class="container">
   <div class="navbar navbar-default">
@@ -48,7 +18,7 @@
        </button>
        <<WBrand>>
     </div>
-    <div class="navbar-collapse collapse navbar-inverse-collapse">
+    <div class="collapse navbar-collapse js-navbar-collapse">
       <ul class="nav navbar-nav">
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bars"></i>  <%=("Site")%> <b class="caret"></b></a>
@@ -86,8 +56,6 @@
                     <%Else%>
                     <img src="http://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/twDq00QDud4/s120-c/photo.jpg" alt="Alternate Text" class="img-responsive" />
                     <%Endif%>
-                      <p class="text-center small">
-                      <a href="#">Change Photo</a></p>
                   </div>
                   <div class="col-md-7">
                     <span><%=Usera.USER_DATA["CERBERO_USERNAME"]%></span>
@@ -96,7 +64,7 @@
                       </div>
                       <%If Usera.User_Logged() = True And Usera.User_IsAdmin() = True Then%>
                       <div class="btn-group">
-                        <a href="#" class="btn btn-primary btn-sm active"><%=("PA")%></a>
+                        <a href="<%=Application.Root%>?padm" class="btn btn-primary btn-sm active"><%=("PA")%></a>
                         <a href="#" class="btn btn-primary btn-sm active"><%=("CList")%></a>
                         <a href="#" class="btn btn-primary btn-sm active"><%=("CAdd")%></a>
                       </div>

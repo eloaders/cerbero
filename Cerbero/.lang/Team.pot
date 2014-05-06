@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: Team.webpage:213
+#: Team.webpage:46
 msgid "Team"
 msgstr ""
 

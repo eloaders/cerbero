@@ -14,107 +14,107 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: WProfile.webpage:66
+#: WProfile.webpage:27
 msgid "Account"
 msgstr ""
 
-#: WProfile.webpage:70
+#: WProfile.webpage:31
 msgid "Profile"
 msgstr ""
 
-#: WProfile.webpage:71
+#: WProfile.webpage:32
 msgid "API Keys"
 msgstr ""
 
-#: WProfile.webpage:72
+#: WProfile.webpage:33
 msgid "Submitted Reports"
 msgstr ""
 
-#: WProfile.webpage:83
+#: WProfile.webpage:43
+msgid "Base"
+msgstr ""
+
+#: WProfile.webpage:45
 msgid "Login"
 msgstr ""
 
-#: WProfile.webpage:90
+#: WProfile.webpage:52
 msgid "Display name"
 msgstr ""
 
-#: WProfile.webpage:97
-msgid "Facebook"
+#: WProfile.webpage:58
+msgid "Social links"
 msgstr ""
 
-#: WProfile.webpage:104
-msgid "Google"
+#: WProfile.webpage:87
+msgid "Additional"
 msgstr ""
 
-#: WProfile.webpage:111
-msgid "Twitter"
-msgstr ""
-
-#: WProfile.webpage:118
-msgid "Github"
-msgstr ""
-
-#: WProfile.webpage:125
+#: WProfile.webpage:89
 msgid "Email"
 msgstr ""
 
-#: WProfile.webpage:132
+#: WProfile.webpage:96
 msgid "Homepage"
 msgstr ""
 
-#: WProfile.webpage:139
+#: WProfile.webpage:103
 msgid "About You"
 msgstr ""
 
-#: WProfile.webpage:142
+#: WProfile.webpage:106
 msgid "Some text about you :)"
 msgstr ""
 
-#: WProfile.webpage:148
+#: WProfile.webpage:112
 msgid "Save"
 msgstr ""
 
-#: WProfile.webpage:162
+#: WProfile.webpage:125
+msgid "Password"
+msgstr ""
+
+#: WProfile.webpage:127
 msgid "Old Password"
 msgstr ""
 
-#: WProfile.webpage:169
+#: WProfile.webpage:134
 msgid "New Password"
 msgstr ""
 
-#: WProfile.webpage:176
+#: WProfile.webpage:141
 msgid "Repeat new password"
 msgstr ""
 
-#: WProfile.webpage:184
+#: WProfile.webpage:149
 msgid "Change"
 msgstr ""
 
-#: WProfile.webpage:215
+#: WProfile.webpage:180
 msgid "Remember! I-Nex use only Private API Key to publish data online"
 msgstr ""
 
-#: WProfile.webpage:222
+#: WProfile.webpage:187
 msgid "CPU Logo"
 msgstr ""
 
-#: WProfile.webpage:223
+#: WProfile.webpage:188
 msgid "CPU and GPU"
 msgstr ""
 
-#: WProfile.webpage:224
+#: WProfile.webpage:189
 msgid "Motherboard"
 msgstr ""
 
-#: WProfile.webpage:225
+#: WProfile.webpage:190
 msgid "Distribution"
 msgstr ""
 
-#: WProfile.webpage:226
+#: WProfile.webpage:191
 msgid "Link"
 msgstr ""
 
-#: WProfile.webpage:227
+#: WProfile.webpage:192
 msgid "Remove"
 msgstr ""
 

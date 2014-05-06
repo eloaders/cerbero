@@ -14,19 +14,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: DUpload.webpage:17
+#: DUpload.webpage:16
 msgid "Upload Report"
 msgstr ""
 
-#: DUpload.webpage:21
+#: DUpload.webpage:20
 msgid "Validate"
 msgstr ""
 
-#: DUpload.webpage:23
+#: DUpload.webpage:22
 msgid "Please browse file to publish data online"
 msgstr ""
 
-#: DUpload.webpage:36
+#: DUpload.webpage:35
 msgid "Redirect to"
 msgstr ""
 
