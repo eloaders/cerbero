@@ -179,6 +179,10 @@ msgstr ""
 msgid "CPU Specifications"
 msgstr ""
 
+#: WAdminPanel.webpage:45 WProfile.webpage:112
+msgid "Save"
+msgstr ""
+
 #: WCPUDBAtom.webpage:20
 msgid "CPU Model Name"
 msgstr ""
@@ -373,10 +377,6 @@ msgstr ""
 
 #: WProfile.webpage:106
 msgid "Some text about you :)"
-msgstr ""
-
-#: WProfile.webpage:112
-msgid "Save"
 msgstr ""
 
 #: WProfile.webpage:125

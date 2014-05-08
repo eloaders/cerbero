@@ -33,7 +33,7 @@ Public Sub SendFileToServer()
               File.Save("" & Global.WHEREIS_SITE_ROOT & "/ValidScr/" & DDATE_NOW & "/" & VALIDATE_NEW_ID & ".png", UnBase64(cpuiddata["SCREENSHOT"]))
 
               cpuiddata.Remove("SCREENSHOT")
-              cpuiddata.Add("" & Global.WEBSITE_ROOT_URL_HTTP & "/ValidScr/" & DDATE_NOW & "/" & VALIDATE_NEW_ID & ".png", "SCREENSHOT_URL")
+              cpuiddata.Add("ValidScr/" & DDATE_NOW & "/" & VALIDATE_NEW_ID & ".png", "SCREENSHOT_URL")
               
               ReportSave()
               '[][]][][][][][]
@@ -96,13 +96,13 @@ Public Sub SendFileToServer()
               If IsNull(cpuiddata["DMESG"]) = False Then
               Try cpuiddata.Add(Global.CRB_OUTPUTS(cpuiddata["DMESG"], "DMESG validate=" & DDATE_NOW & VALIDATE_NEW_ID, cpuiddata["SUBMITED_BY"]), "DMESGS")
               Endif
-              If IsNull(cpuiddata["DMESG"]) = False Then
+              If IsNull(cpuiddata["LSPCI"]) = False Then
               Try cpuiddata.Add(Global.CRB_OUTPUTS(cpuiddata["LSPCI"], "LSPCI validate=" & DDATE_NOW & VALIDATE_NEW_ID, cpuiddata["SUBMITED_BY"]), "LSPCIS")
               Endif
-              If IsNull(cpuiddata["DMESG"]) = False Then
+              If IsNull(cpuiddata["LSUSB"]) = False Then
               Try cpuiddata.Add(Global.CRB_OUTPUTS(cpuiddata["LSUSB"], "LSUSB validate=" & DDATE_NOW & VALIDATE_NEW_ID, cpuiddata["SUBMITED_BY"]), "LSUSBS")
               Endif
-              If IsNull(cpuiddata["DMESG"]) = False Then
+              If IsNull(cpuiddata["CPUINFO"]) = False Then
               Try cpuiddata.Add(Global.CRB_OUTPUTS(cpuiddata["CPUINFO"], "CPUINFO validate=" & DDATE_NOW & VALIDATE_NEW_ID, cpuiddata["SUBMITED_BY"]), "CPUINFOS")
               Endif
               

@@ -17,7 +17,7 @@
       <h3 class="panel-title"><%=("Upload Report")%></h3>
     </div>
     <div class="panel-body">
-          <form method="post" action="inex.r" enctype="multipart/form-data" id="validform"> 
+          <form method="post" action="<%=Application.Root%>" enctype="multipart/form-data" id="validform"> 
             <h1><%Print ("Validate")%></h1>
               <div class="login-fields">
                 <p><% Print ("Please browse file to publish data online") %></p>

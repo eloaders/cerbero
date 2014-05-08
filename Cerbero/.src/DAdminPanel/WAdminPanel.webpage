@@ -11,7 +11,43 @@
           <h3 class="panel-title"><i class="fa fa-tachometer"></i>  <%=("CPU Specifications")%></h3>
         </div>
         <div class="panel-body">
-        
+          <form action="<%=Application.Root%>?updprofile" method="post" class="form-horizontal">
+            <fieldset>
+              <div class="form-group">
+                <label>Checkboxes</label>
+              <div class="form-group input-group">
+                <span class="input-group-addon">$</span>
+                <input type="checkbox" value="">
+                <span class="input-group-addon">.00</span>
+              </div>
+
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">
+                    Checkbox  1
+                  </label>
+                </div>
+               <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">
+                    Checkbox  2
+                  </label>
+                </div>
+               <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">
+                    Checkbox  3
+                  </label>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <div class="col-lg-10">
+                  <button type="submit" class="btn btn-primary"><%=("Save")%></button>
+                </div>
+              </div>
+            <fieldset>
+          </form>
         </div>
       </div>
     </div>
