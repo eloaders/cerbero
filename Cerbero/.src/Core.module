@@ -55,6 +55,14 @@ Else If Request.Get.Exist("cpudb[atom]") = True Then
   Response.End
 Else If Request.Get.Exist("cpudb[atom]edit") = True Then
   WCPUDBAtomEdit.Render
+Else If Request.Get.Exist("downloadcount") = True Then
+MDownload.Main()
+Response.Redirect("http://127.0.0.1/")
+
+Else If Request.Get.Exist("downloadcountr") = True Then
+  Response.Begin
+  Print MDownload.DownloadCount()
+  Response.End
 Else
   ResponseFromServer()
 Endif

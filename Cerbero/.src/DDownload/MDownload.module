@@ -1,0 +1,29 @@
+' Gambas module file
+
+Public Sub Main()
+  Dim Counts As Collection = [("Downloads"): 0]
+  Try Counts = JSON.Decode(File.Load(Global.WHEREIS_SITE_ROOT & "/downloads.json"))
+  If Error Then
+    Counts.Add(0, "Downloads")
+  Endif
+  If Request.Get.Exist("downloadcount") = True Then
+    If Request.Get["downloadcount"] = "1" Then
+      If CGI["HTTP_USER_AGENT"] Like "*curl*" Then
+        Counts["Downloads"] = (Counts["Downloads"] + 1)
+        File.Save(Global.WHEREIS_SITE_ROOT & "/downloads.json", JSON.Encode(Counts))
+      Endif
+    Endif
+  Endif
+  If Request.Get.Exist("downloadcount") = True Then
+    If Request.Get["downloadcount"] = "reset" Then
+      Counts["Downloads"] = 0
+      File.Save(Global.WHEREIS_SITE_ROOT & "/downloads.json", JSON.Encode(Counts))
+    Endif
+  Endif
+End
+
+Public Sub DownloadCount() As Integer
+  Dim Counts As Collection
+  Counts = JSON.Decode(File.Load(Global.WHEREIS_SITE_ROOT & "/downloads.json"))
+  Return Counts["Downloads"]
+End

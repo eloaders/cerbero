@@ -33,11 +33,11 @@
     <div class="col-sm-3">
       <div class="hero-widget well well-sm">
         <div class="icon">
-          <i class="fa fa-wrench"></i>
+          <i class="fa fa-cloud-download"></i>
         </div>
         <div class="text">
-          <var><%=Application.Version%></var>
-          <label class="text-muted">Cerbero Version</label>
+          <var><div id="responsecontainer"></div></var>
+          <label class="text-muted">I-Nex PPA Downloads</label>
         </div>
       </div>
     </div>

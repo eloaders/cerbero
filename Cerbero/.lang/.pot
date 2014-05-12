@@ -126,6 +126,10 @@ msgstr ""
 msgid "Homepage"
 msgstr ""
 
+#: MDownload.module:4
+msgid "Downloads"
+msgstr ""
+
 #: MLatestAdded.module:11 Upload.module:5
 msgid "VALD"
 msgstr ""
