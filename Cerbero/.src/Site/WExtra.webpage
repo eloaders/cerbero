@@ -11,9 +11,6 @@
             <div class="col-md-3 col-md-3 col-md-3">
               <ul class="list-unstyled">
                 <p>
-                  <li><a href="http://i-nex.linux.pl/" class="btn btn-default"><i class="fa fa-users fa-2x"></i>  I-Nex</a></li>
-                </p>
-                <p>
                   <li><a href="<%=Application.Root%>?page=team" class="btn btn-primary"><i class="fa fa-users fa-2x"></i>  <%=("Team")%></a></li>
                 </p>
                 <p>
@@ -21,6 +18,9 @@
                 </p>
                 <p>
                   <li><a href="<%=Application.Root%>?page=donate" class="btn btn-info"><i class="fa fa-money fa-2x"></i>  <%=("Donate")%></a></li>
+                </p>
+                <p>
+                  <li><a href="<%=Application.Root%>?page=policy" class="btn btn-default"><i class="fa fa-bolt fa-2x"></i>  <%=("Privacy Policy")%></a></li>
                 </p>
               </ul>
             </div>

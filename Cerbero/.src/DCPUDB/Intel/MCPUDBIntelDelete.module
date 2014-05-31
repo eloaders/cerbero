@@ -1,0 +1,21 @@
+' Gambas module file
+
+Public Sub Delete()
+  Dim CPUDBINTEL As String
+  Dim CPUDBINTEL2 As Collection = [("DATABASE"): ""]
+  Dim CPUDBINTEL3 As Collection
+  Dim i As Integer
+  If Usera.User_Logged() = True And Usera.User_IsAdmin() = True Then
+  'CPUDBATOM = JSON.Decode(File.Load(Global.WHEREIS_SITE_ROOT & "/CPUDB/atom"))
+
+  Shell "cat " & Global.WHEREIS_SITE_ROOT & "/CPUDB/intel | jq '. | del(.DATABASE[" & Request.Get["cpudb[intel]delete"] & "])' > " & Global.WHEREIS_SITE_ROOT & "/CPUDB/intel2" Wait
+  Shell "mv " & Global.WHEREIS_SITE_ROOT & "/CPUDB/intel2 " & Global.WHEREIS_SITE_ROOT & "/CPUDB/intel" Wait
+  ' Response.Begin
+  ' Print CPUDBATOM
+  ' Response.End
+  Response.Redirect(CGI["HTTP_REFERER"])
+
+  Else
+    Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & Application.Root)
+  Endif
+End

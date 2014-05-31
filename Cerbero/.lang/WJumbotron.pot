@@ -14,7 +14,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: WJumbotron.webpage:31
+#: WJumbotron.webpage:30
 msgid "Open-Source Linux CPU, GPU, Motherboard Database Website"
+msgstr ""
+
+#: WJumbotron.webpage:35
+msgid "Share"
 msgstr ""
 

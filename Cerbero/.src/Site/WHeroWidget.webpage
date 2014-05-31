@@ -5,6 +5,12 @@
 .hero-widget label { font-size: 17px; } 
 .hero-widget .options { margin-top: 10px; }    
 </style>
+<script>
+var refreshId = setInterval(function()
+{
+     $('#responsecontainer').fadeOut("slow").load('?downloadcountr').fadeIn("slow");
+}, 10000);
+</script>
 <br />
 <div class="container">
   <div class="row">

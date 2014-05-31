@@ -1,0 +1,122 @@
+<%
+Dim i As Integer
+Dim MAX As Integer = 50
+Dim STRN As String
+STRN = Request.Get["strn"]
+%>
+<%MBrand.Brand_TEXT = "I-Nex - Cerbero - AMD CPU Database"%>
+<%MBrand.Brand_URL = Global.WEBSITE_ROOT_URL_HTTP%>
+<!DOCTYPE html>
+<html lang="en">
+<<WHead>>
+<body>
+<<WNavbar>>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-success">
+            <div class="panel-heading">
+              <h3 class="panel-title"><i class="fa fa-tachometer"></i>  <%=("AMD CPU Database")%></h3>
+            </div>
+            <div class="panel-body">
+              <table class="table table-striped table-bordered"> 
+              <%MCPUDBAmd.AmdCPUList = JSON.Decode(File.Load(Global.WHEREIS_SITE_ROOT & "/CPUDB/amd"))%>
+              <thead> 
+                  <tr> 
+                    <th><%=("CPU Model Name")%></th>
+                    <th><%=("Process Size")%>
+                    <th><%=("Integrated Graphic")%>
+                    <th><%=("CPU Frequency")%></th>
+                    <th><%=("Turboclock")%></th>
+                    <th><%=("CPU Package")%></th>
+                    <th><%=("CPU Codename")%></th>
+                    <th><%=("CPU Edit")%></th>
+                  </tr> 
+              </thead>
+              <tbody>
+              <%If IsNull(Request.Get["perpage"]) = True Then%>
+              <%For i = 0 To 50%>
+              <tr>
+              <td><%Print MCPUDBAmd.AmdCPUList["DATABASE"][i]["PROCESSOR_MODEL_NAME"]%></td>
+              <td><%Print MCPUDBAmd.AmdCPUList["DATABASE"][i]["PROCESSOR_PROCESS_SIZE"]%></td>
+              <td><%Print MCPUDBAmd.AmdCPUList["DATABASE"][i]["PROCESSOR_INTEGRATEDGRAPHIC"]%></td>
+              <td><%Print MCPUDBAmd.AmdCPUList["DATABASE"][i]["PROCESSOR_FREQUENCY"]%></td>
+              <td><%Print MCPUDBAmd.AmdCPUList["DATABASE"][i]["PROCESSOR_TURBOCLOCK"]%></td>
+              <td><%Print MCPUDBAmd.AmdCPUList["DATABASE"][i]["PROCESSOR_PACKAGE"]%></td>
+              <td><%Print MCPUDBAmd.AmdCPUList["DATABASE"][i]["PROCESSOR_CODENAME"]%></td>
+              <td class="td-actions">
+                <%If Usera.User_Logged() = True And Usera.User_IsAdmin() = True Then%>
+                  <a href="<%=Global.WEBSITE_ROOT_URL_HTTP%><%=Application.Root%>?cpudb[amd]edit=<%=i%>" class="btn btn-success btn-xs" role="button"><i class="fa fa-pencil-square-o"></i></a>
+                <%Endif%>
+                
+                <a href="<%=Global.WEBSITE_ROOT_URL_HTTP%><%=Application.Root%>?cpudb[amd]view=<%=i%>" target="_blank" class="btn btn-info btn-xs" role="button"><i class="fa fa-info-circle"></i></a>
+                
+                <%If Usera.User_Logged() = True And Usera.User_IsAdmin() = True Then%>
+                  <a href="<%=Global.WEBSITE_ROOT_URL_HTTP%><%=Application.Root%>?cpudb[amd]delete=<%=i%>" class="btn btn-danger btn-xs" role="button"><i class="fa fa-trash-o"></i></a>
+                <%Endif%>
+              </td>
+              </tr>
+              <%Next%>
+              
+              <%Else%>
+              <%For i = CInt(Request.Get["perpage"]) To CInt(CInt(Request.Get["perpage"]) + 50)%>
+              <%If CInt(MCPUDBAmd.AmdCPUList["DATABASE"].Count) = i Then Break%>
+              <tr>
+              <td><%Print MCPUDBAmd.AmdCPUList["DATABASE"][i]["PROCESSOR_MODEL_NAME"]%></td>
+              <td><%Print MCPUDBAmd.AmdCPUList["DATABASE"][i]["PROCESSOR_PROCESS_SIZE"]%></td>
+              <td><%Print MCPUDBAmd.AmdCPUList["DATABASE"][i]["PROCESSOR_INTEGRATEDGRAPHIC"]%></td>
+              <td><%Print MCPUDBAmd.AmdCPUList["DATABASE"][i]["PROCESSOR_FREQUENCY"]%></td>
+              <td><%Print MCPUDBAmd.AmdCPUList["DATABASE"][i]["PROCESSOR_TURBOCLOCK"]%></td>
+              <td><%Print MCPUDBAmd.AmdCPUList["DATABASE"][i]["PROCESSOR_PACKAGE"]%></td>
+              <td><%Print MCPUDBAmd.AmdCPUList["DATABASE"][i]["PROCESSOR_CODENAME"]%></td>
+              <td class="td-actions">
+                <%If Usera.User_Logged() = True And Usera.User_IsAdmin() = True Then%>
+                  <a href="<%=Global.WEBSITE_ROOT_URL_HTTP%><%=Application.Root%>?cpudb[amd]edit=<%=i%>" class="btn btn-success btn-xs" role="button"><i class="fa fa-pencil-square-o"></i></a>
+                <%Endif%>
+                
+                <a href="<%=Global.WEBSITE_ROOT_URL_HTTP%><%=Application.Root%>?cpudb[amd]view=<%=i%>" target="_blank" class="btn btn-info btn-xs" role="button"><i class="fa fa-info-circle"></i></a>
+                
+                <%If Usera.User_Logged() = True And Usera.User_IsAdmin() = True Then%>
+                  <a href="<%=Global.WEBSITE_ROOT_URL_HTTP%><%=Application.Root%>?cpudb[amd]delete=<%=i%>" class="btn btn-danger btn-xs" role="button"><i class="fa fa-trash-o"></i></a>
+                <%Endif%>
+              </td>
+              </tr>
+              
+              <%Next%>
+              <%Endif%>
+               </tbody>
+              </table>
+            </div>
+            <%If Usera.User_Logged() = True And Usera.User_IsAdmin() = True Then%>
+            <ul class="list-group">
+              <li class="list-group-item"><a href="<%=Global.WEBSITE_ROOT_URL_HTTP%><%=Application.Root%>?cpudb[amd]add" class="btn btn-default btn-xs" role="button"><i class="fa fa-plus-square"></i> <%=("Add Cpu to database")%></a></li>
+            </ul>
+            <%Endif%>
+            <div class="col-lg-12">
+              <ul class="pagination pagination-sm">
+              <%If IsNull(Request.Get["strn"]) = False Then%>
+              <%For i = 0 To CInt(MCPUDBAmd.AmdCPUList["DATABASE"].Count) / 50%>
+                <%If i = CInt(Request.Get["strn"]) Then%>
+                <li class="active"><a href="<%=Application.Root%>?cpudb[amd]&strn=<%= CString(i)%>&perpage=<%=CString(CInt(i * 50))%>"><%= CString(i)%></a></li>
+                <%Else%>
+                <li><a href="<%=Application.Root%>?cpudb[amd]&strn=<%= CString(i)%>&perpage=<%=CString(CInt(i * 50))%>"><%= CString(i)%></a></li>
+                <%Endif%>
+              <%Next%>
+              <%Else%>
+              <%For i = 0 To CInt(MCPUDBAmd.AmdCPUList["DATABASE"].Count) / 50%>
+                <%If i = 0 Then%>
+                  <li class="active"><a href="<%=Application.Root%>?cpudb[amd]&strn=<%= CString(i)%>&perpage=<%=CString(CInt(i * 50))%>"><%= CString(i)%></a></li>
+                <%Else%>
+                  <li><a href="<%=Application.Root%>?cpudb[amd]&strn=<%= CString(i)%>&perpage=<%=CString(CInt(i * 50))%>"><%= CString(i)%></a></li>
+                <%Endif%>
+              <%Next%>
+              <%Endif%>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+<<WExtra>>
+<<WFooter>> 
+</body>

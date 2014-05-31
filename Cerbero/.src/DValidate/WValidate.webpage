@@ -3,32 +3,87 @@
 <<WHead>>
 <body>
 <<WNavbar>>
+<script type="text/javascript">
+$(document).ready(function(){function e(){var e=$("section").length;$("#dot-nav li a").removeClass("active").parent("li").removeClass("active");$("section").each(function(t,n){var r=$(n),i;console.log(r.next().html());if(typeof r.next().offset()!="undefined"){i=r.next().offset().top}else{i=$(document).height()}if(r.offset()!==null){thisTop=r.offset().top-(i-r.offset().top)/e}else{thisTop=0}var s=$(document).scrollTop();if(s>=thisTop&&s<i){$("#dot-nav li").eq(t).addClass("active")}})}$(".awesome-tooltip").tooltip({placement:"left"});$(window).bind("scroll",function(t){e()});$("#dot-nav li").click(function(){var e=$(this).find("a").attr("href"),t,n,r=0;n=$(e);t=($(n).offset()||0).top-r;$("html, body").animate({scrollTop:t},"slow");return false})})
+</script>
+<style type="text/css">
+#main{height:100%}
+#dot-nav{right:10px;top:50%;margin-top:-50px;height:100px;z-index:999}
+#dot-nav ul{list-style:none;margin:0;padding:0}
+#dot-nav li{position:relative;background-color:#bdc3c7;border:3px solid #bdc3c7;border-radius:15px 15px 15px 15px;cursor:pointer;height:10px;width:10px;vertical-align:bottom;margin:10px 10px 0 0;padding:5px}
+#dot-nav li.active,#dot-nav li:hover{background-color:#8e44ad}
+#dot-nav a{outline:0;vertical-align:top;position:relative;top:-5px;margin:0 0 0 25px}
+.awesome-tooltip + .tooltip > .tooltip-inner{background-color:#8e44ad;color:#f5f5f5;border:1px solid #8e44ad}
+.awesome-tooltip + .tooltip.left > .tooltip-arrow{top:50%;right:0;margin-top:-5px;border-top:5px solid transparent;border-bottom:5px solid transparent;border-left:5px solid #8e44ad}
+</style>
+<div data-spy="affix" id="dot-nav">
+      <ul>
+        <li class="awesome-tooltip active" title="CPU"><a href="#cpu"></a></li>
+        <li class="awesome-tooltip" title="CPUDB"><a href="#cpudb"></a></li>
+        <li class="awesome-tooltip" title="GPU"><a href="#gpu"></a></li>
+        <li class="awesome-tooltip" title="Motherboard"><a href="#mobo"></a></li>
+        <li class="awesome-tooltip" title="Screenshot"><a href="#screenshot"></a></li>
+        <li class="awesome-tooltip" title="Distribution"><a href="#distro"></a></li>
+        <li class="awesome-tooltip" title="Linux Kernel"><a href="#kernel"></a></li>
+        <%If MValidate.RADIVATE.Exist("USAGE") = True Then%>
+        <li class="awesome-tooltip" title="Misc"><a href="#misc"></a></li>
+        <%Endif%>
+        <%If MValidate.SHOW_USER = True Then%>
+        <li class="awesome-tooltip" title="Submitted by"><a href="#user"></a></li>
+        <%Endif%>
+        <%If MValidate.RADIVATE.Exist("GOO_GL") = True Then%>
+        <li class="awesome-tooltip" title="Links"><a href="#links"></a></li>
+        <%Endif%>
+        <li class="awesome-tooltip" title="Comments"><a href="#comments"></a></li>
+      </ul>
+</div>
 <div class="container">
   <div class="row">
     <div class="col-lg-6">
+      <section id="cpu">
       <<WWidgetCPU>>
+      </section>
+      <section id="cpudb">
       <<WWidgetCPUDB>>
+      </section>
+      <section id="gpu">
       <<WWidgetGPU>>
+      </section>
+      <section id="mobo">
       <<WWidgetMobo>>
+      </section>
       <%If IsNull(MValidate.RADIVATE["DMESGS"]) = False Then%>
       <<WAditional>>
       <%Endif%>
     </div>
     <div class="col-lg-6">
+      <section id="screenshot">
       <<WWidgetScreenshot>>
+      </section>
+      <section id="distro">
       <<WWidgetDistro>>
+      </section>
+      <section id="kernel">
       <<WWidgetKernel>>
+      </section>
       <%If MValidate.RADIVATE.Exist("USAGE") = True Then%>
+      <section id="misc">
       <<WWidgetMisc>>
+      </section>
       <%Endif%>
       <%If MValidate.SHOW_USER = True Then%>
+      <section id="user">
       <<WWidgetUser>>
+      </section>
       <%Endif%>
-          
       <%If MValidate.RADIVATE.Exist("GOO_GL") = True Then%>
+      <section id="links">
       <<WWidgetGooGL>>
+      </section>
       <%Endif%>
+      <section id="comments">
       <<WDisqus>>
+      </section>
     </div> 
   </div>
 </div> 

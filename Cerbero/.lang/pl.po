@@ -35,24 +35,23 @@ msgstr "Posiadasz już konto? Zaloguj się"
 msgid "Back to Homepage"
 msgstr "Wróć na stronę główną"
 
-#: DUpload.webpage:17
-#, fuzzy
+#: DUpload.webpage:20
 msgid "Upload Report"
-msgstr "Wyślij"
+msgstr "Wyślij raport"
 
-#: DUpload.webpage:21
+#: DUpload.webpage:24
 msgid "Validate"
 msgstr "Zweryfikuj"
 
-#: DUpload.webpage:23
+#: DUpload.webpage:26
 msgid "Please browse file to publish data online"
 msgstr "Wybierz plik raportu z dysku, i opublikuj online."
 
-#: DUpload.webpage:36
+#: DUpload.webpage:39
 msgid "Redirect to"
 msgstr "Przekieruj do"
 
-#: Donate.webpage:13 Page.module:7 WExtra.webpage:22
+#: Donate.webpage:13 Page.module:7 WExtra.webpage:19
 msgid "Donate"
 msgstr "Wspomóż projekt"
 
@@ -116,53 +115,53 @@ msgstr "Użytkownik"
 msgid "Count"
 msgstr "Kwota"
 
-#: Donate.webpage:48 WProfile.webpage:132
+#: Donate.webpage:48 WProfile.webpage:96
 msgid "Homepage"
 msgstr "Strona główna"
+
+#: MDownload.module:4
+msgid "Downloads"
+msgstr ""
 
 #: MLatestAdded.module:11 Upload.module:5
 msgid "VALD"
 msgstr "VALD"
 
-#: MNavbar.module:14 WProfile.webpage:70
+#: MNavbar.module:14 WProfile.webpage:31
 msgid "Profile"
-msgstr ""
+msgstr "Profil"
 
 #: MNavbar.module:16
 msgid "Logout"
-msgstr ""
+msgstr "Wyloguj"
 
-#: MNavbar.module:18 WProfile.webpage:66
+#: MNavbar.module:18 WProfile.webpage:27
 msgid "Account"
 msgstr "Konto"
 
 #: MNavbar.module:20
-#, fuzzy
 msgid "Sign In"
 msgstr "Zaloguj"
 
 #: MNavbar.module:22
-#, fuzzy
 msgid "Sign Up"
-msgstr "Zarejestruj"
+msgstr "Rejestracja"
 
-#: MQuery.module:14
-#, fuzzy
+#: MQuery.module:16
 msgid "Search - I-Nex - Cerbero"
-msgstr "Rejestracja - I-Nex - Cerbero"
+msgstr "Szukaj"
 
-#: Page.module:13 Translators.webpage:212 WExtra.webpage:19
-#, fuzzy
+#: Page.module:13 Translators.webpage:45 WExtra.webpage:16
 msgid "Translators"
-msgstr "Tranzystory:"
+msgstr "Tłumacze"
 
-#: Page.module:17 Team.webpage:213 WExtra.webpage:16
+#: Page.module:17 Team.webpage:46 WExtra.webpage:13
 msgid "Team"
-msgstr ""
+msgstr "Zespół"
 
-#: Policy.webpage:18
+#: Policy.webpage:15
 msgid "Polityka prywatności serwisu i-nex.pl"
-msgstr ""
+msgstr "Polityka prywatności serwisu i-nex.pl"
 
 #: Register.module:3
 msgid "SECRET_KEY"
@@ -170,53 +169,60 @@ msgstr "SECRET_KEY"
 
 #: WAditional.webpage:2
 msgid "System commands outputs"
-msgstr ""
+msgstr "Wyniki poleceń systemowych"
 
-#: WCPUDBAtom.webpage:13 WCPUDBAtomEdit.webpage:14 WWidgetCPU.webpage:2
+#: WAdminPanel.webpage:10 WCPUDBAtom.webpage:13 WCPUDBAtomEdit.webpage:14
+#: WWidgetCPU.webpage:2
 msgid "CPU Specifications"
 msgstr "Specyfikacja procesora"
 
+#: WAdminPanel.webpage:45 WProfile.webpage:112
+msgid "Save"
+msgstr "Zapisz"
+
 #: WCPUDBAtom.webpage:20
 msgid "CPU Model Name"
-msgstr ""
+msgstr "Model CPU"
 
 #: WCPUDBAtom.webpage:21
 msgid "CPU Frequency"
-msgstr ""
+msgstr "Taktowanie"
 
 #: WCPUDBAtom.webpage:22
-#, fuzzy
 msgid "CPU Package"
-msgstr "Obudowa:"
+msgstr ""
 
 #: WCPUDBAtom.webpage:23
-#, fuzzy
 msgid "CPU Codename"
 msgstr "Nazwa kodowa"
 
 #: WCPUDBAtom.webpage:24
 msgid "CPU Edit"
-msgstr ""
+msgstr "Edycja"
 
-#: WCookies.webpage:30
+#: WCookies.webpage:0
 msgid "I understand"
-msgstr ""
+msgstr "Zrozumiałem"
 
-#: WCookies.webpage:30
+#: WCookies.webpage:0
 msgid "Learn more"
-msgstr ""
+msgstr "Więcej"
 
-#: WCookies.webpage:30
+#: WCookies.webpage:0
 msgid "This site uses cookies (cookies), so that our service can work better."
-msgstr ""
+msgstr "Ta strona używa cookies (ciasteczek) aby nasz serwis działał lepiej."
 
-#: WCookies.webpage:30
+#: WCookies.webpage:0
 msgid "http://www.allaboutcookies.org/"
-msgstr ""
+msgstr "http://www.allaboutcookies.org/"
 
 #: WExtra.webpage:7
 msgid "About Cerbero"
 msgstr "O Cerbero"
+
+#: WExtra.webpage:22
+msgid "Privacy Policy"
+msgstr "Polityka prywatności"
 
 #: WExtra.webpage:33
 msgid "Support"
@@ -224,23 +230,19 @@ msgstr "Wsparcie"
 
 #: WExtra.webpage:37
 msgid "Ask a Question"
-msgstr ""
+msgstr "Zadaj Pytanie"
 
 #: WExtra.webpage:38
 msgid "Report a bug"
-msgstr ""
+msgstr "Zgłoś błąd"
 
 #: WExtra.webpage:41
 msgid "Friends of the project"
-msgstr ""
+msgstr "Przyjaciele projektu"
 
 #: WExtra.webpage:55
 msgid "Something Legal"
 msgstr "W pełni legalne"
-
-#: WExtra.webpage:59
-msgid "Privacy Policy"
-msgstr "Polityka prywatności"
 
 #: WExtra.webpage:68
 msgid "Sponsors"
@@ -248,210 +250,230 @@ msgstr "Sponsorzy"
 
 #: WFalseQuery.webpage:10 WQuery.webpage:13
 msgid "Search by:"
-msgstr ""
+msgstr "Szukaj:"
 
 #: WFalseQuery.webpage:13
 msgid "Search failed."
-msgstr ""
+msgstr "Wyszukiwanie nie powiodło się."
 
 #: WFalseQuery.webpage:14
 msgid "The minimum number of characters is too small."
-msgstr ""
+msgstr "Wpisano za mało znaków."
 
 #: WFalseQuery.webpage:15
 msgid "The minimum number of characters = 4"
-msgstr ""
+msgstr "Minimalna liczba znaków = 4"
 
 #: WHeroWidget.webpage:17
 msgid "Total registered users"
-msgstr ""
+msgstr "Zarejestrowanych użytkowników"
 
 #: WHeroWidget.webpage:28
 msgid "Total reports in database"
-msgstr ""
+msgstr "Raportów w bazie"
 
 #: WHeroWidget.webpage:50
-#, fuzzy
 msgid "Today submitted reports"
-msgstr "             Przesłane raporty"
+msgstr "Wysłanych dzisiaj raportów"
 
-#: WJumbotron.webpage:180
+#: WJumbotron.webpage:31
 msgid "Open-Source Linux CPU, GPU, Motherboard Database Website"
 msgstr ""
 
+#: WJumbotron.webpage:36
+msgid "Share"
+msgstr ""
+
 #: WLogin.webpage:4 WLoginnedin.webpage:4
-#, fuzzy
 msgid "Cerbero - Login"
-msgstr "Cerbero"
+msgstr "Cerbero - Logowanie"
 
-#: WLogin.webpage:29 WLoginnedin.webpage:28
+#: WLogin.webpage:23 WLoginnedin.webpage:29
 msgid "Please sign in"
-msgstr ""
+msgstr "Proszę się zalogować"
 
-#: WLogin.webpage:48
+#: WLogin.webpage:42
 msgid "Remember Me"
-msgstr ""
+msgstr "Zapamiętaj mnie"
 
-#: WLoginnedin.webpage:31
+#: WLoginnedin.webpage:32
 msgid "You are currently logged in."
-msgstr ""
+msgstr "Jesteś zalogowany"
 
-#: WNavbar.webpage:53
+#: WNavbar.webpage:23
 msgid "Site"
-msgstr ""
+msgstr "Strona"
 
-#: WNavbar.webpage:55
+#: WNavbar.webpage:25
 msgid "Upload"
 msgstr "Wyślij"
 
-#: WNavbar.webpage:56
+#: WNavbar.webpage:26
 msgid "Latest added"
 msgstr "Ostatnio dodane"
 
-#: WNavbar.webpage:58
+#: WNavbar.webpage:28
 msgid "Forum"
-msgstr ""
+msgstr "Forum"
 
-#: WNavbar.webpage:59
-#, fuzzy
+#: WNavbar.webpage:29
 msgid "I-Nex Homepage"
-msgstr "Strona główna"
+msgstr "Strona domowa I-Nex"
 
-#: WNavbar.webpage:60
+#: WNavbar.webpage:30
 msgid "Install I-Nex"
-msgstr ""
+msgstr "Zainstaluj I-Nex"
+
+#: WNavbar.webpage:37
+msgid "Search by CPU Name"
+msgstr "Szukaj po modelu procesora"
+
+#: WNavbar.webpage:66
+msgid "PA"
+msgstr "PA"
 
 #: WNavbar.webpage:67
-msgid "Search by CPU Name"
-msgstr ""
-
-#: WNavbar.webpage:98
-msgid "PA"
-msgstr ""
-
-#: WNavbar.webpage:99
 msgid "CList"
-msgstr ""
+msgstr "Clist"
 
-#: WNavbar.webpage:100
+#: WNavbar.webpage:68
 msgid "CAdd"
+msgstr "CAdd"
+
+#: WPageHeader.webpage:5
+msgid "Linux Hardware Database (CLHD)"
 msgstr ""
 
-#: WProfile.webpage:71
-msgid "API Keys"
-msgstr ""
-
-#: WProfile.webpage:72
+#: WProcess.webpage:58
 #, fuzzy
+msgid "Install I-Nex app"
+msgstr "Zainstaluj I-Nex"
+
+#: WProcess.webpage:62
+msgid "Register in Cerbero"
+msgstr ""
+
+#: WProcess.webpage:66
+msgid "Get Private API Key"
+msgstr ""
+
+#: WProcess.webpage:70
+msgid "Click Validate Button"
+msgstr ""
+
+#: WProcess.webpage:74
+msgid "Open link in default web browser"
+msgstr ""
+
+#: WProcess.webpage:78
+msgid "View your hardware details via web"
+msgstr ""
+
+#: WProfile.webpage:32
+msgid "API Keys"
+msgstr "Klucze API"
+
+#: WProfile.webpage:33
 msgid "Submitted Reports"
-msgstr "             Przesłane raporty"
+msgstr "Wysłane raporty"
 
-#: WProfile.webpage:83
+#: WProfile.webpage:43
+msgid "Base"
+msgstr ""
+
+#: WProfile.webpage:45
 msgid "Login"
-msgstr ""
+msgstr "Login"
 
-#: WProfile.webpage:90
+#: WProfile.webpage:52
 msgid "Display name"
+msgstr "Wyświetlana nazwa"
+
+#: WProfile.webpage:58
+msgid "Social links"
 msgstr ""
 
-#: WProfile.webpage:97
-msgid "Facebook"
+#: WProfile.webpage:87
+msgid "Additional"
 msgstr ""
 
-#: WProfile.webpage:104
-msgid "Google"
-msgstr ""
+#: WProfile.webpage:89
+msgid "Email"
+msgstr "Email"
 
-#: WProfile.webpage:111
-msgid "Twitter"
-msgstr ""
+#: WProfile.webpage:103
+msgid "About You"
+msgstr "Informacje o Tobie"
 
-#: WProfile.webpage:118
-msgid "Github"
-msgstr ""
+#: WProfile.webpage:106
+msgid "Some text about you :)"
+msgstr "Kilka słów o Tobie :)"
 
 #: WProfile.webpage:125
-msgid "Email"
+msgid "Password"
 msgstr ""
 
-#: WProfile.webpage:139
-#, fuzzy
-msgid "About You"
-msgstr "O Cerbero"
-
-#: WProfile.webpage:142
-msgid "Some text about you :)"
-msgstr ""
-
-#: WProfile.webpage:148
-msgid "Save"
-msgstr ""
-
-#: WProfile.webpage:162
+#: WProfile.webpage:127
 msgid "Old Password"
-msgstr ""
+msgstr "Stare hasło"
 
-#: WProfile.webpage:169
+#: WProfile.webpage:134
 msgid "New Password"
-msgstr ""
+msgstr "Nowe hasło"
 
-#: WProfile.webpage:176
-#, fuzzy
+#: WProfile.webpage:141
 msgid "Repeat new password"
-msgstr "            Powtórz hasło"
+msgstr "Powtórz nowe hasło"
 
-#: WProfile.webpage:184
+#: WProfile.webpage:149
 msgid "Change"
-msgstr ""
+msgstr "Zmień"
 
-#: WProfile.webpage:215
-#, fuzzy
+#: WProfile.webpage:180
 msgid "Remember! I-Nex use only Private API Key to publish data online"
-msgstr "Wybierz plik raportu z dysku, i opublikuj online."
+msgstr "Pamiętaj! I-Nex używa tylko prywatny klucz API do publikacji raportów online."
 
-#: WProfile.webpage:222 WQuery.webpage:19 WWidgetLatestAdded.webpage:12
+#: WProfile.webpage:187 WQuery.webpage:19 WWidgetLatestAdded.webpage:11
 msgid "CPU Logo"
-msgstr ""
+msgstr "Logo CPU"
 
-#: WProfile.webpage:223 WQuery.webpage:20 WWidgetLatestAdded.webpage:13
+#: WProfile.webpage:188 WQuery.webpage:20 WWidgetLatestAdded.webpage:12
 msgid "CPU and GPU"
-msgstr ""
+msgstr "CPU i GPU"
 
-#: WProfile.webpage:224 WQuery.webpage:21 WWidgetLatestAdded.webpage:14
+#: WProfile.webpage:189 WQuery.webpage:21 WWidgetLatestAdded.webpage:13
 #: WWidgetMobo.webpage:2
 msgid "Motherboard"
 msgstr "Płyta główna"
 
-#: WProfile.webpage:225 WQuery.webpage:22 WWidgetDistro.webpage:2
-#: WWidgetLatestAdded.webpage:15
+#: WProfile.webpage:190 WQuery.webpage:22 WWidgetDistro.webpage:2
+#: WWidgetLatestAdded.webpage:14
 msgid "Distribution"
 msgstr "Dystrybucja"
 
-#: WProfile.webpage:226 WQuery.webpage:23 WWidgetLatestAdded.webpage:16
+#: WProfile.webpage:191 WQuery.webpage:23 WWidgetLatestAdded.webpage:15
 msgid "Link"
-msgstr ""
+msgstr "Odnośnik"
 
-#: WProfile.webpage:227
+#: WProfile.webpage:192
 msgid "Remove"
-msgstr ""
+msgstr "Usuń"
 
 #: WRegister.webpage:4
 msgid "Cerbero - Register"
-msgstr ""
+msgstr "Cerbero - Rejestracja"
 
-#: WRegister.webpage:29
-#, fuzzy
+#: WRegister.webpage:23
 msgid "Register"
-msgstr "         Zarejestruj"
+msgstr "Zarejestruj"
 
-#: WRegister.webpage:90
-#, fuzzy
+#: WRegister.webpage:84
 msgid "Agree with the Terms & Conditions."
-msgstr "                   Zgoda użytkownika na warunki licencji."
+msgstr "Zgadzam się z Warunkami Korzystania z Usługi."
 
-#: WReturnTop.webpage:31
+#: WReturnTop.webpage:6
 msgid "Click to return on the top page"
-msgstr ""
+msgstr "Kliknij aby wrócić na stronę główną"
 
 #: WWidgetCPU.webpage:12 WWidgetGPU.webpage:11
 msgid "Model:"
@@ -459,23 +481,23 @@ msgstr "Model:"
 
 #: WWidgetCPU.webpage:16
 msgid "CPU Clock:"
-msgstr ""
+msgstr "Taktowanie CPU:"
 
 #: WWidgetCPU.webpage:20
 msgid "CPU Clock By OS:"
-msgstr ""
+msgstr "Taktowanie CPU w systemie:"
 
 #: WWidgetCPU.webpage:24
 msgid "CPU Clock By IC:"
-msgstr ""
+msgstr "Taktowanie CPU w IC:"
 
 #: WWidgetCPU.webpage:28
 msgid "CPU Clock Measure:"
-msgstr ""
+msgstr "CPU Clock Measure:"
 
 #: WWidgetCPU.webpage:32
 msgid "CPU Mark TSC:"
-msgstr ""
+msgstr "CPU Mark TSC:"
 
 #: WWidgetCPU.webpage:36
 msgid "Integrated GPU:"
@@ -503,7 +525,7 @@ msgstr "Długość adresu:"
 
 #: WWidgetCPU.webpage:64
 msgid "Bogomips:"
-msgstr ""
+msgstr "Bogomips:"
 
 #: WWidgetCPU.webpage:68
 msgid "Flags:"
@@ -519,7 +541,7 @@ msgstr "64 bitowe rozszerzenia"
 
 #: WWidgetCPU.webpage:91
 msgid "Hardware Virtualization:"
-msgstr ""
+msgstr "Wirtualizacja Sprzętowa:"
 
 #: WWidgetCPU.webpage:97
 msgid "Hyper Threading:"
@@ -527,7 +549,7 @@ msgstr "Hyper Threading:"
 
 #: WWidgetCPU.webpage:104
 msgid "Hyper Transport:"
-msgstr ""
+msgstr "Hyper Transport:"
 
 #: WWidgetCPU.webpage:111
 msgid "Power management:"
@@ -535,43 +557,43 @@ msgstr "Zarządzanie poborem energii:"
 
 #: WWidgetCPU.webpage:120
 msgid "Cache L1 Data:"
-msgstr ""
+msgstr "Dane Cache L1:"
 
 #: WWidgetCPU.webpage:122
 msgid "Cache L1 Instruction:"
-msgstr ""
+msgstr "Instrukcje Cache L1:"
 
 #: WWidgetCPU.webpage:124
 msgid "Cache L1 Assoc:"
-msgstr ""
+msgstr "Cache L1 Assoc:"
 
 #: WWidgetCPU.webpage:128
 msgid "Cache L2:"
-msgstr ""
+msgstr "Cache L2:"
 
 #: WWidgetCPU.webpage:130
 msgid "Cache L2 Assoc:"
-msgstr ""
+msgstr "Cache L2 Assoc:"
 
 #: WWidgetCPU.webpage:132
 msgid "Cache L2 Cacheline:"
-msgstr ""
+msgstr "Cache L2 Cacheline:"
 
 #: WWidgetCPU.webpage:136
 msgid "Cache L3:"
-msgstr ""
+msgstr "Cache L3:"
 
 #: WWidgetCPU.webpage:138
 msgid "Cache L3 Assoc:"
-msgstr ""
+msgstr "Cache L3 Assoc:"
 
 #: WWidgetCPU.webpage:140
 msgid "Cache L3 Cacheline:"
-msgstr ""
+msgstr "Cache L3 Cacheline:"
 
 #: WWidgetCPU.webpage:146
 msgid "SSE Size:"
-msgstr ""
+msgstr "Wielkość SSE:"
 
 #: WWidgetCPUDB.webpage:2
 msgid "CPU From Database"
@@ -615,7 +637,7 @@ msgstr "Tranzystory:"
 
 #: WWidgetCPUDB.webpage:44
 msgid "TCaseMax:"
-msgstr ""
+msgstr "TCaseMax:"
 
 #: WWidgetCPUDB.webpage:48
 msgid "Multiplier:"
@@ -687,7 +709,7 @@ msgstr "X.Org Server:"
 
 #: WWidgetDistro.webpage:67
 msgid "Net-tools:"
-msgstr ""
+msgstr "Net-tools:"
 
 #: WWidgetDistro.webpage:71
 msgid "Arch:"
@@ -695,7 +717,7 @@ msgstr "Architektura:"
 
 #: WWidgetDistro.webpage:75
 msgid "Binutils:"
-msgstr ""
+msgstr "Binutils:"
 
 #: WWidgetDistro.webpage:79
 msgid "GCC Version:"
@@ -769,6 +791,14 @@ msgstr "Rozdzielczości ekranu:"
 msgid "Present resolution:"
 msgstr "Obecna rozdzielczość ekranu:"
 
+#: WWidgetGooGL.webpage:3
+msgid "Long url"
+msgstr ""
+
+#: WWidgetGooGL.webpage:10
+msgid "Goo.gl Short url"
+msgstr ""
+
 #: WWidgetKernel.webpage:2
 msgid "Kernel"
 msgstr "Jądro systemu"
@@ -797,10 +827,9 @@ msgstr "Architektura:"
 msgid "Latest stable:"
 msgstr "Ostatnie stabilne wydanie jądra Linux:"
 
-#: WWidgetLatestAdded.webpage:6 WWidgetNotAdded.webpage:2
-#, fuzzy
+#: WWidgetLatestAdded.webpage:5 WWidgetNotAdded.webpage:2
 msgid "Latest Added"
-msgstr "Ostatnio dodane"
+msgstr "Ostatnio dodany:"
 
 #: WWidgetMYModal.webpage:8
 msgid "CPU Flags long desc"
@@ -808,7 +837,7 @@ msgstr "Wszystkie dostępne flagi procesora"
 
 #: WWidgetMYModal.webpage:33
 msgid "Close"
-msgstr ""
+msgstr "Zamknij"
 
 #: WWidgetMisc.webpage:2
 msgid "Misc"
@@ -864,7 +893,7 @@ msgstr "Nazwa:"
 
 #: WWidgetMobo.webpage:20
 msgid "Board Asset Tag:"
-msgstr ""
+msgstr "Tagi płyty głównej:"
 
 #: WWidgetMobo.webpage:24
 msgid "Bios Vendor:"
@@ -880,33 +909,33 @@ msgstr "Data ostatniej aktualizacji BIOSu:"
 
 #: WWidgetMobo.webpage:36
 msgid "Chassis Vendor:"
-msgstr ""
+msgstr "Producent obudowy:"
 
 #: WWidgetMobo.webpage:40
 msgid "Chassis Version:"
-msgstr ""
+msgstr "Wersja obudowy:"
 
 #: WWidgetMobo.webpage:44
 msgid "Chassis Type:"
-msgstr ""
+msgstr "Typ obudowy:"
 
 #: WWidgetMobo.webpage:48
 msgid "Chassis Asset Tag:"
-msgstr ""
+msgstr "Tagi obudowy:"
 
 #: WWidgetMobo.webpage:52
 msgid "Product Name:"
-msgstr ""
+msgstr "Nazwa produktu:"
 
 #: WWidgetMobo.webpage:56
 msgid "Product Version:"
-msgstr ""
+msgstr "Wersja produktu:"
 
 #: WWidgetNotAdded.webpage:5
 msgid "Today has not added any reports"
-msgstr ""
+msgstr "Dzisiaj nie dodano nowych raportów"
 
-#: WWidgetScreenshot.webpage:50
+#: WWidgetScreenshot.webpage:13
 msgid "I-Nex Screenshot"
 msgstr "Zrzut ekranu:"
 
@@ -916,185 +945,16 @@ msgstr "Wysłane przez"
 
 #: WWidgetUser.webpage:18
 msgid "More About"
-msgstr ""
+msgstr "Więcej informacji"
 
 #: WWidgetUser.webpage:24
 msgid "Social: "
-msgstr ""
+msgstr "Społeczności: "
 
 #: WWidgetUser.webpage:47
 msgid "Bio:"
-msgstr ""
+msgstr "O mnie:"
 
-#: WWidgetUser.webpage:54
+#: WWidgetUser.webpage:55
 msgid "I've heard enough about"
-msgstr ""
-
-#~ msgid "           I-Nex - Cerbero"
-#~ msgstr "           I-Nex - Cerbero"
-
-#~ msgid "                    Profile"
-#~ msgstr "                    Profil"
-
-#~ msgid "                   Logout"
-#~ msgstr "                   Wyloguj"
-
-#~ msgid "Other"
-#~ msgstr "Pozostałe"
-
-#~ msgid "              Logout"
-#~ msgstr "              Wyloguj"
-
-#~ msgid "             Profile"
-#~ msgstr "             Profil"
-
-#~ msgid "     I-Nex - Cerbero"
-#~ msgstr "     I-Nex - Cerbero"
-
-#~ msgid "                   Sign In"
-#~ msgstr "                   Zaloguj się"
-
-#~ msgid "                               Keep me signed in"
-#~ msgstr "                               Zapamiętaj mnie na tym komputerze"
-
-#~ msgid "                               Password:"
-#~ msgstr "                               Hasło:"
-
-#~ msgid "                               Username:"
-#~ msgstr "                               Nazwa użytkownika:"
-
-#~ msgid "                   Please provide your details"
-#~ msgstr "                   Podaj szczegółowe dane"
-
-#, fuzzy
-#~ msgid "List CPU Database"
-#~ msgstr "Dane o CPU z bazy danych:"
-
-#~ msgid "Login to your account"
-#~ msgstr "Zaloguj się do swojego konta"
-
-#~ msgid "     Already have an account?"
-#~ msgstr "     Posiadasz już konto?"
-
-#~ msgid "                   Confirm Password:"
-#~ msgstr "                   Potwierdź hasło:"
-
-#~ msgid "                   Password:"
-#~ msgstr "                   Hasło:"
-
-#~ msgid "                   Email Address:"
-#~ msgstr "                   Adres e-mail:"
-
-#~ msgid "                   Display name:"
-#~ msgstr "                   Wyświetlana nazwa:"
-
-#~ msgid "                   User name:"
-#~ msgstr "                   Nazwa użytkownika:"
-
-#~ msgid "             Create your free account:"
-#~ msgstr "             Załóż darmowe konto"
-
-#~ msgid "       Signup for Free Account"
-#~ msgstr "       Zarejestruj się"
-
-#~ msgid "             Remove link"
-#~ msgstr "             Usuń odnośnik"
-
-#~ msgid "             Link to"
-#~ msgstr "             Odnośnik do"
-
-#~ msgid "             Distro"
-#~ msgstr "             Dystrybucja"
-
-#~ msgid "             Motherboard"
-#~ msgstr "             Płyta główna"
-
-#~ msgid "             CPU & GPU"
-#~ msgstr "             Procesor i Karta graficzna"
-
-#~ msgid "             Processor logo"
-#~ msgstr "             Logo procesora"
-
-#~ msgid "                           I-Nex use provate key to submit data online"
-#~ msgstr "                           I-Nex wykorzystuje klucz prywatny do wysyłania danych na serwer"
-
-#~ msgid "                           Change"
-#~ msgstr "                           Zmiana"
-
-#~ msgid "                       API Private"
-#~ msgstr "                       Prywatne API"
-
-#~ msgid "                             Public key used in some cases."
-#~ msgstr "                             Klucz publiczny jest używany w niektórych przypadkach."
-
-#~ msgid "                             Change"
-#~ msgstr "                             Zmiana"
-
-#~ msgid "                     API Public "
-#~ msgstr "                     Publiczne API "
-
-#~ msgid "             Save"
-#~ msgstr "             Zapisz"
-
-#~ msgid "             New password"
-#~ msgstr "             Nowe hasło"
-
-#~ msgid "            Current password"
-#~ msgstr "            Aktualne hasło"
-
-#~ msgid "           Author Bio"
-#~ msgstr "           O autorze"
-
-#~ msgid "           Homepage"
-#~ msgstr "           Strona domowa"
-
-#~ msgid "               Your e-mail will also be used to display Gravatar"
-#~ msgstr "               Twój e-mail może zostać użyty do wyświetlania Gravatara."
-
-#~ msgid "            Email Address"
-#~ msgstr "            E-mail"
-
-#~ msgid "                  Public account name. It is used in some cases."
-#~ msgstr "                  Publiczna nazwa konta użytkownika. Jest wykorzystywana w niektórych przypadkach."
-
-#~ msgid "                  Your Login is for logging in and cannot be changed."
-#~ msgstr "                  Twoja nazwa użytkownika jest używana do logowania się i nie może być zmieniona."
-
-#~ msgid "             Keys"
-#~ msgstr "             Klucze"
-
-#~ msgid "             Account details"
-#~ msgstr "             Szczegóły konta"
-
-#~ msgid "           Account"
-#~ msgstr "           Konto"
-
-#~ msgid "Enter all the data in the I-Nex and then send the report."
-#~ msgstr "Wpisz wszystkie potrzebne dane w konfiguracji wysyłania raportów i wyślij raport."
-
-#~ msgid "Register on the site, get your key and user name. "
-#~ msgstr "Zarejestruj się na stronie, zdobądź swój klucz prywatny oraz login. "
-
-#~ msgid "I-Nex Cerbero"
-#~ msgstr "I-Nex Cerbero"
-
-#~ msgid "The need for many people to help. You can also help."
-#~ msgstr "Potrzeba wiele osób do pomocy. Ty także możesz pomóc."
-
-#~ msgid "Work on the introduction of new features. "
-#~ msgstr "Trwają pracę nad nowymi funkcjami oraz naprawą błędów. "
-
-#~ msgid "Keep in mind that the service is currently in beta. "
-#~ msgstr "Miej na uwadze, serwis jest nadal w fazie beta. "
-
-#~ msgid "Beta"
-#~ msgstr "Beta"
-
-#~ msgid "Account - I-Nex - Cerbero"
-#~ msgstr "Konto - I-Nex - Cerbero"
-
-#~ msgid "Don't have an account?"
-#~ msgstr "Nie masz jeszcze konta?"
-
-#~ msgid "Login - I-Nex - Cerbero"
-#~ msgstr "Logowanie - I-Nex - Cerbero"
+msgstr "Wiem wystarczająco dużo o"

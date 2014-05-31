@@ -1,2 +1,9 @@
 [Desktop Entry]
 Icon=./.icon.png
+
+[Dolphin]
+Timestamp=2014,5,12,19,47,58
+Version=3
+
+[Settings]
+HiddenFilesShown=true

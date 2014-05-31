@@ -49,12 +49,94 @@ Else If Request.Get.Exist("query") = True Then
   MQuery.Main()
 Else If Request.Get.Exist("padm") = True And Usera.User_IsAdmin() = True Then
   WAdminPanel.Render
+Else If Request.Get.Exist("cpudb[intel]") = True Then
+  Response.Begin
+  WCPUDBIntel.Render
+  Response.End
+Else If Request.Get.Exist("cpudb[intel]edit") = True Then
+ If Usera.User_Logged() = True And Usera.User_IsAdmin() = True Then
+  WCPUDBIntelEdit.Render
+ Else
+  Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & Application.Root)
+ Endif
+Else If Request.Get.Exist("cpudb[intel]view") = True Then
+  Response.Begin
+  WCPUDBIntelView.Render
+  Response.End
+Else If Request.Get.Exist("cpudb[intel]change") = True Then
+  MCPUDBIntelChange.Change()
+Else If Request.Get.Exist("cpudb[intel]addd") = True Then
+  MCPUDBIntelAdd.Add()
+Else If Request.Get.Exist("cpudb[intel]add") = True Then
+  If Usera.User_Logged() = True And Usera.User_IsAdmin() = True Then
+    Response.Begin
+      WCPUDBIntelAdd.Render
+    Response.End
+  Else
+    Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & Application.Root)
+  Endif
+Else If Request.Get.Exist("cpudb[intel]delete") = True Then
+  MCPUDBIntelDelete.Delete()
 Else If Request.Get.Exist("cpudb[atom]") = True Then
   Response.Begin
   WCPUDBAtom.Render
   Response.End
 Else If Request.Get.Exist("cpudb[atom]edit") = True Then
+ If Usera.User_Logged() = True And Usera.User_IsAdmin() = True Then
   WCPUDBAtomEdit.Render
+ Else
+  Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & Application.Root)
+ Endif
+Else If Request.Get.Exist("cpudb[atom]view") = True Then
+  Response.Begin
+  WCPUDBAtomView.Render
+  Response.End
+Else If Request.Get.Exist("cpudb[atom]change") = True Then
+  MCPUDBAtomChange.Change()
+Else If Request.Get.Exist("cpudb[atom]addd") = True Then
+  MCPUDBAtomAdd.Add()
+Else If Request.Get.Exist("cpudb[atom]add") = True Then
+  If Usera.User_Logged() = True And Usera.User_IsAdmin() = True Then
+    Response.Begin
+      WCPUDBAtomAdd.Render
+    Response.End
+  Else
+    Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & Application.Root)
+  Endif
+Else If Request.Get.Exist("cpudb[atom]delete") = True Then
+  MCPUDBAtomDelete.Delete()
+Else If Request.Get.Exist("cpudb[amd]") = True Then
+  Response.Begin
+  WCPUDBAmd.Render
+  Response.End
+Else If Request.Get.Exist("cpudb[amd]edit") = True Then
+ If Usera.User_Logged() = True And Usera.User_IsAdmin() = True Then
+  WCPUDBAmdEdit.Render
+ Else
+  Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & Application.Root)
+ Endif
+Else If Request.Get.Exist("cpudb[amd]view") = True Then
+  Response.Begin
+  WCPUDBAmdView.Render
+  Response.End
+Else If Request.Get.Exist("cpudb[amd]change") = True Then
+  MCPUDBAmdChange.Change()
+Else If Request.Get.Exist("cpudb[amd]addd") = True Then
+  MCPUDBAmdAdd.Add()
+Else If Request.Get.Exist("cpudb[amd]add") = True Then
+  If Usera.User_Logged() = True And Usera.User_IsAdmin() = True Then
+    Response.Begin
+      WCPUDBAmdAdd.Render
+    Response.End
+  Else
+    Response.Redirect(Global.WEBSITE_ROOT_URL_HTTP & Application.Root)
+  Endif
+Else If Request.Get.Exist("cpudb[amd]delete") = True Then
+  MCPUDBAmdDelete.Delete()
+Else If Request.Get.Exist("cpudb") = True Then
+  Response.Begin
+    WCPUDBIndex.Render
+  Response.End
 Else If Request.Get.Exist("downloadcount") = True Then
 MDownload.Main()
 Response.Redirect("http://127.0.0.1/")
@@ -71,12 +153,8 @@ End
 Public Sub ResponseFromServer()
   MBrand.Brand_URL = Global.WEBSITE_ROOT_URL_HTTP & Application.Root
   MBrand.Brand_TEXT = "I-Nex - Cerbero"
+
   Response.Begin
-    Print "<!DOCTYPE html>"
-    Print "<html lang=\"en\">"
-    WHead.Render
-    Print "<body>"
-    WNavbar.Render
     DUpload.Render
   Response.End
   

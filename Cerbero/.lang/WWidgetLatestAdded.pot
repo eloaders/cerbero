@@ -14,27 +14,27 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: WWidgetLatestAdded.webpage:5
+#: WWidgetLatestAdded.webpage:27
 msgid "Latest Added"
 msgstr ""
 
-#: WWidgetLatestAdded.webpage:11
+#: WWidgetLatestAdded.webpage:33
 msgid "CPU Logo"
 msgstr ""
 
-#: WWidgetLatestAdded.webpage:12
+#: WWidgetLatestAdded.webpage:34
 msgid "CPU and GPU"
 msgstr ""
 
-#: WWidgetLatestAdded.webpage:13
+#: WWidgetLatestAdded.webpage:35
 msgid "Motherboard"
 msgstr ""
 
-#: WWidgetLatestAdded.webpage:14
+#: WWidgetLatestAdded.webpage:36
 msgid "Distribution"
 msgstr ""
 
-#: WWidgetLatestAdded.webpage:15
+#: WWidgetLatestAdded.webpage:37
 msgid "Link"
 msgstr ""
 

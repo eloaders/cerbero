@@ -1,7 +1,29 @@
+#MCPUDBAmd
+
+CA
+AmdCPUList
+V
+Collection
+
+Main
+M
+
+
 #MCPUDBAtom
 
 CA
 AtomCPUList
+V
+Collection
+
+Main
+M
+
+
+#MCPUDBIntel
+
+CA
+IntelCPUList
 V
 Collection
 

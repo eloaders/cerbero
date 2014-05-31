@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<<WHead>>
+<body>
+<<WNavbar>>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="panel panel-success">
+        <div class="panel-heading">
+          <h3 class="panel-title"><i class="fa fa-tachometer"></i>  <%=("CPU Specifications")%></h3>
+        </div>
+        <div class="panel-body">
+<form action="<%=Application.Root%>?cpudb[intel]addd" method="post" class="form-horizontal">
+  <fieldset>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+          <%=("Select CPU Logo")%>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse">
+      <div class="panel-body">
+      <select class="image-picker" name="PROCESSOR_SOCKET_IMAGE">
+        <option data-img-src='LOGOS/0.gif' value='0.gif'>0</option>
+        <option data-img-src='LOGOS/1.gif' value='1.gif'>1</option>
+        <option data-img-src='LOGOS/4.gif' value='4.gif'>2</option>
+        <option data-img-src='LOGOS/6.gif' value='6.gif'>3</option>
+        <option data-img-src='LOGOS/7.gif' value='7.gif'>4</option>
+        <option data-img-src='LOGOS/8.gif' value='8.gif'>5</option>
+        <option data-img-src='LOGOS/9.gif' value='9.gif'>6</option>
+        <option data-img-src='LOGOS/11.gif' value='11.gif'>7</option>
+        <option data-img-src='LOGOS/12.gif' value='12.gif'>8</option>
+        <option data-img-src='LOGOS/13.gif' value='13.gif'>9</option>
+        <option data-img-src='LOGOS/14.gif' value='14.gif'>10</option>
+        <option data-img-src='LOGOS/15.gif' value='15.gif'>11</option>
+        <option data-img-src='LOGOS/16.gif' value='16.gif'>12</option>
+        <option data-img-src='LOGOS/18.gif' value='18.gif'>13</option>
+        <option data-img-src='LOGOS/19.gif' value='19.gif'>14</option>
+        <option data-img-src='LOGOS/20.gif' value='20.gif'>15</option>
+        <option data-img-src='LOGOS/21.gif' value='21.gif'>16</option>
+        <option data-img-src='LOGOS/22.gif' value='22.gif'>17</option>
+        <option data-img-src='LOGOS/23.gif' value='23.gif'>18</option>
+        <option data-img-src='LOGOS/24.gif' value='24.gif'>19</option>
+        <option data-img-src='LOGOS/25.gif' value='25.gif'>20</option>
+        <option data-img-src='LOGOS/26.gif' value='26.gif'>21</option>
+        <option data-img-src='LOGOS/27.gif' value='27.gif'>22</option>
+        <option data-img-src='LOGOS/28.gif' value='28.gif'>23</option>
+        <option data-img-src='LOGOS/29.gif' value='29.gif'>24</option>
+        <option data-img-src='LOGOS/30.gif' value='30.gif'>25</option>
+        <option data-img-src='LOGOS/31.gif' value='31.gif'>26</option>
+        <option data-img-src='LOGOS/32.gif' value='32.gif'>27</option>
+        <option data-img-src='LOGOS/33.gif' value='33.gif'>28</option>
+        <option data-img-src='LOGOS/34.gif' value='34.gif'>29</option>
+        <option data-img-src='LOGOS/35.gif' value='35.gif'>30</option>
+        <option data-img-src='LOGOS/36.gif' value='36.gif'>31</option>
+        <option data-img-src='LOGOS/37.gif' value='37.gif'>32</option>
+        <option data-img-src='LOGOS/38.gif' value='38.gif'>33</option>
+        <option data-img-src='LOGOS/39.gif' value='39.gif'>34</option>
+        <option data-img-src='LOGOS/40.gif' value='40.gif'>35</option>
+        <option data-img-src='LOGOS/41.gif' value='41.gif'>36</option>
+        <option data-img-src='LOGOS/42.gif' value='42.gif'>37</option>
+        <option data-img-src='LOGOS/43.gif' value='43.gif'>38</option>
+        <option data-img-src='LOGOS/45.gif' value='45.gif'>39</option>
+        <option data-img-src='LOGOS/46.gif' value='46.gif'>40</option>
+        <option data-img-src='LOGOS/47.gif' value='47.gif'>41</option>
+        <option data-img-src='LOGOS/48.gif' value='48.gif'>42</option>
+        <option data-img-src='LOGOS/50.gif' value='50.gif'>43</option>
+        <option data-img-src='LOGOS/55.gif' value='55.gif'>44</option>
+        <option data-img-src='LOGOS/56.gif' value='56.gif'>45</option>
+        <option data-img-src='LOGOS/57.gif' value='57.gif'>46</option>
+        <option data-img-src='LOGOS/59.gif' value='59.gif'>47</option>
+        <option data-img-src='LOGOS/60.gif' value='60.gif'>48</option>
+        <option data-img-src='LOGOS/61.gif' value='61.gif'>49</option>
+        <option data-img-src='LOGOS/62.gif' value='62.gif'>50</option>
+        <option data-img-src='LOGOS/63.gif' value='63.gif'>51</option>
+        <option data-img-src='LOGOS/64.gif' value='64.gif'>52</option>
+        <option data-img-src='LOGOS/65.gif' value='65.gif'>53</option>
+        <option data-img-src='LOGOS/66.gif' value='66.gif'>54</option>
+        <option data-img-src='LOGOS/67.gif' value='67.gif'>55</option>
+        <option data-img-src='LOGOS/68.gif' value='68.gif'>56</option>
+        <option data-img-src='LOGOS/70.gif' value='70.gif'>57</option>
+        <option data-img-src='LOGOS/71.gif' value='71.gif'>58</option>
+        <option data-img-src='LOGOS/72.gif' value='72.gif'>59</option>
+        <option data-img-src='LOGOS/77.gif' value='77.gif'>60</option>
+        <option data-img-src='LOGOS/78.gif' value='78.gif'>61</option>
+        <option data-img-src='LOGOS/79.gif' value='79.gif'>62</option>
+        <option data-img-src='LOGOS/80.gif' value='80.gif'>63</option>
+        <option data-img-src='LOGOS/81.gif' value='81.gif'>64</option>
+        <option data-img-src='LOGOS/82.gif' value='82.gif'>65</option>
+        <option data-img-src='LOGOS/83.gif' value='83.gif'>66</option>
+        <option data-img-src='LOGOS/84.gif' value='84.gif'>67</option>
+        <option data-img-src='LOGOS/96.gif' value='96.gif'>68</option>
+        <option data-img-src='LOGOS/97.gif' value='97.gif'>69</option>
+        <option data-img-src='LOGOS/98.gif' value='98.gif'>70</option>
+        <option data-img-src='LOGOS/99.gif' value='99.gif'>71</option>
+        <option data-img-src='LOGOS/100.gif' value='100.gif'>72</option>
+        <option data-img-src='LOGOS/101.gif' value='101.gif'>73</option>
+        <option data-img-src='LOGOS/102.gif' value='102.gif'>74</option>
+        <option data-img-src='LOGOS/103.gif' value='103.gif'>75</option>
+        <option data-img-src='LOGOS/104.gif' value='104.gif'>76</option>
+        <option data-img-src='LOGOS/105.gif' value='105.gif'>77</option>
+        <option data-img-src='LOGOS/107.gif' value='107.gif'>78</option>
+        <option data-img-src='LOGOS/108.gif' value='108.gif'>79</option>
+        <option data-img-src='LOGOS/109.gif' value='109.gif'>80</option>
+        <option data-img-src='LOGOS/110.gif' value='110.gif'>81</option>
+        <option data-img-src='LOGOS/111.gif' value='111.gif'>82</option>
+        <option data-img-src='LOGOS/112.gif' value='112.gif'>83</option>
+        <option data-img-src='LOGOS/113.gif' value='113.gif'>84</option>
+        <option data-img-src='LOGOS/114.gif' value='114.gif'>85</option>
+        <option data-img-src='LOGOS/115.gif' value='115.gif'>86</option>
+        <option data-img-src='LOGOS/116.gif' value='116.gif'>87</option>
+        <option data-img-src='LOGOS/117.gif' value='117.gif'>88</option>
+        <option data-img-src='LOGOS/118.gif' value='118.gif'>89</option>
+        <option data-img-src='LOGOS/119.gif' value='119.gif'>90</option>
+        <option data-img-src='LOGOS/120.gif' value='120.gif'>91</option>
+        <option data-img-src='LOGOS/121.gif' value='121.gif'>92</option>
+        <option data-img-src='LOGOS/122.gif' value='121.gif'>93</option>
+        <option data-img-src='LOGOS/123.gif' value='123.gif'>94</option>
+        <option data-img-src='LOGOS/124.gif' value='124.gif'>95</option>
+        <option data-img-src='LOGOS/125.gif' value='125.gif'>96</option>
+        <option data-img-src='LOGOS/126.gif' value='126.gif'>97</option>
+        <option data-img-src='LOGOS/127.gif' value='127.gif'>98</option>
+        <option data-img-src='LOGOS/128.gif' value='128.gif'>99</option>
+        <option data-img-src='LOGOS/129.gif' value='129.gif'>100</option>
+        <option data-img-src='LOGOS/133.gif' value='133.gif'>101</option>
+        <option data-img-src='LOGOS/134.gif' value='134.gif'>102</option>
+        <option data-img-src='LOGOS/135.gif' value='135.gif'>103</option>
+        <option data-img-src='LOGOS/136.gif' value='136.gif'>104</option>
+        <option data-img-src='LOGOS/137.gif' value='137.gif'>105</option>
+        <option data-img-src='LOGOS/138.gif' value='138.gif'>106</option>
+        <option data-img-src='LOGOS/139.gif' value='139.gif'>107</option>
+        <option data-img-src='LOGOS/140.gif' value='140.gif'>108</option>
+        <option data-img-src='LOGOS/145.gif' value='145.gif'>109</option>
+        <option data-img-src='LOGOS/147.gif' value='147.gif'>110</option>
+        <option data-img-src='LOGOS/154.gif' value='154.gif'>111</option>
+        <option data-img-src='LOGOS/158.gif' value='158.gif'>112</option>
+        <option data-img-src='LOGOS/159.gif' value='159.gif'>113</option>
+        <option data-img-src='LOGOS/160.gif' value='160.gif'>114</option>
+        <option data-img-src='LOGOS/162.gif' value='162.gif'>115</option>
+        <option data-img-src='LOGOS/163.gif' value='163.gif'>116</option>
+        <option data-img-src='LOGOS/166.gif' value='166.gif'>117</option>
+        <option data-img-src='LOGOS/169.gif' value='169.gif'>118</option>
+        <option data-img-src='LOGOS/170.gif' value='170.gif'>119</option>
+        <option data-img-src='LOGOS/171.gif' value='171.gif'>120</option>
+        <option data-img-src='LOGOS/172.gif' value='172.gif'>121</option>
+        <option data-img-src='LOGOS/174.gif' value='174.gif'>122</option>
+        <option data-img-src='LOGOS/175.gif' value='175.gif'>123</option>
+        <option data-img-src='LOGOS/176.gif' value='176.gif'>124</option>
+        <option data-img-src='LOGOS/177.gif' value='177.gif'>125</option>
+        <option data-img-src='LOGOS/178.gif' value='178.gif'>126</option>
+        <option data-img-src='LOGOS/180.gif' value='180.gif'>127</option>
+        <option data-img-src='LOGOS/181.gif' value='181.gif'>128</option>
+        <option data-img-src='LOGOS/182.gif' value='182.gif'>129</option>
+        <option data-img-src='LOGOS/183.gif' value='183.gif'>130</option>
+        <option data-img-src='LOGOS/184.gif' value='184.gif'>131</option>
+        <option data-img-src='LOGOS/185.gif' value='185.gif'>132</option>
+        <option data-img-src='LOGOS/186.gif' value='186.gif'>133</option>
+        <option data-img-src='LOGOS/188.gif' value='188.gif'>134</option>
+        <option data-img-src='LOGOS/189.gif' value='189.gif'>135</option>
+        <option data-img-src='LOGOS/190.gif' value='190.gif'>136</option>
+        <option data-img-src='LOGOS/191.gif' value='191.gif'>136</option>
+        <option data-img-src='LOGOS/192.gif' value='192.gif'>138</option>
+        <option data-img-src='LOGOS/193.gif' value='193.gif'>139</option>
+        <option data-img-src='LOGOS/196.gif' value='196.gif'>140</option>
+        <option data-img-src='LOGOS/199.gif' value='199.gif'>141</option>
+        <option data-img-src='LOGOS/201.gif' value='201.gif'>142</option>
+        <option data-img-src='LOGOS/203.gif' value='203.gif'>143</option>
+        <option data-img-src='LOGOS/206.gif' value='206.gif'>144</option>
+        <option data-img-src='LOGOS/211.gif' value='211.gif'>145</option>
+        <option data-img-src='LOGOS/216.gif' value='216.gif'>146</option>
+        <option data-img-src='LOGOS/217.gif' value='217.gif'>147</option>
+        <option data-img-src='LOGOS/218.gif' value='218.gif'>148</option>
+        <option data-img-src='LOGOS/220.gif' value='220.gif'>149</option>
+        <option data-img-src='LOGOS/221.gif' value='221.gif'>150</option>
+        <option data-img-src='LOGOS/223.gif' value='223.gif'>151</option>
+        <option data-img-src='LOGOS/224.gif' value='224.gif'>152</option>
+        <option data-img-src='LOGOS/225.gif' value='225.gif'>153</option>
+        <option data-img-src='LOGOS/233.gif' value='233.gif'>154</option>
+        <option data-img-src='LOGOS/234.gif' value='234.gif'>155</option>
+        <option data-img-src='LOGOS/235.gif' value='235.gif'>156</option>
+        <option data-img-src='LOGOS/237.gif' value='237.gif'>157</option>
+        <option data-img-src='LOGOS/241.gif' value='241.gif'>158</option>
+        <option data-img-src='LOGOS/242.gif' value='242.gif'>159</option>
+        <option data-img-src='LOGOS/243.gif' value='243.gif'>160</option>
+        <option data-img-src='LOGOS/244.gif' value='244.gif'>161</option>
+        <option data-img-src='LOGOS/245.gif' value='245.gif'>162</option>
+        <option data-img-src='LOGOS/246.gif' value='246.gif'>163</option>
+        <option data-img-src='LOGOS/247.gif' value='247.gif'>164</option>
+        <option data-img-src='LOGOS/248.gif' value='248.gif'>165</option>
+        <option data-img-src='LOGOS/249.gif' value='249.gif'>166</option>
+        <option data-img-src='LOGOS/257.gif' value='257.gif'>167</option>
+        <option data-img-src='LOGOS/261.gif' value='261.gif'>168</option>
+        <option data-img-src='LOGOS/262.gif' value='262.gif'>169</option>
+        <option data-img-src='LOGOS/263.gif' value='263.gif'>170</option>
+        <option data-img-src='LOGOS/265.gif' value='265.gif'>171</option>
+        <option data-img-src='LOGOS/266.gif' value='266.gif'>172</option>
+        <option data-img-src='LOGOS/267.gif' value='267.gif'>173</option>
+        <option data-img-src='LOGOS/268.gif' value='268.gif'>174</option>
+        <option data-img-src='LOGOS/269.gif' value='269.gif'>175</option>
+        <option data-img-src='LOGOS/270.gif' value='270.gif'>176</option>
+        <option data-img-src='LOGOS/271.gif' value='271.gif'>177</option>
+        <option data-img-src='LOGOS/272.gif' value='272.gif'>178</option>
+        <option data-img-src='LOGOS/273.gif' value='273.gif'>179</option>
+        <option data-img-src='LOGOS/274.gif' value='274.gif'>180</option>
+        <option data-img-src='LOGOS/275.gif' value='275.gif'>181</option>
+        <option data-img-src='LOGOS/276.gif' value='276.gif'>182</option>
+        <option data-img-src='LOGOS/283.gif' value='283.gif'>183</option>
+        <option data-img-src='LOGOS/287.gif' value='287.gif'>184</option>
+        <option data-img-src='LOGOS/288.gif' value='288.gif'>185</option>
+        <option data-img-src='LOGOS/289.gif' value='289.gif'>186</option>
+        <option data-img-src='LOGOS/290.gif' value='290.gif'>187</option>
+        <option data-img-src='LOGOS/291.gif' value='291.gif'>188</option>
+        <option data-img-src='LOGOS/292.gif' value='292.gif'>189</option>
+        <option data-img-src='LOGOS/293.gif' value='293.gif'>190</option>
+        <option data-img-src='LOGOS/294.gif' value='294.gif'>191</option>
+        <option data-img-src='LOGOS/295.gif' value='295.gif'>192</option>
+        <option data-img-src='LOGOS/296.gif' value='296.gif'>193</option>
+        <option data-img-src='LOGOS/297.gif' value='297.gif'>194</option>
+        <option data-img-src='LOGOS/298.gif' value='298.gif'>195</option>
+        <option data-img-src='LOGOS/299.gif' value='299.gif'>196</option>
+        <option data-img-src='LOGOS/300.gif' value='300.gif'>197</option>
+        <option data-img-src='LOGOS/301.gif' value='301.gif'>198</option>
+        <option data-img-src='LOGOS/302.gif' value='302.gif'>199</option>
+        <option data-img-src='LOGOS/303.gif' value='303.gif'>200</option>
+        <option data-img-src='LOGOS/304.gif' value='304.gif'>201</option>
+        <option data-img-src='LOGOS/305.gif' value='305.gif'>202</option>
+        <option data-img-src='LOGOS/306.gif' value='306.gif'>203</option>
+        <option data-img-src='LOGOS/308.gif' value='308.gif'>204</option>
+        <option data-img-src='LOGOS/309.gif' value='309.gif'>205</option>
+        <option data-img-src='LOGOS/310.gif' value='310.gif'>206</option>
+        <option data-img-src='LOGOS/311.gif' value='311.gif'>207</option>
+        <option data-img-src='LOGOS/312.gif' value='312.gif'>208</option>
+      </select>
+
+  <script type="text/javascript">
+
+    jQuery("select.image-picker").imagepicker({
+      hide_select:  false,
+    });
+
+    jQuery("select.image-picker.show-labels").imagepicker({
+      hide_select:  false,
+      show_label:   true,
+    });
+
+    jQuery("select.image-picker.limit_callback").imagepicker({
+      limit_reached:  function(){alert('We are full!')},
+      hide_select:    false
+    });
+
+    var container = jQuery("select.image-picker.masonry").next("ul.thumbnails");
+    container.imagesLoaded(function(){
+      container.masonry({
+        itemSelector:   "li",
+      });
+    });
+
+  </script>
+
+      </div>
+    </div>
+  </div>
+
+    <div class="form-group">
+      <label for="PROCESSOR_MODEL_NAME" class="col-lg-3 control-label"><%=("Processor Model Name")%></label>
+      <div class="col-lg-9">
+        <input type="text" class="form-control" id="PROCESSOR_MODEL_NAME" name="PROCESSOR_MODEL_NAME">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="PROCESSOR_SOCKET" class="col-lg-3 control-label"><%=("Processor Socket")%></label>
+      <div class="col-lg-9">
+        <input type="text" class="form-control" id="PROCESSOR_SOCKET" name="PROCESSOR_SOCKET">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="PROCESSOR_PROCESS_SIZE" class="col-lg-3 control-label"><%=("Processor Process Size")%></label>
+      <div class="col-lg-9">
+        <input type="text" class="form-control" id="PROCESSOR_PROCESS_SIZE" name="PROCESSOR_PROCESS_SIZE">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="PROCESSOR_TRANSISTORS" class="col-lg-3 control-label"><%=("Processor Transistors")%></label>
+      <div class="col-lg-9">
+        <input type="text" class="form-control" id="PROCESSOR_TRANSISTORS" name="PROCESSOR_TRANSISTORS">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="PROCESSOR_DIE_SIZE" class="col-lg-3 control-label"><%=("Processor Die Size")%></label>
+      <div class="col-lg-9">
+        <input type="text" class="form-control" id="PROCESSOR_DIE_SIZE" name="PROCESSOR_DIE_SIZE">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="PROCESSOR_PACKAGE" class="col-lg-3 control-label"><%=("Processor Package")%></label>
+      <div class="col-lg-9">
+        <input type="text" class="form-control" id="PROCESSOR_PACKAGE" name="PROCESSOR_PACKAGE">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="PROCESSOR_TCASEMAX" class="col-lg-3 control-label"><%=("Processor tCaseMax")%></label>
+      <div class="col-lg-9">
+        <input type="text" class="form-control" id="PROCESSOR_TCASEMAX" name="PROCESSOR_TCASEMAX">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="PROCESSOR_FREQUENCY" class="col-lg-3 control-label"><%=("Processor Frequency")%></label>
+      <div class="col-lg-9">
+        <input type="text" class="form-control" id="PROCESSOR_FREQUENCY" name="PROCESSOR_FREQUENCY">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="PROCESSOR_TURBOCLOCK" class="col-lg-3 control-label"><%=("Processor Turbo Clock")%></label>
+      <div class="col-lg-9">
+        <input type="text" class="form-control" id="PROCESSOR_TURBOCLOCK" name="PROCESSOR_TURBOCLOCK">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="PROCESSOR_MULTIPLIER" class="col-lg-3 control-label"><%=("Processor Multiplier")%></label>
+      <div class="col-lg-9">
+        <input type="text" class="form-control" id="PROCESSOR_MULTIPLIER" name="PROCESSOR_MULTIPLIER">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="PROCESSOR_VOLTAGE" class="col-lg-3 control-label"><%=("Processor Voltage")%></label>
+      <div class="col-lg-9">
+        <input type="text" class="form-control" id="PROCESSOR_VOLTAGE" name="PROCESSOR_VOLTAGE">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="PROCESSOR_TDP" class="col-lg-3 control-label"><%=("Processor TDP")%></label>
+      <div class="col-lg-9">
+        <input type="text" class="form-control" id="PROCESSOR_TDP" name="PROCESSOR_TDP">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="PROCESSOR_CODENAME" class="col-lg-3 control-label"><%=("Processor Codename")%></label>
+      <div class="col-lg-9">
+        <input type="text" class="form-control" id="PROCESSOR_CODENAME" name="PROCESSOR_CODENAME">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="PROCESSOR_PART" class="col-lg-3 control-label"><%=("Processor Part")%></label>
+      <div class="col-lg-9">
+        <input type="text" class="form-control" id="PROCESSOR_PART" name="PROCESSOR_PART">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="PROCESSOR_PRODUCTION_STATUS" class="col-lg-3 control-label"><%=("Production Status")%></label>
+      <div class="col-lg-9">
+        <input type="text" class="form-control" id="PROCESSOR_PRODUCTION_STATUS" name="PROCESSOR_PRODUCTION_STATUS">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="PROCESSOR_RELEASED" class="col-lg-3 control-label"><%=("Processor Released")%></label>
+      <div class="col-lg-9">
+        <input type="text" class="form-control" id="PROCESSOR_TDP" name="PROCESSOR_RELEASED">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="PROCESSOR_MEMORYSUPPORT" class="col-lg-3 control-label"><%=("Processor Memory Support")%></label>
+      <div class="col-lg-9">
+        <input type="text" class="form-control" id="PROCESSOR_MEMORYSUPPORT" name="PROCESSOR_MEMORYSUPPORT">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="PROCESSOR_OFCORES" class="col-lg-3 control-label"><%=("Processor Of Cores")%></label>
+      <div class="col-lg-9">
+        <input type="text" class="form-control" id="PROCESSOR_OFCORES" name="PROCESSOR_OFCORES">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="PROCESSOR_SMPCPUS" class="col-lg-3 control-label"><%=("Processor SMP Cpus")%></label>
+      <div class="col-lg-9">
+        <input type="text" class="form-control" id="PROCESSOR_SMPCPUS" name="PROCESSOR_SMPCPUS">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="PROCESSOR_INTEGRATEDGRAPHIC" class="col-lg-3 control-label"><%=("Integrated Graphic")%></label>
+      <div class="col-lg-9">
+        <input type="text" class="form-control" id="PROCESSOR_INTEGRATEDGRAPHIC" name="PROCESSOR_INTEGRATEDGRAPHIC">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="PROCESSOR_CACHEL1" class="col-lg-3 control-label"><%=("Cache L1")%></label>
+      <div class="col-lg-5">
+        <input type="text" class="form-control" id="PROCESSOR_CACHEL1" name="PROCESSOR_CACHEL1">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="PROCESSOR_CACHEL2" class="col-lg-3 control-label"><%=("Cache L2")%></label>
+      <div class="col-lg-5">
+        <input type="text" class="form-control" id="PROCESSOR_CACHEL2" name="PROCESSOR_CACHEL2">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="PROCESSOR_CACHEL3" class="col-lg-3 control-label"><%=("Cache L3")%></label>
+      <div class="col-lg-5">
+        <input type="text" class="form-control" id="PROCESSOR_CACHEL3" name="PROCESSOR_CACHEL3">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="PROCESSOR_MARKET" class="col-lg-3 control-label"><%=("Processor Market")%></label>
+      <div class="col-lg-9">
+        <input type="text" class="form-control" id="PROCESSOR_MARKET" name="PROCESSOR_MARKET">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <div class="col-lg-10 col-lg-offset-4">
+        <button type="submit" class="btn btn-primary"><%=("Add")%></button>
+      </div>
+    </div>
+  </fieldset>
+</form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>   
+<<WExtra>>
+<<WFooter>> 
+</body>
+</html>

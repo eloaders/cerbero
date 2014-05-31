@@ -34,23 +34,23 @@ msgstr ""
 msgid "Back to Homepage"
 msgstr ""
 
-#: DUpload.webpage:16
+#: DUpload.webpage:20
 msgid "Upload Report"
 msgstr ""
 
-#: DUpload.webpage:20
+#: DUpload.webpage:24
 msgid "Validate"
 msgstr ""
 
-#: DUpload.webpage:22
+#: DUpload.webpage:26
 msgid "Please browse file to publish data online"
 msgstr ""
 
-#: DUpload.webpage:35
+#: DUpload.webpage:39
 msgid "Redirect to"
 msgstr ""
 
-#: Donate.webpage:13 Page.module:7 WExtra.webpage:22
+#: Donate.webpage:13 Page.module:7 WExtra.webpage:19
 msgid "Donate"
 msgstr ""
 
@@ -126,12 +126,18 @@ msgstr ""
 msgid "Homepage"
 msgstr ""
 
-#: MDownload.module:4
-msgid "Downloads"
-msgstr ""
-
+#: MCPUDBAmdAdd.module:5 MCPUDBAtomAdd.module:5 MCPUDBIntelAdd.module:5
 #: MLatestAdded.module:11 Upload.module:5
 msgid "VALD"
+msgstr ""
+
+#: MCPUDBAmdDelete.module:5 MCPUDBAtomDelete.module:5
+#: MCPUDBIntelDelete.module:5
+msgid "DATABASE"
+msgstr ""
+
+#: MDownload.module:4
+msgid "Downloads"
 msgstr ""
 
 #: MNavbar.module:14 WProfile.webpage:31
@@ -154,15 +160,15 @@ msgstr ""
 msgid "Sign Up"
 msgstr ""
 
-#: MQuery.module:16
+#: MQuery.module:19
 msgid "Search - I-Nex - Cerbero"
 msgstr ""
 
-#: Page.module:13 Translators.webpage:45 WExtra.webpage:19
+#: Page.module:13 Translators.webpage:45 WExtra.webpage:16
 msgid "Translators"
 msgstr ""
 
-#: Page.module:17 Team.webpage:46 WExtra.webpage:16
+#: Page.module:17 Team.webpage:46 WExtra.webpage:13
 msgid "Team"
 msgstr ""
 
@@ -178,8 +184,9 @@ msgstr ""
 msgid "System commands outputs"
 msgstr ""
 
-#: WAdminPanel.webpage:10 WCPUDBAtom.webpage:13 WCPUDBAtomEdit.webpage:14
-#: WWidgetCPU.webpage:2
+#: WAdminPanel.webpage:10 WCPUDBAmdAdd.webpage:10 WCPUDBAmdEdit.webpage:15
+#: WCPUDBAtomAdd.webpage:10 WCPUDBAtomEdit.webpage:15
+#: WCPUDBIntelAdd.webpage:10 WCPUDBIntelEdit.webpage:15 WWidgetCPU.webpage:13
 msgid "CPU Specifications"
 msgstr ""
 
@@ -187,24 +194,214 @@ msgstr ""
 msgid "Save"
 msgstr ""
 
-#: WCPUDBAtom.webpage:20
+#: WCPUDBAmd.webpage:18
+msgid "AMD CPU Database"
+msgstr ""
+
+#: WCPUDBAmd.webpage:25 WCPUDBAtom.webpage:25 WCPUDBIntel.webpage:25
 msgid "CPU Model Name"
 msgstr ""
 
-#: WCPUDBAtom.webpage:21
+#: WCPUDBAmd.webpage:26 WCPUDBAtom.webpage:26 WCPUDBIntel.webpage:26
+msgid "Process Size"
+msgstr ""
+
+#: WCPUDBAmd.webpage:27 WCPUDBAmdAdd.webpage:400 WCPUDBAmdEdit.webpage:413
+#: WCPUDBAtom.webpage:27 WCPUDBAtomAdd.webpage:400 WCPUDBAtomEdit.webpage:413
+#: WCPUDBIntel.webpage:27 WCPUDBIntelAdd.webpage:400
+#: WCPUDBIntelEdit.webpage:413
+msgid "Integrated Graphic"
+msgstr ""
+
+#: WCPUDBAmd.webpage:28 WCPUDBAtom.webpage:28 WCPUDBIntel.webpage:28
 msgid "CPU Frequency"
 msgstr ""
 
-#: WCPUDBAtom.webpage:22
+#: WCPUDBAmd.webpage:29 WCPUDBAtom.webpage:29 WCPUDBIntel.webpage:29
+msgid "Turboclock"
+msgstr ""
+
+#: WCPUDBAmd.webpage:30 WCPUDBAtom.webpage:30 WCPUDBIntel.webpage:30
 msgid "CPU Package"
 msgstr ""
 
-#: WCPUDBAtom.webpage:23
+#: WCPUDBAmd.webpage:31 WCPUDBAtom.webpage:31 WCPUDBIntel.webpage:31
 msgid "CPU Codename"
 msgstr ""
 
-#: WCPUDBAtom.webpage:24
+#: WCPUDBAmd.webpage:32 WCPUDBAtom.webpage:32 WCPUDBIntel.webpage:32
 msgid "CPU Edit"
+msgstr ""
+
+#: WCPUDBAmd.webpage:91 WCPUDBAtom.webpage:91 WCPUDBIntel.webpage:91
+msgid "Add Cpu to database"
+msgstr ""
+
+#: WCPUDBAmdAdd.webpage:19 WCPUDBAmdEdit.webpage:24 WCPUDBAtomAdd.webpage:19
+#: WCPUDBAtomEdit.webpage:24 WCPUDBIntelAdd.webpage:19
+#: WCPUDBIntelEdit.webpage:24
+msgid "Select CPU Logo"
+msgstr ""
+
+#: WCPUDBAmdAdd.webpage:267 WCPUDBAmdEdit.webpage:280
+#: WCPUDBAtomAdd.webpage:267 WCPUDBAtomEdit.webpage:280
+#: WCPUDBIntelAdd.webpage:267 WCPUDBIntelEdit.webpage:280
+msgid "Processor Model Name"
+msgstr ""
+
+#: WCPUDBAmdAdd.webpage:274 WCPUDBAmdEdit.webpage:287
+#: WCPUDBAtomAdd.webpage:274 WCPUDBAtomEdit.webpage:287
+#: WCPUDBIntelAdd.webpage:274 WCPUDBIntelEdit.webpage:287
+msgid "Processor Socket"
+msgstr ""
+
+#: WCPUDBAmdAdd.webpage:281 WCPUDBAmdEdit.webpage:294
+#: WCPUDBAtomAdd.webpage:281 WCPUDBAtomEdit.webpage:294
+#: WCPUDBIntelAdd.webpage:281 WCPUDBIntelEdit.webpage:294
+msgid "Processor Process Size"
+msgstr ""
+
+#: WCPUDBAmdAdd.webpage:288 WCPUDBAmdEdit.webpage:301
+#: WCPUDBAtomAdd.webpage:288 WCPUDBAtomEdit.webpage:301
+#: WCPUDBIntelAdd.webpage:288 WCPUDBIntelEdit.webpage:301
+msgid "Processor Transistors"
+msgstr ""
+
+#: WCPUDBAmdAdd.webpage:295 WCPUDBAmdEdit.webpage:308
+#: WCPUDBAtomAdd.webpage:295 WCPUDBAtomEdit.webpage:308
+#: WCPUDBIntelAdd.webpage:295 WCPUDBIntelEdit.webpage:308
+msgid "Processor Die Size"
+msgstr ""
+
+#: WCPUDBAmdAdd.webpage:302 WCPUDBAmdEdit.webpage:315
+#: WCPUDBAtomAdd.webpage:302 WCPUDBAtomEdit.webpage:315
+#: WCPUDBIntelAdd.webpage:302 WCPUDBIntelEdit.webpage:315
+msgid "Processor Package"
+msgstr ""
+
+#: WCPUDBAmdAdd.webpage:309 WCPUDBAmdEdit.webpage:322
+#: WCPUDBAtomAdd.webpage:309 WCPUDBAtomEdit.webpage:322
+#: WCPUDBIntelAdd.webpage:309 WCPUDBIntelEdit.webpage:322
+msgid "Processor tCaseMax"
+msgstr ""
+
+#: WCPUDBAmdAdd.webpage:316 WCPUDBAmdEdit.webpage:329
+#: WCPUDBAtomAdd.webpage:316 WCPUDBAtomEdit.webpage:329
+#: WCPUDBIntelAdd.webpage:316 WCPUDBIntelEdit.webpage:329
+msgid "Processor Frequency"
+msgstr ""
+
+#: WCPUDBAmdAdd.webpage:323 WCPUDBAmdEdit.webpage:336
+#: WCPUDBAtomAdd.webpage:323 WCPUDBAtomEdit.webpage:336
+#: WCPUDBIntelAdd.webpage:323 WCPUDBIntelEdit.webpage:336
+msgid "Processor Turbo Clock"
+msgstr ""
+
+#: WCPUDBAmdAdd.webpage:330 WCPUDBAmdEdit.webpage:343
+#: WCPUDBAtomAdd.webpage:330 WCPUDBAtomEdit.webpage:343
+#: WCPUDBIntelAdd.webpage:330 WCPUDBIntelEdit.webpage:343
+msgid "Processor Multiplier"
+msgstr ""
+
+#: WCPUDBAmdAdd.webpage:337 WCPUDBAmdEdit.webpage:350
+#: WCPUDBAtomAdd.webpage:337 WCPUDBAtomEdit.webpage:350
+#: WCPUDBIntelAdd.webpage:337 WCPUDBIntelEdit.webpage:350
+msgid "Processor Voltage"
+msgstr ""
+
+#: WCPUDBAmdAdd.webpage:344 WCPUDBAmdEdit.webpage:357
+#: WCPUDBAtomAdd.webpage:344 WCPUDBAtomEdit.webpage:357
+#: WCPUDBIntelAdd.webpage:344 WCPUDBIntelEdit.webpage:357
+msgid "Processor TDP"
+msgstr ""
+
+#: WCPUDBAmdAdd.webpage:351 WCPUDBAmdEdit.webpage:364
+#: WCPUDBAtomAdd.webpage:351 WCPUDBAtomEdit.webpage:364
+#: WCPUDBIntelAdd.webpage:351 WCPUDBIntelEdit.webpage:364
+msgid "Processor Codename"
+msgstr ""
+
+#: WCPUDBAmdAdd.webpage:358 WCPUDBAmdEdit.webpage:371
+#: WCPUDBAtomAdd.webpage:358 WCPUDBAtomEdit.webpage:371
+#: WCPUDBIntelAdd.webpage:358 WCPUDBIntelEdit.webpage:371
+msgid "Processor Part"
+msgstr ""
+
+#: WCPUDBAmdAdd.webpage:365 WCPUDBAmdEdit.webpage:378
+#: WCPUDBAtomAdd.webpage:365 WCPUDBAtomEdit.webpage:378
+#: WCPUDBIntelAdd.webpage:365 WCPUDBIntelEdit.webpage:378
+msgid "Production Status"
+msgstr ""
+
+#: WCPUDBAmdAdd.webpage:372 WCPUDBAmdEdit.webpage:385
+#: WCPUDBAtomAdd.webpage:372 WCPUDBAtomEdit.webpage:385
+#: WCPUDBIntelAdd.webpage:372 WCPUDBIntelEdit.webpage:385
+msgid "Processor Released"
+msgstr ""
+
+#: WCPUDBAmdAdd.webpage:379 WCPUDBAmdEdit.webpage:392
+#: WCPUDBAtomAdd.webpage:379 WCPUDBAtomEdit.webpage:392
+#: WCPUDBIntelAdd.webpage:379 WCPUDBIntelEdit.webpage:392
+msgid "Processor Memory Support"
+msgstr ""
+
+#: WCPUDBAmdAdd.webpage:386 WCPUDBAmdEdit.webpage:399
+#: WCPUDBAtomAdd.webpage:386 WCPUDBAtomEdit.webpage:399
+#: WCPUDBIntelAdd.webpage:386 WCPUDBIntelEdit.webpage:399
+msgid "Processor Of Cores"
+msgstr ""
+
+#: WCPUDBAmdAdd.webpage:393 WCPUDBAmdEdit.webpage:406
+#: WCPUDBAtomAdd.webpage:393 WCPUDBAtomEdit.webpage:406
+#: WCPUDBIntelAdd.webpage:393 WCPUDBIntelEdit.webpage:406
+msgid "Processor SMP Cpus"
+msgstr ""
+
+#: WCPUDBAmdAdd.webpage:407 WCPUDBAmdEdit.webpage:420
+#: WCPUDBAtomAdd.webpage:407 WCPUDBAtomEdit.webpage:420
+#: WCPUDBIntelAdd.webpage:407 WCPUDBIntelEdit.webpage:420
+msgid "Cache L1"
+msgstr ""
+
+#: WCPUDBAmdAdd.webpage:414 WCPUDBAmdEdit.webpage:427
+#: WCPUDBAtomAdd.webpage:414 WCPUDBAtomEdit.webpage:427
+#: WCPUDBIntelAdd.webpage:414 WCPUDBIntelEdit.webpage:427
+msgid "Cache L2"
+msgstr ""
+
+#: WCPUDBAmdAdd.webpage:421 WCPUDBAmdEdit.webpage:434
+#: WCPUDBAtomAdd.webpage:421 WCPUDBAtomEdit.webpage:434
+#: WCPUDBIntelAdd.webpage:421 WCPUDBIntelEdit.webpage:434
+msgid "Cache L3"
+msgstr ""
+
+#: WCPUDBAmdAdd.webpage:428 WCPUDBAmdEdit.webpage:441
+#: WCPUDBAtomAdd.webpage:428 WCPUDBAtomEdit.webpage:441
+#: WCPUDBIntelAdd.webpage:428 WCPUDBIntelEdit.webpage:441
+msgid "Processor Market"
+msgstr ""
+
+#: WCPUDBAmdAdd.webpage:436 WCPUDBAtomAdd.webpage:436
+#: WCPUDBIntelAdd.webpage:436
+msgid "Add"
+msgstr ""
+
+#: WCPUDBAmdEdit.webpage:273 WCPUDBAtomEdit.webpage:273
+#: WCPUDBIntelEdit.webpage:273
+msgid "Current Logo"
+msgstr ""
+
+#: WCPUDBAmdEdit.webpage:449 WCPUDBAtomEdit.webpage:449
+#: WCPUDBIntelEdit.webpage:449 WProfile.webpage:149
+msgid "Change"
+msgstr ""
+
+#: WCPUDBAtom.webpage:18
+msgid "Atom CPU Database"
+msgstr ""
+
+#: WCPUDBIntel.webpage:18
+msgid "Intel CPU Database"
 msgstr ""
 
 #: WCookies.webpage:0
@@ -227,6 +424,10 @@ msgstr ""
 msgid "About Cerbero"
 msgstr ""
 
+#: WExtra.webpage:22
+msgid "Privacy Policy"
+msgstr ""
+
 #: WExtra.webpage:33
 msgid "Support"
 msgstr ""
@@ -247,15 +448,11 @@ msgstr ""
 msgid "Something Legal"
 msgstr ""
 
-#: WExtra.webpage:59
-msgid "Privacy Policy"
-msgstr ""
-
 #: WExtra.webpage:68
 msgid "Sponsors"
 msgstr ""
 
-#: WFalseQuery.webpage:10 WQuery.webpage:13
+#: WFalseQuery.webpage:10 WQuery.webpage:35
 msgid "Search by:"
 msgstr ""
 
@@ -271,27 +468,31 @@ msgstr ""
 msgid "The minimum number of characters = 4"
 msgstr ""
 
-#: WHeroWidget.webpage:17
+#: WHeroWidget.webpage:23
 msgid "Total registered users"
 msgstr ""
 
-#: WHeroWidget.webpage:28
+#: WHeroWidget.webpage:34
 msgid "Total reports in database"
 msgstr ""
 
-#: WHeroWidget.webpage:50
+#: WHeroWidget.webpage:56
 msgid "Today submitted reports"
 msgstr ""
 
-#: WJumbotron.webpage:31
+#: WJumbotron.webpage:30
 msgid "Open-Source Linux CPU, GPU, Motherboard Database Website"
+msgstr ""
+
+#: WJumbotron.webpage:35
+msgid "Share"
 msgstr ""
 
 #: WLogin.webpage:4 WLoginnedin.webpage:4
 msgid "Cerbero - Login"
 msgstr ""
 
-#: WLogin.webpage:23 WLoginnedin.webpage:28
+#: WLogin.webpage:23 WLoginnedin.webpage:29
 msgid "Please sign in"
 msgstr ""
 
@@ -299,7 +500,7 @@ msgstr ""
 msgid "Remember Me"
 msgstr ""
 
-#: WLoginnedin.webpage:31
+#: WLoginnedin.webpage:32
 msgid "You are currently logged in."
 msgstr ""
 
@@ -315,32 +516,64 @@ msgstr ""
 msgid "Latest added"
 msgstr ""
 
-#: WNavbar.webpage:28
-msgid "Forum"
+#: WNavbar.webpage:27
+msgid "CPU Database"
 msgstr ""
 
 #: WNavbar.webpage:29
-msgid "I-Nex Homepage"
+msgid "Forum"
 msgstr ""
 
 #: WNavbar.webpage:30
+msgid "I-Nex Homepage"
+msgstr ""
+
+#: WNavbar.webpage:31
 msgid "Install I-Nex"
 msgstr ""
 
-#: WNavbar.webpage:37
+#: WNavbar.webpage:38
 msgid "Search by CPU Name"
 msgstr ""
 
-#: WNavbar.webpage:66
+#: WNavbar.webpage:67
 msgid "PA"
 msgstr ""
 
-#: WNavbar.webpage:67
+#: WNavbar.webpage:68
 msgid "CList"
 msgstr ""
 
-#: WNavbar.webpage:68
+#: WNavbar.webpage:69
 msgid "CAdd"
+msgstr ""
+
+#: WPageHeader.webpage:5
+msgid "Linux Hardware Database (CLHD)"
+msgstr ""
+
+#: WProcess.webpage:58
+msgid "Install I-Nex app"
+msgstr ""
+
+#: WProcess.webpage:62
+msgid "Register in Cerbero"
+msgstr ""
+
+#: WProcess.webpage:66
+msgid "Get Private API Key"
+msgstr ""
+
+#: WProcess.webpage:70
+msgid "Click Validate Button"
+msgstr ""
+
+#: WProcess.webpage:74
+msgid "Open link in default web browser"
+msgstr ""
+
+#: WProcess.webpage:78
+msgid "View your hardware details via web"
 msgstr ""
 
 #: WProfile.webpage:32
@@ -380,7 +613,7 @@ msgid "About You"
 msgstr ""
 
 #: WProfile.webpage:106
-msgid "Some text about you :)"
+msgid "Some text about you"
 msgstr ""
 
 #: WProfile.webpage:125
@@ -399,33 +632,29 @@ msgstr ""
 msgid "Repeat new password"
 msgstr ""
 
-#: WProfile.webpage:149
-msgid "Change"
-msgstr ""
-
 #: WProfile.webpage:180
 msgid "Remember! I-Nex use only Private API Key to publish data online"
 msgstr ""
 
-#: WProfile.webpage:187 WQuery.webpage:19 WWidgetLatestAdded.webpage:11
+#: WProfile.webpage:187 WQuery.webpage:41 WWidgetLatestAdded.webpage:33
 msgid "CPU Logo"
 msgstr ""
 
-#: WProfile.webpage:188 WQuery.webpage:20 WWidgetLatestAdded.webpage:12
+#: WProfile.webpage:188 WQuery.webpage:42 WWidgetLatestAdded.webpage:34
 msgid "CPU and GPU"
 msgstr ""
 
-#: WProfile.webpage:189 WQuery.webpage:21 WWidgetLatestAdded.webpage:13
+#: WProfile.webpage:189 WQuery.webpage:43 WWidgetLatestAdded.webpage:35
 #: WWidgetMobo.webpage:2
 msgid "Motherboard"
 msgstr ""
 
-#: WProfile.webpage:190 WQuery.webpage:22 WWidgetDistro.webpage:2
-#: WWidgetLatestAdded.webpage:14
+#: WProfile.webpage:190 WQuery.webpage:44 WWidgetDistro.webpage:2
+#: WWidgetLatestAdded.webpage:36
 msgid "Distribution"
 msgstr ""
 
-#: WProfile.webpage:191 WQuery.webpage:23 WWidgetLatestAdded.webpage:15
+#: WProfile.webpage:191 WQuery.webpage:45 WWidgetLatestAdded.webpage:37
 msgid "Link"
 msgstr ""
 
@@ -449,123 +678,123 @@ msgstr ""
 msgid "Click to return on the top page"
 msgstr ""
 
-#: WWidgetCPU.webpage:12 WWidgetGPU.webpage:11
+#: WWidgetCPU.webpage:42 WWidgetGPU.webpage:11
 msgid "Model:"
 msgstr ""
 
-#: WWidgetCPU.webpage:16
+#: WWidgetCPU.webpage:46
 msgid "CPU Clock:"
 msgstr ""
 
-#: WWidgetCPU.webpage:20
+#: WWidgetCPU.webpage:50
 msgid "CPU Clock By OS:"
 msgstr ""
 
-#: WWidgetCPU.webpage:24
+#: WWidgetCPU.webpage:54
 msgid "CPU Clock By IC:"
 msgstr ""
 
-#: WWidgetCPU.webpage:28
+#: WWidgetCPU.webpage:58
 msgid "CPU Clock Measure:"
 msgstr ""
 
-#: WWidgetCPU.webpage:32
+#: WWidgetCPU.webpage:62
 msgid "CPU Mark TSC:"
 msgstr ""
 
-#: WWidgetCPU.webpage:36
+#: WWidgetCPU.webpage:66
 msgid "Integrated GPU:"
 msgstr ""
 
-#: WWidgetCPU.webpage:40
+#: WWidgetCPU.webpage:70
 msgid "Family:"
 msgstr ""
 
-#: WWidgetCPU.webpage:48
+#: WWidgetCPU.webpage:78
 msgid "Stepping:"
 msgstr ""
 
-#: WWidgetCPU.webpage:52
+#: WWidgetCPU.webpage:82
 msgid "Cores:"
 msgstr ""
 
-#: WWidgetCPU.webpage:56
+#: WWidgetCPU.webpage:86
 msgid "Phy ID:"
 msgstr ""
 
-#: WWidgetCPU.webpage:60
+#: WWidgetCPU.webpage:90
 msgid "Adress sizes:"
 msgstr ""
 
-#: WWidgetCPU.webpage:64
+#: WWidgetCPU.webpage:94
 msgid "Bogomips:"
 msgstr ""
 
-#: WWidgetCPU.webpage:68
+#: WWidgetCPU.webpage:98
 msgid "Flags:"
 msgstr ""
 
-#: WWidgetCPU.webpage:81
+#: WWidgetCPU.webpage:111
 msgid "More"
 msgstr ""
 
-#: WWidgetCPU.webpage:87
+#: WWidgetCPU.webpage:117
 msgid "x86 64-Bit Extensions:"
 msgstr ""
 
-#: WWidgetCPU.webpage:91
+#: WWidgetCPU.webpage:121
 msgid "Hardware Virtualization:"
 msgstr ""
 
-#: WWidgetCPU.webpage:97
+#: WWidgetCPU.webpage:127
 msgid "Hyper Threading:"
 msgstr ""
 
-#: WWidgetCPU.webpage:104
+#: WWidgetCPU.webpage:134
 msgid "Hyper Transport:"
 msgstr ""
 
-#: WWidgetCPU.webpage:111
+#: WWidgetCPU.webpage:141
 msgid "Power management:"
 msgstr ""
 
-#: WWidgetCPU.webpage:120
+#: WWidgetCPU.webpage:150
 msgid "Cache L1 Data:"
 msgstr ""
 
-#: WWidgetCPU.webpage:122
+#: WWidgetCPU.webpage:152
 msgid "Cache L1 Instruction:"
 msgstr ""
 
-#: WWidgetCPU.webpage:124
+#: WWidgetCPU.webpage:154
 msgid "Cache L1 Assoc:"
 msgstr ""
 
-#: WWidgetCPU.webpage:128
+#: WWidgetCPU.webpage:158
 msgid "Cache L2:"
 msgstr ""
 
-#: WWidgetCPU.webpage:130
+#: WWidgetCPU.webpage:160
 msgid "Cache L2 Assoc:"
 msgstr ""
 
-#: WWidgetCPU.webpage:132
+#: WWidgetCPU.webpage:162
 msgid "Cache L2 Cacheline:"
 msgstr ""
 
-#: WWidgetCPU.webpage:136
+#: WWidgetCPU.webpage:166
 msgid "Cache L3:"
 msgstr ""
 
-#: WWidgetCPU.webpage:138
+#: WWidgetCPU.webpage:168
 msgid "Cache L3 Assoc:"
 msgstr ""
 
-#: WWidgetCPU.webpage:140
+#: WWidgetCPU.webpage:170
 msgid "Cache L3 Cacheline:"
 msgstr ""
 
-#: WWidgetCPU.webpage:146
+#: WWidgetCPU.webpage:176
 msgid "SSE Size:"
 msgstr ""
 
@@ -801,7 +1030,7 @@ msgstr ""
 msgid "Latest stable:"
 msgstr ""
 
-#: WWidgetLatestAdded.webpage:5 WWidgetNotAdded.webpage:2
+#: WWidgetLatestAdded.webpage:27 WWidgetNotAdded.webpage:2
 msgid "Latest Added"
 msgstr ""
 

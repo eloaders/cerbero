@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <title><%=("Cerbero - Register")%></title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="flatly/css/font-awesome.css">
-<link rel="stylesheet" href="flatly/bootstrap.css" rel="stylesheet" id="bootstrap-css">
+<link href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/flatly/bootstrap.min.css" rel="stylesheet">
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
 <style type="text/css">
 body{background-color:#444;background:url(Parallax/pinlayer2.png),url(Parallax/pinlayer1.png),url(Parallax/back.png)}
 .vertical-offset-100{padding-top:100px}

@@ -14,27 +14,27 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: WQuery.webpage:13
+#: WQuery.webpage:35
 msgid "Search by:"
 msgstr ""
 
-#: WQuery.webpage:19
+#: WQuery.webpage:41
 msgid "CPU Logo"
 msgstr ""
 
-#: WQuery.webpage:20
+#: WQuery.webpage:42
 msgid "CPU and GPU"
 msgstr ""
 
-#: WQuery.webpage:21
+#: WQuery.webpage:43
 msgid "Motherboard"
 msgstr ""
 
-#: WQuery.webpage:22
+#: WQuery.webpage:44
 msgid "Distribution"
 msgstr ""
 
-#: WQuery.webpage:23
+#: WQuery.webpage:45
 msgid "Link"
 msgstr ""
 

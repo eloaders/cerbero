@@ -6,6 +6,28 @@ Dim i As Integer
 <<WHead>>
 <body>
 <<WNavbar>>
+<script type="text/javascript">
+$(document).ready(function() {
+
+  $('.po-markup > .po-link').popover({
+    trigger: 'hover',
+    html: true,  // must have if HTML is contained in popover
+
+    // get the title and conent
+    title: function() {
+      return $(this).parent().find('.po-title').html();
+    },
+    content: function() {
+      return $(this).parent().find('.po-body').html();
+    },
+
+    container: 'body',
+    placement: 'right'
+
+  });
+
+});  
+</script>
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
@@ -51,7 +73,19 @@ Dim i As Integer
                     <strong><%Print Replace(MQuery.QWEry["DISTRO_VENDOR"], "Distro Vendor:", "") & " " & Replace(MQuery.QWEry["DISTRO_VENDOR2"], "Distro Release:", "")%></strong>
                   </td> 
                   <td class="td-actions"> 
-                    <a href="<%Print Global.WEBSITE_ROOT_URL_HTTP & Application.Root & "?validate=" & MQuery.CPUusageLines[i]%>" target="_blank" class="btn btn-primary btn-xs" role="button"><i class="fa fa-external-link"></i></a>
+                    <div class="po-markup">
+                    <br>
+                      <a href="<%Print Global.WEBSITE_ROOT_URL_HTTP & Application.Root & "?validate=" & MQuery.CPUusageLines[i]%>" target="_blank" class="po-link btn btn-primary btn-xs" role="button"><i class="fa fa-external-link"></i></a>
+                    <div class="po-content hidden">
+                      <div class="po-title">
+                        <img src="<%Print MQuery.QWEry["SCREENSHOT_URL"]%>" alt="I-Nex Screenshot" width="249" height="319" />
+                      </div> <!-- ./po-title -->
+                    <div class="po-body">
+                      <p>
+                      </p> 
+                    </div><!-- ./po-body -->
+                    </div>  <!-- ./po-content -->
+                    </div><!-- ./po-markup -->
                   </tr>
                 <%Next%>
                 </tbody> 

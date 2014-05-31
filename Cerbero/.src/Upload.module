@@ -139,6 +139,6 @@ End
 Public Function ReportSave()
 
   File.Save(Global.WHEREIS_SITE_ROOT & "/ValidCache/" & VALIDATE_NEW_ID & "", JSON.Encode(cpuiddata))
-  Try Shell "cat " & Global.WHEREIS_SITE_ROOT & "/ValidCache/" & VALIDATE_NEW_ID & " | /usr/bin/jsontool -j >" & Global.WHEREIS_SITE_ROOT & "/ValidDB/" & DDATE_NOW & "/" & VALIDATE_NEW_ID & ".json" Wait
+  Try Shell "cat " & Global.WHEREIS_SITE_ROOT & "/ValidCache/" & VALIDATE_NEW_ID & " | python -mjson.tool >" & Global.WHEREIS_SITE_ROOT & "/ValidDB/" & DDATE_NOW & "/" & VALIDATE_NEW_ID & ".json" Wait
   
 End

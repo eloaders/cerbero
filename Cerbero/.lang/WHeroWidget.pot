@@ -14,15 +14,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: WHeroWidget.webpage:17
+#: WHeroWidget.webpage:23
 msgid "Total registered users"
 msgstr ""
 
-#: WHeroWidget.webpage:28
+#: WHeroWidget.webpage:34
 msgid "Total reports in database"
 msgstr ""
 
-#: WHeroWidget.webpage:50
+#: WHeroWidget.webpage:56
 msgid "Today submitted reports"
 msgstr ""
 

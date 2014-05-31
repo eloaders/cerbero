@@ -57,5 +57,7 @@ Dim URL As String = Global.WEBSITE_ROOT_URL_HTTP & "/Distlogos/"
   Return URL & "LinuxDeepin.png" 
   Case Like "*netrunner*"
   Return URL & "netrunner.png"
+  Case Like "*kdu*"
+  Return URL & "kdu.png"
  End Select
  End

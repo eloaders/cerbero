@@ -26,31 +26,35 @@ msgstr ""
 msgid "Latest added"
 msgstr ""
 
-#: WNavbar.webpage:28
-msgid "Forum"
+#: WNavbar.webpage:27
+msgid "CPU Database"
 msgstr ""
 
 #: WNavbar.webpage:29
-msgid "I-Nex Homepage"
+msgid "Forum"
 msgstr ""
 
 #: WNavbar.webpage:30
+msgid "I-Nex Homepage"
+msgstr ""
+
+#: WNavbar.webpage:31
 msgid "Install I-Nex"
 msgstr ""
 
-#: WNavbar.webpage:37
+#: WNavbar.webpage:38
 msgid "Search by CPU Name"
 msgstr ""
 
-#: WNavbar.webpage:66
+#: WNavbar.webpage:67
 msgid "PA"
 msgstr ""
 
-#: WNavbar.webpage:67
+#: WNavbar.webpage:68
 msgid "CList"
 msgstr ""
 
-#: WNavbar.webpage:68
+#: WNavbar.webpage:69
 msgid "CAdd"
 msgstr ""
 

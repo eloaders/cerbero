@@ -20,7 +20,6 @@
 <script type='text/javascript'>
 $(function(){$(".social").hover(function(){$(this).find(".shutter").stop(true,true).animate({bottom:"-36px"},{duration:300,easing:"easeOutBounce"})},function(){$(this).find(".shutter").stop(true,true).animate({bottom:0},{duration:300,easing:"easeOutBounce"})})})
 </script>
-
 <div class="container">
   <div class="jumbotron">
     <div class="row">
@@ -34,7 +33,7 @@ $(function(){$(".social").hover(function(){$(this).find(".shutter").stop(true,tr
           <div class="icon"></div>
           <div class="shutter_frame">
             <div class="shutter">
-              <div class="number">Share</div>
+              <div class="number"><%=("Share")%></div>
               <div class="bar"></div>
               <div class="text">Twitter</div>
             </div>
@@ -45,7 +44,7 @@ $(function(){$(".social").hover(function(){$(this).find(".shutter").stop(true,tr
           </div>
           <div class="shutter_frame">
             <div class="shutter">
-              <div class="number">Share</div>
+              <div class="number"><%=("Share")%></div>
               <div class="bar"></div>
               <div class="text">Google+</div>
             </div>
@@ -55,7 +54,7 @@ $(function(){$(".social").hover(function(){$(this).find(".shutter").stop(true,tr
           <div class="icon"></div>
           <div class="shutter_frame">
             <div class="shutter">
-              <div class="number">Share</div>
+              <div class="number"><%=("Share")%></div>
               <div class="bar"></div>
               <div class="text">Facebook</div>
             </div>

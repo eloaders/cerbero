@@ -18,16 +18,20 @@ msgstr ""
 msgid "About Cerbero"
 msgstr ""
 
-#: WExtra.webpage:16
+#: WExtra.webpage:13
 msgid "Team"
 msgstr ""
 
-#: WExtra.webpage:19
+#: WExtra.webpage:16
 msgid "Translators"
 msgstr ""
 
-#: WExtra.webpage:22
+#: WExtra.webpage:19
 msgid "Donate"
+msgstr ""
+
+#: WExtra.webpage:22
+msgid "Privacy Policy"
 msgstr ""
 
 #: WExtra.webpage:33
@@ -48,10 +52,6 @@ msgstr ""
 
 #: WExtra.webpage:55
 msgid "Something Legal"
-msgstr ""
-
-#: WExtra.webpage:59
-msgid "Privacy Policy"
 msgstr ""
 
 #: WExtra.webpage:68

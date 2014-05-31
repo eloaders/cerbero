@@ -63,7 +63,7 @@ msgid "About You"
 msgstr ""
 
 #: WProfile.webpage:106
-msgid "Some text about you :)"
+msgid "Some text about you"
 msgstr ""
 
 #: WProfile.webpage:112

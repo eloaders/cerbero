@@ -1,0 +1,84 @@
+<%MBrand.Brand_TEXT = "I-Nex - Cerbero - CPU Database"%>
+<%MBrand.Brand_URL = Global.WEBSITE_ROOT_URL_HTTP%>
+<!DOCTYPE html>
+<html lang="en">
+<<WHead>>
+<body>
+<<WNavbar>>
+<style type="text/css">
+.nav-row {
+  text-align: center;
+}
+.nav-row p {
+  padding: 5px;
+}
+.nav-row .col-md-2 {
+  background-color: #fff;
+  border: 1px solid #e0e1db;
+  border-right: none;
+}
+.nav-row .col-md-2:last-child {
+  border: 1px solid #e0e1db;
+}
+.nav-row .col-md-2:first-child {
+  border-radius: 5px 0 0 5px;
+}
+.nav-row .col-md-2:last-child {
+  border-radius: 0 5px 5px 0;
+}
+.nav-row .col-md-2:hover {
+  color: #e92d00;
+    cursor: pointer;
+}
+.nav-row .active {
+  color: #e92d00;
+  margin-top: -6px;
+  border-top: 6px solid #e92d00;
+  border-bottom: 6px solid #e92d00;
+}
+.nav-row .active:before {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 6px 6px 0;
+  border-color: #e92d00 transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+  margin-left: -6px;
+  top: 0;
+  left: 50%;
+}
+.nav-row .glyphicon {
+  padding-top: 15px;
+  font-size: 40px;
+}
+</style>
+<div class="container" style="margin-top:150px;margin-bottom:200px;">
+  <div class="row">
+    <div class="row nav-row">
+      <div class="col-md-2 col-md-offset-3">
+        <a href="<%=Application.Root%>?cpudb[atom]">
+          <span class="glyphicon glyphicon-ok"></span>
+          <p>Atom</p>
+        </a>
+      </div>
+      <div class="col-md-2">
+        <a href="<%=Application.Root%>?cpudb[intel]">
+          <span class="glyphicon glyphicon-ok"></span>
+          <p>Intel</p>
+        </a>
+      </div>
+      <div class="col-md-2">
+        <a href="<%=Application.Root%>?cpudb[amd]">
+          <span class="glyphicon glyphicon-ok"></span>
+          <p>AMD</p>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<<WExtra>>
+<<WFooter>> 
+</body>
+</html>

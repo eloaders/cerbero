@@ -103,8 +103,8 @@
     <div class="form-group">
       <label for="authorbio" class="col-lg-2 control-label"><%=("About You")%></label>
       <div class="col-lg-10">
-        <textarea class="form-control" name="authorbio" id="authorbio" rows="9" placeholder="About You"><%=Usera.USER_DATA["CERBERO_USER_AUTHOR_BIO"]%></textarea>
-        <span class="help-block"><%=("Some text about you :)")%></span>
+        <textarea class="form-control" name="authorbio" id="authorbio" rows="9" placeholder="<%=("About You")%>"><%=Usera.USER_DATA["CERBERO_USER_AUTHOR_BIO"]%></textarea>
+        <span class="help-block"><%=("Some text about you")%></span>
       </div>
     </div>
     </div>

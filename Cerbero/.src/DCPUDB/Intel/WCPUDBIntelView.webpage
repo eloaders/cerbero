@@ -1,0 +1,182 @@
+<%
+Dim RQG As Integer
+RQG = Request.Get["cpudb[intel]view"]
+%>
+<%MCPUDBIntel.IntelCPUList = JSON.Decode(File.Load(Global.WHEREIS_SITE_ROOT & "/CPUDB/intel"))%>
+<%MBrand.Brand_TEXT = MCPUDBIntel.IntelCPUList["DATABASE"][RQG]["PROCESSOR_MODEL_NAME"]%>
+<%MBrand.Brand_URL = Global.WEBSITE_ROOT_URL_HTTP%>
+<!DOCTYPE html>
+<html lang="en">
+<<WHead>>
+<body>
+<<WNavbar>>
+<style type="text/css">
+.profile 
+{
+    min-height: 355px;
+    display: inline-block;
+    }
+figcaption.ratings
+{
+    margin-top:20px;
+    }
+figcaption.ratings a
+{
+    color:#f1c40f;
+    font-size:11px;
+    }
+figcaption.ratings a:hover
+{
+    color:#f39c12;
+    text-decoration:none;
+    }
+.divider 
+{
+    border-top:1px solid rgba(0,0,0,0.1);
+    }
+.emphasis 
+{
+    border-top: 4px solid transparent;
+    }
+.emphasis:hover 
+{
+    border-top: 4px solid #1abc9c;
+    }
+.emphasis h2
+{
+    margin-bottom:0;
+    }
+span.tags 
+{
+    background: #1abc9c;
+    border-radius: 2px;
+    color: #f5f5f5;
+    font-weight: bold;
+    padding: 2px 4px;
+    }
+.dropdown-menu 
+{
+    background-color: #34495e;    
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    width: 250px;
+    margin-left: -125px;
+    left: 50%;
+    }
+.dropdown-menu .divider 
+{
+    background:none;    
+    }
+.dropdown-menu>li>a
+{
+    color:#f5f5f5;
+    }
+.dropup .dropdown-menu 
+{
+    margin-bottom:10px;
+    }
+.dropup .dropdown-menu:before 
+{
+    content: "";
+    border-top: 10px solid #34495e;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    margin-left: -10px;
+    z-index: 10;
+    }    
+</style>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6">
+            <div class="well profile">
+              <div class="col-sm-12">
+                <div class="col-xs-12 col-sm-8">
+                    <h2><%Print MCPUDBIntel.IntelCPUList["DATABASE"][RQG]["PROCESSOR_MODEL_NAME"]%></h2>
+                    <p><strong>Socket: </strong> <%Print MCPUDBIntel.IntelCPUList["DATABASE"][RQG]["PROCESSOR_SOCKET"]%> </p>
+                    <p><strong>Process Size: </strong> <%Print MCPUDBIntel.IntelCPUList["DATABASE"][RQG]["PROCESSOR_PROCESS_SIZE"]%> </p>
+                    <p><strong>Transistors: </strong> <%Print MCPUDBIntel.IntelCPUList["DATABASE"][RQG]["PROCESSOR_TRANSISTORS"]%> </p>
+                    <p><strong>Die Size: </strong> <%Print MCPUDBIntel.IntelCPUList["DATABASE"][RQG]["PROCESSOR_DIE_SIZE"]%> </p>
+                    <p><strong>Package: </strong> <%Print MCPUDBIntel.IntelCPUList["DATABASE"][RQG]["PROCESSOR_PACKAGE"]%> </p>
+                    <p><strong>TCaseMax: </strong> <%Print MCPUDBIntel.IntelCPUList["DATABASE"][RQG]["PROCESSOR_TCASEMAX"]%> </p>
+                    <p><strong>Frequency: </strong> <%Print MCPUDBIntel.IntelCPUList["DATABASE"][RQG]["PROCESSOR_FREQUENCY"]%> </p>
+                    <p><strong>Turboclock: </strong> <%Print MCPUDBIntel.IntelCPUList["DATABASE"][RQG]["PROCESSOR_TURBOCLOCK"]%> </p>
+                    <p><strong>Multiplier: </strong> <%Print MCPUDBIntel.IntelCPUList["DATABASE"][RQG]["PROCESSOR_MULTIPLIER"]%> </p>
+                    <p><strong>Voltage: </strong> <%Print MCPUDBIntel.IntelCPUList["DATABASE"][RQG]["PROCESSOR_VOLTAGE"]%> </p>
+                    <p><strong>TDP: </strong> <%Print MCPUDBIntel.IntelCPUList["DATABASE"][RQG]["PROCESSOR_TDP"]%> </p>
+                    <p><strong>Codename: </strong> <%Print MCPUDBIntel.IntelCPUList["DATABASE"][RQG]["PROCESSOR_CODENAME"]%> </p>
+                    <p><strong>Part: </strong> <%Print MCPUDBIntel.IntelCPUList["DATABASE"][RQG]["PROCESSOR_PART"]%> </p>
+                    <p><strong>Memory Support: </strong> <%Print MCPUDBIntel.IntelCPUList["DATABASE"][RQG]["PROCESSOR_MEMORYSUPPORT"]%> </p>
+                    <p><strong>Of Cores: </strong> <%Print MCPUDBIntel.IntelCPUList["DATABASE"][RQG]["PROCESSOR_OFCORES"]%> </p>
+                    <p><strong>SMP Cpus: </strong> <%Print MCPUDBIntel.IntelCPUList["DATABASE"][RQG]["PROCESSOR_SMPCPUS"]%> </p>
+                    <p><strong>Integrated Graphic: </strong> <%Print MCPUDBIntel.IntelCPUList["DATABASE"][RQG]["PROCESSOR_INTEGRATEDGRAPHIC"]%> </p>
+                    <p><strong>Market: </strong> <%Print MCPUDBIntel.IntelCPUList["DATABASE"][RQG]["PROCESSOR_MARKET"]%> </p>
+                    <p><strong>Production Status: </strong> <%Print MCPUDBIntel.IntelCPUList["DATABASE"][RQG]["PROCESSOR_PRODUCTION_STATUS"]%> </p>
+                    <p><strong>Released: </strong> <%Print MCPUDBIntel.IntelCPUList["DATABASE"][RQG]["PROCESSOR_RELEASED"]%> </p>
+                    <p>
+                      <strong>Cache: L1</strong>
+                      <span class="tags"> <%Print MCPUDBIntel.IntelCPUList["DATABASE"][RQG]["PROCESSOR_CACHEL1"]%></span> 
+                    </p>
+                    <p>
+                      <strong>Cache: L2</strong>
+                      <span class="tags"> <%Print MCPUDBIntel.IntelCPUList["DATABASE"][RQG]["PROCESSOR_CACHEL2"]%></span>
+                    </p>
+                    <p>
+                      <strong>Cache: L3</strong>
+                      <span class="tags"> <%Print MCPUDBIntel.IntelCPUList["DATABASE"][RQG]["PROCESSOR_CACHEL3"]%></span>
+                    </p>
+                </div>             
+                <div class="col-xs-12 col-sm-4 text-center">
+                    <figure>
+                        <img src="<%=Global.WEBSITE_ROOT_URL_HTTP%>/LOGOS/<%=MCPUDBIntel.IntelCPUList["DATABASE"][RQG]["PROCESSOR_SOCKET_IMAGE"]%>" alt="" class="img-responsive">
+                    </figure>
+                </div>
+            </div>            
+            <div class="col-xs-12 divider text-center">
+                <div class="col-xs-12 col-sm-4 emphasis">
+                    <h2><strong> 20,7K </strong></h2>                    
+                    <p><small>Followers</small></p>
+                    <button class="btn btn-success btn-block"><span class="fa fa-plus-circle"></span> Follow </button>
+                </div>
+                <div class="col-xs-12 col-sm-4 emphasis">
+                    <h2><strong>245</strong></h2>                    
+                    <p><small>Following</small></p>
+                    <button class="btn btn-info btn-block"><span class="fa fa-user"></span> View Profile </button>
+                </div>
+                <div class="col-xs-12 col-sm-4 emphasis">
+                    <h2><strong>43</strong></h2>                    
+                    <p><small>Snippets</small></p>
+                    <div class="btn-group dropup btn-block">
+                      <button type="button" class="btn btn-primary"><span class="fa fa-gear"></span> Options </button>
+                      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                      </button>
+                      <ul class="dropdown-menu text-left" role="menu">
+                        <li><a href="#"><span class="fa fa-envelope pull-right"></span> Send an email </a></li>
+                        <li><a href="#"><span class="fa fa-list pull-right"></span> Add or remove from a list  </a></li>
+                        <li class="divider"></li>
+                        <li><a href="#"><span class="fa fa-warning pull-right"></span>Report this user for spam</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#" class="btn disabled" role="button"> Unfollow </a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>                 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>   
+  </div>   
+</div>   
+<<WExtra>>
+<<WFooter>> 
+</body>
+</html>

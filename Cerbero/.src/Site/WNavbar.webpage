@@ -25,6 +25,7 @@
             <ul class="dropdown-menu">
               <li><a href="<%=Application.Root%>"><i class="fa fa-upload"></i>  <%Print ("Upload")%></a></li>
               <li><a href="<%=Application.Root%>?added"><i class="fa fa-th-list"></i>  <%Print ("Latest added")%></a></li>
+              <li><a href="<%=Application.Root%>?cpudb"><i class="fa fa-th-list"></i>  <%Print ("CPU Database")%></a></li>
               <li class="divider"></li>
               <li><a href="http://i-nex.linux.pl/bbs/categories/i-nex-validate"><%Print ("Forum")%></a></li>
               <li><a href="http://i-nex.linux.pl"><%Print ("I-Nex Homepage")%></a></li>
@@ -65,7 +66,7 @@
                       <%If Usera.User_Logged() = True And Usera.User_IsAdmin() = True Then%>
                       <div class="btn-group">
                         <a href="<%=Application.Root%>?padm" class="btn btn-primary btn-sm active"><%=("PA")%></a>
-                        <a href="#" class="btn btn-primary btn-sm active"><%=("CList")%></a>
+                        <a href="<%=Application.Root%>?cpudb" class="btn btn-primary btn-sm active"><%=("CList")%></a>
                         <a href="#" class="btn btn-primary btn-sm active"><%=("CAdd")%></a>
                       </div>
                       <%Endif%>

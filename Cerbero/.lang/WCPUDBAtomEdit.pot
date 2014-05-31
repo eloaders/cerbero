@@ -14,7 +14,115 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: WCPUDBAtomEdit.webpage:14
+#: WCPUDBAtomEdit.webpage:15
 msgid "CPU Specifications"
+msgstr ""
+
+#: WCPUDBAtomEdit.webpage:24
+msgid "Select CPU Logo"
+msgstr ""
+
+#: WCPUDBAtomEdit.webpage:273
+msgid "Current Logo"
+msgstr ""
+
+#: WCPUDBAtomEdit.webpage:280
+msgid "Processor Model Name"
+msgstr ""
+
+#: WCPUDBAtomEdit.webpage:287
+msgid "Processor Socket"
+msgstr ""
+
+#: WCPUDBAtomEdit.webpage:294
+msgid "Processor Process Size"
+msgstr ""
+
+#: WCPUDBAtomEdit.webpage:301
+msgid "Processor Transistors"
+msgstr ""
+
+#: WCPUDBAtomEdit.webpage:308
+msgid "Processor Die Size"
+msgstr ""
+
+#: WCPUDBAtomEdit.webpage:315
+msgid "Processor Package"
+msgstr ""
+
+#: WCPUDBAtomEdit.webpage:322
+msgid "Processor tCaseMax"
+msgstr ""
+
+#: WCPUDBAtomEdit.webpage:329
+msgid "Processor Frequency"
+msgstr ""
+
+#: WCPUDBAtomEdit.webpage:336
+msgid "Processor Turbo Clock"
+msgstr ""
+
+#: WCPUDBAtomEdit.webpage:343
+msgid "Processor Multiplier"
+msgstr ""
+
+#: WCPUDBAtomEdit.webpage:350
+msgid "Processor Voltage"
+msgstr ""
+
+#: WCPUDBAtomEdit.webpage:357
+msgid "Processor TDP"
+msgstr ""
+
+#: WCPUDBAtomEdit.webpage:364
+msgid "Processor Codename"
+msgstr ""
+
+#: WCPUDBAtomEdit.webpage:371
+msgid "Processor Part"
+msgstr ""
+
+#: WCPUDBAtomEdit.webpage:378
+msgid "Production Status"
+msgstr ""
+
+#: WCPUDBAtomEdit.webpage:385
+msgid "Processor Released"
+msgstr ""
+
+#: WCPUDBAtomEdit.webpage:392
+msgid "Processor Memory Support"
+msgstr ""
+
+#: WCPUDBAtomEdit.webpage:399
+msgid "Processor Of Cores"
+msgstr ""
+
+#: WCPUDBAtomEdit.webpage:406
+msgid "Processor SMP Cpus"
+msgstr ""
+
+#: WCPUDBAtomEdit.webpage:413
+msgid "Integrated Graphic"
+msgstr ""
+
+#: WCPUDBAtomEdit.webpage:420
+msgid "Cache L1"
+msgstr ""
+
+#: WCPUDBAtomEdit.webpage:427
+msgid "Cache L2"
+msgstr ""
+
+#: WCPUDBAtomEdit.webpage:434
+msgid "Cache L3"
+msgstr ""
+
+#: WCPUDBAtomEdit.webpage:441
+msgid "Processor Market"
+msgstr ""
+
+#: WCPUDBAtomEdit.webpage:449
+msgid "Change"
 msgstr ""
 

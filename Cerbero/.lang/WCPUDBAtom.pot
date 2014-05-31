@@ -14,27 +14,43 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: WCPUDBAtom.webpage:13
-msgid "CPU Specifications"
+#: WCPUDBAtom.webpage:18
+msgid "Atom CPU Database"
 msgstr ""
 
-#: WCPUDBAtom.webpage:20
+#: WCPUDBAtom.webpage:25
 msgid "CPU Model Name"
 msgstr ""
 
-#: WCPUDBAtom.webpage:21
+#: WCPUDBAtom.webpage:26
+msgid "Process Size"
+msgstr ""
+
+#: WCPUDBAtom.webpage:27
+msgid "Integrated Graphic"
+msgstr ""
+
+#: WCPUDBAtom.webpage:28
 msgid "CPU Frequency"
 msgstr ""
 
-#: WCPUDBAtom.webpage:22
+#: WCPUDBAtom.webpage:29
+msgid "Turboclock"
+msgstr ""
+
+#: WCPUDBAtom.webpage:30
 msgid "CPU Package"
 msgstr ""
 
-#: WCPUDBAtom.webpage:23
+#: WCPUDBAtom.webpage:31
 msgid "CPU Codename"
 msgstr ""
 
-#: WCPUDBAtom.webpage:24
+#: WCPUDBAtom.webpage:32
 msgid "CPU Edit"
+msgstr ""
+
+#: WCPUDBAtom.webpage:91
+msgid "Add Cpu to database"
 msgstr ""
 

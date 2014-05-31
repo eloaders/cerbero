@@ -10,13 +10,16 @@ Public QWEry As Collection
 Public Sub Main()
   Dim SRequest As String
   SRequest = Request.Get["query"]
-
+  'SRequest = Replace(Replace(Replace(SRequest, "TM", ""), ")", ""), "(", "")
+  'SRequest = Replace(SRequest, "(R)", "")
+  'SRequest = Replace(SRequest, "Core", "")
+  'SRequest = Replace(SRequest, "CPU", "")
   Shell "cd " & CGI["DOCUMENT_ROOT"] & "/ValidDB && grep -e \"CPU_NAME\" -e \"CPU_VENDOR\" -e \"GPU_MODEL\" ./*/* | grep -i \"" & SRequest & "\" | awk {'print $1'} | sort" Wait To Cached
   CPUusagelines = Split(Cached, "\n")
   MBrand.Brand_TEXT = ("Search - I-Nex - Cerbero")
   MBrand.Brand_URL = Global.WEBSITE_ROOT_URL_HTTP
   Response.Begin
-  If Len(Request.Get["query"]) >= 3 And IsSpace(Request.Get["query"]) = False Then
+  If Len(SRequest) >= 3 And IsSpace(SRequest) = False Then
     WQuery.Render
   Else
     WFalseQuery.Render

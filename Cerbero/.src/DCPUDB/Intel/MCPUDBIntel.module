@@ -1,0 +1,9 @@
+' Gambas module file
+
+Export
+Create Static
+Public IntelCPUList As Collection
+
+Public Sub Main()
+  IntelCPUList = JSON.Decode(File.Load(Global.WHEREIS_SITE_ROOT & "/CPUDB/intel"))
+End

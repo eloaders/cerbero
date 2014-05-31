@@ -14,127 +14,127 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: WWidgetCPU.webpage:2
+#: WWidgetCPU.webpage:13
 msgid "CPU Specifications"
 msgstr ""
 
-#: WWidgetCPU.webpage:12
+#: WWidgetCPU.webpage:42
 msgid "Model:"
 msgstr ""
 
-#: WWidgetCPU.webpage:16
+#: WWidgetCPU.webpage:46
 msgid "CPU Clock:"
 msgstr ""
 
-#: WWidgetCPU.webpage:20
+#: WWidgetCPU.webpage:50
 msgid "CPU Clock By OS:"
 msgstr ""
 
-#: WWidgetCPU.webpage:24
+#: WWidgetCPU.webpage:54
 msgid "CPU Clock By IC:"
 msgstr ""
 
-#: WWidgetCPU.webpage:28
+#: WWidgetCPU.webpage:58
 msgid "CPU Clock Measure:"
 msgstr ""
 
-#: WWidgetCPU.webpage:32
+#: WWidgetCPU.webpage:62
 msgid "CPU Mark TSC:"
 msgstr ""
 
-#: WWidgetCPU.webpage:36
+#: WWidgetCPU.webpage:66
 msgid "Integrated GPU:"
 msgstr ""
 
-#: WWidgetCPU.webpage:40
+#: WWidgetCPU.webpage:70
 msgid "Family:"
 msgstr ""
 
-#: WWidgetCPU.webpage:48
+#: WWidgetCPU.webpage:78
 msgid "Stepping:"
 msgstr ""
 
-#: WWidgetCPU.webpage:52
+#: WWidgetCPU.webpage:82
 msgid "Cores:"
 msgstr ""
 
-#: WWidgetCPU.webpage:56
+#: WWidgetCPU.webpage:86
 msgid "Phy ID:"
 msgstr ""
 
-#: WWidgetCPU.webpage:60
+#: WWidgetCPU.webpage:90
 msgid "Adress sizes:"
 msgstr ""
 
-#: WWidgetCPU.webpage:64
+#: WWidgetCPU.webpage:94
 msgid "Bogomips:"
 msgstr ""
 
-#: WWidgetCPU.webpage:68
+#: WWidgetCPU.webpage:98
 msgid "Flags:"
 msgstr ""
 
-#: WWidgetCPU.webpage:81
+#: WWidgetCPU.webpage:111
 msgid "More"
 msgstr ""
 
-#: WWidgetCPU.webpage:87
+#: WWidgetCPU.webpage:117
 msgid "x86 64-Bit Extensions:"
 msgstr ""
 
-#: WWidgetCPU.webpage:91
+#: WWidgetCPU.webpage:121
 msgid "Hardware Virtualization:"
 msgstr ""
 
-#: WWidgetCPU.webpage:97
+#: WWidgetCPU.webpage:127
 msgid "Hyper Threading:"
 msgstr ""
 
-#: WWidgetCPU.webpage:104
+#: WWidgetCPU.webpage:134
 msgid "Hyper Transport:"
 msgstr ""
 
-#: WWidgetCPU.webpage:111
+#: WWidgetCPU.webpage:141
 msgid "Power management:"
 msgstr ""
 
-#: WWidgetCPU.webpage:120
+#: WWidgetCPU.webpage:150
 msgid "Cache L1 Data:"
 msgstr ""
 
-#: WWidgetCPU.webpage:122
+#: WWidgetCPU.webpage:152
 msgid "Cache L1 Instruction:"
 msgstr ""
 
-#: WWidgetCPU.webpage:124
+#: WWidgetCPU.webpage:154
 msgid "Cache L1 Assoc:"
 msgstr ""
 
-#: WWidgetCPU.webpage:128
+#: WWidgetCPU.webpage:158
 msgid "Cache L2:"
 msgstr ""
 
-#: WWidgetCPU.webpage:130
+#: WWidgetCPU.webpage:160
 msgid "Cache L2 Assoc:"
 msgstr ""
 
-#: WWidgetCPU.webpage:132
+#: WWidgetCPU.webpage:162
 msgid "Cache L2 Cacheline:"
 msgstr ""
 
-#: WWidgetCPU.webpage:136
+#: WWidgetCPU.webpage:166
 msgid "Cache L3:"
 msgstr ""
 
-#: WWidgetCPU.webpage:138
+#: WWidgetCPU.webpage:168
 msgid "Cache L3 Assoc:"
 msgstr ""
 
-#: WWidgetCPU.webpage:140
+#: WWidgetCPU.webpage:170
 msgid "Cache L3 Cacheline:"
 msgstr ""
 
-#: WWidgetCPU.webpage:146
+#: WWidgetCPU.webpage:176
 msgid "SSE Size:"
 msgstr ""
 

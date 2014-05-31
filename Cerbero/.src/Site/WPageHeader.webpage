@@ -3,7 +3,7 @@
     <div class="col-md-12 column">
       <div class="page-header">
         <h1>
-          Cerbero <small>Linux Hardware Database (CLHD)</small>
+          Cerbero <small><%=("Linux Hardware Database (CLHD)")%></small>
         </h1>
       </div>
     </div>
