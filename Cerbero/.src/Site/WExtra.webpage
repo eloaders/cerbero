@@ -53,11 +53,12 @@
       <div class="col-md-3">
         <div class="panel panel-primary">
           <div class="panel-heading">
-            <h2 class="panel-title"><i class="fa fa-bookmark fa-lg"></i>  <span class="label label-default"><%=("Something Legal")%></span></h2>
+            <h2 class="panel-title"><i class="fa fa-bookmark fa-lg"></i>  <span class="label label-default"><%=("Social & Other")%></span></h2>
           </div>
           <div class="panel-body">
             <ul class="list-unstyled">
-              <li><a href="<%=Application.Root%>?page=policy"><%=("Privacy Policy")%></a></li>
+              <li><iframe src="http://ghbtns.com/github-btn.html?user=eloaders&type=follow&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="224px" height="30px"></iframe></li>
+              <li><iframe src="http://ghbtns.com/github-btn.html?user=eloaders&repo=cerbero&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="104px" height="20px"></iframe></li>
             </ul>
           </div>
           <div class="panel-footer"></div>

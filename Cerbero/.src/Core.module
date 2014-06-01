@@ -77,6 +77,10 @@ Else If Request.Get.Exist("cpudb[intel]add") = True Then
   Endif
 Else If Request.Get.Exist("cpudb[intel]delete") = True Then
   MCPUDBIntelDelete.Delete()
+Else If Request.Get.Exist("cpudb[intel]query") = True Then
+  Response.Begin
+    WCPUDBIntelQuery.Render
+  Response.End
 Else If Request.Get.Exist("cpudb[atom]") = True Then
   Response.Begin
   WCPUDBAtom.Render
@@ -105,6 +109,10 @@ Else If Request.Get.Exist("cpudb[atom]add") = True Then
   Endif
 Else If Request.Get.Exist("cpudb[atom]delete") = True Then
   MCPUDBAtomDelete.Delete()
+Else If Request.Get.Exist("cpudb[atom]query") = True Then
+  Response.Begin
+    WCPUDBAtomQuery.Render
+  Response.End
 Else If Request.Get.Exist("cpudb[amd]") = True Then
   Response.Begin
   WCPUDBAmd.Render
@@ -133,6 +141,10 @@ Else If Request.Get.Exist("cpudb[amd]add") = True Then
   Endif
 Else If Request.Get.Exist("cpudb[amd]delete") = True Then
   MCPUDBAmdDelete.Delete()
+Else If Request.Get.Exist("cpudb[amd]query") = True Then
+  Response.Begin
+    WCPUDBAmdQuery.Render
+  Response.End
 Else If Request.Get.Exist("cpudb") = True Then
   Response.Begin
     WCPUDBIndex.Render

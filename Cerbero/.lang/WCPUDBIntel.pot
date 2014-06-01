@@ -54,3 +54,7 @@ msgstr ""
 msgid "Add Cpu to database"
 msgstr ""
 
+#: WCPUDBIntel.webpage:95
+msgid "Search by CPU Name"
+msgstr ""
+

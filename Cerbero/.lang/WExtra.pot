@@ -51,10 +51,10 @@ msgid "Friends of the project"
 msgstr ""
 
 #: WExtra.webpage:55
-msgid "Something Legal"
+msgid "Social & Other"
 msgstr ""
 
-#: WExtra.webpage:68
+#: WExtra.webpage:69
 msgid "Sponsors"
 msgstr ""
 

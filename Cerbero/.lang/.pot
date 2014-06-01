@@ -194,47 +194,70 @@ msgstr ""
 msgid "Save"
 msgstr ""
 
-#: WCPUDBAmd.webpage:18
+#: WCPUDBAmd.webpage:18 WCPUDBAmdQuery.webpage:18
 msgid "AMD CPU Database"
 msgstr ""
 
-#: WCPUDBAmd.webpage:25 WCPUDBAtom.webpage:25 WCPUDBIntel.webpage:25
+#: WCPUDBAmd.webpage:25 WCPUDBAmdQuery.webpage:25 WCPUDBAtom.webpage:25
+#: WCPUDBAtomQuery.webpage:25 WCPUDBIntel.webpage:25
+#: WCPUDBIntelQuery.webpage:25
 msgid "CPU Model Name"
 msgstr ""
 
-#: WCPUDBAmd.webpage:26 WCPUDBAtom.webpage:26 WCPUDBIntel.webpage:26
+#: WCPUDBAmd.webpage:26 WCPUDBAmdQuery.webpage:26 WCPUDBAtom.webpage:26
+#: WCPUDBAtomQuery.webpage:26 WCPUDBIntel.webpage:26
+#: WCPUDBIntelQuery.webpage:26
 msgid "Process Size"
 msgstr ""
 
 #: WCPUDBAmd.webpage:27 WCPUDBAmdAdd.webpage:400 WCPUDBAmdEdit.webpage:413
-#: WCPUDBAtom.webpage:27 WCPUDBAtomAdd.webpage:400 WCPUDBAtomEdit.webpage:413
+#: WCPUDBAmdQuery.webpage:27 WCPUDBAtom.webpage:27 WCPUDBAtomAdd.webpage:400
+#: WCPUDBAtomEdit.webpage:413 WCPUDBAtomQuery.webpage:27
 #: WCPUDBIntel.webpage:27 WCPUDBIntelAdd.webpage:400
-#: WCPUDBIntelEdit.webpage:413
+#: WCPUDBIntelEdit.webpage:413 WCPUDBIntelQuery.webpage:27
 msgid "Integrated Graphic"
 msgstr ""
 
-#: WCPUDBAmd.webpage:28 WCPUDBAtom.webpage:28 WCPUDBIntel.webpage:28
+#: WCPUDBAmd.webpage:28 WCPUDBAmdQuery.webpage:28 WCPUDBAtom.webpage:28
+#: WCPUDBAtomQuery.webpage:28 WCPUDBIntel.webpage:28
+#: WCPUDBIntelQuery.webpage:28
 msgid "CPU Frequency"
 msgstr ""
 
-#: WCPUDBAmd.webpage:29 WCPUDBAtom.webpage:29 WCPUDBIntel.webpage:29
+#: WCPUDBAmd.webpage:29 WCPUDBAmdQuery.webpage:29 WCPUDBAtom.webpage:29
+#: WCPUDBAtomQuery.webpage:29 WCPUDBIntel.webpage:29
+#: WCPUDBIntelQuery.webpage:29
 msgid "Turboclock"
 msgstr ""
 
-#: WCPUDBAmd.webpage:30 WCPUDBAtom.webpage:30 WCPUDBIntel.webpage:30
+#: WCPUDBAmd.webpage:30 WCPUDBAmdQuery.webpage:30 WCPUDBAtom.webpage:30
+#: WCPUDBAtomQuery.webpage:30 WCPUDBIntel.webpage:30
+#: WCPUDBIntelQuery.webpage:30
 msgid "CPU Package"
 msgstr ""
 
-#: WCPUDBAmd.webpage:31 WCPUDBAtom.webpage:31 WCPUDBIntel.webpage:31
+#: WCPUDBAmd.webpage:31 WCPUDBAmdQuery.webpage:31 WCPUDBAtom.webpage:31
+#: WCPUDBAtomQuery.webpage:31 WCPUDBIntel.webpage:31
+#: WCPUDBIntelQuery.webpage:31
 msgid "CPU Codename"
 msgstr ""
 
-#: WCPUDBAmd.webpage:32 WCPUDBAtom.webpage:32 WCPUDBIntel.webpage:32
+#: WCPUDBAmd.webpage:32 WCPUDBAmdQuery.webpage:32 WCPUDBAtom.webpage:32
+#: WCPUDBAtomQuery.webpage:32 WCPUDBIntel.webpage:32
+#: WCPUDBIntelQuery.webpage:32
 msgid "CPU Edit"
 msgstr ""
 
-#: WCPUDBAmd.webpage:91 WCPUDBAtom.webpage:91 WCPUDBIntel.webpage:91
+#: WCPUDBAmd.webpage:91 WCPUDBAmdQuery.webpage:64 WCPUDBAtom.webpage:91
+#: WCPUDBAtomQuery.webpage:64 WCPUDBIntel.webpage:91
+#: WCPUDBIntelQuery.webpage:64
 msgid "Add Cpu to database"
+msgstr ""
+
+#: WCPUDBAmd.webpage:95 WCPUDBAmdQuery.webpage:68 WCPUDBAtom.webpage:95
+#: WCPUDBAtomQuery.webpage:68 WCPUDBIntel.webpage:95
+#: WCPUDBIntelQuery.webpage:68 WNavbar.webpage:38
+msgid "Search by CPU Name"
 msgstr ""
 
 #: WCPUDBAmdAdd.webpage:19 WCPUDBAmdEdit.webpage:24 WCPUDBAtomAdd.webpage:19
@@ -396,11 +419,11 @@ msgstr ""
 msgid "Change"
 msgstr ""
 
-#: WCPUDBAtom.webpage:18
+#: WCPUDBAtom.webpage:18 WCPUDBAtomQuery.webpage:18
 msgid "Atom CPU Database"
 msgstr ""
 
-#: WCPUDBIntel.webpage:18
+#: WCPUDBIntel.webpage:18 WCPUDBIntelQuery.webpage:18
 msgid "Intel CPU Database"
 msgstr ""
 
@@ -445,10 +468,10 @@ msgid "Friends of the project"
 msgstr ""
 
 #: WExtra.webpage:55
-msgid "Something Legal"
+msgid "Social & Other"
 msgstr ""
 
-#: WExtra.webpage:68
+#: WExtra.webpage:69
 msgid "Sponsors"
 msgstr ""
 
@@ -530,10 +553,6 @@ msgstr ""
 
 #: WNavbar.webpage:31
 msgid "Install I-Nex"
-msgstr ""
-
-#: WNavbar.webpage:38
-msgid "Search by CPU Name"
 msgstr ""
 
 #: WNavbar.webpage:67
