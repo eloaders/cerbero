@@ -93,18 +93,12 @@ Public Sub SendFileToServer()
               Endif
               Try GOO_GL = JSON.Decode(Global.ShortURL(Global.WEBSITE_ROOT_URL_HTTP & "/" & Application.Root & "?validate=" & DDATE_NOW & VALIDATE_NEW_ID))
               
-              If IsNull(cpuiddata["DMESG"]) = False Then
-              Try cpuiddata.Add(Global.CRB_OUTPUTS(cpuiddata["DMESG"], "DMESG validate=" & DDATE_NOW & VALIDATE_NEW_ID, cpuiddata["SUBMITED_BY"]), "DMESGS")
-              Endif
-              If IsNull(cpuiddata["LSPCI"]) = False Then
-              Try cpuiddata.Add(Global.CRB_OUTPUTS(cpuiddata["LSPCI"], "LSPCI validate=" & DDATE_NOW & VALIDATE_NEW_ID, cpuiddata["SUBMITED_BY"]), "LSPCIS")
-              Endif
-              If IsNull(cpuiddata["LSUSB"]) = False Then
-              Try cpuiddata.Add(Global.CRB_OUTPUTS(cpuiddata["LSUSB"], "LSUSB validate=" & DDATE_NOW & VALIDATE_NEW_ID, cpuiddata["SUBMITED_BY"]), "LSUSBS")
-              Endif
-              If IsNull(cpuiddata["CPUINFO"]) = False Then
-              Try cpuiddata.Add(Global.CRB_OUTPUTS(cpuiddata["CPUINFO"], "CPUINFO validate=" & DDATE_NOW & VALIDATE_NEW_ID, cpuiddata["SUBMITED_BY"]), "CPUINFOS")
-              Endif
+              Global.GEN_USERBAR(cpuiddata["CPU_NAME"] & "" & cpuiddata["CPUID"]["CPU_CLOCK_MEASURE"] & " MHz", 
+              Replace(cpuiddata["GPU_OGL_VENDOR"], "OpenGL Vendor:  ", "") & " DRV: " & Replace(cpuiddata["GPU_KRN_DRV_IN_USE"], "Kernel driver in use:", ""), 
+              Replace(cpuiddata["INEX_MOTHERBOARD_VENDOR1"], "Board Vendor:   ", "") & " " & Replace(cpuiddata["INEX_MOTHERBOARD_VENDOR3"], "Board Name:   ", ""), 
+              Replace(cpuiddata["DISTRO_VENDOR"], "Distro Vendor: ", "") & " " & Replace(cpuiddata["DISTRO_VENDOR2"], "Distro Release: ", "") & " " & Replace(cpuiddata["DISTRO_VENDOR3"], "Desktop environment: ", ""), 
+              cpuiddata["UNAME"]["Release"], 
+              Global.WHEREIS_SITE_ROOT & "/USERBAR/" & DDATE_NOW & VALIDATE_NEW_ID & ".png")
               
               cpuiddata.Remove("DMESG")
               cpuiddata.Remove("LSPCI")

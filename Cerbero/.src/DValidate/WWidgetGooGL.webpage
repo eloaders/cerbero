@@ -1,3 +1,6 @@
+<script type="text/javascript"><!--//--><![CDATA[//><!-- 
+function selectText(field){field.focus();field.select();} 
+</script>
 <div class="panel panel-primary">
   <div class="panel-body">
     <div class="form-group has-success">

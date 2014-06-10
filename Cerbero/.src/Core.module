@@ -167,6 +167,8 @@ Public Sub ResponseFromServer()
   MBrand.Brand_TEXT = "I-Nex - Cerbero"
 
   Response.Begin
+  'Print CGI["DOCUMENT_ROOT"]
+  Global.GEN_USERBAR("1", "2", "3", "4", "5", "/var/www/USERBAR/usr.png")
     DUpload.Render
   Response.End
   

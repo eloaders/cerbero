@@ -94,3 +94,38 @@ Public Function CRB_TODAYREPORTS() As String
   Today_Reports = Replace(Today_Reports, "\n", "")
   Return Today_Reports
 End
+
+Public Function REPORTSINDB(cpuname As String) As String
+  Dim CPUCOUNT As String
+  If cpuname Like "*Atom*" Then
+    cpuname = Replace(cpuname, "Atom", "")
+  Endif
+  If cpuname Like "*Core*" Then
+    cpuname = Replace(cpuname, "Core", "")
+  Endif
+  
+  Shell "cd " & CGI["DOCUMENT_ROOT"] & "/ValidDB && grep -e \"CPU_NAME\" ./*/* | grep -i \"" & cpuname & "\" | awk {'print $1'} | wc -l" Wait To CPUCOUNT
+  
+  Return CPUCOUNT
+End
+
+Public Function REPLACE_CPUNAME(cpuname As String) As String
+  Select Case cpuname
+    Case Like "*Atom*"
+      cpuname = Replace(cpuname, "Atom", "")
+    Case Like "*Core*"
+      cpuname = Replace(cpuname, "Core", "")
+  End Select
+  Return cpuname
+End
+
+Public Function GEN_USERBAR(CPU As String, OpenGL As String, MOBO As String, DIST As String, KERNEL As String, Outputs As String)
+  Shell "/usr/bin/crbusrb.py --input=\"" & WHEREIS_SITE_ROOT & "/USERBAR/sample_in.png\" --cpu=\"" & CPU & "\" --opengl=\"" & OpenGL & "\" --mobo=\"" & MOBO & "\" --dist=\"" & DIST & "\" --kernel=\"" & KERNEL & "\" --output=\"" & Outputs & "\"" Wait
+  'crbusrb.py --input="sample_in.png" 
+  '--cpu="A10-4600M APU with Radeon(tm) HD Graphics 1400 MHz X4" 
+  '--opengl="Gallium 0.4 on AMD ARUBA DRV: radeon" 
+  '--mobo="LENOVO ThinkPad Edge E535" 
+  '--dist="Ubuntu 14.04 Unity 7.1.2" 
+  '--kernel="3.14.5-ext73-f1-29.5-atom-ags-cfs" 
+  '--output="/home/michal/Pulpit/simple.png"
+End

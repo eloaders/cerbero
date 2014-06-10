@@ -187,53 +187,76 @@ msgstr "Specyfikacja procesora"
 msgid "Save"
 msgstr "Zapisz"
 
-#: WCPUDBAmd.webpage:18
+#: WCPUDBAmd.webpage:18 WCPUDBAmdQuery.webpage:18
 #, fuzzy
 msgid "AMD CPU Database"
 msgstr "Dane o CPU z bazy danych:"
 
-#: WCPUDBAmd.webpage:25 WCPUDBAtom.webpage:25 WCPUDBIntel.webpage:25
+#: WCPUDBAmd.webpage:25 WCPUDBAmdQuery.webpage:25 WCPUDBAtom.webpage:25
+#: WCPUDBAtomQuery.webpage:25 WCPUDBIntel.webpage:25
+#: WCPUDBIntelQuery.webpage:25
 msgid "CPU Model Name"
 msgstr "Model CPU"
 
-#: WCPUDBAmd.webpage:26 WCPUDBAtom.webpage:26 WCPUDBIntel.webpage:26
+#: WCPUDBAmd.webpage:26 WCPUDBAmdQuery.webpage:26 WCPUDBAtom.webpage:26
+#: WCPUDBAtomQuery.webpage:26 WCPUDBIntel.webpage:26
+#: WCPUDBIntelQuery.webpage:26
 #, fuzzy
 msgid "Process Size"
 msgstr "Długość adresu:"
 
 #: WCPUDBAmd.webpage:27 WCPUDBAmdAdd.webpage:400 WCPUDBAmdEdit.webpage:413
-#: WCPUDBAtom.webpage:27 WCPUDBAtomAdd.webpage:400 WCPUDBAtomEdit.webpage:413
+#: WCPUDBAmdQuery.webpage:27 WCPUDBAtom.webpage:27 WCPUDBAtomAdd.webpage:400
+#: WCPUDBAtomEdit.webpage:413 WCPUDBAtomQuery.webpage:27
 #: WCPUDBIntel.webpage:27 WCPUDBIntelAdd.webpage:400
-#: WCPUDBIntelEdit.webpage:413
+#: WCPUDBIntelEdit.webpage:413 WCPUDBIntelQuery.webpage:27
 #, fuzzy
 msgid "Integrated Graphic"
 msgstr "Zintegrowana karta graficzna"
 
-#: WCPUDBAmd.webpage:28 WCPUDBAtom.webpage:28 WCPUDBIntel.webpage:28
+#: WCPUDBAmd.webpage:28 WCPUDBAmdQuery.webpage:28 WCPUDBAtom.webpage:28
+#: WCPUDBAtomQuery.webpage:28 WCPUDBIntel.webpage:28
+#: WCPUDBIntelQuery.webpage:28
 msgid "CPU Frequency"
 msgstr "Taktowanie"
 
-#: WCPUDBAmd.webpage:29 WCPUDBAtom.webpage:29 WCPUDBIntel.webpage:29
+#: WCPUDBAmd.webpage:29 WCPUDBAmdQuery.webpage:29 WCPUDBAtom.webpage:29
+#: WCPUDBAtomQuery.webpage:29 WCPUDBIntel.webpage:29
+#: WCPUDBIntelQuery.webpage:29
 #, fuzzy
 msgid "Turboclock"
 msgstr "Zegar Turbo:"
 
-#: WCPUDBAmd.webpage:30 WCPUDBAtom.webpage:30 WCPUDBIntel.webpage:30
+#: WCPUDBAmd.webpage:30 WCPUDBAmdQuery.webpage:30 WCPUDBAtom.webpage:30
+#: WCPUDBAtomQuery.webpage:30 WCPUDBIntel.webpage:30
+#: WCPUDBIntelQuery.webpage:30
 msgid "CPU Package"
 msgstr ""
 
-#: WCPUDBAmd.webpage:31 WCPUDBAtom.webpage:31 WCPUDBIntel.webpage:31
+#: WCPUDBAmd.webpage:31 WCPUDBAmdQuery.webpage:31 WCPUDBAtom.webpage:31
+#: WCPUDBAtomQuery.webpage:31 WCPUDBIntel.webpage:31
+#: WCPUDBIntelQuery.webpage:31
 msgid "CPU Codename"
 msgstr "Nazwa kodowa"
 
-#: WCPUDBAmd.webpage:32 WCPUDBAtom.webpage:32 WCPUDBIntel.webpage:32
+#: WCPUDBAmd.webpage:32 WCPUDBAmdQuery.webpage:32 WCPUDBAtom.webpage:32
+#: WCPUDBAtomQuery.webpage:32 WCPUDBIntel.webpage:32
+#: WCPUDBIntelQuery.webpage:32
 msgid "CPU Edit"
 msgstr "Edycja"
 
-#: WCPUDBAmd.webpage:91 WCPUDBAtom.webpage:91 WCPUDBIntel.webpage:91
+#: WCPUDBAmd.webpage:91 WCPUDBAmdQuery.webpage:64 WCPUDBAtom.webpage:91
+#: WCPUDBAtomQuery.webpage:64 WCPUDBIntel.webpage:91
+#: WCPUDBIntelQuery.webpage:64
 #, fuzzy
 msgid "Add Cpu to database"
 msgstr "Dane o CPU z bazy danych:"
+
+#: WCPUDBAmd.webpage:95 WCPUDBAmdQuery.webpage:68 WCPUDBAtom.webpage:95
+#: WCPUDBAtomQuery.webpage:68 WCPUDBIntel.webpage:95
+#: WCPUDBIntelQuery.webpage:68 WNavbar.webpage:38
+msgid "Search by CPU Name"
+msgstr "Szukaj po modelu procesora"
 
 #: WCPUDBAmdAdd.webpage:19 WCPUDBAmdEdit.webpage:24 WCPUDBAtomAdd.webpage:19
 #: WCPUDBAtomEdit.webpage:24 WCPUDBIntelAdd.webpage:19
@@ -408,12 +431,22 @@ msgstr "Logo CPU"
 msgid "Change"
 msgstr "Zmień"
 
-#: WCPUDBAtom.webpage:18
+#: WCPUDBAtom.webpage:18 WCPUDBAtomQuery.webpage:18
 #, fuzzy
 msgid "Atom CPU Database"
 msgstr "Dane o CPU z bazy danych:"
 
-#: WCPUDBIntel.webpage:18
+#: WCPUDBAtomView.webpage:142
+#, fuzzy
+msgid "Reports in database"
+msgstr "Raportów w bazie"
+
+#: WCPUDBAtomView.webpage:143
+#, fuzzy
+msgid "Search"
+msgstr "Szukaj:"
+
+#: WCPUDBIntel.webpage:18 WCPUDBIntelQuery.webpage:18
 #, fuzzy
 msgid "Intel CPU Database"
 msgstr "Dane o CPU z bazy danych:"
@@ -459,10 +492,11 @@ msgid "Friends of the project"
 msgstr "Przyjaciele projektu"
 
 #: WExtra.webpage:55
-msgid "Something Legal"
-msgstr "W pełni legalne"
+#, fuzzy
+msgid "Social & Other"
+msgstr "Społeczności: "
 
-#: WExtra.webpage:68
+#: WExtra.webpage:69
 msgid "Sponsors"
 msgstr "Sponsorzy"
 
@@ -546,10 +580,6 @@ msgstr "Strona domowa I-Nex"
 #: WNavbar.webpage:31
 msgid "Install I-Nex"
 msgstr "Zainstaluj I-Nex"
-
-#: WNavbar.webpage:38
-msgid "Search by CPU Name"
-msgstr "Szukaj po modelu procesora"
 
 #: WNavbar.webpage:67
 msgid "PA"
@@ -695,123 +725,123 @@ msgstr "Zgadzam się z Warunkami Korzystania z Usługi."
 msgid "Click to return on the top page"
 msgstr "Kliknij aby wrócić na stronę główną"
 
-#: WWidgetCPU.webpage:42 WWidgetGPU.webpage:11
+#: WWidgetCPU.webpage:37 WWidgetGPU.webpage:11
 msgid "Model:"
 msgstr "Model:"
 
-#: WWidgetCPU.webpage:46
+#: WWidgetCPU.webpage:41
 msgid "CPU Clock:"
 msgstr "Taktowanie CPU:"
 
-#: WWidgetCPU.webpage:50
+#: WWidgetCPU.webpage:45
 msgid "CPU Clock By OS:"
 msgstr "Taktowanie CPU w systemie:"
 
-#: WWidgetCPU.webpage:54
+#: WWidgetCPU.webpage:49
 msgid "CPU Clock By IC:"
 msgstr "Taktowanie CPU w IC:"
 
-#: WWidgetCPU.webpage:58
+#: WWidgetCPU.webpage:53
 msgid "CPU Clock Measure:"
 msgstr "CPU Clock Measure:"
 
-#: WWidgetCPU.webpage:62
+#: WWidgetCPU.webpage:57
 msgid "CPU Mark TSC:"
 msgstr "CPU Mark TSC:"
 
-#: WWidgetCPU.webpage:66
+#: WWidgetCPU.webpage:61
 msgid "Integrated GPU:"
 msgstr "Zintegrowana karta graficzna"
 
-#: WWidgetCPU.webpage:70
+#: WWidgetCPU.webpage:65
 msgid "Family:"
 msgstr "Rodzina:"
 
-#: WWidgetCPU.webpage:78
+#: WWidgetCPU.webpage:73
 msgid "Stepping:"
 msgstr "Wersja:"
 
-#: WWidgetCPU.webpage:82
+#: WWidgetCPU.webpage:77
 msgid "Cores:"
 msgstr "Rdzenie:"
 
-#: WWidgetCPU.webpage:86
+#: WWidgetCPU.webpage:81
 msgid "Phy ID:"
 msgstr "Phy ID:"
 
-#: WWidgetCPU.webpage:90
+#: WWidgetCPU.webpage:85
 msgid "Adress sizes:"
 msgstr "Długość adresu:"
 
-#: WWidgetCPU.webpage:94
+#: WWidgetCPU.webpage:89
 msgid "Bogomips:"
 msgstr "Bogomips:"
 
-#: WWidgetCPU.webpage:98
+#: WWidgetCPU.webpage:93
 msgid "Flags:"
 msgstr "Flagi:"
 
-#: WWidgetCPU.webpage:111
+#: WWidgetCPU.webpage:106
 msgid "More"
 msgstr "Więcej"
 
-#: WWidgetCPU.webpage:117
+#: WWidgetCPU.webpage:112
 msgid "x86 64-Bit Extensions:"
 msgstr "64 bitowe rozszerzenia"
 
-#: WWidgetCPU.webpage:121
+#: WWidgetCPU.webpage:116
 msgid "Hardware Virtualization:"
 msgstr "Wirtualizacja Sprzętowa:"
 
-#: WWidgetCPU.webpage:127
+#: WWidgetCPU.webpage:122
 msgid "Hyper Threading:"
 msgstr "Hyper Threading:"
 
-#: WWidgetCPU.webpage:134
+#: WWidgetCPU.webpage:129
 msgid "Hyper Transport:"
 msgstr "Hyper Transport:"
 
-#: WWidgetCPU.webpage:141
+#: WWidgetCPU.webpage:136
 msgid "Power management:"
 msgstr "Zarządzanie poborem energii:"
 
-#: WWidgetCPU.webpage:150
+#: WWidgetCPU.webpage:145
 msgid "Cache L1 Data:"
 msgstr "Dane Cache L1:"
 
-#: WWidgetCPU.webpage:152
+#: WWidgetCPU.webpage:147
 msgid "Cache L1 Instruction:"
 msgstr "Instrukcje Cache L1:"
 
-#: WWidgetCPU.webpage:154
+#: WWidgetCPU.webpage:149
 msgid "Cache L1 Assoc:"
 msgstr "Cache L1 Assoc:"
 
-#: WWidgetCPU.webpage:158
+#: WWidgetCPU.webpage:153
 msgid "Cache L2:"
 msgstr "Cache L2:"
 
-#: WWidgetCPU.webpage:160
+#: WWidgetCPU.webpage:155
 msgid "Cache L2 Assoc:"
 msgstr "Cache L2 Assoc:"
 
-#: WWidgetCPU.webpage:162
+#: WWidgetCPU.webpage:157
 msgid "Cache L2 Cacheline:"
 msgstr "Cache L2 Cacheline:"
 
-#: WWidgetCPU.webpage:166
+#: WWidgetCPU.webpage:161
 msgid "Cache L3:"
 msgstr "Cache L3:"
 
-#: WWidgetCPU.webpage:168
+#: WWidgetCPU.webpage:163
 msgid "Cache L3 Assoc:"
 msgstr "Cache L3 Assoc:"
 
-#: WWidgetCPU.webpage:170
+#: WWidgetCPU.webpage:165
 msgid "Cache L3 Cacheline:"
 msgstr "Cache L3 Cacheline:"
 
-#: WWidgetCPU.webpage:176
+#: WWidgetCPU.webpage:171
 msgid "SSE Size:"
 msgstr "Wielkość SSE:"
 
@@ -1178,3 +1208,6 @@ msgstr "O mnie:"
 #: WWidgetUser.webpage:55
 msgid "I've heard enough about"
 msgstr "Wiem wystarczająco dużo o"
+
+#~ msgid "Something Legal"
+#~ msgstr "W pełni legalne"

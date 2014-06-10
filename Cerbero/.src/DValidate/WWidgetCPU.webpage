@@ -20,19 +20,14 @@
             <td><img src="<%=Global.WEBSITE_ROOT_URL_HTTP%>/LOGOS/<%=MValidate.RADIVATE["CPU_LOGO"]%>" alt="thumbnail"></td> 
             <td>
             <div id="wrap" class="text-center">
-              <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"><%=MValidate.RADIVATE["CPU_VENDOR"]%></button>
+              <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#cpu_vendor_modal"><%=MValidate.RADIVATE["CPU_VENDOR"]%></button>
             </div>
             <!-- Modal -->
-            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal fade" id="cpu_vendor_modal" tabindex="-1" role="dialog" aria-labelledby="cpu_vendor_modalLabel" aria-hidden="true">
               <div class="container">
                 <div class="row">
                   <div class="col-sm-6 col-sm-offset-3 text-center">
-                    <h1>Modal with blur effect</h1>
-                    <h2>Put here whatever you want here</h2>
-                    <h4>For instance, a login form or an article content</h4>
-                    <h4><kbd>esc</kbd> or click anyway to close</h4>
-                    <hr>
-                    <div class="alert alert-info"><h4>I can add a close button if you want.<br>Please, tell me in comments :)</h4></div>
+
                   </div>
                 </div>
               </div>

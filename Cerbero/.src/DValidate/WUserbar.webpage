@@ -1,0 +1,12 @@
+<div class="panel panel-primary">
+  <div class="panel-body">
+    <div class="form-group has-success">
+      <label class="control-label"><%=("Userbar")%></label>
+      <img class="img-responsive center-block" src="USERBAR/<%=CString(Replace(Request.Get["validate"], Right$(Request.Get["validate"], -8), "") & Right$(Request.Get["validate"], -8) & ".png")%>"/>
+      <div class="input-group">
+        <span class="input-group-addon"><i class="fa fa-link fa-lg"></i></span>
+        <input type="text" class="form-control" onclick="javascript:selectText(this);" value="[url=<%=Global.WEBSITE_ROOT_URL_HTTP%><%=Application.Root%>?validate=<%=Request.Get["validate"]%>][img]<%=Global.WEBSITE_ROOT_URL_HTTP%>/USERBAR/<%=CString(Replace(Request.Get["validate"], Right$(Request.Get["validate"], -8), "") & Right$(Request.Get["validate"], -8) & ".png")%>[/img][/url]" onclick="javascript:selectText(this);" />
+      </div>
+    </div> 
+  </div>
+</div>

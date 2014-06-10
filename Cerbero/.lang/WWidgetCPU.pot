@@ -18,123 +18,123 @@ msgstr ""
 msgid "CPU Specifications"
 msgstr ""
 
-#: WWidgetCPU.webpage:42
+#: WWidgetCPU.webpage:37
 msgid "Model:"
 msgstr ""
 
-#: WWidgetCPU.webpage:46
+#: WWidgetCPU.webpage:41
 msgid "CPU Clock:"
 msgstr ""
 
-#: WWidgetCPU.webpage:50
+#: WWidgetCPU.webpage:45
 msgid "CPU Clock By OS:"
 msgstr ""
 
-#: WWidgetCPU.webpage:54
+#: WWidgetCPU.webpage:49
 msgid "CPU Clock By IC:"
 msgstr ""
 
-#: WWidgetCPU.webpage:58
+#: WWidgetCPU.webpage:53
 msgid "CPU Clock Measure:"
 msgstr ""
 
-#: WWidgetCPU.webpage:62
+#: WWidgetCPU.webpage:57
 msgid "CPU Mark TSC:"
 msgstr ""
 
-#: WWidgetCPU.webpage:66
+#: WWidgetCPU.webpage:61
 msgid "Integrated GPU:"
 msgstr ""
 
-#: WWidgetCPU.webpage:70
+#: WWidgetCPU.webpage:65
 msgid "Family:"
 msgstr ""
 
-#: WWidgetCPU.webpage:78
+#: WWidgetCPU.webpage:73
 msgid "Stepping:"
 msgstr ""
 
-#: WWidgetCPU.webpage:82
+#: WWidgetCPU.webpage:77
 msgid "Cores:"
 msgstr ""
 
-#: WWidgetCPU.webpage:86
+#: WWidgetCPU.webpage:81
 msgid "Phy ID:"
 msgstr ""
 
-#: WWidgetCPU.webpage:90
+#: WWidgetCPU.webpage:85
 msgid "Adress sizes:"
 msgstr ""
 
-#: WWidgetCPU.webpage:94
+#: WWidgetCPU.webpage:89
 msgid "Bogomips:"
 msgstr ""
 
-#: WWidgetCPU.webpage:98
+#: WWidgetCPU.webpage:93
 msgid "Flags:"
 msgstr ""
 
-#: WWidgetCPU.webpage:111
+#: WWidgetCPU.webpage:106
 msgid "More"
 msgstr ""
 
-#: WWidgetCPU.webpage:117
+#: WWidgetCPU.webpage:112
 msgid "x86 64-Bit Extensions:"
 msgstr ""
 
-#: WWidgetCPU.webpage:121
+#: WWidgetCPU.webpage:116
 msgid "Hardware Virtualization:"
 msgstr ""
 
-#: WWidgetCPU.webpage:127
+#: WWidgetCPU.webpage:122
 msgid "Hyper Threading:"
 msgstr ""
 
-#: WWidgetCPU.webpage:134
+#: WWidgetCPU.webpage:129
 msgid "Hyper Transport:"
 msgstr ""
 
-#: WWidgetCPU.webpage:141
+#: WWidgetCPU.webpage:136
 msgid "Power management:"
 msgstr ""
 
-#: WWidgetCPU.webpage:150
+#: WWidgetCPU.webpage:145
 msgid "Cache L1 Data:"
 msgstr ""
 
-#: WWidgetCPU.webpage:152
+#: WWidgetCPU.webpage:147
 msgid "Cache L1 Instruction:"
 msgstr ""
 
-#: WWidgetCPU.webpage:154
+#: WWidgetCPU.webpage:149
 msgid "Cache L1 Assoc:"
 msgstr ""
 
-#: WWidgetCPU.webpage:158
+#: WWidgetCPU.webpage:153
 msgid "Cache L2:"
 msgstr ""
 
-#: WWidgetCPU.webpage:160
+#: WWidgetCPU.webpage:155
 msgid "Cache L2 Assoc:"
 msgstr ""
 
-#: WWidgetCPU.webpage:162
+#: WWidgetCPU.webpage:157
 msgid "Cache L2 Cacheline:"
 msgstr ""
 
-#: WWidgetCPU.webpage:166
+#: WWidgetCPU.webpage:161
 msgid "Cache L3:"
 msgstr ""
 
-#: WWidgetCPU.webpage:168
+#: WWidgetCPU.webpage:163
 msgid "Cache L3 Assoc:"
 msgstr ""
 
-#: WWidgetCPU.webpage:170
+#: WWidgetCPU.webpage:165
 msgid "Cache L3 Cacheline:"
 msgstr ""
 
-#: WWidgetCPU.webpage:176
+#: WWidgetCPU.webpage:171
 msgid "SSE Size:"
 msgstr ""
 

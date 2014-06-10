@@ -31,6 +31,9 @@ $(document).ready(function(){function e(){var e=$("section").length;$("#dot-nav 
         <%If MValidate.SHOW_USER = True Then%>
         <li class="awesome-tooltip" title="Submitted by"><a href="#user"></a></li>
         <%Endif%>
+        <%If Exist(Global.WHEREIS_SITE_ROOT & "/USERBAR/" & Replace(Request.Get["validate"], Right$(Request.Get["validate"], -8), "") & Right$(Request.Get["validate"], -8) & ".png") = True Then%>
+        <li class="awesome-tooltip" title="Userbar"><a href="#userbar"></a></li>
+        <%Endif%>
         <%If MValidate.RADIVATE.Exist("GOO_GL") = True Then%>
         <li class="awesome-tooltip" title="Links"><a href="#links"></a></li>
         <%Endif%>
@@ -74,6 +77,11 @@ $(document).ready(function(){function e(){var e=$("section").length;$("#dot-nav 
       <%If MValidate.SHOW_USER = True Then%>
       <section id="user">
       <<WWidgetUser>>
+      </section>
+      <%Endif%>
+      <%If Exist(Global.WHEREIS_SITE_ROOT & "/USERBAR/" & Replace(Request.Get["validate"], Right$(Request.Get["validate"], -8), "") & Right$(Request.Get["validate"], -8) & ".png") = True Then%>
+      <section id="userbar">
+      <<WUserbar>>
       </section>
       <%Endif%>
       <%If MValidate.RADIVATE.Exist("GOO_GL") = True Then%>

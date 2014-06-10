@@ -137,12 +137,11 @@ span.tags
                     </figure>
                 </div>
             </div>
-            <%--
             <div class="col-xs-12 divider text-center">
                 <div class="col-xs-12 col-sm-4 emphasis">
-                    <h2><strong> 20,7K </strong></h2>                    
-                    <p><small>Followers</small></p>
-                    <button class="btn btn-success btn-block"><span class="fa fa-plus-circle"></span> Follow </button>
+                    <h2><strong><%=Global.REPORTSINDB(MCPUDBAtom.AtomCPUList["DATABASE"][RQG]["PROCESSOR_MODEL_NAME"])%></strong></h2>                    
+                    <p><small><%=("Reports in database")%></small></p>
+                    <a href="<%=Global.WEBSITE_ROOT_URL_HTTP%><%=Application.Root%>?query=<%=Global.REPLACE_CPUNAME(MCPUDBAtom.AtomCPUList["DATABASE"][RQG]["PROCESSOR_MODEL_NAME"])%>" target="_blank" class="btn btn-success btn-block" role="button"><span class="fa fa-plus-circle"></span> <%=("Search")%> </a>
                 </div>
                 <div class="col-xs-12 col-sm-4 emphasis">
                     <h2><strong>245</strong></h2>                    
@@ -169,7 +168,6 @@ span.tags
                     </div>
                   </div>
                 </div>
-                --%>
               </div>                 
             </div>
           </div>
