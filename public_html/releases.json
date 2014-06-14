@@ -1,0 +1,143 @@
+{
+    "latest_stable": {
+        "version": "3.15"
+    }, 
+    "releases": [
+        {
+            "iseol": false, 
+            "version": "3.15", 
+            "moniker": "mainline", 
+            "source": "https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.15.tar.xz", 
+            "pgp": "https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.15.tar.sign", 
+            "released": {
+                "timestamp": 1402251602, 
+                "isodate": "2014-06-08"
+            }, 
+            "gitweb": "https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/log/?id=refs/tags/v3.15", 
+            "changelog": null, 
+            "patch": {
+                "full": "https://www.kernel.org/pub/linux/kernel/v3.x/patch-3.15.xz", 
+                "incremental": null
+            }
+        }, 
+        {
+            "iseol": false, 
+            "version": "3.14.6", 
+            "moniker": "stable", 
+            "source": "https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.14.6.tar.xz", 
+            "pgp": "https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.14.6.tar.sign", 
+            "released": {
+                "timestamp": 1402172689, 
+                "isodate": "2014-06-07"
+            }, 
+            "gitweb": "https://git.kernel.org/cgit/linux/kernel/git/stable/linux-stable.git/log/?id=refs/tags/v3.14.6", 
+            "changelog": "https://www.kernel.org/pub/linux/kernel/v3.x/ChangeLog-3.14.6", 
+            "patch": {
+                "full": "https://www.kernel.org/pub/linux/kernel/v3.x/patch-3.14.6.xz", 
+                "incremental": "https://www.kernel.org/pub/linux/kernel/v3.x/incr/patch-3.14.5-6.xz"
+            }
+        }, 
+        {
+            "iseol": false, 
+            "version": "3.12.21", 
+            "moniker": "longterm", 
+            "source": "https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.12.21.tar.xz", 
+            "pgp": "https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.12.21.tar.sign", 
+            "released": {
+                "timestamp": 1401691014, 
+                "isodate": "2014-06-02"
+            }, 
+            "gitweb": "https://git.kernel.org/cgit/linux/kernel/git/stable/linux-stable.git/log/?id=refs/tags/v3.12.21", 
+            "changelog": "https://www.kernel.org/pub/linux/kernel/v3.x/ChangeLog-3.12.21", 
+            "patch": {
+                "full": "https://www.kernel.org/pub/linux/kernel/v3.x/patch-3.12.21.xz", 
+                "incremental": "https://www.kernel.org/pub/linux/kernel/v3.x/incr/patch-3.12.20-21.xz"
+            }
+        }, 
+        {
+            "iseol": false, 
+            "version": "3.10.42", 
+            "moniker": "longterm", 
+            "source": "https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.10.42.tar.xz", 
+            "pgp": "https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.10.42.tar.sign", 
+            "released": {
+                "timestamp": 1402174116, 
+                "isodate": "2014-06-07"
+            }, 
+            "gitweb": "https://git.kernel.org/cgit/linux/kernel/git/stable/linux-stable.git/log/?id=refs/tags/v3.10.42", 
+            "changelog": "https://www.kernel.org/pub/linux/kernel/v3.x/ChangeLog-3.10.42", 
+            "patch": {
+                "full": "https://www.kernel.org/pub/linux/kernel/v3.x/patch-3.10.42.xz", 
+                "incremental": "https://www.kernel.org/pub/linux/kernel/v3.x/incr/patch-3.10.41-42.xz"
+            }
+        }, 
+        {
+            "iseol": false, 
+            "version": "3.4.92", 
+            "moniker": "longterm", 
+            "source": "https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.4.92.tar.xz", 
+            "pgp": "https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.4.92.tar.sign", 
+            "released": {
+                "timestamp": 1402182197, 
+                "isodate": "2014-06-07"
+            }, 
+            "gitweb": "https://git.kernel.org/cgit/linux/kernel/git/stable/linux-stable.git/log/?id=refs/tags/v3.4.92", 
+            "changelog": "https://www.kernel.org/pub/linux/kernel/v3.x/ChangeLog-3.4.92", 
+            "patch": {
+                "full": "https://www.kernel.org/pub/linux/kernel/v3.x/patch-3.4.92.xz", 
+                "incremental": "https://www.kernel.org/pub/linux/kernel/v3.x/incr/patch-3.4.91-92.xz"
+            }
+        }, 
+        {
+            "iseol": false, 
+            "version": "3.2.60", 
+            "moniker": "longterm", 
+            "source": "https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.2.60.tar.xz", 
+            "pgp": "https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.2.60.tar.sign", 
+            "released": {
+                "timestamp": 1402316958, 
+                "isodate": "2014-06-09"
+            }, 
+            "gitweb": "https://git.kernel.org/cgit/linux/kernel/git/stable/linux-stable.git/log/?id=refs/tags/v3.2.60", 
+            "changelog": "https://www.kernel.org/pub/linux/kernel/v3.x/ChangeLog-3.2.60", 
+            "patch": {
+                "full": "https://www.kernel.org/pub/linux/kernel/v3.x/patch-3.2.60.xz", 
+                "incremental": "https://www.kernel.org/pub/linux/kernel/v3.x/incr/patch-3.2.59-60.xz"
+            }
+        }, 
+        {
+            "iseol": false, 
+            "version": "2.6.32.62", 
+            "moniker": "longterm", 
+            "source": "https://www.kernel.org/pub/linux/kernel/v2.6/longterm/v2.6.32/linux-2.6.32.62.tar.xz", 
+            "pgp": "https://www.kernel.org/pub/linux/kernel/v2.6/longterm/v2.6.32/linux-2.6.32.62.tar.sign", 
+            "released": {
+                "timestamp": 1400478880, 
+                "isodate": "2014-05-19"
+            }, 
+            "gitweb": "https://git.kernel.org/cgit/linux/kernel/git/stable/linux-stable.git/log/?id=refs/tags/v2.6.32.62", 
+            "changelog": "https://www.kernel.org/pub/linux/kernel/v2.6/longterm/v2.6.32/ChangeLog-2.6.32.62", 
+            "patch": {
+                "full": "https://www.kernel.org/pub/linux/kernel/v2.6/longterm/v2.6.32/patch-2.6.32.62.xz", 
+                "incremental": "https://www.kernel.org/pub/linux/kernel/v2.6/longterm/v2.6.32/incr/patch-2.6.32.61-62.xz"
+            }
+        }, 
+        {
+            "iseol": false, 
+            "version": "next-20140606", 
+            "moniker": "linux-next", 
+            "source": null, 
+            "pgp": null, 
+            "released": {
+                "timestamp": 1402040695, 
+                "isodate": "2014-06-06"
+            }, 
+            "gitweb": "https://git.kernel.org/cgit/linux/kernel/git/next/linux-next.git/log/?id=refs/tags/next-20140606", 
+            "changelog": null, 
+            "patch": {
+                "full": null, 
+                "incremental": null
+            }
+        }
+    ]
+}

@@ -1,0 +1,938 @@
+{
+    "67.7295219553959": 29.3396673941311,
+    "CPUID": {
+        "BRAND_STR": "Intel(R) Core(TM) i3-3217U CPU @ 1.80GHz",
+        "CPU_CLOCK": "1100",
+        "CPU_CLOCK_BY_IC": "-2",
+        "CPU_CLOCK_BY_OS": "1100",
+        "CPU_CLOCK_MEASURE": "1795",
+        "CPU_CODENAME": "Arrandale (Core i3)",
+        "EXT_FAMILY": "6",
+        "EXT_MODEL": "58",
+        "FAMILY": "6",
+        "Flags": {
+            "1": {
+                "DESC": "AMD MMX-extended instructions supported",
+                "FEATURE": "mmxext",
+                "HAVEWEBSITE": 1,
+                "NAME": "CPU_FEATURE_MMXEXT",
+                "VALUE": 0,
+                "WEBSITE": "http://en.wikipedia.org/wiki/MMX_(instruction_set)"
+            },
+            "10": {
+                "DESC": "Memory type range registers",
+                "FEATURE": "mtrr",
+                "HAVEWEBSITE": 1,
+                "NAME": "CPU_FEATURE_MTRR",
+                "VALUE": 1,
+                "WEBSITE": "http://en.wikipedia.org/wiki/Memory_type_range_register"
+            },
+            "11": {
+                "DESC": "ACPI support (power states)",
+                "FEATURE": "acpi",
+                "HAVEWEBSITE": 1,
+                "NAME": "CPU_FEATURE_ACPI",
+                "VALUE": 1,
+                "WEBSITE": "http://en.wikipedia.org/wiki/Acpi"
+            },
+            "12": {
+                "DESC": "Virtualization technology supported",
+                "FEATURE": "vmx",
+                "HAVEWEBSITE": 1,
+                "NAME": "CPU_FEATURE_VMX",
+                "VALUE": 1,
+                "WEBSITE": "http://en.wikipedia.org/wiki/X86_virtualization"
+            },
+            "13": {
+                "DESC": "SYSCALL / SYSRET instructions supported",
+                "FEATURE": "syscall",
+                "HAVEWEBSITE": 1,
+                "NAME": "CPU_FEATURE_SYSCALL",
+                "VALUE": 1,
+                "WEBSITE": "http://en.wikipedia.org/wiki/Syscall"
+            },
+            "14": {
+                "DESC": "64-bit Debug store supported",
+                "FEATURE": "dts64",
+                "HAVEWEBSITE": 0,
+                "NAME": "CPU_FEATURE_DTS64",
+                "VALUE": 1,
+                "WEBSITE": "mmxext"
+            },
+            "15": {
+                "DESC": "Floating point unit",
+                "FEATURE": "fpu",
+                "HAVEWEBSITE": 1,
+                "NAME": "CPU_FEATURE_FPU",
+                "VALUE": 1,
+                "WEBSITE": "http://en.wikipedia.org/wiki/Floating-point_unit"
+            },
+            "16": {
+                "DESC": "Debugging extension",
+                "FEATURE": "de",
+                "HAVEWEBSITE": 0,
+                "NAME": "CPU_FEATURE_DE",
+                "VALUE": 1,
+                "WEBSITE": "mmxext"
+            },
+            "17": {
+                "DESC": "Virtual mode extension",
+                "FEATURE": "vme",
+                "HAVEWEBSITE": 1,
+                "NAME": "CPU_FEATURE_VME",
+                "VALUE": 1,
+                "WEBSITE": "http://en.wikipedia.org/wiki/Virtual_8086_mode"
+            },
+            "18": {
+                "DESC": "Page size extension",
+                "FEATURE": "pse",
+                "HAVEWEBSITE": 1,
+                "NAME": "CPU_FEATURE_PSE",
+                "VALUE": 1,
+                "WEBSITE": "http://en.wikipedia.org/wiki/Page_Size_Extension"
+            },
+            "19": {
+                "DESC": "Time-stamp counter",
+                "FEATURE": "tsc",
+                "HAVEWEBSITE": 1,
+                "NAME": "CPU_FEATURE_TSC",
+                "VALUE": 1,
+                "WEBSITE": "http://en.wikipedia.org/wiki/Time_Stamp_Counter"
+            },
+            "2": {
+                "DESC": "Streaming-SIMD Extensions (SSE) supported",
+                "FEATURE": "sse",
+                "HAVEWEBSITE": 1,
+                "NAME": "CPU_FEATURE_SSE",
+                "VALUE": 1,
+                "WEBSITE": "http://en.wikipedia.org/wiki/Streaming_SIMD_Extensions"
+            },
+            "20": {
+                "DESC": "Model-specific regsisters, RDMSR/WRMSR supported",
+                "FEATURE": "msr",
+                "HAVEWEBSITE": 1,
+                "NAME": "CPU_FEATURE_MSR",
+                "VALUE": 1,
+                "WEBSITE": "http://en.wikipedia.org/wiki/Model-specific_register"
+            },
+            "21": {
+                "DESC": "Physical address extension",
+                "FEATURE": "pae",
+                "HAVEWEBSITE": 1,
+                "NAME": "CPU_FEATURE_PAE",
+                "VALUE": 1,
+                "WEBSITE": "http://en.wikipedia.org/wiki/Physical_Address_Extension"
+            },
+            "22": {
+                "DESC": "Machine check exception",
+                "FEATURE": "mce",
+                "HAVEWEBSITE": 1,
+                "NAME": "CPU_FEATURE_MCE",
+                "VALUE": 1,
+                "WEBSITE": "http://en.wikipedia.org/wiki/Machine-check_exception"
+            },
+            "23": {
+                "DESC": "CMPXCHG8/CMPXCHG8B instruction supported",
+                "FEATURE": "cx8",
+                "HAVEWEBSITE": 0,
+                "NAME": "CPU_FEATURE_CX8",
+                "VALUE": 1,
+                "WEBSITE": "mmxext"
+            },
+            "24": {
+                "DESC": "Advanced Programmable Interrupt Controller support",
+                "FEATURE": "apic",
+                "HAVEWEBSITE": 1,
+                "NAME": "CPU_FEATURE_APIC",
+                "VALUE": 1,
+                "WEBSITE": "http://en.wikipedia.org/wiki/Advanced_Programmable_Interrupt_Controller"
+            },
+            "25": {
+                "DESC": "Intel 64 Architecture x2APIC Specification",
+                "FEATURE": "x2apic",
+                "HAVEWEBSITE": 1,
+                "NAME": "CPU_FEATURE_X2APIC",
+                "VALUE": 1,
+                "WEBSITE": "http://en.wikipedia.org/wiki/X2APIC"
+            },
+            "26": {
+                "DESC": "SYSENTER / SYSEXIT instructions supported",
+                "FEATURE": "sep",
+                "HAVEWEBSITE": 1,
+                "NAME": "CPU_FEATURE_SEP",
+                "VALUE": 1,
+                "WEBSITE": "http://en.wikipedia.org/wiki/Call_gate"
+            },
+            "27": {
+                "DESC": "Page global enable",
+                "FEATURE": "pge",
+                "HAVEWEBSITE": 1,
+                "NAME": "CPU_FEATURE_PGE",
+                "VALUE": 1,
+                "WEBSITE": "http://en.wikipedia.org/wiki/Translation_lookaside_buffer"
+            },
+            "28": {
+                "DESC": "Machine check architecture",
+                "FEATURE": "mca",
+                "HAVEWEBSITE": 1,
+                "NAME": "CPU_FEATURE_MCA",
+                "VALUE": 1,
+                "WEBSITE": "http://en.wikipedia.org/wiki/Machine_check_architecture"
+            },
+            "29": {
+                "DESC": "CMOVxx instructions supported",
+                "FEATURE": "cmov",
+                "HAVEWEBSITE": 0,
+                "NAME": "CPU_FEATURE_CMOV",
+                "VALUE": 1,
+                "WEBSITE": "mmxext"
+            },
+            "3": {
+                "DESC": "SSE2 instructions supported",
+                "FEATURE": "sse2",
+                "HAVEWEBSITE": 1,
+                "NAME": "CPU_FEATURE_SSE2",
+                "VALUE": 1,
+                "WEBSITE": "http://en.wikipedia.org/wiki/SSE2"
+            },
+            "30": {
+                "DESC": "Page attribute table",
+                "FEATURE": "pat",
+                "HAVEWEBSITE": 1,
+                "NAME": "CPU_FEATURE_PAT",
+                "VALUE": 1,
+                "WEBSITE": "http://en.wikipedia.org/wiki/Page_attribute_table"
+            },
+            "31": {
+                "DESC": "36-bit page address extension",
+                "FEATURE": "pse36",
+                "HAVEWEBSITE": 1,
+                "NAME": "CPU_FEATURE_PSE36",
+                "VALUE": 1,
+                "WEBSITE": "http://en.wikipedia.org/wiki/Physical_Address_Extension"
+            },
+            "32": {
+                "DESC": "Processor serial # implemented (Intel P3 only)",
+                "FEATURE": "pt",
+                "HAVEWEBSITE": 0,
+                "NAME": "CPU_FEATURE_PN",
+                "VALUE": 0,
+                "WEBSITE": "mmxext"
+            },
+            "33": {
+                "DESC": "Debug store supported",
+                "FEATURE": "dts",
+                "HAVEWEBSITE": 0,
+                "NAME": "CPU_FEATURE_DTS",
+                "VALUE": 1,
+                "WEBSITE": "mmxext"
+            },
+            "34": {
+                "DESC": "Self-snoop",
+                "FEATURE": "ss",
+                "HAVEWEBSITE": 1,
+                "NAME": "CPU_FEATURE_SS",
+                "VALUE": 1,
+                "WEBSITE": "http://en.wikipedia.org/wiki/Cache_snooping"
+            },
+            "35": {
+                "DESC": "Thermal monitor",
+                "FEATURE": "tm",
+                "HAVEWEBSITE": 0,
+                "NAME": "CPU_FEATURE_TM",
+                "VALUE": 1,
+                "WEBSITE": "mmxext"
+            },
+            "36": {
+                "DESC": "IA64 supported (Itanium only)",
+                "FEATURE": "ia64",
+                "HAVEWEBSITE": 1,
+                "NAME": "CPU_FEATURE_IA64",
+                "VALUE": 0,
+                "WEBSITE": "http://en.wikipedia.org/wiki/Ia64"
+            },
+            "37": {
+                "DESC": "Pending-break enable",
+                "FEATURE": "pbe",
+                "HAVEWEBSITE": 0,
+                "NAME": "CPU_FEATURE_PBE",
+                "VALUE": 1,
+                "WEBSITE": "mmxext"
+            },
+            "38": {
+                "DESC": "PNI (SSE3) instructions supported",
+                "FEATURE": "pni",
+                "HAVEWEBSITE": 1,
+                "NAME": "CPU_FEATURE_PNI",
+                "VALUE": 1,
+                "WEBSITE": "http://en.wikipedia.org/wiki/SSE3"
+            },
+            "39": {
+                "DESC": "PCLMULQDQ instruction supported",
+                "FEATURE": "pclmul",
+                "HAVEWEBSITE": 0,
+                "NAME": "CPU_FEATURE_PCLMUL",
+                "VALUE": 1,
+                "WEBSITE": "mmxext"
+            },
+            "4": {
+                "DESC": "AMD 3DNow! instructions supported",
+                "FEATURE": "3dnow",
+                "HAVEWEBSITE": 1,
+                "NAME": "CPU_FEATURE_3DNOW",
+                "VALUE": 0,
+                "WEBSITE": "http://en.wikipedia.org/wiki/3DNow!"
+            },
+            "40": {
+                "DESC": "MONITOR / MWAIT supported",
+                "FEATURE": "monitor",
+                "HAVEWEBSITE": 0,
+                "NAME": "CPU_FEATURE_MONITOR",
+                "VALUE": 1,
+                "WEBSITE": "mmxext"
+            },
+            "41": {
+                "DESC": "CPL Qualified Debug Store",
+                "FEATURE": "ds_cpl",
+                "HAVEWEBSITE": 0,
+                "NAME": "CPU_FEATURE_DS_CPL",
+                "VALUE": 1,
+                "WEBSITE": "mmxext"
+            },
+            "42": {
+                "DESC": "Safer mode exceptions",
+                "FEATURE": "smx",
+                "HAVEWEBSITE": 1,
+                "NAME": "CPU_FEATURE_SMX",
+                "VALUE": 0,
+                "WEBSITE": "http://en.wikipedia.org/wiki/LaGrande"
+            },
+            "43": {
+                "DESC": "Enhanced SpeedStep",
+                "FEATURE": "est",
+                "HAVEWEBSITE": 1,
+                "NAME": "CPU_FEATURE_EST",
+                "VALUE": 1,
+                "WEBSITE": "http://en.wikipedia.org/wiki/SpeedStep"
+            },
+            "44": {
+                "DESC": "Thermal monitor 2",
+                "FEATURE": "tm2",
+                "HAVEWEBSITE": 1,
+                "NAME": "CPU_FEATURE_TM2",
+                "VALUE": 1,
+                "WEBSITE": "http://en.wikipedia.org/wiki/Tm2"
+            },
+            "45": {
+                "DESC": "Context ID supported",
+                "FEATURE": "cid",
+                "HAVEWEBSITE": 0,
+                "NAME": "CPU_FEATURE_CID",
+                "VALUE": 0,
+                "WEBSITE": "mmxext"
+            },
+            "46": {
+                "DESC": "CMPXCHG16B instruction supported",
+                "FEATURE": "cx16",
+                "HAVEWEBSITE": 0,
+                "NAME": "CPU_FEATURE_CX16",
+                "VALUE": 1,
+                "WEBSITE": "mmxext"
+            },
+            "47": {
+                "DESC": "Send Task Priority Messages disable",
+                "FEATURE": "xtpr",
+                "HAVEWEBSITE": 0,
+                "NAME": "CPU_FEATURE_XTPR",
+                "VALUE": 1,
+                "WEBSITE": "mmxext"
+            },
+            "48": {
+                "DESC": "Performance capabilities MSR supported",
+                "FEATURE": "pdcm",
+                "HAVEWEBSITE": 0,
+                "NAME": "CPU_FEATURE_PDCM",
+                "VALUE": 1,
+                "WEBSITE": "mmxext"
+            },
+            "49": {
+                "DESC": "Direct cache access supported",
+                "FEATURE": "dca",
+                "HAVEWEBSITE": 0,
+                "NAME": "CPU_FEATURE_DCA",
+                "VALUE": 0,
+                "WEBSITE": "mmxext"
+            },
+            "5": {
+                "DESC": "Virtual mode extension",
+                "FEATURE": "vme",
+                "HAVEWEBSITE": 1,
+                "NAME": "CPU_FEATURE_VME",
+                "VALUE": 1,
+                "WEBSITE": "http://en.wikipedia.org/wiki/Virtual_8086_mode"
+            },
+            "50": {
+                "DESC": "SSE 4.1 instructions supported",
+                "FEATURE": "sse4_1",
+                "HAVEWEBSITE": 1,
+                "NAME": "CPU_FEATURE_SSE4_1",
+                "VALUE": 1,
+                "WEBSITE": "http://en.wikipedia.org/wiki/SSE4"
+            },
+            "51": {
+                "DESC": "SSE 4.2 instructions supported",
+                "FEATURE": "sse4_2",
+                "HAVEWEBSITE": 1,
+                "NAME": "CPU_FEATURE_SSE4_2",
+                "VALUE": 1,
+                "WEBSITE": "http://en.wikipedia.org/wiki/SSE4"
+            },
+            "52": {
+                "DESC": "SYSCALL / SYSRET instructions supported",
+                "FEATURE": "syscall",
+                "HAVEWEBSITE": 0,
+                "NAME": "CPU_FEATURE_SYSCALL",
+                "VALUE": 1,
+                "WEBSITE": "mmxext"
+            },
+            "53": {
+                "DESC": "Execute disable bit supported",
+                "FEATURE": "xd",
+                "HAVEWEBSITE": 0,
+                "NAME": "CPU_FEATURE_XD",
+                "VALUE": 1,
+                "WEBSITE": "mmxext"
+            },
+            "54": {
+                "DESC": "MOVBE instruction supported",
+                "FEATURE": "movbe",
+                "HAVEWEBSITE": 0,
+                "NAME": "CPU_FEATURE_MOVBE",
+                "VALUE": 0,
+                "WEBSITE": "mmxext"
+            },
+            "55": {
+                "DESC": "POPCNT instruction supported",
+                "FEATURE": "popcnt",
+                "HAVEWEBSITE": 1,
+                "NAME": "CPU_FEATURE_POPCNT",
+                "VALUE": 1,
+                "WEBSITE": "http://en.wikipedia.org/wiki/Hamming_weight"
+            },
+            "56": {
+                "DESC": "AES* instructions supported",
+                "FEATURE": "aes",
+                "HAVEWEBSITE": 1,
+                "NAME": "CPU_FEATURE_AES",
+                "VALUE": 0,
+                "WEBSITE": "http://en.wikipedia.org/wiki/AES_instruction_set"
+            },
+            "57": {
+                "DESC": "XSAVE/XRSTOR/etc instructions supported",
+                "FEATURE": "xsave",
+                "HAVEWEBSITE": 1,
+                "NAME": "CPU_FEATURE_XSAVE",
+                "VALUE": 1,
+                "WEBSITE": "http://en.wikipedia.org/wiki/Streaming_SIMD_Extensions"
+            },
+            "58": {
+                "DESC": "non-privileged copy of OSXSAVE supported",
+                "FEATURE": "osxsave",
+                "HAVEWEBSITE": 1,
+                "NAME": "CPU_FEATURE_OSXSAVE",
+                "VALUE": 1,
+                "WEBSITE": "http://en.wikipedia.org/wiki/Streaming_SIMD_Extensions"
+            },
+            "59": {
+                "DESC": "Advanced vector extensions supported",
+                "FEATURE": "avx",
+                "HAVEWEBSITE": 1,
+                "NAME": "CPU_FEATURE_AVX",
+                "VALUE": 1,
+                "WEBSITE": "http://en.wikipedia.org/wiki/Advanced_Vector_Extensions"
+            },
+            "6": {
+                "DESC": "CLFLUSH instruction supported",
+                "FEATURE": "clflush",
+                "HAVEWEBSITE": 0,
+                "NAME": "CPU_FEATURE_CLFLUSH",
+                "VALUE": 1,
+                "WEBSITE": "mmxext"
+            },
+            "60": {
+                "DESC": "AMD 3DNow! extended instructions supported",
+                "FEATURE": "3dnowext",
+                "HAVEWEBSITE": 1,
+                "NAME": "CPU_FEATURE_3DNOWEXT",
+                "VALUE": 0,
+                "WEBSITE": "http://en.wikipedia.org/wiki/3DNow!"
+            },
+            "61": {
+                "DESC": "No-execute bit supported",
+                "FEATURE": "nx",
+                "HAVEWEBSITE": 1,
+                "NAME": "CPU_FEATURE_NX",
+                "VALUE": 0,
+                "WEBSITE": "http://en.wikipedia.org/wiki/NX_bit"
+            },
+            "62": {
+                "DESC": "FFXSR: FXSAVE and FXRSTOR optimizations",
+                "FEATURE": "opt",
+                "HAVEWEBSITE": 0,
+                "NAME": "CPU_FEATURE_FXSR_OPT",
+                "VALUE": 0,
+                "WEBSITE": "mmxext"
+            },
+            "63": {
+                "DESC": "RDTSCP instruction supported (AMD-only)",
+                "FEATURE": "rdtscp",
+                "HAVEWEBSITE": 1,
+                "NAME": "CPU_FEATURE_RDTSCP",
+                "VALUE": 0,
+                "WEBSITE": "http://en.wikipedia.org/wiki/Time_Stamp_Counter"
+            },
+            "64": {
+                "DESC": "Long mode (x86_64/EM64T) supported",
+                "FEATURE": "lm",
+                "HAVEWEBSITE": 0,
+                "NAME": "CPU_FEATURE_LM",
+                "VALUE": 1,
+                "WEBSITE": "mmxext"
+            },
+            "65": {
+                "DESC": "LAHF/SAHF supported in 64-bit mode",
+                "FEATURE": "lahf_lm",
+                "HAVEWEBSITE": 0,
+                "NAME": "CPU_FEATURE_LAHF_LM",
+                "VALUE": 1,
+                "WEBSITE": "mmxext"
+            },
+            "66": {
+                "DESC": "Core multi-processing legacy mode",
+                "FEATURE": "cmp_legacy",
+                "HAVEWEBSITE": 0,
+                "NAME": "CPU_FEATURE_CMP_LEGACY",
+                "VALUE": 0,
+                "WEBSITE": "mmxext"
+            },
+            "67": {
+                "DESC": "AMD Secure virtual machine",
+                "FEATURE": "svm",
+                "HAVEWEBSITE": 0,
+                "NAME": "CPU_FEATURE_SVM",
+                "VALUE": 0,
+                "WEBSITE": "mmxext"
+            },
+            "68": {
+                "DESC": "SSE 4a from AMD",
+                "FEATURE": "sse4a",
+                "HAVEWEBSITE": 1,
+                "NAME": "CPU_FEATURE_SSE4A",
+                "VALUE": 0,
+                "WEBSITE": "http://en.wikipedia.org/wiki/SSE4"
+            },
+            "69": {
+                "DESC": "Misaligned SSE supported",
+                "FEATURE": "misalignsse",
+                "HAVEWEBSITE": 0,
+                "NAME": "CPU_FEATURE_MISALIGNSSE",
+                "VALUE": 0,
+                "WEBSITE": "mmxext"
+            },
+            "7": {
+                "DESC": "SSSE3 instructionss supported (this is different from SSE3!)",
+                "FEATURE": "ssse3",
+                "HAVEWEBSITE": 1,
+                "NAME": "CPU_FEATURE_SSSE3",
+                "VALUE": 1,
+                "WEBSITE": "http://en.wikipedia.org/wiki/SSE3"
+            },
+            "70": {
+                "DESC": "LZCNT instruction support",
+                "FEATURE": "abm",
+                "HAVEWEBSITE": 1,
+                "NAME": "CPU_FEATURE_ABM",
+                "VALUE": 0,
+                "WEBSITE": "http://en.wikipedia.org/wiki/Bit_Manipulation_Instruction_Sets"
+            },
+            "71": {
+                "DESC": "PREFETCH/PREFETCHW support",
+                "FEATURE": "3dnowprefetch",
+                "HAVEWEBSITE": 1,
+                "NAME": "CPU_FEATURE_3DNOWPREFETCH",
+                "VALUE": 0,
+                "WEBSITE": "http://en.wikipedia.org/wiki/3DNow!"
+            },
+            "72": {
+                "DESC": "OS Visible Workaround (AMD)",
+                "FEATURE": "osvw",
+                "HAVEWEBSITE": 0,
+                "NAME": "CPU_FEATURE_OSVW",
+                "VALUE": 0,
+                "WEBSITE": "mmxext"
+            },
+            "73": {
+                "DESC": "Instruction-based sampling",
+                "FEATURE": "ibs",
+                "HAVEWEBSITE": 1,
+                "NAME": "CPU_FEATURE_IBS",
+                "VALUE": 0,
+                "WEBSITE": "http://en.wikipedia.org/wiki/Hardware_performance_counter"
+            },
+            "74": {
+                "DESC": "SSE 5 instructions supported (deprecated, will never be 1)",
+                "FEATURE": "sse5",
+                "HAVEWEBSITE": 1,
+                "NAME": "CPU_FEATURE_SSE5",
+                "VALUE": 0,
+                "WEBSITE": "http://en.wikipedia.org/wiki/SSE5"
+            },
+            "75": {
+                "DESC": "SKINIT / STGI supported",
+                "FEATURE": "skinit",
+                "HAVEWEBSITE": 0,
+                "NAME": "CPU_FEATURE_SKINIT",
+                "VALUE": 0,
+                "WEBSITE": "mmxext"
+            },
+            "76": {
+                "DESC": "Watchdog timer support",
+                "FEATURE": "wdt",
+                "HAVEWEBSITE": 1,
+                "NAME": "CPU_FEATURE_WDT",
+                "VALUE": 0,
+                "WEBSITE": "http://en.wikipedia.org/wiki/Watchdog_timer"
+            },
+            "77": {
+                "DESC": "Temperature sensor",
+                "FEATURE": "ts",
+                "HAVEWEBSITE": 0,
+                "NAME": "CPU_FEATURE_TS",
+                "VALUE": 0,
+                "WEBSITE": "mmxext"
+            },
+            "78": {
+                "DESC": "Frequency ID control",
+                "FEATURE": "fid",
+                "HAVEWEBSITE": 0,
+                "NAME": "CPU_FEATURE_FID",
+                "VALUE": 0,
+                "WEBSITE": "mmxext"
+            },
+            "79": {
+                "DESC": "Voltage ID control",
+                "FEATURE": "vid",
+                "HAVEWEBSITE": 0,
+                "NAME": "CPU_FEATURE_VID",
+                "VALUE": 0,
+                "WEBSITE": "mmxext"
+            },
+            "8": {
+                "DESC": "Long mode (x86_64/EM64T) supported",
+                "FEATURE": "lm",
+                "HAVEWEBSITE": 0,
+                "NAME": "CPU_FEATURE_LM",
+                "VALUE": 1,
+                "WEBSITE": "mmxext"
+            },
+            "80": {
+                "DESC": "THERMTRIP",
+                "FEATURE": "ttp",
+                "HAVEWEBSITE": 0,
+                "NAME": "CPU_FEATURE_TTP",
+                "VALUE": 0,
+                "WEBSITE": "mmxext"
+            },
+            "81": {
+                "DESC": "AMD-specified hardware thermal control",
+                "FEATURE": "tm_amd",
+                "HAVEWEBSITE": 0,
+                "NAME": "CPU_FEATURE_TM_AMD",
+                "VALUE": 0,
+                "WEBSITE": "mmxext"
+            },
+            "82": {
+                "DESC": "Software thermal control",
+                "FEATURE": "stc",
+                "HAVEWEBSITE": 0,
+                "NAME": "CPU_FEATURE_STC",
+                "VALUE": 0,
+                "WEBSITE": "mmxext"
+            },
+            "83": {
+                "DESC": "100 MHz multiplier control",
+                "FEATURE": "100mhzsteps",
+                "HAVEWEBSITE": 0,
+                "NAME": "CPU_FEATURE_100MHZSTEPS",
+                "VALUE": 0,
+                "WEBSITE": "mmxext"
+            },
+            "84": {
+                "DESC": "Hardware P-state control",
+                "FEATURE": "hwpstate",
+                "HAVEWEBSITE": 0,
+                "NAME": "CPU_FEATURE_HWPSTATE",
+                "VALUE": 0,
+                "WEBSITE": "mmxext"
+            },
+            "85": {
+                "DESC": "TSC ticks at constant rate",
+                "FEATURE": "constant_tsc",
+                "HAVEWEBSITE": 1,
+                "NAME": "CPU_FEATURE_CONSTANT_TSC",
+                "VALUE": 0,
+                "WEBSITE": "http://en.wikipedia.org/wiki/Time_Stamp_Counter"
+            },
+            "86": {
+                "DESC": "The XOP instruction set (same as the old CPU_FEATURE_SSE5)",
+                "FEATURE": "xop",
+                "HAVEWEBSITE": 0,
+                "NAME": "CPU_FEATURE_XOP",
+                "VALUE": 0,
+                "WEBSITE": "mmxext"
+            },
+            "87": {
+                "DESC": "The FMA3 instruction set",
+                "FEATURE": "fma3",
+                "HAVEWEBSITE": 1,
+                "NAME": "CPU_FEATURE_FMA3",
+                "VALUE": 0,
+                "WEBSITE": "http://en.wikipedia.org/wiki/FMA_instruction_set"
+            },
+            "88": {
+                "DESC": "The FMA4 instruction set",
+                "FEATURE": "fma4",
+                "HAVEWEBSITE": 1,
+                "NAME": "CPU_FEATURE_FMA4",
+                "VALUE": 0,
+                "WEBSITE": "http://en.wikipedia.org/wiki/FMA_instruction_set"
+            },
+            "89": {
+                "DESC": "Trailing bit manipulation instruction support",
+                "FEATURE": "tbm",
+                "HAVEWEBSITE": 0,
+                "NAME": "CPU_FEATURE_TBM",
+                "VALUE": 0,
+                "WEBSITE": "mmxext"
+            },
+            "9": {
+                "DESC": "LAHF/SAHF supported in 64-bit mode",
+                "FEATURE": "lahf_lm",
+                "HAVEWEBSITE": 0,
+                "NAME": "CPU_FEATURE_LAHF_LM",
+                "VALUE": 1,
+                "WEBSITE": "mmxext"
+            },
+            "90": {
+                "DESC": "16-bit FP convert instruction support",
+                "FEATURE": "f16c",
+                "HAVEWEBSITE": 0,
+                "NAME": "CPU_FEATURE_F16C",
+                "VALUE": 1,
+                "WEBSITE": "mmxext"
+            },
+            "91": {
+                "DESC": "RdRand instruction",
+                "FEATURE": "rdrand",
+                "HAVEWEBSITE": 1,
+                "NAME": "CPU_FEATURE_RDRAND",
+                "VALUE": 0,
+                "WEBSITE": "http://en.wikipedia.org/wiki/RdRand"
+            },
+            "92": {
+                "DESC": "Hyper-threading supported (but might be disabled)",
+                "FEATURE": "ht",
+                "HAVEWEBSITE": 1,
+                "NAME": "CPU_FEATURE_HT",
+                "VALUE": 1,
+                "WEBSITE": "http://en.wikipedia.org/wiki/Hyper-Threading"
+            },
+            "93": {
+                "DESC": "MMX instruction set supported",
+                "FEATURE": "mmx",
+                "HAVEWEBSITE": 1,
+                "NAME": "CPU_FEATURE_MMX",
+                "VALUE": 1,
+                "WEBSITE": "http://en.wikipedia.org/wiki/MMX_(instruction_set)"
+            },
+            "94": {
+                "DESC": "Memory type range registers",
+                "FEATURE": "mtrr",
+                "HAVEWEBSITE": 1,
+                "NAME": "CPU_FEATURE_MTRR",
+                "VALUE": 1,
+                "WEBSITE": "http://en.wikipedia.org/wiki/Memory_type_range_register"
+            }
+        },
+        "L1_ASSOC": "8",
+        "L1_CACHELINE": "64",
+        "L1_DATA_CACHE": "32",
+        "L1_INSTRUCTION_CACHE": "32",
+        "L2_ASSOC": "8",
+        "L2_CACHE": "256",
+        "L2_CACHELINE": "64",
+        "L3_ASSOC": "12",
+        "L3_CACHE": "3072",
+        "L3_CACHELINE": "64",
+        "MARK_SYS_CLOCK": "0",
+        "MARK_TSC": "1108",
+        "MODEL": "10",
+        "NUM_CORES": "2",
+        "NUM_LOGICAL_CPUS": "4",
+        "SSE_SIZE": "128",
+        "STEPPING": "9",
+        "TOTAL_LOGICAL_CPUS": "4",
+        "VENDOR_STR": "GenuineIntel"
+    },
+    "CPU_ADRE_SIZES": "Address sizes:  36 bits physical, 48 bits virtual",
+    "CPU_BOGOMIPS": "Bogomips:  3591.80",
+    "CPU_CACHE_L1D": "L1 Data:        32K",
+    "CPU_CACHE_L1I": "L1 instruction: 32K",
+    "CPU_CACHE_L2": "Level 2:        256K",
+    "CPU_CACHE_L3": "Level 3:        3072K",
+    "CPU_CODENAME": " Codename: Ivy Bridge",
+    "CPU_CORES": "Cores:  4",
+    "CPU_DIE_SIZE": " Die size: 118 mm\u00b2",
+    "CPU_FAMILY": "Family:  6",
+    "CPU_FLAGS": "Flags: MMX, SSE, SSE2, SSE3, SSSE3, SSE4.2, SSE4.1, XD-Bit, ",
+    "CPU_HT": "True",
+    "CPU_HW_VIRT": "True",
+    "CPU_INTEGRATED_GRAPH": " Integrated GPU: Intel HD 4000",
+    "CPU_LOGO": "62.gif",
+    "CPU_MEMORY_SUPPORT": " Memory support: unknown",
+    "CPU_MODEL": "Model:  58",
+    "CPU_MULTIPLIER": " Multiplier: 16.0x",
+    "CPU_NAME": " (R) Core(TM) i3-3217U CPU ",
+    "CPU_PACKAGE": " Package: FC-BGA12F",
+    "CPU_PART": " Part: SR0WN",
+    "CPU_PHY": "Phy id:  0",
+    "CPU_POWER_MANGAMENT": "Power mangament: ",
+    "CPU_PPS": " PPS: 22 nm",
+    "CPU_SOCKET": " Socket: Intel BGA1023",
+    "CPU_SPEED": " 1801.000 MHz",
+    "CPU_STEPPING": "Stepping:  9",
+    "CPU_TCASEMAX": " TCaseMax: unknown",
+    "CPU_TDP": " TDP: 17 W",
+    "CPU_TRANSISTORS": " Transistors: unknown",
+    "CPU_TURBOCLOCK": " Turboclock: NA",
+    "CPU_VENDOR": " INTEL",
+    "CPU_VOLTAGE": " Voltage: unknown",
+    "CPU_X86_64": "True",
+    "DATE_TIME": "06/12/2014 17:20:40.094",
+    "DISTRO_LOGO": "elementaryos.png",
+    "DISTRO_VENDOR": "Distro Vendor: elementaryOS",
+    "DISTRO_VENDOR10": "Hostname: russ-CT14",
+    "DISTRO_VENDOR11": "Deafult DM: /usr/sbin/lightdm",
+    "DISTRO_VENDOR12": "Timezone: Europe/Kiev",
+    "DISTRO_VENDOR13": "GLX Version: ",
+    "DISTRO_VENDOR14": "X.Org Version: 1.11.3",
+    "DISTRO_VENDOR15": "Net-tools: 1.60",
+    "DISTRO_VENDOR16": "Arch: x86_64",
+    "DISTRO_VENDOR17": "Binutils 2.22",
+    "DISTRO_VENDOR18": "GCC Version: 4.6",
+    "DISTRO_VENDOR19": "Linux C Library: 2.15",
+    "DISTRO_VENDOR2": "Distro Release: 0.2",
+    "DISTRO_VENDOR20": "GNU Make Version: 3.81",
+    "DISTRO_VENDOR21": "Dynamic linker (ldd): 2.15",
+    "DISTRO_VENDOR3": "Desktop environment: Gnome 3.2.1",
+    "DISTRO_VENDOR4": "Window manager: Mutter(Gala)",
+    "DISTRO_VENDOR5": "Window manager Theme: elementary",
+    "DISTRO_VENDOR6": "GTK+ 2 Theme: elementary",
+    "DISTRO_VENDOR7": "GTK+ 3 Theme: elementary",
+    "DISTRO_VENDOR8": "GTK Icons: Pacifica-updated",
+    "DISTRO_VENDOR9": "GTK Font: DroidSans9",
+    "GOO_GL": {
+        "id": "http://goo.gl/VRrbdk",
+        "kind": "urlshortener#url",
+        "longUrl": "http://i-nex.pl//inex.r?validate=0612201412.3281230245787"
+    },
+    "GPU_CLI_GLX_VENDOR": "Client glx vendor:  Mesa Project and SGI",
+    "GPU_CLI_GLX_VERSION": "Client glx version:  1.4",
+    "GPU_GLX_VERSION": "GLX version:  1.4",
+    "GPU_KRN_DRV_IN_USE": "Kernel driver in use:  i915",
+    "GPU_LOGO": "intel.png",
+    "GPU_MODEL": " Intel Corporation 3rd Gen Core processor Graphics Controller",
+    "GPU_OGL_RENDERER": "OpenGL Renderer:  Mesa DRI Intel(R) Ivybridge Mobile ",
+    "GPU_OGL_VENDOR": "OpenGL Vendor:  Tungsten Graphics, Inc",
+    "GPU_OGL_VERSION": "OpenGL Version:  3.0 Mesa 8.0.4",
+    "GPU_PRESENT_RESOLUTION": "Present resolution:     1600x900 pixels (423x238 millimeters)",
+    "GPU_RESOLUTIONS": " minimum 320 x 200, current 1600 x 900, maximum 8192 x 8192",
+    "GPU_SRV_GLX_VENDOR": "Server glx vendor:  SGI",
+    "GPU_SRV_GLX_VERSION": "Server glx version:  1.4",
+    "GPU_TOT_MEM_NON_PRE": "Total Memory non-prefetchable: 256M - ",
+    "GPU_TOT_MEM_PRE": "Total Memory prefetchable: 4M - ",
+    "INEX_MOTHERBOARD_VENDOR1": "Board Vendor:   Quanta",
+    "INEX_MOTHERBOARD_VENDOR10": "Chassis Type:   10",
+    "INEX_MOTHERBOARD_VENDOR11": "Chassis Asset Tag:           ",
+    "INEX_MOTHERBOARD_VENDOR12": "Product Name:   CT14",
+    "INEX_MOTHERBOARD_VENDOR13": "Product Version:           ",
+    "INEX_MOTHERBOARD_VENDOR2": "Board Version:           ",
+    "INEX_MOTHERBOARD_VENDOR3": "Board Name:   VZ1",
+    "INEX_MOTHERBOARD_VENDOR4": "Board Asset Tag:          ",
+    "INEX_MOTHERBOARD_VENDOR5": "Bios Vendor:   American Megatrends Inc.",
+    "INEX_MOTHERBOARD_VENDOR6": "Bios Version:   VZ1Q102",
+    "INEX_MOTHERBOARD_VENDOR7": "Bios Date:   05/15/2012",
+    "INEX_MOTHERBOARD_VENDOR8": "Chassis Vendor:   VIZIO",
+    "INEX_MOTHERBOARD_VENDOR9": "Chassis Version:           ",
+    "INEX_VERSION": "0.6.6",
+    "SCREENSHOT_URL": "ValidScr/06122014/12.3281230245787.png",
+    "SUBMITED_BY": "UNKNOWN",
+    "SYSTEM_DOMAIN": "(none)",
+    "UNAME": {
+        "Machine": "x86_64",
+        "Nodename": "russ-CT14",
+        "Release": "3.2.0-64-generic",
+        "System_name": "Linux",
+        "Version": "#97-Ubuntu SMP Wed Jun 4 22:04:21 UTC 2014"
+    },
+    "USAGE": {
+        "BUFFERED_RAM": 84,
+        "FREE_HIGH": 0,
+        "FREE_PLUS_CACHED": 2734,
+        "FREE_RAM": 508,
+        "FREE_RAM_UNIT": 508,
+        "FREE_SWAP": 3983,
+        "LOAD_AVG_15MIN": 14,
+        "LOAD_AVG_1MIN": 16,
+        "LOAD_AVG_5MIN": 16,
+        "MEMORY_BUFFERS": 84,
+        "MEMORY_CACHED": 2142,
+        "MEMORY_FREE": 508,
+        "MEMORY_SHARED": 0,
+        "MEMORY_TOTAL": 3845,
+        "MEMORY_USED": 3337,
+        "NUMBER_OF_PROCESSES": 495,
+        "OTH": {
+            "HIGH": {
+                "FREE": 0,
+                "TOTAL": 0,
+                "USED": 0
+            },
+            "LOW": {
+                "FREE": 508,
+                "TOTAL": 3845,
+                "USED": 3337
+            }
+        },
+        "SHARED_RAM": 0,
+        "SWAP_FREE": 3983,
+        "SWAP_TOTAL": 3983,
+        "SWAP_USED": 0,
+        "TOTAL": {
+            "TOTAL": {
+                "FREE": 4492,
+                "TOTAL": 7829,
+                "USED": 3337
+            }
+        },
+        "TOTAL_HIGH": 0,
+        "TOTAL_RAM": 3845,
+        "TOTAL_RAM_UNIT": 3845,
+        "TOTAL_SWAP": 3983,
+        "UPTIME_DAYS": 0,
+        "UPTIME_HOURS": 0,
+        "UPTIME_MINUTES": 17,
+        "UPTIME_SECONDS": 49,
+        "USED_PLUS_CACHED": 1110
+    }
+}
