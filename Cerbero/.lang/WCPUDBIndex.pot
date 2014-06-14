@@ -14,3 +14,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+#: WCPUDBIndex.webpage:60
+msgid "Help Expand CPU Database."
+msgstr ""
+
+#: WCPUDBIndex.webpage:62
+msgid "As part of our ongoing efforts to improve CPU Database, we are actively trying to gather and publish information on x86 mobile and desktop processors. "
+msgstr ""
+
+#: WCPUDBIndex.webpage:63
+msgid "Contribute »"
+msgstr ""
+

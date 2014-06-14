@@ -2,7 +2,7 @@
 # Compiled with Gambas 3.5.3
 Title=Cerbero
 Startup=Core
-Version=0.0.4290
+Version=0.0.4296
 Component=gb.image
 Component=gb.crypt
 Component=gb.data

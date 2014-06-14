@@ -54,6 +54,17 @@
   font-size: 40px;
 }
 </style>
+<div class='container'>
+  <div class="row">
+    <div class='alert alert-info'>
+      <strong>
+        <%=("Help Expand CPU Database.")%>
+      </strong>
+        <%=("As part of our ongoing efforts to improve CPU Database, we are actively trying to gather and publish information on x86 mobile and desktop processors. ")%>
+      <a class='btn-success btn btn-sm' href='mailto:eloaders@i-nex.pl'><%=("Contribute »")%></a>
+    </div>
+  </div>
+</div>
 <div class="container" style="margin-top:150px;margin-bottom:200px;">
   <div class="row">
     <div class="row nav-row">

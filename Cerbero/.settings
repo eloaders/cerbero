@@ -7,7 +7,6 @@ Count=0
 [OpenFile]
 File[1]=".src/Core.module:170.73"
 File[2]="Error/NotFoundValidateID.html:21.6"
-Active=3
 File[3]=".src/Global.class:122.28"
 File[4]=".src/Upload.module:96.156"
 File[5]=".src/Errors.module:3.48"
@@ -98,7 +97,8 @@ File[89]=".src/DCPUDB/Amd/MCPUDBAmd.module:9.0"
 File[90]=".src/DCPUDB/Amd/WCPUDBAmd.webpage:102.17"
 File[91]=".src/DCPUDB/Amd/WCPUDBAmdEdit.webpage:14.35"
 File[92]=".src/DCPUDB/Atom/WCPUDBAtomView.webpage:143.198"
-File[93]=".src/DCPUDB/WCPUDBIndex.webpage:66.51"
+Active=93
+File[93]=".src/DCPUDB/WCPUDBIndex.webpage:71.52"
 File[94]=".src/DCPUDB/Intel/WCPUDBIntelView.webpage:163.47"
 File[95]=".src/DCPUDB/Amd/WCPUDBAmdView.webpage:170.20"
 File[96]=".src/DCPUDB/Atom/MCPUDBAtomChange.module:45.0"
